@@ -1,0 +1,18 @@
+# XST flow : Creating project file
+Adder.prj
+# xst flow : RunXST
+Adder.prj
+__projnav/Adder.xst
+./xst
+# XST flow : Creating project file
+Adder.prj
+# xst flow : RunXST
+Adder.prj
+__projnav/Adder.xst
+./xst
+# XST flow : Creating project file
+Adder.prj
+# xst flow : RunXST
+Adder.prj
+__projnav/Adder.xst
+./xst

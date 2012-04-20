@@ -1,0 +1,3 @@
+echo "playing music!"
+echo "not, they didn't want me playing hamster dance in a testcase.. redirecting stuff to foo.bar instead"
+cat m2test0.xssh >foo.bar

@@ -1,0 +1,13 @@
+
+public class LinkedList<T> {
+	private ListNode<T> first, last;
+	
+	public LinkedList() {
+		first = last = null;
+	}
+	
+	public LinkedList(T e) {
+		first = last = new ListNode (e);
+	}
+	
+}

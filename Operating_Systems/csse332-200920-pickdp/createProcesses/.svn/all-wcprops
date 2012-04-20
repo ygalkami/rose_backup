@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/csse332-200920-pickdp/!svn/ver/37/createProcesses
+END
+createChildAndWait.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/csse332-200920-pickdp/!svn/ver/37/createProcesses/createChildAndWait.c
+END
+myCopy.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/csse332-200920-pickdp/!svn/ver/37/createProcesses/myCopy.c
+END
+createChildAndWait-v2.c
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/repos/csse332-200920-pickdp/!svn/ver/37/createProcesses/createChildAndWait-v2.c
+END
+createChild.c
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/csse332-200920-pickdp/!svn/ver/37/createProcesses/createChild.c
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/csse332-200920-pickdp/!svn/ver/37/createProcesses/Makefile
+END
+test.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/csse332-200920-pickdp/!svn/ver/37/createProcesses/test.txt
+END

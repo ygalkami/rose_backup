@@ -1,0 +1,28 @@
+#!/bin/bash
+#get weather id from weather.noaa.gov
+gmail_login=""
+gmail_password=""
+
+while true; do
+
+	fetch="$(wget --secure-protocol=TLSv1 --timeout=3 -t 1 -q -O - https://${gmail_login}:${gmail_password}@mail.google.com/mail/feed/atom --no-check-certificate )"
+	line="$(echo "$fetch" | grep 'fullcount')"
+	unread="$(echo "$line" | sed "s/<fullcount>\(.*\)<\/fullcount>/\1/")"
+	unread="$unread  "
+
+	if [ -z "$unread" ]; then
+		echo "gmail.text = ! " | awesome-client
+		echo "temp.text = '`weather --id=KHUF | grep Temperature | sed s/"   Temperature: "/""/ | sed s/"F[ -.()0-9C]*"/"F"/` |'" | awesome-client
+		echo "conditions.text =  ' `weather --id=KHUF | grep Weather | sed s/"   Weather: "/""/`'" | awesome-client
+		echo "nextclass.text = '| `python /etc/xdg/awesome/next_class.py`'" | awesome-client
+		echo "mytextclock.text = '`date +"%a %b %d, %I:%M`'" | awesome-client
+	else
+		echo "gmail.text = $unread" | awesome-client
+		echo "temp.text = ' | `weather --id=KHUF | grep Temperature | sed s/"   Temperature: "/""/ | sed s/"F[ -.()0-9C]*"/"F"/`'" | awesome-client
+		echo "conditions.text =  ' | `weather --id=KHUF | grep Weather | sed s/"   Weather: "/""/`'" | awesome-client
+		echo "nextclass.text = ' | `python /etc/xdg/awesome/next_class.py`'" | awesome-client
+		echo "mytextclock.text = ' `date +"%a %b %d, %I:%M"`'" | awesome-client
+	fi
+
+	sleep 60
+done

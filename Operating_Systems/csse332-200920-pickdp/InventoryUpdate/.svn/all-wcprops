@@ -1,0 +1,53 @@
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/repos/csse332-200920-pickdp/!svn/ver/59/InventoryUpdate
+END
+inventoryUpdate.c
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/repos/csse332-200920-pickdp/!svn/ver/31/InventoryUpdate/inventoryUpdate.c
+END
+inv.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/csse332-200920-pickdp/!svn/ver/29/InventoryUpdate/inv.h
+END
+InventoryUpdate.xls
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/repos/csse332-200920-pickdp/!svn/ver/59/InventoryUpdate/InventoryUpdate.xls
+END
+out.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/csse332-200920-pickdp/!svn/ver/59/InventoryUpdate/out.txt
+END
+small.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/csse332-200920-pickdp/!svn/ver/5/InventoryUpdate/small.txt
+END
+large.txt
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/csse332-200920-pickdp/!svn/ver/5/InventoryUpdate/large.txt
+END
+makefile
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/csse332-200920-pickdp/!svn/ver/35/InventoryUpdate/makefile
+END
+medium.txt
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/csse332-200920-pickdp/!svn/ver/5/InventoryUpdate/medium.txt
+END

@@ -1,0 +1,256 @@
+!SESSION 2007-10-24 08:03:08.625 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_02
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.launch 4 104 2007-10-24 08:44:15.030
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\1st Program\Debug\1stProgram.exe not found
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.verifyProgramPath(AbstractCLaunchDelegate.java:369)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:76)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:62)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:639)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:565)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:754)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$6.run(DebugUIPlugin.java:944)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 104 2007-10-24 08:44:15.030
+!MESSAGE C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\1st Program\Debug\1stProgram.exe not found
+!STACK 0
+java.io.FileNotFoundException: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\1st Program\Debug\1stProgram.exe not found
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.verifyProgramPath(AbstractCLaunchDelegate.java:369)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:76)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:62)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:639)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:565)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:754)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$6.run(DebugUIPlugin.java:944)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.eclipse.core.resources 4 368 2007-10-24 08:54:26.220
+!MESSAGE Resource /RootTable does not exist.
+
+!ENTRY org.eclipse.core.resources 4 368 2007-10-24 08:55:25.381
+!MESSAGE Resource /rootTable does not exist.
+
+!ENTRY org.eclipse.debug.core 4 2 2007-10-24 09:28:45.476
+!MESSAGE Problems occurred when invoking code from plug-in: "org.eclipse.debug.core".
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.getProjectName(AbstractCLaunchDelegate.java:177)
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.getCProject(AbstractCLaunchDelegate.java:162)
+	at org.eclipse.cdt.launch.internal.ui.LaunchUIPlugin.handleDebugEvents(LaunchUIPlugin.java:213)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1076)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1108)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:344)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.eclipse.debug.core 4 120 2007-10-24 09:28:45.476
+!MESSAGE An exception occurred while dispatching debug events.
+!STACK 0
+java.lang.NullPointerException
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.getProjectName(AbstractCLaunchDelegate.java:177)
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.getCProject(AbstractCLaunchDelegate.java:162)
+	at org.eclipse.cdt.launch.internal.ui.LaunchUIPlugin.handleDebugEvents(LaunchUIPlugin.java:213)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.run(DebugPlugin.java:1076)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.debug.core.DebugPlugin$EventNotifier.dispatch(DebugPlugin.java:1108)
+	at org.eclipse.debug.core.DebugPlugin$EventDispatchJob.run(DebugPlugin.java:344)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SESSION 2007-10-30 20:49:54.253 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_02
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 4 368 2007-10-30 21:08:32.528
+!MESSAGE Resource /HousePrices does not exist.
+!SESSION 2007-11-07 15:51:45.216 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_03
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.cdt.launch 4 104 2007-11-07 18:36:26.551
+!MESSAGE Program file does not exist
+!STACK 0
+java.io.FileNotFoundException: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug\CharsStringsFiles.exe not found
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.verifyProgramPath(AbstractCLaunchDelegate.java:369)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:76)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:62)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:639)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:565)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:754)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$6.run(DebugUIPlugin.java:944)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.cdt.launch 4 104 2007-11-07 18:36:26.551
+!MESSAGE C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug\CharsStringsFiles.exe not found
+!STACK 0
+java.io.FileNotFoundException: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug\CharsStringsFiles.exe not found
+	at org.eclipse.cdt.launch.AbstractCLaunchDelegate.verifyProgramPath(AbstractCLaunchDelegate.java:369)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.runLocalApplication(LocalCDILaunchDelegate.java:76)
+	at org.eclipse.cdt.launch.internal.LocalCDILaunchDelegate.launch(LocalCDILaunchDelegate.java:62)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:639)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:565)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:754)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$6.run(DebugUIPlugin.java:944)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SESSION 2007-11-07 22:11:34.631 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_03
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 4 273 2007-11-07 22:15:20.576
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2007-11-07 22:15:20.576
+!MESSAGE Could not delete: /CharsStringsFiles.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:222)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:826)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1644)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:695)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:337)
+	at org.eclipse.ui.actions.DeleteResourceAction.delete(DeleteResourceAction.java:473)
+	at org.eclipse.ui.actions.DeleteResourceAction.delete(DeleteResourceAction.java:447)
+	at org.eclipse.ui.actions.DeleteResourceAction.access$2(DeleteResourceAction.java:436)
+	at org.eclipse.ui.actions.DeleteResourceAction$4.run(DeleteResourceAction.java:600)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.ui.actions.DeleteResourceAction$3.run(DeleteResourceAction.java:596)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2007-11-07 22:15:20.576
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:20.576
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:20.576
+!MESSAGE Could not delete: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug\CharsStringsFiles.exe.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:20.576
+!MESSAGE Could not delete: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:20.576
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:20.576
+!MESSAGE Could not delete: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug\CharsStringsFiles.exe.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:20.576
+!MESSAGE Could not delete: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug.
+
+!ENTRY org.eclipse.core.filesystem 4 272 2007-11-07 22:15:20.763
+!MESSAGE Could not move: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug\CharsStringsFiles.exe.
+!STACK 1
+org.eclipse.core.runtime.CoreException: Problems encountered while deleting files.
+	at org.eclipse.core.internal.filesystem.local.LocalFile.delete(LocalFile.java:103)
+	at org.eclipse.core.filesystem.provider.FileStore.move(FileStore.java:346)
+	at org.eclipse.core.internal.filesystem.local.LocalFile.move(LocalFile.java:308)
+	at org.eclipse.core.internal.localstore.BlobStore.addBlob(BlobStore.java:55)
+	at org.eclipse.core.internal.localstore.HistoryStore2.addState(HistoryStore2.java:92)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(DeleteVisitor.java:95)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.recursiveKeepHistory(DeleteVisitor.java:90)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.delete(DeleteVisitor.java:58)
+	at org.eclipse.core.internal.localstore.DeleteVisitor.visit(DeleteVisitor.java:152)
+	at org.eclipse.core.internal.localstore.UnifiedTree.accept(UnifiedTree.java:93)
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:219)
+	at org.eclipse.core.internal.resources.ResourceTree.internalDeleteFolder(ResourceTree.java:332)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteFolder(ResourceTree.java:771)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1639)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:695)
+	at org.eclipse.core.internal.resources.Workspace.delete(Workspace.java:856)
+	at org.eclipse.core.internal.resources.Workspace.delete(Workspace.java:827)
+	at org.eclipse.cdt.managedbuilder.internal.core.GeneratedMakefileBuilder.clean(GeneratedMakefileBuilder.java:598)
+	at org.eclipse.cdt.managedbuilder.internal.core.GeneratedMakefileBuilder.build(GeneratedMakefileBuilder.java:477)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:603)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:167)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:230)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:233)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:252)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:285)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:20.763
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:20.763
+!MESSAGE Could not delete: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug\CharsStringsFiles.exe.
+
+!ENTRY org.eclipse.core.resources 4 273 2007-11-07 22:15:33.295
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 1 org.eclipse.core.resources 4 273 2007-11-07 22:15:33.295
+!MESSAGE Could not delete: /CharsStringsFiles.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Problems encountered while deleting resources.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.delete(FileSystemResourceManager.java:222)
+	at org.eclipse.core.internal.resources.ResourceTree.standardDeleteProject(ResourceTree.java:826)
+	at org.eclipse.core.internal.resources.Resource.unprotectedDelete(Resource.java:1644)
+	at org.eclipse.core.internal.resources.Resource.delete(Resource.java:695)
+	at org.eclipse.core.internal.resources.Project.delete(Project.java:337)
+	at org.eclipse.ui.actions.DeleteResourceAction.delete(DeleteResourceAction.java:473)
+	at org.eclipse.ui.actions.DeleteResourceAction.delete(DeleteResourceAction.java:447)
+	at org.eclipse.ui.actions.DeleteResourceAction.access$2(DeleteResourceAction.java:436)
+	at org.eclipse.ui.actions.DeleteResourceAction$4.run(DeleteResourceAction.java:600)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.ui.actions.DeleteResourceAction$3.run(DeleteResourceAction.java:596)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 2 org.eclipse.core.resources 4 273 2007-11-07 22:15:33.295
+!MESSAGE Problems encountered while deleting resources.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:33.295
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:33.295
+!MESSAGE Could not delete: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug\CharsStringsFiles.exe.
+!SUBENTRY 4 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:33.295
+!MESSAGE Could not delete: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug.
+!SUBENTRY 2 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:33.295
+!MESSAGE Problems encountered while deleting files.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:33.295
+!MESSAGE Could not delete: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug\CharsStringsFiles.exe.
+!SUBENTRY 3 org.eclipse.core.filesystem 4 273 2007-11-07 22:15:33.295
+!MESSAGE Could not delete: C:\Documents and Settings\pickdp\My Documents\CSSE 120\C Programs\CharsStringsFiles\Debug.
+!SESSION 2007-11-12 17:55:21.000 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_03
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2007-11-12 20:08:56.458
+!MESSAGE org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: OPTIONS request failed on '/repos/csse120-fall07-pickdp/FinalExam'
+svn: OPTIONS of '/repos/csse120-fall07-pickdp/FinalExam': could not connect to server (http://svn.cs.rose-hulman.edu)
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: OPTIONS request failed on '/repos/csse120-fall07-pickdp/FinalExam'
+svn: OPTIONS of '/repos/csse120-fall07-pickdp/FinalExam': could not connect to server (http://svn.cs.rose-hulman.edu)
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.commit(AbstractJhlClientAdapter.java:274)
+	at org.tigris.subversion.subclipse.core.commands.CheckinResourcesCommand$1.run(CheckinResourcesCommand.java:98)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin$5.run(SVNProviderPlugin.java:456)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1719)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.run(SVNProviderPlugin.java:451)
+	at org.tigris.subversion.subclipse.core.commands.CheckinResourcesCommand.run(CheckinResourcesCommand.java:90)
+	at org.tigris.subversion.subclipse.core.SVNTeamProvider.checkin(SVNTeamProvider.java:139)
+	at org.tigris.subversion.subclipse.ui.operations.CommitOperation.execute(CommitOperation.java:108)
+	at org.tigris.subversion.subclipse.ui.operations.SVNOperation.run(SVNOperation.java:89)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext.run(JobRunnableContext.java:144)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext$ResourceJob.runInWorkspace(JobRunnableContext.java:72)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+Caused by: org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: OPTIONS request failed on '/repos/csse120-fall07-pickdp/FinalExam'
+svn: OPTIONS of '/repos/csse120-fall07-pickdp/FinalExam': could not connect to server (http://svn.cs.rose-hulman.edu)
+
+	at org.tigris.subversion.javahl.SVNClient.commit(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.commit(AbstractJhlClientAdapter.java:268)
+	... 13 more

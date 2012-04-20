@@ -1,0 +1,20 @@
+I:\Documents\csse374-201020-team23\Poker\pre-compute\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\Documents\csse374-201020-team23\Poker\pre-compute\bin\Debug\pre-compute.exe
+I:\Documents\csse374-201020-team23\Poker\pre-compute\bin\Debug\pre-compute.pdb
+I:\Documents\csse374-201020-team23\Poker\pre-compute\obj\x86\Debug\pre-compute.exe
+I:\Documents\csse374-201020-team23\Poker\pre-compute\obj\x86\Debug\pre-compute.pdb
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\pre-compute\bin\Debug\pre-compute.exe
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\pre-compute\bin\Debug\pre-compute.pdb
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\pre-compute\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\pre-compute\obj\x86\Debug\pre-compute.exe
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\pre-compute\obj\x86\Debug\pre-compute.pdb
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\pre-compute\bin\Debug\pre-compute.exe
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\pre-compute\bin\Debug\pre-compute.pdb
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\pre-compute\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\pre-compute\obj\x86\Debug\pre-compute.exe
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\pre-compute\obj\x86\Debug\pre-compute.pdb
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\pre-compute\bin\Debug\pre-compute.exe
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\pre-compute\bin\Debug\pre-compute.pdb
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\pre-compute\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\pre-compute\obj\x86\Debug\pre-compute.exe
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\pre-compute\obj\x86\Debug\pre-compute.pdb

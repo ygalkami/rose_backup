@@ -1,0 +1,44 @@
+﻿<Window x:Class="Poker.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" Height="800" Width="1200" ResizeMode="NoResize">
+	<Grid Name="MainGrid" Height="800" Width="1200">
+		<Image Height="600" HorizontalAlignment="Left" Name="background" Source="/Poker;component/Images/background.png" Stretch="Fill" VerticalAlignment="Top" Width="1200" Grid.ColumnSpan="2" Margin="0,0,0,0" Grid.RowSpan="2" />
+		<Button Content="Play" Height="25" HorizontalAlignment="Left" Name="startButton" VerticalAlignment="Top" Width="75" Click="startButton_Click" Margin="25,12,0,0" />
+		<!-- These cards make a card pile for the deck. They are simply there for appearance and do not change.-->
+        <Image Height="125" HorizontalAlignment="Left" Margin="20,45,0,0" Name="deckCard1" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <Image Height="125" HorizontalAlignment="Left" Margin="30,55,0,0" Name="deckCard2" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <Image Height="125" HorizontalAlignment="Left" Margin="25,50,0,0" Name="deckCard3" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <!-- These cards make up the dealer's hand -->
+        <Image Height="125" HorizontalAlignment="Left" Margin="25,50,0,0" Name="dealerCard1" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <Image Height="125" HorizontalAlignment="Left" Margin="25,50,0,0" Name="dealerCard2" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <Image Height="125" HorizontalAlignment="Left" Margin="25,50,0,0" Name="dealerCard3" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <Image Height="125" HorizontalAlignment="Left" Margin="25,50,0,0" Name="dealerCard4" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <Image Height="125" HorizontalAlignment="Left" Margin="25,50,0,0" Name="dealerCard5" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <!-- These cards make up the players' hands -->
+		<Image Height="125" HorizontalAlignment="Left" Margin="25,50,0,0" Name="RightCard1" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <Image Height="125" HorizontalAlignment="Left" Margin="25,50,0,0" Name="RightCard2" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <Image Height="125" HorizontalAlignment="Left" Margin="25,50,0,0" Name="MiddleCard1" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <Image Height="125" HorizontalAlignment="Left" Margin="25,50,0,0" Name="MiddleCard2" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <Image Height="125" HorizontalAlignment="Left" Margin="25,50,0,0" Name="LeftCard1" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <Image Height="125" HorizontalAlignment="Left" Margin="25,50,0,0" Name="LeftCard2" Source="/Poker;component/Images/cards/cardback.png" Stretch="Uniform" VerticalAlignment="Top" />
+        <!-- These are the textboxes labeling the players' hands-->
+        <Label Content="$" FontFamily="Bookman Old Style" FontSize="16" Foreground="White" HorizontalAlignment="Left" Margin="1009,373,166,402" Name="rightMoneyLabel" Width="25" Height="25" Grid.Column="1" Visibility="Hidden" />
+        <TextBox Height="25" HorizontalAlignment="Left" Margin="1025,375,0,0" Name="RightLabel" VerticalAlignment="Top" Width="75" Grid.Column="1" IsReadOnly="True" Background="{x:Null}" Foreground="White" FontFamily="Bookman Old Style" FontSize="16" BorderBrush="{x:Null}"/>
+        <Label Content="$" FontFamily="Bookman Old Style" FontSize="16" Foreground="White" HorizontalAlignment="Left" Margin="559,373,0,402" Name="middleMoneyLabel" Width="25" Height="25" Visibility="Hidden" />
+        <TextBox Height="25" HorizontalAlignment="Left" Margin="575,375,0,0" Name="MiddleLabel" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" IsReadOnly="True" Background="{x:Null}" Foreground="White" FontFamily="Bookman Old Style" FontSize="16" BorderBrush="{x:Null}"/>
+        <Label Content="$" FontFamily="Bookman Old Style" FontSize="16" Foreground="White" HorizontalAlignment="Left" Margin="109,373,0,402" Name="leftMoneyLabel" Width="25" Height="25" Visibility="Hidden" />
+        <TextBox Height="25" HorizontalAlignment="Left" Margin="125,375,0,0" Name="LeftLabel" VerticalAlignment="Top" Width="75" IsReadOnly="True" Background="{x:Null}" Foreground="White" FontFamily="Bookman Old Style" FontSize="16" BorderBrush="{x:Null}" />
+        <!-- These are other things -->
+		<TextBox Height="171" HorizontalAlignment="Left" Margin="0,600,0,0" Name="textBox" VerticalAlignment="Top" Width="1190" Grid.ColumnSpan="2" IsReadOnly="True" VerticalScrollBarVisibility="Auto" Opacity="1" OpacityMask="{x:Null}" />
+		<TextBox Height="25" HorizontalAlignment="Left" Margin="581,219,0,0" Name="potLabel" VerticalAlignment="Top" Width="75" Grid.ColumnSpan="2" IsReadOnly="True" Opacity="1" Foreground="White" FontSize="16" Background="{x:Null}" FontFamily="Bookman Old Style" BorderThickness="0" Text="" DataContext="{Binding}" />
+		<Image Height="50" HorizontalAlignment="Left" Margin="575,303,0,0" Name="chip1" Source="/Poker;component/Images/chip.png" VerticalAlignment="Top" />
+		<Image Height="50" HorizontalAlignment="Left" Margin="575,276,0,0" Name="chip2" Source="/Poker;component/Images/chip.png" VerticalAlignment="Top" />
+		<Image Height="50" HorizontalAlignment="Left" Margin="611,293,0,0" Name="chip3" Source="/Poker;component/Images/chip.png" VerticalAlignment="Top" />
+		<Image Height="50" HorizontalAlignment="Left" Margin="519,303,0,0" Name="chip4" Source="/Poker;component/Images/chip.png" VerticalAlignment="Top" />
+		<Image Height="50" HorizontalAlignment="Left" Margin="494,293,0,0" Name="chip5" Source="/Poker;component/Images/chip.png" VerticalAlignment="Top" />
+		<Image Height="50" HorizontalAlignment="Left" Margin="531,276,0,0" Name="chip6" Source="/Poker;component/Images/chip.png" VerticalAlignment="Top" />
+		<Label Content="Pot: $" HorizontalAlignment="Left" Margin="526,215,0,557" Name="label1" Width="60" FontSize="16" FontFamily="Bookman Old Style" Foreground="White" />
+        
+    </Grid>
+</Window>

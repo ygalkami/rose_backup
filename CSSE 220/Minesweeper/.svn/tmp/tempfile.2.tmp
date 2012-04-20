@@ -1,0 +1,31 @@
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+
+
+public class Square extends JButton implements ActionListener {
+	
+	protected boolean isBomb;
+	protected int numBombsAround;
+	protected boolean isFlag;
+	protected boolean isQMark;
+	
+	
+	public Square(boolean isbomb, int numbombs){
+		this.isBomb = isbomb;
+		this.numBombsAround = numbombs;
+		this.isFlag=false;
+		this.isQMark=false;
+	}
+	
+	public setbomb() {
+		if (!this.isbomb)
+			
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+	}
+
+}

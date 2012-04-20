@@ -1,0 +1,55 @@
+8
+
+dir
+31
+http://svn.cs.rose-hulman.edu/repos/csse220-winter2008-pickdp/220Exam1-200810/doc
+http://svn.cs.rose-hulman.edu/repos/csse220-winter2008-pickdp
+
+
+
+2007-12-20T14:46:49.010969Z
+22
+anderson
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bdb6ebd3-5640-0410-bb24-fb6c758ba0c5
+
+stylesheet.css
+file
+
+
+
+
+2007-12-20T15:05:24.201022Z
+5012a122d1b6a2442fa81923bdc4f33d
+2007-12-20T14:46:49.010969Z
+22
+anderson
+
+Date220.html
+file
+
+
+
+
+2007-12-20T15:05:24.216631Z
+a4b2be66987149f49c7dc7a85c42aada
+2007-12-20T14:46:49.010969Z
+22
+anderson
+
+resources
+dir
+

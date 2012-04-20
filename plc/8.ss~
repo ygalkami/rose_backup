@@ -1,0 +1,229 @@
+;Problem 1, Written by David Pick
+(define free-vars
+  (lambda (exp)
+    (cond ((null? exp) '())
+          ((symbol? exp) (list exp))
+          ((list? (car exp)) (append (free-vars (car exp)) (free-vars (cdr exp))))
+          ((eq? (car exp) 'lambda) (free-vars-help exp))
+          (else (set-cons (car exp) (free-vars (cdr exp)))))))
+
+(define free-vars-help
+  (lambda (exp)
+    (cond ((null? exp) '())
+          ((null? (cddr exp)) '()) 
+          ((and (list? (car exp)) (null? (cdr exp))) (free-vars-help (car exp)))
+          ((symbol? (caddr exp)) (list-subtract (cadr exp) (list (caddr exp))))
+          ((equal? (car exp) 'lambda) 
+           (if (equal? (caaddr exp) 'lambda)
+               (list-subtract (cadr exp) (free-vars-help (caddr exp)))
+               (list-subtract (cadr exp) (flatten (caddr exp)))))
+          ((symbol? (car exp)) (set-cons (car exp) (free-vars-help (cdr exp)))))))
+
+(define set-cons
+  (lambda (el set)
+    (if (member el set)
+        set
+        (cons el set))))
+
+(define list-subtract
+  (lambda (list1 list2)
+    (cond ((null? list1) list2)
+          (else (list-subtract (cdr list1) (remove (car list1) list2))))))
+
+(define remove 
+  (lambda (element list)
+    (cond ((null? list) list)
+       ((equal? element (car list)) (cdr list))
+       (else (cons (car list) (remove element (cdr list)))))))
+
+(define flatten
+   (lambda (slist)
+     (let loop ([slist slist])
+       (cond [(null? slist) '() ]
+             [(list? (car slist)) (append (loop (car slist))
+                                           (loop (cdr slist)))]
+             [else (cons (car slist)
+                   (loop (cdr slist)))]))))
+
+;Problem 2
+(define bound-vars
+  (lambda (exp)
+    (cond ((null? exp) '())
+          ((symbol? exp) '())
+          ((and (symbol? (car exp)) (not (eq? (car exp) 'lambda))) (bound-vars (cdr exp)))
+          ((list? (car exp)) (append (bound-vars (car exp)) (bound-vars (cdr exp))))
+          (else (in-both-sets (flatten (get-vars exp)) (flatten (get-args exp)))))))
+
+(define get-args
+  (lambda (exp)
+    (cond ((null? exp) exp)
+          ((symbol? exp) '())
+          ((not (list? (caddr exp))) (cadr exp))
+          ((eq? (car exp) 'lambda) (if (eq? (caaddr exp) 'lambda)
+                                       (append (cadr exp) (get-args (caddr exp)))
+                                       (cadr exp)))
+          (else (union-set (get-args (car exp)) (get-args (cdr exp)))))))
+
+(define get-vars
+  (lambda (exp)
+    (cond ((null? exp) '())
+          ((symbol? exp) (list exp))
+          ((not (list? (caddr exp))) (list (caddr exp)))
+          ((eq? (car exp) 'lambda) (if (eq? (caaddr exp) 'lambda)
+                                       (get-vars (caddr exp))
+                                       (caddr exp)))
+          (else (union-set (get-vars (car exp)) (get-vars (cdr exp)))))))
+
+(define in-both-sets
+  (lambda (ls1 ls2)
+    (remove-duplicates
+     (cond ((null? ls1) '())
+          ((member (car ls1) ls2) (cons (car ls1) (in-both-sets (cdr ls1) ls2)))
+          (else (in-both-sets (cdr ls1) ls2))))))
+
+(define (union-set set1 set2)
+  (cond ((null? set1) set2)
+	((member (car set1) set2)
+	 (union-set (cdr set1) set2))
+	(else (cons (car set1) (union-set (cdr set1) set2)))))
+
+(define remove-duplicates
+  (lambda (lst)
+    (if (null? lst) '()
+        (let ((first (car lst))
+              (rest (remove-duplicates (cdr lst))))
+          (if (member first rest) rest
+              (cons first rest))))))
+
+
+;Problem 3
+(define occurs-free?
+  (lambda (var exp)
+    (cond ((null? exp) #f)
+      ((symbol? exp) (eqv? var exp))
+      ((eqv? (car exp) 'lambda) 
+       (and (not (member var (cadr exp) ))
+            (occurs-free? var (cddr exp))))
+      ((eqv? (car exp) 'if)
+       (occurs-free? var (cdr exp)))
+      ((eqv? (car exp) 'let)
+       (occurs-free? var (let->application exp)))
+      ((eqv? (car exp) 'let*)
+       (occurs-free? var (let->application (let*->let exp))))
+      ((eqv? (car exp) 'set!)
+       (occurs-free? var (cadr exp)))
+      (else (or (occurs-free? var  (car exp))
+                (occurs-free? var (cdr exp)))))))
+
+(define let->application
+  (lambda (ls)
+    (let ([vars (firsts (cadr ls))])
+    (let ([args (seconds (cadr ls))])
+    (append (list (append (list 'lambda vars) (list (caddr ls)))) args)))))
+
+(define let*->let
+  (lambda (ls)
+    (if (<= (length ls) 1)
+        '()
+        (let ([vars (cadr ls)])
+        (let ([other (cddr ls)])
+          (if (null? other)
+              (remove '() (let*-help vars other))
+              (let*-help vars other)))))))
+        
+(define let*-help
+  (lambda (vars other)
+    (if (null? vars)
+        (list 'let '() (car other))
+        (if (equal? (length vars) 1)
+            (append (list 'let vars) other)
+            (append (list 'let (list (car vars))) (list (let*-help (cdr vars) other)))))))
+
+(define occurs-bound?
+  (lambda (var exp)
+    (cond ((null? exp) #f)
+          ((symbol? exp) #f)
+          ((eqv? (car exp) 'lambda) 
+           (or (occurs-bound? var (caddr exp))
+               (and (occurs-free? var (cadr exp))
+                    (occurs-free? var (caddr exp)))))
+          ((eqv? (car exp) 'if)
+           (occurs-bound? var (cdr exp)))
+          ((eqv? (car exp) 'let)
+           (occurs-bound? var (let->application exp)))
+          ((eqv? (car exp) 'let*)
+           (occurs-bound? var (let->application (let*->let exp))))
+          ((eqv? (car exp) 'set!)
+           (occurs-free? var (cadr exp)))
+          (else (or (occurs-bound? var (car exp))
+                    (occurs-bound? var (cdr exp)))))))
+
+(define firsts
+  (lambda (ls)
+    (map car ls)))
+
+(define seconds
+  (lambda (ls)
+    (map cadr ls)))
+
+;Problem 4
+(define lexical-address
+  (lambda (exp)
+    (lexical-address-help exp '() 0)))
+    
+(define lexical-address-help
+  (lambda (exp var-ls depth)
+    (cond ((null? exp) '())
+          ((symbol? exp) (if (lookup-var exp var-ls)
+                             (lookup-var exp var-ls)
+                             (list ': 'free exp)))
+          ((eqv? (car exp) 'lambda) (cons 'lambda (cons (cadr exp) (lexical-address-help 
+                                     (cddr exp) 
+                                     (add-vars (cadr exp) (add-1-to-list var-ls) depth -1) depth))))
+          ((eqv? (car exp) 'if) (cons 'if (lexical-address-help (cdr exp) var-ls depth)))
+          (else (cons (lexical-address-help (car exp) var-ls depth)
+                      (lexical-address-help (cdr exp) var-ls depth))))))
+
+(define lookup-var
+  (lambda (var var-ls)
+    (cond ((null? var) #f)
+          ((null? var-ls) #f)
+          ((eq? var (caar var-ls)) (cons ': (cdar var-ls)))
+          (else (lookup-var var (cdr var-ls))))))
+
+(define add-1-to-list
+  (lambda (ls)
+    (if (null? ls)
+        '()
+        (cons (list (caar ls) (+ (cadar ls) 1) (caddar ls)) (add-1-to-list (cdr ls))))))
+
+(define add-vars
+  (lambda (vars var-ls depth pos)
+      (if (null? vars)
+          var-ls
+          (add-vars (cdr vars) (cons (list (car vars) depth (+ pos 1)) var-ls) depth (+ 1 pos)))))
+
+;Problem 5
+(define un-lexical-address
+  (lambda (exp)
+    (un-lexical-address-help exp '() 0)))
+    
+(define un-lexical-address-help
+  (lambda (exp var-ls depth)
+    (cond ((null? exp) '())
+          ((eqv? (car exp) 'lambda) (cons 'lambda (cons (cadr exp) (un-lexical-address-help
+                                                                    (cddr exp)
+                                                                    (add-vars (cadr exp) (add-1-to-list var-ls) depth -1) depth))))
+          ((eqv? (car exp) 'if) (cons 'if (un-lexical-address-help (cdr exp) var-ls depth)))
+          ((eqv? (car exp) ':) (if (un-lookup exp var-ls)
+                                   (un-lookup exp var-ls)
+                                   (caddr exp)))
+          (else (cons (un-lexical-address-help (car exp) var-ls depth)
+                      (un-lexical-address-help (cdr exp) var-ls depth))))))
+
+(define un-lookup
+  (lambda (var var-ls)
+    (cond ((null? var) #f)
+          ((null? var-ls) #f)
+          ((equal? (cdr var) (cdar var-ls)) (caar var-ls))
+          (else (un-lookup var (cdr var-ls))))))

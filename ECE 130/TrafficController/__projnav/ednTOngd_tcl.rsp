@@ -1,0 +1,3 @@
+set ADucfFile {TrafficSignalController_TOPLEVEL.ucf}
+set ADbmmFile {}
+set ADcdcFile {}

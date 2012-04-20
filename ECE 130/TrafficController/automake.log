@@ -1,0 +1,37 @@
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../../../../Desktop/Verilog RaceCar files/PWD_FinishLine_ControllerDatapath.v"
+Module <PWD_FinishLine> compiled
+Module <PWD_FinishLine_TB> compiled
+No errors in compilation
+Analysis of file <"PWD_FinishLine_TB.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <PWD_FinishLine_TB>.
+ERROR:Xst:1884 - "../../../../Desktop/Verilog RaceCar files/PWD_FinishLine_ControllerDatapath.v" line 141: Module <PWD_FinishLine_TB> has no port.
+WARNING:Xst:854 - "../../../../Desktop/Verilog RaceCar files/PWD_FinishLine_ControllerDatapath.v" line 192: Ignored initial statement.
+WARNING:Xst:854 - "../../../../Desktop/Verilog RaceCar files/PWD_FinishLine_ControllerDatapath.v" line 193: Ignored initial statement.
+WARNING:Xst:854 - "../../../../Desktop/Verilog RaceCar files/PWD_FinishLine_ControllerDatapath.v" line 203: Ignored initial statement.
+ 
+Found 1 error(s). Aborting synthesis.
+--> 
+
+Total memory usage is 75336 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    3 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/csse374-201020-team23/!svn/ver/119/Poker/Poker/NeuralNetwork
+END
+CharacterDefs.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/csse374-201020-team23/!svn/ver/119/Poker/Poker/NeuralNetwork/CharacterDefs.cs
+END
+NetworkNode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/csse374-201020-team23/!svn/ver/119/Poker/Poker/NeuralNetwork/NetworkNode.cs
+END
+ListIterator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/repos/csse374-201020-team23/!svn/ver/119/Poker/Poker/NeuralNetwork/ListIterator.cs
+END
+InNetworkNode.cs
+K 25
+svn:wc:ra_dav:version-url
+V 84
+/repos/csse374-201020-team23/!svn/ver/119/Poker/Poker/NeuralNetwork/InNetworkNode.cs
+END
+Network.cs
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/csse374-201020-team23/!svn/ver/119/Poker/Poker/NeuralNetwork/Network.cs
+END
+NetworkSimulator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/repos/csse374-201020-team23/!svn/ver/119/Poker/Poker/NeuralNetwork/NetworkSimulator.cs
+END

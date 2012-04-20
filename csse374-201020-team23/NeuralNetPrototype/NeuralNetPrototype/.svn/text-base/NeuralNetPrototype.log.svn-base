@@ -1,0 +1,17 @@
+﻿Build started 12/13/2009 3:25:52 PM.
+     1>Project "I:\Documents\csse374-201020-team23\NeuralNetPrototype\NeuralNetPrototype\NeuralNetPrototype.vcxproj" on node 3 (build target(s)).
+     1>_PrepareForBuild:
+         Creating "Debug\NeuralNetPrototype.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       ManifestResourceCompile:
+         All outputs are up-to-date.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(935,5): warning MSB8012: TargetPath(I:\Documents\csse374-201020-team23\NeuralNetPrototype\Debug\NeuralNetPrototype.exe) does not match the Linker's OutputFile property value (). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(936,5): warning MSB8012: TargetExt(.exe) does not match the Linker's OutputFile property value (). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Microsoft.CppBuild.targets(937,5): warning MSB8012: TargetName(NeuralNetPrototype) does not match the Linker's OutputFile property value (). This may cause your project to build incorrectly. To correct this, please make sure that $(OutDir), $(TargetName) and $(TargetExt) property values match the value specified in %(Link.OutputFile).
+       _AfterBuild:
+         Deleting file "Debug\NeuralNetPrototype.unsuccessfulbuild".
+         Touching "Debug\NeuralNetPrototype.lastbuildstate".
+     1>Done Building Project "I:\Documents\csse374-201020-team23\NeuralNetPrototype\NeuralNetPrototype\NeuralNetPrototype.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.06

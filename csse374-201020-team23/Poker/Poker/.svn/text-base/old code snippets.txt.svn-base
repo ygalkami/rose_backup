@@ -1,0 +1,363 @@
+﻿OLD CODE
+
+			/*
+			Boolean roundIsOver = false;
+            while (!roundIsOver)
+            {
+                for (int i = 0; i < game.activePlayers.Count; i++)
+                {
+                    int raise = game.activePlayers[i].getMove(game.lastBet, game.pot, game.dealersHand);
+                    if (raise == -1)
+                    {
+                        game.activePlayers.RemoveAt(i);
+                        updateLabels();
+                        textBox.Text = addToTextBox(textBox.Text, i, " folded");
+                    }
+                    else if (raise == 0)
+                    {
+                        game.lastBet = 0;
+                        updateLabels();
+                        textBox.Text = addToTextBox(textBox.Text, i, " checked");
+                    }
+                    else
+                    {
+                        game.pot = game.pot + raise;
+                        game.lastBet = raise;
+                        updateLabels();
+                        textBox.Text = addToTextBox(textBox.Text, i, " raised");
+                    }
+                    roundIsOver = checkForRoundEnd();
+                }
+
+            }
+			*/
+			        private string addToTextBox(String box, int i, String txt)
+        {
+            if (i == 0)
+            {
+                return String.Concat(box, "Player ", i + 1, txt);            //i+1 is used to adjust for 0-based indexing
+            }
+            else if (i == 1)
+                return String.Concat(box, "\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t", "Player ", i + 1, txt, "\n"); //i+1 is used to adjust for 0-based indexing
+            else return "wtf? how did this happen? did someone add a 3rd player and forget to update this method? shame on you.";
+        }
+
+		private void updateLabels() {
+			player1Label.Text = game.players[0].stack.ToString();
+			player2Label.Text = game.players[1].stack.ToString();
+			potLabel.Text = game.pot.ToString();
+		}
+
+
+		private Boolean checkForRoundEnd()
+		{
+			if (game.activePlayers.Count == 1) {
+				return true;
+			}
+			for (int i = 0; i < game.activePlayers.Count; i++)
+				if (!(game.activePlayers[i].lastMove == 0 | game.activePlayers[i].lastMove == -2))
+					return false;
+			return true;
+		}
+
+			private void initialDeal()
+		{
+			createHands();
+			//dealCards();
+			updateLabels();
+
+
+			//just to show that the fields of Cards are correct
+			textBox.Text = String.Concat(this.game.dealersHand.cards[0].suit, " ", this.game.dealersHand.cards[0].value.ToString(), "\n",
+				this.game.dealersHand.cards[1].suit, " ", this.game.dealersHand.cards[1].value.ToString(), "\n",
+				this.game.dealersHand.cards[2].suit, " ", this.game.dealersHand.cards[2].value.ToString(), "\n");
+
+
+			//NetworkSimulator netSim = new NetworkSimulator(this);
+
+			OneArgDelegate fetcher = new OneArgDelegate(this.dealWithSleep);
+			fetcher.BeginInvoke(2, null, null);
+
+		}
+
+		private void dealFourth()
+		{
+			//Thread.Sleep(5000);
+			changeImage(dealerCard4, this.game.dealersHand.cards[3]);
+			textBox.Text = String.Concat(textBox.Text, "\n", this.game.dealersHand.cards[3].suit, " ", this.game.dealersHand.cards[3].value.ToString());
+
+			OneArgDelegate fetcher = new OneArgDelegate(this.dealWithSleep);
+			fetcher.BeginInvoke(3, null, null);
+		}
+
+		private void dealFifth()
+		{
+			changeImage(dealerCard5, this.game.dealersHand.cards[4]);
+			textBox.Text = String.Concat(textBox.Text, "\n", this.game.dealersHand.cards[4].suit, " ", this.game.dealersHand.cards[4].value.ToString());
+			button1.Visibility = System.Windows.Visibility.Hidden;
+
+		}
+
+		public void neuralNetDisplay(String output)
+		{
+			textBox.Text = String.Concat(textBox.Text, "\n", output);
+		}
+
+		//create the dealer's hand (5 carsd) and the players' hands (2 cards)
+		private void createHands()
+		{
+
+			//randomly generate the numbers for the  cards
+			Random rand = new Random();
+			int[] randomCards = new int[9];
+			int randomInt = 0;
+			int distinctNumCount = 0;
+			while (distinctNumCount < 9)
+			{
+				randomInt = rand.Next(51) + 1;
+				if (!randomCards.Contains(randomInt))
+				{
+					randomCards[distinctNumCount] = randomInt;
+					distinctNumCount++;
+				}
+			}
+
+			//create dealer's hand
+			Card[] dealersCards = new Card[5];
+			for (int i = 0; i < 5; i++)
+			{
+				dealersCards[i] = new Card(randomCards[i]);
+			}
+			game.dealersHand = new Hand(5, dealersCards);
+
+			//create player1's hand
+			Card[] player1Cards = new Card[2];
+			for (int i = 0; i < 2; i++)
+			{
+				player1Cards[i] = new Card(randomCards[i + 5]);
+			}
+			game.players[0].hand = new Hand(2, player1Cards);
+
+			//create player2's hand
+			Card[] player2Cards = new Card[2];
+			for (int i = 0; i < 2; i++)
+			{
+				player2Cards[i] = new Card(randomCards[i + 7]);
+			}
+			game.players[1].hand = new Hand(2, player2Cards);
+
+		}
+
+		//does the intial deal in the GUI
+		private void dealCards()
+		{
+			//this deals the dealer's hand
+			moveCard(dealerCard1, 350, 0, "AnimateDealerCard1");
+			changeImage(dealerCard1, this.game.dealersHand.cards[0]);
+			moveCard(dealerCard2, 450, 0, "AnimateDealerCard2");
+			changeImage(dealerCard2, this.game.dealersHand.cards[1]);
+			moveCard(dealerCard3, 550, 0, "AnimateDealerCard3");
+			changeImage(dealerCard3, this.game.dealersHand.cards[2]);
+			moveCard(dealerCard4, 650, 0, "AnimateDealerCard4");
+			moveCard(dealerCard5, 750, 0, "AnimateDealerCard5");
+
+			//this deals the players' hands
+			moveCard(player1Card1, 0, 400, "AnimatePlayer1Card1");
+			changeImage(player1Card1, this.game.players[0].hand.cards[0]);
+			moveCard(player1Card2, 100, 400, "AnimatePlayer1Card2");
+			changeImage(player1Card2, this.game.players[0].hand.cards[1]);
+			moveCard(player2Card1, 950, 400, "AnimatePlayer2Card1");
+			changeImage(player2Card1, this.game.players[1].hand.cards[0]);
+			moveCard(player2Card2, 1050, 400, "AnimatePlayer2Card2");
+			changeImage(player2Card2, this.game.players[1].hand.cards[1]);
+
+		}
+
+		
+		private delegate void NoArgDelegate();
+		private delegate void OneArgDelegate(int arg);
+
+
+				private void dealWithSleep(int deal)
+		{
+			// delay
+			Thread.Sleep(2000);
+
+			if (deal == 2)
+			{
+				MainGrid.Dispatcher.BeginInvoke(
+					System.Windows.Threading.DispatcherPriority.Normal,
+					new NoArgDelegate(dealFourth));
+			}
+			else
+			{
+				MainGrid.Dispatcher.BeginInvoke(
+					System.Windows.Threading.DispatcherPriority.Normal,
+					new NoArgDelegate(dealFifth));
+			}
+
+		}
+
+			public List<int> getOtherPlayersMoves(int currentPlayerIndex)
+		{
+			List<int> otherPlayersMoves = new List<int>();
+			//if it's round 0, then only get the players that have already gone
+			if (currentRound == 0)
+			{
+				for (int i = 0; i < currentPlayerIndex; i++)
+					otherPlayersMoves.Add(activePlayers.ElementAt(i).lastMove);
+			}
+			//if it's any other round, get all the players but the current player
+			else
+			{
+				for (int i = 0; i < activePlayers.Count; i++)
+				{
+					if (i != currentPlayerIndex)
+						otherPlayersMoves.Add(activePlayers.ElementAt(i).lastMove);
+				}
+			}
+			return otherPlayersMoves;
+
+		}
+
+		public Boolean endRound(List<int> otherPlayersMoves)
+		{
+			//if at least one player checked but no players raised
+			if (otherPlayersMoves.Max() == 0)
+				return true;
+			else
+				return false;
+		}
+
+		public Boolean endGame(List<int> otherPlayersMoves)
+		{
+			//if all the other players folded
+			if (otherPlayersMoves.Max() == -1)
+				return true;
+			else
+				return false;
+		}
+
+		public Boolean playerCanRaise(List<int> otherPlayersMoves, Player currentPlayer, int raiseAmount)
+		{
+			if (otherPlayersMoves.Max() == 1)
+			{
+				int k = otherPlayersMoves.FindAll(delegate(int i) { return i == 1; }).Count;
+				if (currentPlayer.stack >= (k + 1) * raiseAmount)
+					return true;
+				else
+					return false;
+			}
+			else
+				//this is the case that the round is over or the game is over. i don't know how to deal with that.
+				return false;
+		}
+
+
+
+
+		OLD PLAYER GETMOVE CODE
+
+				/*	bool raiseIsLegal = canRaise(currentDealState);
+			bool checkIsLegal = canCheck(currentDealState);
+			if (raiseIsLegal)
+			{
+				Random rand = new Random();
+				int randomVal = rand.Next(3);
+				if (randomVal == 0)
+				{
+					int amountStackDeducted = (currentDealState.currentBet - this.betInRound + currentDealState.game.setRaiseAmount);
+					int raiseAmount = currentDealState.game.setRaiseAmount;
+
+					this.currentStack = this.currentStack - amountStackDeducted;
+					this.betInRound = this.betInRound + raiseAmount;
+					return new Raise(amountStackDeducted, raiseAmount);
+				}
+				else if (randomVal == 1)
+				{
+					if (checkIsLegal)
+					{
+						currentDealState.game.playerChecked(this.position);
+						return new Check();
+					}
+					else
+					{
+						int amountStackDeducted = (currentDealState.currentBet - this.betInRound);
+
+						this.currentStack = this.currentStack - amountStackDeducted;
+
+						this.currentStack = this.currentStack - (currentDealState.currentBet - this.betInRound);
+						currentDealState.potValue = currentDealState.potValue + (currentDealState.currentBet - this.betInRound);
+						currentDealState.game.playerCalled(this.position, currentDealState.potValue, this.currentStack);
+						return new Call(currentDealState.currentBet - this.betInRound);
+					}
+				}
+				else
+				{
+					//THIS SHOULD ACTUALLY BE FOLD!!
+					if (checkIsLegal)
+					{
+						currentDealState.game.playerChecked(this.position);
+						return new Check();
+					}
+					else
+					{
+						this.currentStack = this.currentStack - (currentDealState.currentBet - this.betInRound);
+						currentDealState.potValue = currentDealState.potValue + (currentDealState.currentBet - this.betInRound);
+						currentDealState.game.playerCalled(this.position, currentDealState.potValue, this.currentStack);
+						return new Call(currentDealState.currentBet - this.betInRound);
+					}
+					//return new Fold();
+				}
+			}
+			else
+			{
+				Random rand = new Random();
+				int randomVal = rand.Next(2);
+				if (randomVal == 0)
+				{
+					if (checkIsLegal)
+					{
+						currentDealState.game.playerChecked(this.position);
+						return new Check();
+					}
+					else
+					{
+						this.currentStack = this.currentStack - (currentDealState.currentBet - this.betInRound);
+						currentDealState.potValue = currentDealState.potValue + (currentDealState.currentBet - this.betInRound);
+						currentDealState.game.playerCalled(this.position, currentDealState.potValue, this.currentStack);
+						return new Call(currentDealState.currentBet - this.betInRound);
+					}
+				}
+				else
+				{
+					//THIS SHOULD ACTUALLY BE FOLD!!
+					if (checkIsLegal)
+					{
+						currentDealState.game.playerChecked(this.position);
+						return new Check();
+					}
+					else
+					{
+						this.currentStack = this.currentStack - (currentDealState.currentBet - this.betInRound);
+						currentDealState.potValue = currentDealState.potValue + (currentDealState.currentBet - this.betInRound);
+						currentDealState.game.playerCalled(this.position, currentDealState.potValue, this.currentStack);
+						return new Call(currentDealState.currentBet - this.betInRound);
+					}
+					//return new Fold();
+				}
+
+			}
+		 */
+
+		 
+			//game over event in igameobserver
+			/*
+			MessageBoxResult playAgainResult;
+			playAgainResult = MessageBox.Show("Would you like to play again?", "Play Again Option", MessageBoxButton.YesNo);
+			while (playAgainResult == MessageBoxResult.Yes)
+			{
+				this.game.playAgain();
+				playAgainResult = MessageBox.Show("Would you like to play again?", "Play Again Option", MessageBoxButton.YesNo);
+			}
+			 * */

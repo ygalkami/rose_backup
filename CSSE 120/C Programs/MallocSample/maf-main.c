@@ -1,0 +1,85 @@
+/*****************************************************************************
+ * Experimenting with dynamic allocation.
+ * by Curt Clifton, Rose-Hulman Institute of Technology.
+ * Nov. 5, 2007
+ *****************************************************************************/
+
+#include <stdio.h>
+#include <stdlib.h>
+#include "gaussian.h"
+
+#define TERMS 3
+
+typedef int creditHours[TERMS];
+
+/*****************************************************************************
+ * Prints the values in the given array of the given size with the given 
+ * label.
+ *****************************************************************************/ 
+void printArray(char *label, double values[], int size) {
+	printf("%s", label);
+	int i;
+	for (i=0; i<size; i++) {
+		printf("%8.2lf", values[i]);
+	}
+	putchar('\n');
+}
+
+/*****************************************************************************
+ * Returns an array of count samples drawn at random from some distribution.
+ *****************************************************************************/ 
+double *getSamples(int count) {
+	/* We'd like to allocate the memory this way.  But it disappears when
+	 * the function returns! (Actually it is released to be used by other
+	 * functions. */
+	double result[count];
+	
+	/* For memory that is retained we have to ask for memory from a special 
+	 * area called "the heap".  Here's how we do that. */
+//	double *result;
+//	result = (double *) malloc(count * sizeof(double));
+//	if (result == NULL) {
+//		exit(EXIT_FAILURE);
+//	}
+
+	int i;
+	for (i=0; i<count; i++) {
+		result[i] = gaussian(82.5, 7.1);
+	}
+	printArray("     generated:", result, count);
+	return result;
+}
+
+int main() {
+	printf("It runs!\n");
+	
+	int aa[4];
+	printf("%d, %d\n", sizeof(creditHours), sizeof(aa));
+	// Remove the following line to run rest of demo:
+	if (result == NULL)
+		exit(EXIT_SUCCESS);
+	
+	seedRandomNumberGenerator();
+	
+	double *sampleA;
+	double *sampleB;
+	int sampleCount = 5;
+	
+	sampleA = getSamples(sampleCount);
+	printArray("sampleA before:", sampleA, sampleCount);
+	putchar('\n');
+	
+	sampleB = getSamples(sampleCount);
+	printArray("       sampleB:", sampleB, sampleCount);
+	putchar('\n');
+	
+	printArray(" sampleA after:", sampleA, sampleCount);
+
+	printf("Element 2 of sampleA: %0.2lf\n", sampleA[2]);
+	printf("Element 2 of sampleB: %0.2lf\n", *(sampleB + 2));
+	/* Need to free memory allocated by getSamples once it is fixed. */
+//	free(sampleA);
+//	free(sampleB);
+
+	return 0;
+}

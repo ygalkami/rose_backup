@@ -1,0 +1,420 @@
+import java.awt.geom.Point2D;
+import java.io.BufferedReader;
+import java.io.FileInputStream;
+import java.io.FileReader;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.LinkedList;
+
+
+/**
+ * TODO Put here a description of what this class does.
+ *
+ * @author <your username>.
+ *         Created Jan 31, 2008.
+ */
+public class Solver {
+	public static int numblocks = 0;
+	/**
+	 * TODO Put here a description of what this method does.
+	 *
+	 * @param args
+	 */
+	public HashMap<Integer, Integer> PreviousConfigs = new HashMap<Integer, Integer>();
+	public LinkedList<PreviousConfig> currentconfig = new LinkedList<PreviousConfig>();
+	public LinkedList<Move> movesmade = new LinkedList<Move>();
+	public static Block[] Configuration;
+	public static Block[] ConfigurationGoal;
+	public int GoalHash;
+	public static int boardRows;
+	public static int boardCols;
+	public static int previousconfigs = 0;
+	public static int debugState = 0;
+	public int i = 0;
+	
+	
+	public Solver(Block[] blocks) {
+		this.Configuration = blocks;
+		currentconfig.addFirst(new PreviousConfig());
+		int count = 0;
+		for (Block a : Configuration) {
+			if (a != null)
+				currentconfig.getFirst().configuration[count] = new Block(a.height, a.width, a.row, a.col);
+			else
+				break;
+			count++;
+		}
+		PreviousConfigs.put(previousconfigs++, this.hash(currentconfig.getFirst().configuration));
+//		for (Block a : currentconfig.getFirst().configuration) {
+//			System.out.print(a + " ");
+//		}
+//		System.out.println("");
+		GoalHash = this.hash(ConfigurationGoal);
+		Analyze(blocks);
+	}
+	
+	public void Analyze(Block[] blocks){
+		//find possible moves for intial configuration
+		for (Block a : currentconfig.getFirst().configuration) {
+			if (a != null)
+				findmoves(a, currentconfig.getFirst());
+			else
+				break;
+		}
+//		System.out.println("INITIAL MOVES: " + currentconfig.getFirst().moves);
+		Block temp = null;
+		//while current configuration is not equal to goal configuration
+		while (!checkdone(currentconfig.getFirst().configuration)) {
+			//while there are more possible untried moves in the currentconfiguration
+//			System.out.println(currentconfig.getFirst().moves.size());
+//			System.out.println(checkdone(Configuration));
+			while(currentconfig.getFirst().moves.size() > 0 && !checkdone(currentconfig.getFirst().configuration)) {
+				if(debugState == 3){
+					if (movesmade.size() > 0)
+						System.out.println(movesmade.getLast().toString());
+				}
+//				System.out.print(currentconfig.getFirst().moves.size() + " ");
+				//add this configuration a previously been to configuration
+				PreviousConfigs.put(previousconfigs++, this.hash(Configuration));
+				//add the previous move to the list of moves made
+				//do the next move
+//				System.out.println(currentconfig.getFirst().moves);
+				move(currentconfig.getFirst().moves.getLast().block, currentconfig.getFirst().moves.getLast());
+			}
+			//if done, print out moves made to get there
+			if (checkdone(currentconfig.getFirst().configuration)) {
+				for (Move a : movesmade) {
+					System.out.println(a);
+				}
+				break;
+			}
+//			// if not done, backtrack to place where more moves are possible and continue
+//			System.out.print("Backtracking " + currentconfig.size() + " ");
+//			System.out.print("Backtracking ");
+//			for (Block a : currentconfig.getFirst().configuration)
+//				if (a != null)
+//					System.out.print(a + " ");
+//			System.out.println("");
+			boolean temp2 = this.backtrack();
+//			System.out.println(currentconfig.getFirst().moves);
+			if (!temp2) {
+//				System.out.println("No More Possible Moves");
+				System.exit(1);
+//				break;
+			}
+//			System.out.println(currentconfig.getFirst().moves);
+//			else {
+//				for (int i = 0; i < 3; i++) {
+//					for (Block a : currentconfig.get(i).configuration)
+//						System.out.print(a + " ");
+//					System.out.println("");
+//					for (Move a : currentconfig.get(i).moves){
+//						if (a != null)
+//							System.out.print(a + ", ");
+//					}
+//					System.out.println("");
+//				}
+//				System.exit(1);
+//			}
+//			System.out.println("No More Moves");
+//			System.exit(1);
+		}
+	}
+	
+	//backtrack to a previous configuration
+	public boolean backtrack() {
+		if (currentconfig.size() > 1) {
+			currentconfig.removeFirst();
+			movesmade.removeLast();
+			i--;
+		}
+		else
+			return false;
+		Configuration = currentconfig.getFirst().configuration;
+		return true;
+	}
+	
+	//find where a block is stored in the tray array
+	public int find(Block a) {
+		for (int i = 0; i < numblocks; i++) {
+			if (Configuration[i].row == a.row && Configuration[i].col == a.col && Configuration[i].height == a.height && Configuration[i].width == a.width)
+				return i;
+		}
+		return -1;
+	}
+	
+	//take in a block to move
+	public boolean move(Block block, Move moveto) {
+		//find where block is stored in tray array
+		int position = find(block);
+		//move block
+		Configuration[position].row = moveto.moveToY;
+		Configuration[position].col = moveto.moveToX;
+		//hash new tray
+		int hash = this.hash(Configuration);
+//		System.out.print(currentconfig.getFirst().moves);
+		//if this configuration has been seen before, undo move, remove move from list of possible moves, and return false
+		if (this.PreviousConfigs.containsValue(hash)) {
+			Configuration[position].row = moveto.currentPosY;
+			Configuration[position].col = moveto.currentPosX;
+			currentconfig.getFirst().moves.removeLast();
+			return false;
+		}
+//		System.out.println(currentconfig.getFirst().moves.toString());
+		
+		//since move has been made remove it from linkedlist of possible moves
+		//add new node to linkedlist of all configurations and there possible moves
+		//then generate list of possible moves for new configuration
+		//this way if we need to backtrack we can remove last element of linkedlist and have the correct configuration and 
+			//all possible untried moves for that config
+		
+		
+//		if (block.height == 2 && block.width == 2) {
+//			System.out.println(moveto.currentPosY + " " + moveto.currentPosX);
+//		}
+//		System.out.println(currentconfig.getFirst().moves);
+//		System.out.println("Number of Configurations: " + currentconfig.size());
+		//remove move that was just made
+		movesmade.add(currentconfig.getFirst().moves.getLast());
+		currentconfig.getFirst().moves.removeLast();
+//		System.out.println(currentconfig.getFirst().moves);
+		//create new node with new configuration
+		currentconfig.addFirst(new PreviousConfig());
+		int i = 0;
+//		System.out.print("ADDED TO LINKED LIST: ");
+		for (Block a : Configuration) {
+			if (a != null) {
+				currentconfig.getFirst().configuration[i] = new Block(a.height, a.width, a.row, a.col);
+//				System.out.print(a + " ");
+			}
+			else
+				break;
+			i++;
+		}
+//		System.out.println("");
+		currentconfig.getFirst().hash = this.hash(currentconfig.getFirst().configuration);
+		//generate possible moves for new configuration
+//		System.out.println("MOVE: " + moveto + " ");
+		for (Block a : currentconfig.getFirst().configuration) {
+			if (a != null) {
+				findmoves(a, currentconfig.getFirst());
+			}
+		}
+//		System.out.print("CONFIGURATION: ");
+//		for (Block a : Configuration) {
+//			if (a != null)
+//				System.out.print(a + " ");
+//		}
+//		System.out.println(currentconfig.getFirst().hash);
+//		System.out.println("");
+//		System.out.println("MOVES: " + currentconfig.getFirst().moves);
+		i++;
+//		try {
+//			Thread.sleep(3000);
+//		} catch (InterruptedException e) {
+//			// TODO Auto-generated catch block
+//			e.printStackTrace();
+//		}
+//		System.out.println("Move: " + i + " Possible Moves: " + currentconfig.getFirst().moves.size() + " Hash Code: " + currentconfig.getFirst().hash + " Goal Hash: " + GoalHash);
+		if(debugState == 2)
+			System.out.println(currentconfig.getFirst().toString());
+//		System.out.println("Move Finish: " + System.currentTimeMillis());
+		return true;
+	}
+	
+	//check to see if this configuration is equivilant to the goal configuration
+	public boolean checkdone(Block[] current) {
+		if(hash(current) == hash(ConfigurationGoal)) {
+//			System.out.println("Done1");
+			return true;
+		}
+		if(ConfigurationGoal[1] == null)
+			if(find(ConfigurationGoal[0]) > -1) {
+//				System.out.println("done");
+				return true;
+			}
+		
+		return false;
+	}
+	
+	//hash the current configuration for easy comparision of previous configurations
+	public int hash(Block[] current) {
+		int sum = 0;
+		for (Block a : current) {
+			if (a == null)
+				break;
+			sum += a.col * 3 + a.row * 13;
+			if (a.height > 1)
+				sum *= a.height + 1 * 5;
+			else
+				sum += 5;
+			if (a.width > 1)
+				sum *= a.width * 11;
+			else
+				sum += 11;
+		}
+		return Math.abs(sum * 23);
+	}
+	
+	//finds all the possible moves, of the block passed in and the tray
+	public boolean findmoves(Block current, PreviousConfig config) {
+		int row = current.row;
+		int col = current.col;
+		int width = current.width;
+		int height = current.height;
+		int relativeWidth = col + width;
+		int moveleft = 0; int moveright = 0; int moveup = 0; int movedown = 0;
+		for (Block a : config.configuration) {
+			if (a != null && a.equals(current) == false) {
+//				System.out.println(a.allpoints);
+//				System.out.println(a);
+				for (int i = row; i < row + height; i++) {
+					for (int j = col; j < col + width; j++) {
+//						System.out.println(point.x + " " + (point.y + 1));
+						if (moveright == 0 && a.contains(new Point2D.Double(i, (j + 1))) || (j + width) > boardCols) {
+							moveright++;
+						}
+						
+						if (moveleft == 0 && a.contains(new Point2D.Double(i, (j - 1))) || (j - 1) < 0) {
+							moveleft++;
+						}
+						
+						if (movedown == 0 && a.contains(new Point2D.Double((i + 1), j)) || (i + height) >= boardRows) {
+							movedown++;
+						}
+						
+						if (moveup == 0 && a.contains(new Point2D.Double((i - 1), j)) || (i - 1) < 0) {
+							moveup++;
+						}
+						if (moveleft > 0 && moveright > 0 && moveup > 0 && movedown > 0)
+							break;
+					}
+					if (moveleft > 0 && moveright > 0 && moveup > 0 && movedown > 0)
+						break;
+				}
+				if (moveleft > 0 && moveright > 0 && moveup > 0 && movedown > 0)
+					break;
+			}
+		}
+//		System.out.println(moveright + " " + moveleft + " " + movedown + " " + moveup + " " + current + " " + current.allpoints);
+		
+		if (moveright == 0 && col + 1 < boardCols)
+			currentconfig.getFirst().moves.add(new Move(row, col, row, col + 1, current, "right", "left"));
+		if (moveleft == 0 && col - 1 > -1)
+			currentconfig.getFirst().moves.add(new Move(row, col, row, col - 1, current, "left", "right"));
+		if (movedown == 0 && row + 1 < boardRows)
+			currentconfig.getFirst().moves.add(new Move(row, col, row + 1, col, current, "down", "up"));
+		if (moveup == 0 && row - 1 > -1)
+			currentconfig.getFirst().moves.add(new Move(row, col, row - 1, col, current, "up", "down"));
+//		System.out.println(currentconfig.getFirst().moves);
+		if(debugState == 1){
+			//print out all possible moves found
+			System.out.println(currentconfig.getFirst().moves);
+		}
+//		System.out.println("Find Moves End: " + System.currentTimeMillis());
+		return true;
+	}
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub.
+		
+		if (args.length == 2) {
+			try {
+				BufferedReader in = new BufferedReader(new FileReader(args[0]));
+				String temp = "";
+				int count = 0;
+				String[] size = new String[1];
+				size = in.readLine().split(" ");
+				boardRows = Integer.parseInt(size[0]);
+				boardCols = Integer.parseInt(size[1]);
+//				System.out
+//						.println("Rows: " + boardRows + " Cols: " + boardCols);
+				Configuration = new Block[boardRows * boardCols];
+				// System.out.println(in.readLine());
+
+				String[] line = new String[3];
+				while ((temp = in.readLine()) != null) {
+					line = temp.split(" ");
+					Configuration[count] = new Block(Integer.parseInt(line[0]),
+							Integer.parseInt(line[1]), Integer
+									.parseInt(line[2]), Integer
+									.parseInt(line[3]));
+					count++;
+				}
+				
+				numblocks = count;
+//				for (Block a : Configuration) {
+//					if (a != null)
+//						System.out.print(a + " ");
+//				}
+				in = new BufferedReader(new FileReader(args[1]));
+				ConfigurationGoal = new Block[boardRows * boardCols];
+				count = 0;
+				while ((temp = in.readLine()) != null) {
+					line = temp.split(" ");
+					ConfigurationGoal[count] = new Block(Integer
+							.parseInt(line[0]), Integer.parseInt(line[1]),
+							Integer.parseInt(line[2]), Integer
+									.parseInt(line[3]));
+					count++;
+				}
+				// System.out.println(GoalConfiguration.values());
+				
+				new Solver(Configuration);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+			
+		}
+		else if(args.length == 3){
+			try {
+				if(args[0].equals("-oMoves"))
+					debugState = 1;
+				if(args[0].equals("-oBoardConfigs"))
+					debugState = 2;
+				if(args[0].equals("-oLastMove"))
+					debugState = 3;
+				
+				BufferedReader in = new BufferedReader(new FileReader(args[1]));
+				String temp = "";
+				int count = 0;
+				String[] size = new String[1];
+				size = in.readLine().split(" ");
+				boardRows = Integer.parseInt(size[0]);
+				boardCols = Integer.parseInt(size[1]);
+//				System.out.println("Rows: " + boardRows + " Cols: " + boardCols);
+				Configuration = new Block[boardRows * boardCols];
+//				System.out.println(in.readLine());
+				
+				String[] line = new String[3];
+				while ((temp = in.readLine()) != null) {
+					line = temp.split(" ");
+//					BlockConfiguration.put(new Point2D.Double(Integer.parseInt(line[2]), Integer.parseInt(line[3])), new Block(Integer.parseInt(line[0]), Integer.parseInt(line[1]), 
+//							Integer.parseInt(line[2]), Integer.parseInt(line[3])));
+					Configuration[count] = new Block(Integer.parseInt(line[0]), Integer.parseInt(line[1]), Integer.parseInt(line[2]), Integer.parseInt(line[3]));
+					count++;
+				}
+				numblocks = count;
+//				System.out.println(BlockConfiguration.values());
+				in = new BufferedReader(new FileReader(args[2]));
+				ConfigurationGoal = new Block[boardRows * boardCols];
+				count = 0;
+				while((temp = in.readLine()) != null) {
+					line = temp.split(" ");
+//					GoalConfiguration.put(new Point2D.Double(Integer.parseInt(line[2]), Integer.parseInt(line[3])), new Block(Integer.parseInt(line[0]), Integer.parseInt(line[1]), 
+//							Integer.parseInt(line[2]), Integer.parseInt(line[3])));
+					ConfigurationGoal[count] = new Block(Integer.parseInt(line[0]), Integer.parseInt(line[1]), Integer.parseInt(line[2]), Integer.parseInt(line[3]));
+				}
+				new Solver(Configuration);
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+	}
+}

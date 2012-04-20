@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html PUBLIC
+          "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Markov Assignment - index</title>
+<link rel="stylesheet" type="text/css" href="../../style/style.css" />
+
+</head>
+
+<body>
+<h1 align="center">Markov Chain Programming Assignment Index</h1>
+<h3 align="center">CSSE220</h3>
+
+Markov documents:&nbsp;&nbsp; <a href="index-Markov.html">index</a>&nbsp;&nbsp;
+<a href="overview.html">overview</a>&nbsp;&nbsp;&nbsp; <a href="markov.html">
+markov</a>&nbsp;&nbsp;&nbsp; <a href="justification.html">justification</a>&nbsp;&nbsp;
+<a href="turnin-instructions.html">turnin-instructions</a>&nbsp;&nbsp;&nbsp;
+<a href="examples.html">code examples</a>
+&nbsp;&nbsp;&nbsp; <a href="MarkovPartners.xls">partners</a>
+&nbsp;&nbsp;&nbsp; <a href="importingEclipseClasses.html">importing classes</a>
+&nbsp;&nbsp;&nbsp; <a href="multiset/index.html">MultiSet</a>
+
+<h2>You can get a zip file of this whole folder, including the starting code, 
+<a href="CompleteMarkov.zip">here</a>.<br>
+To view the folder's entire contents on-line, click <a href="../Markov">here</a>.</h2>
+
+<p><b>Note:</b> None of the documents for this assignment can be completely&nbsp; understood until you have
+read the others.  They are all inter-related.  That means that you
+should probably read all of them twice before beginning your design
+and coding.&nbsp;
+I suggest that you quickly read this document, then the other
+documents in the order listed below.  Then re-read all of them more carefully. 
+</p>
+
+<p>This is a pair-programming assignment.  You may talk with other people
+about it, of course, and get help as needed, but you and your partner must do the
+assignment yourself and submit it (to your turnin folder on AFS).&nbsp; Even 
+though you won't use SVN to submit the program, I will provide an SVN repository 
+that you and your partner can use if you wish</p>
+
+Unlike some of the recent programming assignments, your code  must <b>not</b> contain any GUI components (such as
+Frame, JFrame, or JApplet). <p>
+
+
+
+<h2>Milestones</h2>
+<b>Milestone 1:</b> After reading the input, your program should produce a
+correct Markov chain of words (as described in the<b> markov.html</b> document).  Line spacing does not matter, and one
+word per line will be fine for your output.
+<p>
+<b>Milestone 2:</b>  Process the words created by the Markov chain
+algorithm so that the output contains justified lines of the length
+specified by the command line.
+
+<h2> Efficiency </h2>
+Minor details of efficiency are not a concern here, but the running
+time should certainly be an asymptotic <b>linear function </b>of the number
+of input words.  If your program takes 20 minutes to run for one of
+the large files in the <b>texts</b> folder, chances are good that you have an N<sup>2</sup> 
+algorithm. The first thing you might look at is how you do the input. (Note: 
+recall the analysis of the <code>stringCopy</code> method from class..)
+ 
+<h2> Documents and folders </h2>
+
+<p>There are five main additional documents associated with this assignment:</p>
+
+<p><a href="overview.html">overview.html</a> describes the goals of
+the assignment, the four required command-line arguments, the data
+structures to be used, and the submission instructions. </p>
+
+<p><a href="markov.html">markov.html</a> describes the Markov Chain
+algorithm that you are to use to generate semi-random text. </p>
+
+<p><a href="justification.html">justification.html</a> describes the
+algorithm for producing text that is left and right justified. </p>
+
+<p><a href="examples.html">examples.html</a> gives examples of using
+some of the data structures and methods that are used in this assignment.</p>
+<p><a href="turnin-instructions.html">turnin-instructions.html</a> tells you how 
+to submit your program</p>
+<p><a href="importingEclipseClasses.html">importingEclipseClasses.html</a> tells how to get Eclipse to recognize the two <code>.class</code> files that we are providing for you.</p>
+
+
+<p> <b>There are also two folders:</b>
+<p><a href="multiset">multiset</a>. We are providing a MultiSet class for
+you.  The multiset folder contains several useful flies:</p>
+<ul>
+	<li><a href="multiset/MultiSet.html">Multiset.html</a> provides javadoc for
+the Multiset class. </li>
+	<li><a href="multiset/MultiSet.class">MultiSet.class</a> is the actual
+class file that you should use in your project.&nbsp;&nbsp; You should copy it to the 
+place where your Eclipse project puts its .class files.</li>
+	<li><a href="multiset/MultiSet$Entry.class">MultiSet$entry.class</a> is the 
+class file for a nested class that MultiSet uses.&nbsp;&nbsp;You should copy it to the 
+place where your Eclipse project puts its .class files.</li>
+	<li><a href="multiset/TestMultiSet.java">TestMultiSet.java</a> should help
+you to understand how the MultiSet class works.</li>
+	</ul>
+	<p>The <a href="multiset/texts">texts</a> folder contains a collection of
+text files that you can use as input to your program.  You may want to copy it into your project folder.  
+
+</p>
+
+<h2>A file to use for testing your code</h2> 
+<a href="Driver.java"> Driver.java</a> contains a sample of a 
+driver file similar to the one that we will use to test your code.  You can change the parameters in the 
+call to the Markov constructor.<br>
+<h2> Suggested process for getting started on this assignment</h2> <ul>
+<li>Create a new project.
+<li>Copy the two MultiSet class files and the <b>TestMultiSet.java</b> file as described  <a href="importingEclipseClasses.htm">here</a>.<li>
+Copy your&nbsp; <b>FixedLengthQueue.java</b>&nbsp; and <b>Driver.java</b> files to the
+project folder (in the <b>src</b> folder if your project is configured to have a 
+<b>src</b> folder).&nbsp;
+<li> Copy the texts folder to your&nbsp; project folder so that you will not have to use a long pathname in 
+your Driver code when you
+run the program.
+<li> Right-click the project folder and choose Refresh so that the new files 
+will be recognized.
+<li> Create the other class or classes that you need.
+<li> <code>do {compile; execute; debug;} while (!programIsWorking);</code>
+</li></ul>
+
+<h2> Why can't I just do it my way? </h2>
+
+Why do you have to use the data structures that I specify, instead of
+simply writing the program "from scratch"? 
+<p> Some of the later assignments in the Fundamentals classes will leave more of the design
+decisions to you, but others will not.  It is important to get practice in implementing other people's
+specifications and designs, and using classes that are provided for you.</p>
+
+<h2> Planning and scheduling your work </h2>
+
+Completing this assignment on time will&nbsp; require starting early.&nbsp; 
+assignment has a tighter schedule than most.&nbsp; It is important that you 
+start early.&nbsp; For each of the two Milestones, it will take you a little 
+while to understand what it is all about and what you should do.&nbsp; Then you 
+will probably need some planning time before you begin coding.&nbsp;&nbsp; For 
+Milestone I, you should do the understanding and planning parts on the day it is 
+assigned, so you can begin coding in earnest the next day.&nbsp; 
+<p>Milestone 1 is due on Day 22, but you should aim to complete it by Friday, so 
+that if you run into trouble you will have extra time to make up for it.&nbsp; 
+Regardless, you should begin work on Milestone 2 <b>before</b> Day 22, if you 
+are to complete it before it is due.&nbsp; Most of the work for Milestone 2 can 
+be done independently of Milestone 1.&nbsp; There will not be another weekend 
+before Milestone 2 is due.</p>
+
+</body>
+
+</html>

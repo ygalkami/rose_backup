@@ -1,0 +1,12 @@
+from graphics import *
+from math import *
+
+def circleOfCircles(win, N, Bcenter, Bradius, Lradius):
+    
+    for i in range(N):
+        x = int(Bcenter.getX() + Bradius * cos((2*pi*i)/N))
+        y = int(Bcenter.getY() + Bradius * sin((2*pi*i)/N))
+        
+        Lcircle = Circle(Point(x, y), Lradius)
+        Lcricle.draw(win)
+        

@@ -1,0 +1,22 @@
+
+*** These modified files were found in JOE when it aborted on Thu Mar 19 00:08:59 2009
+*** JOE was aborted by UNIX signal 1
+
+*** File '(Unnamed)'
+(4.3+3*4)
+
+*** File '(Unnamed)'
+make
+
+*** File '(Unnamed)'
+BinaryNode.
+HeapCheck.java
+blah
+/usr/lib/plt/collects/eopl/eopl.ss
+waste.txt
+waste.txt
+waste.txt
+numCans.c
+/tmp/crontab.KtosFI/crontab
+numCans.c
+pointersAndArrays.c

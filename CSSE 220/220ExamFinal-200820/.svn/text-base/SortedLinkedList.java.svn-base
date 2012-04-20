@@ -1,0 +1,83 @@
+/**
+ * 
+ * @author anderson and (your name)
+ *
+ * @param <T> Any Comparable type
+ * 
+ * A linked list whose elements are kept in sorted order.
+ */
+public class SortedLinkedList<T extends Comparable<T>> extends LinkedList<T>{
+   
+	protected ListNode header, last;
+	
+   public SortedLinkedList() {
+	   header = last = new ListNode<T>( );
+   }
+   
+   /**
+    * Create a sorted list containing the same elements as the parameter
+    * 
+    * @param list the input list
+    */
+   public SortedLinkedList(LinkedList<T> list) {
+	   	last = list.last;
+		header = new ListNode<T> (null, last);
+      }
+   
+   public int size() {
+	   return size(header.next);
+   }
+   
+   @Override public String toString() {
+	      String result = "[ ";
+	      for (ListNode<T> p = header.next; p != null; p = p.next)
+	         result += (p.element + " ");
+	      return result + "]";
+   }
+   
+   /**
+    *  Add this element to the list, keeping the list sorted.
+    */
+   @Override public boolean add(T elementToAdd){
+	  ListNode<T> p = header;
+	  ListNode<T> temp = null;
+      if (this.size() == 0) {
+    	  last = new ListNode<T> (elementToAdd);
+    	  header = new ListNode<T> (elementToAdd, last);
+      }
+      else {
+	      while (p != null) {
+	    	  System.out.println(p.element + " " + elementToAdd);
+	    	  if (p.element.compareTo(elementToAdd) == 0) {
+//	    		  p.next.next = p.next;
+//	    		  p.next = new ListNode<T>(elementToAdd, p.next.next);
+	    		  temp = p;
+	    		  if (p.equals(last)) {
+//	    			  temp = p;
+	    			  last = p;
+	    			  p = new ListNode<T> (elementToAdd, last);
+	    			  break;
+	    		  }
+	    		  else {
+	    			  p.next = p;
+	    			  p = new ListNode<T>(elementToAdd, p.next);
+		    		  break;
+	    		  }
+	    	  }
+	    	  p = p.next;
+	      }
+      }
+      
+      System.out.println(this.size() + " " + this.toString());
+      return true;
+   }
+   
+   /**
+    * Throw an UnsupportedOperationException, since the list will not stay sorted 
+    * if we can add an element in an arbitrary position.
+    */
+   @Override public void add(int i, T elementToAdd){
+	   throw new UnsupportedOperationException("The list will not stay sorted if you try to add an element at an arbitary position");
+   }
+
+}

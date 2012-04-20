@@ -1,0 +1,24 @@
+Release 7.1.04i ngdbuild H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\ece 130/_ngo" -nt timestamp -uc TwoLights.ucf -p xc3s200-ft256-4
+TwoLights.ngc TwoLights.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/ECE
+130/TwoLights.ngc' ...
+
+Applying constraints in "TwoLights.ucf" to the design...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 61916 kilobytes
+
+Writing NGD file "TwoLights.ngd" ...
+
+Writing NGDBUILD log file "TwoLights.bld"...

@@ -1,0 +1,16 @@
+<h1>Editing column</h1>
+
+<% form_for([@table, @column]) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :name %><br />
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', table_column_path(@table, @column) %> |
+<%= link_to 'Back', table_columns_path(@table) %>

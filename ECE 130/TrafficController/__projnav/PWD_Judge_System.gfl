@@ -1,0 +1,407 @@
+# Schematic : PDCL (jhdparse)
+__projnav/PWD_Judge_FSM_jhdparse_tcl.rsp
+# Schematic : PDCL (jhdparse)
+__projnav/PWD_Judge_FSM_jhdparse_tcl.rsp
+# Schematic : PDCL (jhdparse)
+__projnav/PWD_Judge_FSM_jhdparse_tcl.rsp
+# Schematic : PDCL (jhdparse)
+__projnav/PWD_Judge_FSM_jhdparse_tcl.rsp
+# Schematic : PDCL (jhdparse)
+__projnav/PWD_Judge_FSM_jhdparse_tcl.rsp
+# Schematic : View HDL Instantiation Template
+PWD_Judge_FSM.tfi
+# Edit Constraints (Text)
+# Schematic : View HDL Functional Model
+PWD_Judge_FSM.vf
+# XST (Creating Lso File) : 
+PWD_Judge_Top.lso
+# xst flow : RunXST
+PWD_Judge_Top_summary.html
+# xst flow : RunXST
+PWD_Judge_Top.syr
+PWD_Judge_Top.prj
+PWD_Judge_Top.sprj
+PWD_Judge_Top.ana
+PWD_Judge_Top.stx
+PWD_Judge_Top.cmd_log
+PWD_Judge_Top.ngc
+PWD_Judge_Top.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\doering\class\ece130\2006-07_1f\xilinx\pwd_judge_system/_ngo"
+PWD_Judge_Top.ngd
+PWD_Judge_Top_ngdbuild.nav
+PWD_Judge_Top.bld
+.untf
+PWD_Judge_Top.cmd_log
+# Implementation : Map
+PWD_Judge_Top_summary.html
+# Implementation : Map
+PWD_Judge_Top_map.ncd
+PWD_Judge_Top.ngm
+PWD_Judge_Top.pcf
+PWD_Judge_Top.nc1
+PWD_Judge_Top.mrp
+PWD_Judge_Top_map.mrp
+PWD_Judge_Top.mdf
+PWD_Judge_Top.cmd_log
+MAP_NO_GUIDE_FILE_CPF "PWD_Judge_Top"
+PWD_Judge_Top_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+PWD_Judge_Top.twr
+PWD_Judge_Top.twx
+PWD_Judge_Top.tsi
+PWD_Judge_Top.cmd_log
+# Implementation : Place & Route
+PWD_Judge_Top_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+PWD_Judge_Top.ncd
+PWD_Judge_Top.par
+PWD_Judge_Top.pad
+PWD_Judge_Top_pad.txt
+PWD_Judge_Top_pad.csv
+PWD_Judge_Top.pad_txt
+PWD_Judge_Top.dly
+reportgen.log
+PWD_Judge_Top.xpi
+PWD_Judge_Top.grf
+PWD_Judge_Top.itr
+PWD_Judge_Top_last_par.ncd
+PWD_Judge_Top.placed_ncd_tracker
+PWD_Judge_Top.routed_ncd_tracker
+PWD_Judge_Top.cmd_log
+PAR_NO_GUIDE_FILE_CPF "PWD_Judge_Top"
+# Generate Programming File
+__projnav/PWD_Judge_Top_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+PWD_Judge_Top.ut
+# Generate Programming File
+PWD_Judge_Top.bgn
+PWD_Judge_Top.rbt
+PWD_Judge_Top.ll
+PWD_Judge_Top.msk
+PWD_Judge_Top.drc
+PWD_Judge_Top.nky
+PWD_Judge_Top.bit
+PWD_Judge_Top.bin
+PWD_Judge_Top.isc
+PWD_Judge_Top.cmd_log
+# Edit Constraints (Text)
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\doering\class\ece130\2006-07_1f\xilinx\pwd_judge_system/_ngo"
+PWD_Judge_Top.ngd
+PWD_Judge_Top_ngdbuild.nav
+PWD_Judge_Top.bld
+PWD_Judge_Top.ucf.untf
+PWD_Judge_Top.cmd_log
+# Implementation : Map
+PWD_Judge_Top_summary.html
+# Implementation : Map
+PWD_Judge_Top_map.ncd
+PWD_Judge_Top.ngm
+PWD_Judge_Top.pcf
+PWD_Judge_Top.nc1
+PWD_Judge_Top.mrp
+PWD_Judge_Top_map.mrp
+PWD_Judge_Top.mdf
+PWD_Judge_Top.cmd_log
+MAP_NO_GUIDE_FILE_CPF "PWD_Judge_Top"
+PWD_Judge_Top_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+PWD_Judge_Top.twr
+PWD_Judge_Top.twx
+PWD_Judge_Top.tsi
+PWD_Judge_Top.cmd_log
+# Implementation : Place & Route
+PWD_Judge_Top_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+PWD_Judge_Top.ncd
+PWD_Judge_Top.par
+PWD_Judge_Top.pad
+PWD_Judge_Top_pad.txt
+PWD_Judge_Top_pad.csv
+PWD_Judge_Top.pad_txt
+PWD_Judge_Top.dly
+reportgen.log
+PWD_Judge_Top.xpi
+PWD_Judge_Top.grf
+PWD_Judge_Top.itr
+PWD_Judge_Top_last_par.ncd
+PWD_Judge_Top.placed_ncd_tracker
+PWD_Judge_Top.routed_ncd_tracker
+PWD_Judge_Top.cmd_log
+PAR_NO_GUIDE_FILE_CPF "PWD_Judge_Top"
+# Generate Programming File
+__projnav/PWD_Judge_Top_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+PWD_Judge_Top.ut
+# Generate Programming File
+PWD_Judge_Top.bgn
+PWD_Judge_Top.rbt
+PWD_Judge_Top.ll
+PWD_Judge_Top.msk
+PWD_Judge_Top.drc
+PWD_Judge_Top.nky
+PWD_Judge_Top.bit
+PWD_Judge_Top.bin
+PWD_Judge_Top.isc
+PWD_Judge_Top.cmd_log
+# XST (Creating Lso File) : 
+PWD_Judge_Top.lso
+# xst flow : RunXST
+PWD_Judge_Top_summary.html
+# xst flow : RunXST
+PWD_Judge_Top.syr
+PWD_Judge_Top.prj
+PWD_Judge_Top.sprj
+PWD_Judge_Top.ana
+PWD_Judge_Top.stx
+PWD_Judge_Top.cmd_log
+PWD_Judge_Top.ngc
+PWD_Judge_Top.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\doering\class\ece130\2006-07_1f\xilinx\pwd_judge_system/_ngo"
+PWD_Judge_Top.ngd
+PWD_Judge_Top_ngdbuild.nav
+PWD_Judge_Top.bld
+PWD_Judge_Top.ucf.untf
+PWD_Judge_Top.cmd_log
+# Implementation : Map
+PWD_Judge_Top_summary.html
+# Implementation : Map
+PWD_Judge_Top_map.ncd
+PWD_Judge_Top.ngm
+PWD_Judge_Top.pcf
+PWD_Judge_Top.nc1
+PWD_Judge_Top.mrp
+PWD_Judge_Top_map.mrp
+PWD_Judge_Top.mdf
+PWD_Judge_Top.cmd_log
+MAP_NO_GUIDE_FILE_CPF "PWD_Judge_Top"
+PWD_Judge_Top_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+PWD_Judge_Top.twr
+PWD_Judge_Top.twx
+PWD_Judge_Top.tsi
+PWD_Judge_Top.cmd_log
+# Implementation : Place & Route
+PWD_Judge_Top_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+PWD_Judge_Top.ncd
+PWD_Judge_Top.par
+PWD_Judge_Top.pad
+PWD_Judge_Top_pad.txt
+PWD_Judge_Top_pad.csv
+PWD_Judge_Top.pad_txt
+PWD_Judge_Top.dly
+reportgen.log
+PWD_Judge_Top.xpi
+PWD_Judge_Top.grf
+PWD_Judge_Top.itr
+PWD_Judge_Top_last_par.ncd
+PWD_Judge_Top.placed_ncd_tracker
+PWD_Judge_Top.routed_ncd_tracker
+PWD_Judge_Top.cmd_log
+PAR_NO_GUIDE_FILE_CPF "PWD_Judge_Top"
+# Generate Programming File
+__projnav/PWD_Judge_Top_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+PWD_Judge_Top.ut
+# Generate Programming File
+PWD_Judge_Top.bgn
+PWD_Judge_Top.rbt
+PWD_Judge_Top.ll
+PWD_Judge_Top.msk
+PWD_Judge_Top.drc
+PWD_Judge_Top.nky
+PWD_Judge_Top.bit
+PWD_Judge_Top.bin
+PWD_Judge_Top.isc
+PWD_Judge_Top.cmd_log
+# Edit Constraints (Text)
+# Schematic : PDCL (jhdparse)
+__projnav/PWD_Judge_FSM_jhdparse_tcl.rsp
+# Schematic : View HDL Functional Model
+PWD_Judge_FSM.vf
+# XST (Creating Lso File) : 
+PWD_Judge_Top.lso
+# xst flow : RunXST
+PWD_Judge_Top_summary.html
+# xst flow : RunXST
+PWD_Judge_Top.syr
+PWD_Judge_Top.prj
+PWD_Judge_Top.sprj
+PWD_Judge_Top.ana
+PWD_Judge_Top.stx
+PWD_Judge_Top.cmd_log
+PWD_Judge_Top.ngc
+PWD_Judge_Top.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\doering\class\ece130\2006-07_1f\xilinx\pwd_judge_system/_ngo"
+PWD_Judge_Top.ngd
+PWD_Judge_Top_ngdbuild.nav
+PWD_Judge_Top.bld
+PWD_Judge_Top.ucf.untf
+PWD_Judge_Top.cmd_log
+# Implementation : Map
+PWD_Judge_Top_summary.html
+# Implementation : Map
+PWD_Judge_Top_map.ncd
+PWD_Judge_Top.ngm
+PWD_Judge_Top.pcf
+PWD_Judge_Top.nc1
+PWD_Judge_Top.mrp
+PWD_Judge_Top_map.mrp
+PWD_Judge_Top.mdf
+PWD_Judge_Top.cmd_log
+MAP_NO_GUIDE_FILE_CPF "PWD_Judge_Top"
+PWD_Judge_Top_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+PWD_Judge_Top.twr
+PWD_Judge_Top.twx
+PWD_Judge_Top.tsi
+PWD_Judge_Top.cmd_log
+# Implementation : Place & Route
+PWD_Judge_Top_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+PWD_Judge_Top.ncd
+PWD_Judge_Top.par
+PWD_Judge_Top.pad
+PWD_Judge_Top_pad.txt
+PWD_Judge_Top_pad.csv
+PWD_Judge_Top.pad_txt
+PWD_Judge_Top.dly
+reportgen.log
+PWD_Judge_Top.xpi
+PWD_Judge_Top.grf
+PWD_Judge_Top.itr
+PWD_Judge_Top_last_par.ncd
+PWD_Judge_Top.placed_ncd_tracker
+PWD_Judge_Top.routed_ncd_tracker
+PWD_Judge_Top.cmd_log
+PAR_NO_GUIDE_FILE_CPF "PWD_Judge_Top"
+# Generate Programming File
+__projnav/PWD_Judge_Top_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+PWD_Judge_Top.ut
+# Generate Programming File
+PWD_Judge_Top.bgn
+PWD_Judge_Top.rbt
+PWD_Judge_Top.ll
+PWD_Judge_Top.msk
+PWD_Judge_Top.drc
+PWD_Judge_Top.nky
+PWD_Judge_Top.bit
+PWD_Judge_Top.bin
+PWD_Judge_Top.isc
+PWD_Judge_Top.cmd_log
+# Edit Constraints (Text)
+# Schematic : PDCL (jhdparse)
+__projnav/PWD_Judge_FSM_jhdparse_tcl.rsp
+# Schematic : View HDL Functional Model
+PWD_Judge_FSM.vf
+# XST (Creating Lso File) : 
+PWD_Judge_Top.lso
+# xst flow : RunXST
+PWD_Judge_Top_summary.html
+# xst flow : RunXST
+PWD_Judge_Top.syr
+PWD_Judge_Top.prj
+PWD_Judge_Top.sprj
+PWD_Judge_Top.ana
+PWD_Judge_Top.stx
+PWD_Judge_Top.cmd_log
+PWD_Judge_Top.ngc
+PWD_Judge_Top.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\doering\class\ece130\2006-07_1f\xilinx\pwd_judge_system/_ngo"
+PWD_Judge_Top.ngd
+PWD_Judge_Top_ngdbuild.nav
+PWD_Judge_Top.bld
+PWD_Judge_Top.ucf.untf
+PWD_Judge_Top.cmd_log
+# Implementation : Map
+PWD_Judge_Top_summary.html
+# Implementation : Map
+PWD_Judge_Top_map.ncd
+PWD_Judge_Top.ngm
+PWD_Judge_Top.pcf
+PWD_Judge_Top.nc1
+PWD_Judge_Top.mrp
+PWD_Judge_Top_map.mrp
+PWD_Judge_Top.mdf
+PWD_Judge_Top.cmd_log
+MAP_NO_GUIDE_FILE_CPF "PWD_Judge_Top"
+PWD_Judge_Top_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+PWD_Judge_Top.twr
+PWD_Judge_Top.twx
+PWD_Judge_Top.tsi
+PWD_Judge_Top.cmd_log
+# Implementation : Place & Route
+PWD_Judge_Top_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+PWD_Judge_Top.ncd
+PWD_Judge_Top.par
+PWD_Judge_Top.pad
+PWD_Judge_Top_pad.txt
+PWD_Judge_Top_pad.csv
+PWD_Judge_Top.pad_txt
+PWD_Judge_Top.dly
+reportgen.log
+PWD_Judge_Top.xpi
+PWD_Judge_Top.grf
+PWD_Judge_Top.itr
+PWD_Judge_Top_last_par.ncd
+PWD_Judge_Top.placed_ncd_tracker
+PWD_Judge_Top.routed_ncd_tracker
+PWD_Judge_Top.cmd_log
+PAR_NO_GUIDE_FILE_CPF "PWD_Judge_Top"
+# Generate Programming File
+__projnav/PWD_Judge_Top_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+PWD_Judge_Top.ut
+# Generate Programming File
+PWD_Judge_Top.bgn
+PWD_Judge_Top.rbt
+PWD_Judge_Top.ll
+PWD_Judge_Top.msk
+PWD_Judge_Top.drc
+PWD_Judge_Top.nky
+PWD_Judge_Top.bit
+PWD_Judge_Top.bin
+PWD_Judge_Top.isc
+PWD_Judge_Top.cmd_log
+# xst flow : RunXST
+PWD_Judge_Top_summary.html
+# xst flow : RunXST
+PWD_Judge_Top_summary.html
+# Compile HDL Simulation Libraries
+compxlib.log
+PWD_Judge_System.cxl
+PWD_Judge_System.compxlib_log
+# xst flow : RunXST
+PWD_Judge_Top_summary.html
+# xst flow : RunXST
+PWD_Judge_Top_summary.html
+# xst flow : RunXST
+PWD_Judge_Top_summary.html

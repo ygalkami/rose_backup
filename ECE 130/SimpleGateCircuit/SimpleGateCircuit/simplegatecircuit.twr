@@ -1,0 +1,50 @@
+--------------------------------------------------------------------------------
+Release 7.1.04i Trace H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+C:/Xilinx/bin/nt/trce.exe -ise
+c:\documents and settings\pickdp\my documents\ece 130\simplegatecircuit\simplegatecircuit\SimpleGateCircuit.ise
+-intstyle ise -e 3 -l 3 -s 4 -xml SimpleGateCircuit SimpleGateCircuit.ncd -o
+SimpleGateCircuit.twr SimpleGateCircuit.pcf
+
+
+Design file:              simplegatecircuit.ncd
+Physical constraint file: simplegatecircuit.pcf
+Device,speed:             xc3s200,-4 (PRODUCTION 1.37 2005-07-22)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+iA             |oLeft          |    8.576|
+iA             |oMidLeft       |    9.155|
+iA             |oMidRight      |    8.759|
+iB             |oMidLeft       |    9.246|
+iC             |oMidRight      |    8.546|
+iD             |oMidLeft       |    9.176|
+iD             |oMidRight      |    8.979|
+iD             |oRight         |    7.678|
+---------------+---------------+---------+
+
+Analysis completed Mon Dec 10 20:24:13 2007
+--------------------------------------------------------------------------------
+
+
+
+Peak Memory Usage: 80 MB

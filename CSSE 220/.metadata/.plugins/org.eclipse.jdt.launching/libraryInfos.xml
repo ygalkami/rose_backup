@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<libraryInfos>
+  <libraryInfo version="1.5.0" home="/usr/lib/jvm/java-1.5.0-gcj-4.3-1.5.0.0">
+    <bootpath>
+      <entry path="/usr/lib/jvm/java-1.5.0-gcj-4.3-1.5.0.0/jre/lib/rt.jar"/>
+    </bootpath>
+    <extensionDirs>
+      <entry path="/usr/share/java/ext"/>
+    </extensionDirs>
+  </libraryInfo>
+  <libraryInfo version="1.6.0_03" home="C:\Program Files\Java\jre1.6.0_03">
+    <bootpath>
+      <entry path="C:\Program Files\Java\jre1.6.0_03\lib\resources.jar"/>
+      <entry path="C:\Program Files\Java\jre1.6.0_03\lib\rt.jar"/>
+      <entry path="C:\Program Files\Java\jre1.6.0_03\lib\sunrsasign.jar"/>
+      <entry path="C:\Program Files\Java\jre1.6.0_03\lib\jsse.jar"/>
+      <entry path="C:\Program Files\Java\jre1.6.0_03\lib\jce.jar"/>
+      <entry path="C:\Program Files\Java\jre1.6.0_03\lib\charsets.jar"/>
+      <entry path="C:\Program Files\Java\jre1.6.0_03\classes"/>
+    </bootpath>
+    <extensionDirs>
+      <entry path="C:\Program Files\Java\jre1.6.0_03\lib\ext"/>
+      <entry path="C:\WINDOWS\Sun\Java\lib\ext"/>
+    </extensionDirs>
+    <endorsedDirs>
+      <entry path="C:\Program Files\Java\jre1.6.0_03\lib\endorsed"/>
+    </endorsedDirs>
+  </libraryInfo>
+  <libraryInfo version="1.5.0" home="/usr/lib/jvm/java-1.5.0-gcj-4.3-1.5.0.0/jre">
+    <bootpath>
+      <entry path="/usr/lib/jvm/java-1.5.0-gcj-4.3-1.5.0.0/jre/lib/rt.jar"/>
+    </bootpath>
+    <extensionDirs>
+      <entry path="/usr/share/java/ext"/>
+    </extensionDirs>
+  </libraryInfo>
+</libraryInfos>

@@ -1,0 +1,5 @@
+# this is a comment
+# echo this should not be displayed
+echo hello, from m1test0.xssh
+echo quitting with status of 37
+quit 37

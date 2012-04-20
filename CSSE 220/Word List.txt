@@ -1,0 +1,90 @@
+You have to scrl dow a nit to get to many of the mispelled w=rds in this file.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Final grades are also contingent on the following: 
+
+
+•	You must earn a C grade on at least one exam in order to earn a C in the course. 
+
+
+
+•	You must have a passing average on the exams to pass the course. 
+
+
+•	You must demonstrate that you can individually write and debug simple Java programs at the level of this course in order to pass. The exams will be the usual way to do this. 
+•	Attendance is required, as detailed below, in the note on how citizenship affects your grade. 
+I will do my best to conform to the Rose-Hulman definition of the various grades, as described in the Academic Rules and Procedures. Note in particular that the phrase “thorough competence to do excellent work” appears there in the description of the “B” grade (not “A”), and it further states that “B” and “B+” will not be given for mere compliance with the minimum essential standards of the course. 
+Citizenship Counts!
+
+
+I may adjust your overall average up or down by up to 5 percent, based on your citizenship in the CSSE 220 learning community. This includes attendance, promptness, preparation for class, positive participation in class and the online discussion forums, constructive partnership in pair and group assignments, timely completion of various surveys, and peer evaluation of other students’ code and of your team members for group projects. 
+The in-class time in this course constitutes an important learning experience. You should be there,  Two unexcused absences will affect your Citizenship grade. Three or more unexcused absences may result in failure of the course.  I will use the ANGEL attendance manager as a record of your attendance.  Be sure to record your attendance each day.
+
+
+Bug Reports
+If you find errors in the textbook or any of my course documents, please report them via the bug reports discussion forum on ANGEL. I will give a small number of extra credit points to the first person to report a given bug. The number of points will depend on the severity and subtlety of the bug that you report. I recommend that you subscribe to that discussion forum. 
+Communication
+I usually check email several times per day, and do my best to respond quickly. It is a good way to get answers to simple questions. I expect you to check your email daily (not necessarily on weekends, although even that is not a bad idea). When I send mail to you, I will use your Rose-Hulman address. If you do not currently read mail that is sent to that address, please have it forwarded to wherever you do read mail. 
+When you send course-related email directly to me, please include 220 in your Subject: line (and include a real subject line), so that I can quickly pick it out from among the dozens of daily email messages that I receive. Then I can respond to you more quickly. 
+Bad:	When is Assignment 1 due?  
+Bad:	CSSE 220 
+Good:	CSSE220: When is Assignment 1 due?
+
+
+Don't forget the csse220-staff@rose-hulman.edu address. Your mail will go to me and to all of the student assistants.  There is no need for a special subject line for these messages, since the Mailman list system inserts the subject.
+Discussion forums on ANGEL are a place where you can discuss various aspects of the course, including the assignments, with other class members.  The student assistants and I will read the discussions and sometimes respond to your posts.  One way to enhance the Citizenship part of your grade is to post thoughtful questions, answers, and comments to the forums.
+I welcome your suggestions for the course.  Please tell me about things in the course that help you to learn, and things I might do to improve the course for you. If there is something that you'd like to tell me, but don't feel comfortable with me knowing who it comes from, you can use the Anonymous Suggestion Box survey that I have provided on ANGEL. 
+Electronic Distraction 
+I will do my best to keep the class interactive and relevant. But I recognize that sometimes it is hard as a student to stay focused on the class. With laptops in class, there are many more ways to become distracted. Unfortunately these distractions are much more pernicious, since it is very easy to get drawn into things like IM conversations or RSS feeds. 
+In the classroom I strongly encourage you to turn off IM and email software and only use other software for things directly related to class. If you must use non-class-related software during class, then you should sit in the next-to-last row (no one should sit in the last row). Doing so will keep you from distracting your classmates with what is on your screen. 
+
+
+
+Academic Integrity 
+
+
+
+Recall the Institute policy on academic misconduct: 
+“Rose-Hulman expects its students to be responsible adults and to behave at all times with honor and integrity.” 
+Exams and homework will be done on an individual basis. The simple rule of thumb for individual work is: 
+Never give or use someone else’s code or written answers. 
+Such exchanges are definitely cheating and not cooperation. The departmental statement on academic honesty has more detailed advice. 
+We encourage you to discuss the problems and general approaches to solving them with other students. However, when it comes to writing code, it should be your own work (or the work of your group if it is a group or partner assignment). If you are having trouble understanding how some library code works or pinning down a run-time or logic error in your program, by all means talk to someone about it. 
+If you use someone else’s ideas in your solution (or any other work that you do anywhere), you have to: 
+•	give credit to that person in the comment section of your program, and 
+•	be sure that you understand it as well as if it were your own. 
+If you are ever in doubt about whether some specific situation violates the policy, the best approach is to discuss it with your instructor beforehand. This is a very serious matter that we do not take lightly. Nor should you. 
+In general, you should not look at another student’s code to get ideas of how to write your own code. Beginning the process of producing your own solution with an electronic copy of work done by other students is never appropriate. 
+Plagiarism or cheating will result in a negative score (i.e., less than zero) for the assignment or exam. Egregious cases will result in a grade of “F” for the course. More importantly, such dishonesty steals your own self-esteem. So don’t cheat. 
+
+
+
+
+SOme of these wrods are ones that I accidentally misspelled in the the last few days:
+
+
+
+
+Hwo wjll the "FNal" XAEM fect your gerade?
+
+Expacially   Thannks thso (I meant to type "this")
+Componenents.
+
+
+
+Doublewords canb e ap roblem som etimes, can't can't can'y   thay?

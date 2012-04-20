@@ -1,0 +1,241 @@
+/**********************************************************************************
+ * This file is where you will declare the various string functions for the 
+ * homework.
+ * by YOUR_NAME_HERE, on THE_DATE_HERE  
+ **********************************************************************************/
+
+#include <stdio.h>
+#include <ctype.h>
+#include <string.h>
+#include "file-functions.h"
+#include "string-functions.h"
+
+#define FALSE 0
+#define TRUE 1
+
+typedef int bool;
+
+/**********************************************************************************
+ * Capitalizes the first character of the given string "in place".  That is, the
+ * string is mutated.  (This is another difference between C and Python strings.
+ * Strings in Python are immutable.)
+ **********************************************************************************/
+void capitalize(char *str) {
+	// TODO: read and understand this implementation, then go on to the next function
+	*str = toupper(*str);
+}
+
+/**********************************************************************************
+ * Replaces every character of the given string with its lowercase version.
+ * HINT: Use a function from ctype.h 
+ **********************************************************************************/
+void lower(char *str) {
+	// TODO: read and understand this implementation, then go on to the next function
+	char *p;
+	for (p = str; *p != '\0'; p++)
+		*p = tolower(*p);
+}
+
+/**********************************************************************************
+ * Replaces every character of the given string with its uppercase version.
+ * HINT: Use a function from ctype.h 
+ **********************************************************************************/
+void upper(char *str) {
+	char *p;
+	for (p = str; *p != '\0'; p++)
+		*p = toupper(*p);
+}
+
+/**********************************************************************************
+ * Replaces every lowercase character of the given string with its uppercase 
+ * version, replaces every uppercase character with its lowercase version, and
+ * leaves the rest unchanged.
+ **********************************************************************************/
+void swapcase(char *str) {
+	char *p;
+	for(p = str; *p != '\0'; p++)
+	{
+		if (islower(*p))
+			*p = toupper(*p);
+		else
+			*p = tolower(*p);
+	}
+}
+
+/**********************************************************************************
+ * Capitalizes every word of the given string.  That is, every character 
+ * following a space is converted to its uppercase version, as is the first 
+ * character.
+ **********************************************************************************/
+void capwords(char *str) {
+	char *p;
+	capitalize(str);
+	for (p = str; *p != '\0'; p++)
+	{
+		if (isspace(*p))
+			*(p + 1) = toupper(*(p + 1));
+	}
+}
+
+/**********************************************************************************
+ * Pads the end of the given string with spaces so that it is justWidth characters
+ * long.  If str is already longer than justWidth, then it is left unchanged.  The
+ * given string is assumed to have MAX_LINE_LENGTH characters of space allocated.
+ **********************************************************************************/
+void ljust(char *str, int justWidth) {
+	// TODO: read and understand this implementation, then go on to the next function
+	/* This error check makes sure that we don't try to add more spaces than
+	 * the string can hold. */
+	if (justWidth > MAX_LINE_LENGTH)
+		return;
+
+	int len = strlen(str); 
+	int spacesToAdd = justWidth - len;
+	
+	/* If the string is already long enough, then do nothing. */
+	if (spacesToAdd < 0)
+		return;
+		
+	/* Put the trailing '\0' in place first.  This helps with debugging
+	 * because once we start adding spaces to the string the debugger
+	 * still has a '\0' "backstop" so it can display the partially 
+	 * processed string for us. */
+	str[justWidth] = '\0';
+	
+	/* Adds all the spaces. */
+	int i;
+	for (i=0; i < spacesToAdd; i++)
+		str[i + len] = ' ';
+}
+
+/**********************************************************************************
+ * Pads the beginning of the given string with spaces so that it is justWidth 
+ * characters long.  If str is already longer than justWidth, then it is left 
+ * unchanged.  The given string is assumed to have MAX_LINE_LENGTH characters of 
+ * space allocated.
+ **********************************************************************************/
+void rjust(char *str, int justWidth) {
+	/* This error check makes sure that we don't try to add more spaces than
+	 * the string can hold.*/ 
+	int i;
+	if (justWidth > MAX_LINE_LENGTH)
+		return;
+	
+	int len = strlen(str);
+	int spacestoadd = justWidth - len;
+	
+	if (spacestoadd < 0)
+		return;
+	
+	for (i=0; i < len; i++) {
+		str[justWidth-1-i] = str[len-1-i];
+	}
+	for (i=0; i<spacestoadd; i++){
+		str[i] = ' ';
+	}
+	str[justWidth] = '\0';
+}
+
+/**********************************************************************************
+ * Equally pads the beginning and end of the given string with spaces so that it is 
+ * justWidth characters long, with the original string contents centered in the
+ * length.  If str is already longer than justWidth, then it is left unchanged. The
+ * given string is assumed to have MAX_LINE_LENGTH characters of space allocated.
+ * HINT: Can you solve this using ljust and rjust?
+ **********************************************************************************/
+void center(char *str, int justWidth) {
+	/* This error check makes sure that we don't try to add more spaces than
+	 * the string can hold. */
+	if (justWidth > MAX_LINE_LENGTH)
+		return;
+	int len = strlen(str);
+	int spacestoadd = (justWidth - len);
+	int i;
+	//rjust(str, justWidth / 2);
+	//ljust(str, justWidth /2);
+	for (i=0; i < spacestoadd / 2; i++)
+		str[i + len] = ' ';
+	
+	rjust(str, justWidth);
+}
+
+/**********************************************************************************
+ * Removes any leading and trailing spaces from the given string.
+ **********************************************************************************/
+void strip(char *str) {
+	int i;
+	int spacecount;
+	int len = strlen(str);
+	for (i=0; i < len; i++)
+	{
+		if (str[i] != ' ') {
+			spacecount = i--;
+			//printf("%d", i);
+			break;
+		}
+	}
+	
+	for (i=0; i < len; i++)
+		str[i] = str[i + spacecount];
+	
+	//printf("%c", str);
+}
+
+/**********************************************************************************
+ * Reverses the characters of the given string in place.
+ **********************************************************************************/
+void reverse(char *str) {
+	char result[MAX_LINE_LENGTH];
+	int len = strlen(str);
+	int i;
+	for (i=0; i < len; i++)
+		result[i] = str[len - i];
+	/*
+	 * TODO: Copy characters from str to result in the right order.
+	 */
+	
+	/* This copies the answer back into string so that the string is reversed
+	 * "in place". */
+	strcpy(str, result);
+}
+
+/**********************************************************************************
+ * Finds the first occurence of the search string within the str string.  Returns
+ * a pointer to the occurence.  If the search string is not found, then returns
+ * the special NULL pointer.  
+ * HINT: Is there a string.h function that would help A LOT?
+ **********************************************************************************/
+char *find(char *str, char *search) {
+	char *found;
+	found = strstr(str, search);
+	return found;
+}
+
+/**********************************************************************************
+ * Replaces _every_ occurence of the old string in appearing in the str string with 
+ * the new string.   The given string is assumed to have MAX_LINE_LENGTH characters
+ * of space allocated.
+ * THIS PROBLEM IS AN OPTIONAL BONUS PROBLEM
+ **********************************************************************************/
+void replace(char *str, char *old, char *new) {
+	int i, j, k;
+	int numadded;
+	int len = strlen(str);
+	numadded = strlen(new) - strlen(old);
+	int replacenum = 0;
+	
+	for (i=0; i < len; i++)
+	{
+		if (str[i] == old[0])
+		{
+			for (j=0; j < strlen(old); j++)
+			{
+				if(*(str + j) == *(old + j))
+					k++;
+				if (k == strlen(old))
+					replacenum = replacenum + 1;
+			}
+		}		
+	}
+	printf("%d", replacenum);	
+}

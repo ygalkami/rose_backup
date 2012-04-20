@@ -1,0 +1,3 @@
+Item Number	Quantity	Price	Expiration Date
+1706		4		0.35	1/2005
+1843		93		2.1	5/2005

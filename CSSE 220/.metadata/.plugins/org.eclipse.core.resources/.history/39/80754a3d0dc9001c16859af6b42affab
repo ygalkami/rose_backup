@@ -1,0 +1,12 @@
+
+public class Markov {
+
+	public Markov(String inputfile, int n, int maxWordsGen, int MaxCharsPerLine) {
+		
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,89 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/csse374-201020-team23/!svn/ver/265/Poker/Poker
+END
+Poker.csproj
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/csse374-201020-team23/!svn/ver/253/Poker/Poker/Poker.csproj
+END
+MoveDialogBox.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/csse374-201020-team23/!svn/ver/186/Poker/Poker/MoveDialogBox.xaml
+END
+MainWindow.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/csse374-201020-team23/!svn/ver/262/Poker/Poker/MainWindow.xaml.cs
+END
+App.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/csse374-201020-team23/!svn/ver/29/Poker/Poker/App.xaml
+END
+GameController.cs
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/repos/csse374-201020-team23/!svn/ver/265/Poker/Poker/GameController.cs
+END
+possible hands.cs
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/repos/csse374-201020-team23/!svn/ver/259/Poker/Poker/possible%20hands.cs
+END
+MoveDialogBox.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/csse374-201020-team23/!svn/ver/247/Poker/Poker/MoveDialogBox.xaml.cs
+END
+App.xaml.cs
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/csse374-201020-team23/!svn/ver/29/Poker/Poker/App.xaml.cs
+END
+MainWindow.xaml
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/csse374-201020-team23/!svn/ver/245/Poker/Poker/MainWindow.xaml
+END
+CircularQueue.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/csse374-201020-team23/!svn/ver/172/Poker/Poker/CircularQueue.cs
+END
+Card.cs
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/repos/csse374-201020-team23/!svn/ver/231/Poker/Poker/Card.cs
+END
+old code snippets.txt
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/repos/csse374-201020-team23/!svn/ver/202/Poker/Poker/old%20code%20snippets.txt
+END
+IGameObserver.cs
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/csse374-201020-team23/!svn/ver/237/Poker/Poker/IGameObserver.cs
+END
+GameState.cs
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/csse374-201020-team23/!svn/ver/261/Poker/Poker/GameState.cs
+END

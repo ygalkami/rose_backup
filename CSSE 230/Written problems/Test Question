@@ -1,0 +1,13 @@
+public static ThreadedBinaryNode getPreorderSuccessor(ThreadedBinaryNode t) {
+if (t == null) return null;
+// If I have childen, return the leftmost one.
+if (!t.isLeftThread) return t.left;
+if (!t.isRightThread) return t.right;
+// If not (I’m a leaf, no both my children are threads),
+// then my successor is the first
+// non-thread node I find when moving right.
+while (t.right != null && t.isRightThread ) {
+t = t.right;
+}
+return t.right; // could be null;
+}

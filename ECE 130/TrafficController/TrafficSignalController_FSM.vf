@@ -1,0 +1,90 @@
+////////////////////////////////////////////////////////////////////////////////
+// Copyright (c) 1995-2003 Xilinx, Inc.
+// All Right Reserved.
+////////////////////////////////////////////////////////////////////////////////
+//   ____  ____ 
+//  /   /\/   / 
+// /___/  \  /    Vendor: Xilinx 
+// \   \   \/     Version : 7.1.04i
+//  \   \         Application : sch2verilog
+//  /   /         Filename : TrafficSignalController_FSM.vf
+// /___/   /\     Timestamp : 02/01/2008 02:20:51
+// \   \  /  \ 
+//  \___\/\___\ 
+//
+//Command: C:/Xilinx/bin/nt/sch2verilog.exe -intstyle ise -family spartan3 -w TrafficSignalController_FSM.sch TrafficSignalController_FSM.vf
+//Design Name: TrafficSignalController_FSM
+//Device: spartan3
+//Purpose:
+//    This verilog netlist is translated from an ECS schematic.It can be 
+//    synthesized and simulated, but it should not be modified. 
+//
+`timescale 1ns / 1ps
+
+module TrafficSignalController_FSM(gClock, 
+                                   gReset, 
+                                   iAutoSensed, 
+                                   iClockEnable, 
+                                   iStartSystem, 
+                                   iTimerDone, 
+                                   oRHGreen, 
+                                   oRHRed, 
+                                   oRHYellow, 
+                                   oStartTimer, 
+                                   oState, 
+                                   oUS40Green, 
+                                   oUS40Red, 
+                                   oUS40Yellow);
+
+    input gClock;
+    input gReset;
+    input iAutoSensed;
+    input iClockEnable;
+    input iStartSystem;
+    input iTimerDone;
+   output oRHGreen;
+   output oRHRed;
+   output oRHYellow;
+   output oStartTimer;
+   output [3:0] oState;
+   output oUS40Green;
+   output oUS40Red;
+   output oUS40Yellow;
+   
+   wire [2:0] i;
+   wire [6:0] o;
+   wire [3:0] XLXN_1;
+   
+   Reg_w4_iv0 XLXI_5 (.ce(iClockEnable), 
+                      .clk(gClock), 
+                      .i(XLXN_1[3:0]), 
+                      .res(gReset), 
+                      .o(oState[3:0]));
+   Op2_NSD XLXI_6 (.a(i[2:0]), 
+                   .b(oState[3:0]), 
+                   .o(XLXN_1[3:0]));
+   Op3_OD XLXI_7 (.a(oState[3:0]), 
+                  .b(), 
+                  .c(), 
+                  .o(o[6:0]));
+   Op1_a XLXI_8 (.a(iAutoSensed), 
+                 .o(i[2]));
+   Op1_a XLXI_9 (.a(iStartSystem), 
+                 .o(i[1]));
+   Op1_a XLXI_10 (.a(iTimerDone), 
+                  .o(i[0]));
+   Op1_a XLXI_14 (.a(o[6]), 
+                  .o(oUS40Red));
+   Op1_a XLXI_15 (.a(o[5]), 
+                  .o(oUS40Yellow));
+   Op1_a XLXI_16 (.a(o[4]), 
+                  .o(oUS40Green));
+   Op1_a XLXI_17 (.a(o[3]), 
+                  .o(oRHRed));
+   Op1_a XLXI_18 (.a(o[2]), 
+                  .o(oRHYellow));
+   Op1_a XLXI_19 (.a(o[1]), 
+                  .o(oRHGreen));
+   Op1_a XLXI_20 (.a(o[0]), 
+                  .o(oStartTimer));
+endmodule

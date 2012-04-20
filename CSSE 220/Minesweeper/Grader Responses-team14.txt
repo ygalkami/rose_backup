@@ -1,0 +1,24 @@
+Grader Responses - Team 14  gerth pick
+
+12/20/07 UML diagram (Molly Richardson)-
+Which class is your main class. I'm going to assume its Window.
+Does Window create a JComponent?
+Square should connect to JButton and JFrame separately, not in a line.
+If you have an arraylist of buttons in board, you are going to need
+to inherit from JButton.
+What is WindowComponent for?
+Maybe you should name your classes with more information as to what
+they might be doing, it will not only help me the grader, but also
+you as you try to work through your code as to what does what exactly.
+Feel free to email me if you have any questions or need help.
+
+
+1/6/08 IEP (Claude Anderson)
+YOu should be more specific about how you will test the various phases. 
+I.e., how will you know if each is correct?
+Where do you actually test what happens when you left/right click various kinds of squares?
+That should probably involve several stages.
+I an concerned that you have too little in your schedule for 1/7 and 1/8, leaving too much to be done after that.
+
+
+

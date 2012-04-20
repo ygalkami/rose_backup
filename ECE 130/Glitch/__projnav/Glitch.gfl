@@ -1,0 +1,43 @@
+ProjNav -> New -> Test Fixture
+__projnav/createTF.err
+# XST (Creating Lso File) : 
+Glitch.lso
+# Check Syntax
+Glitch.stx
+# xst flow : RunXST
+Glitch_summary.html
+# xst flow : RunXST
+Glitch.syr
+Glitch.prj
+Glitch.sprj
+Glitch.ana
+Glitch.stx
+Glitch.cmd_log
+# XST (Creating Lso File) : 
+Glitch.lso
+# xst flow : RunXST
+Glitch_summary.html
+# xst flow : RunXST
+Glitch.syr
+Glitch.prj
+Glitch.sprj
+Glitch.ana
+Glitch.stx
+Glitch.cmd_log
+# XST (Creating Lso File) : 
+Glitch.lso
+# xst flow : RunXST
+Glitch_summary.html
+# xst flow : RunXST
+Glitch.syr
+Glitch.prj
+Glitch.sprj
+Glitch.ana
+Glitch.stx
+Glitch.cmd_log
+Glitch.ngc
+Glitch.ngr
+# xst flow : RunXST
+Glitch_summary.html
+# xst flow : RunXST
+Glitch_summary.html

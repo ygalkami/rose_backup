@@ -1,0 +1,31 @@
+xst -intstyle ise -ifn __projnav/SimpleGateCircuit.xst -ofn SimpleGateCircuit.syr
+netgen -intstyle ise -w -ofmt verilog -sim SimpleGateCircuit.ngc SimpleGateCircuit_synthesis.v
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\ece 130\simplegatecircuit\simplegatecircuit/_ngo" -nt timestamp -uc SimpleGateCircuit.ucf  -p xc3s200-ft256-4 SimpleGateCircuit.ngc SimpleGateCircuit.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o SimpleGateCircuit_map.ncd SimpleGateCircuit.ngd SimpleGateCircuit.pcf
+par -w -intstyle ise -ol std -t 1 SimpleGateCircuit_map.ncd SimpleGateCircuit.ncd SimpleGateCircuit.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml SimpleGateCircuit SimpleGateCircuit.ncd -o SimpleGateCircuit.twr SimpleGateCircuit.pcf
+bitgen -intstyle ise -f SimpleGateCircuit.ut SimpleGateCircuit.ncd
+xst -intstyle ise -ifn __projnav/SimpleGateCircuit.xst -ofn SimpleGateCircuit.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\ece 130\simplegatecircuit\simplegatecircuit/_ngo" -nt timestamp -uc SimpleGateCircuit.ucf  -p xc3s200-ft256-4 SimpleGateCircuit.ngc SimpleGateCircuit.ngd
+netgen -intstyle ise -w -ofmt verilog -sim SimpleGateCircuit.ngc SimpleGateCircuit_synthesis.v
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o SimpleGateCircuit_map.ncd SimpleGateCircuit.ngd SimpleGateCircuit.pcf
+par -w -intstyle ise -ol std -t 1 SimpleGateCircuit_map.ncd SimpleGateCircuit.ncd SimpleGateCircuit.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml SimpleGateCircuit SimpleGateCircuit.ncd -o SimpleGateCircuit.twr SimpleGateCircuit.pcf
+bitgen -intstyle ise -f SimpleGateCircuit.ut SimpleGateCircuit.ncd
+xst -intstyle ise -ifn __projnav/SimpleGateCircuit.xst -ofn SimpleGateCircuit.syr
+xst -intstyle ise -ifn __projnav/SimpleGateCircuit.xst -ofn SimpleGateCircuit.syr
+xst -intstyle ise -ifn __projnav/SimpleGateCircuit.xst -ofn SimpleGateCircuit.syr
+xst -intstyle ise -ifn __projnav/SimpleGateCircuit.xst -ofn SimpleGateCircuit.syr
+xst -intstyle ise -ifn __projnav/SimpleGateCircuit.xst -ofn SimpleGateCircuit.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\ece 130\simplegatecircuit\simplegatecircuit/_ngo" -nt timestamp -uc SimpleGateCircuit.ucf  -p xc3s200-ft256-4 SimpleGateCircuit.ngc SimpleGateCircuit.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o SimpleGateCircuit_map.ncd SimpleGateCircuit.ngd SimpleGateCircuit.pcf
+par -w -intstyle ise -ol std -t 1 SimpleGateCircuit_map.ncd SimpleGateCircuit.ncd SimpleGateCircuit.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml SimpleGateCircuit SimpleGateCircuit.ncd -o SimpleGateCircuit.twr SimpleGateCircuit.pcf
+bitgen -intstyle ise -f SimpleGateCircuit.ut SimpleGateCircuit.ncd
+bitgen -intstyle ise -f SimpleGateCircuit.ut SimpleGateCircuit.ncd
+xst -intstyle ise -ifn __projnav/SimpleGateCircuit.xst -ofn SimpleGateCircuit.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\ece 130\simplegatecircuit\simplegatecircuit/_ngo" -nt timestamp -uc SimpleGateCircuit.ucf  -p xc3s200-ft256-4 SimpleGateCircuit.ngc SimpleGateCircuit.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o SimpleGateCircuit_map.ncd SimpleGateCircuit.ngd SimpleGateCircuit.pcf
+par -w -intstyle ise -ol std -t 1 SimpleGateCircuit_map.ncd SimpleGateCircuit.ncd SimpleGateCircuit.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml SimpleGateCircuit SimpleGateCircuit.ncd -o SimpleGateCircuit.twr SimpleGateCircuit.pcf
+bitgen -intstyle ise -f SimpleGateCircuit.ut SimpleGateCircuit.ncd

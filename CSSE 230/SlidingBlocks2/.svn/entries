@@ -1,0 +1,147 @@
+8
+
+dir
+97
+http://svn.cs.rose-hulman.edu/repos/csse230-sliding-200830-28/SlidingBlocks
+http://svn.cs.rose-hulman.edu/repos/csse230-sliding-200830-28
+
+
+
+2008-04-30T21:35:22.416163Z
+97
+pickdp
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8f3b3355-b64a-0410-8853-c3a1274cb1cb
+
+.classpath
+file
+
+
+
+
+2008-04-30T21:35:42.537806Z
+d79fbf1bb9bfc211a8aa8c1a1c188a5b
+2008-04-13T14:11:55.752185Z
+1
+anderson
+
+CS Block Solver Milestone 1.doc
+file
+
+
+
+
+2008-04-30T21:35:42.537806Z
+db660ed908df870f6f919390ff7d8e05
+2008-04-17T14:54:55.897073Z
+2
+salisbjm
+has-props
+
+easy
+dir
+
+PreviousConfig.java
+file
+102
+
+
+delete
+2008-05-01T17:08:45.152062Z
+7e6801389bf0d84162d72b05f81fa993
+2008-05-01T17:42:33.178057Z
+102
+pickdp
+
+.project
+file
+
+
+
+
+2008-04-30T21:35:42.553431Z
+029a90e63c8bfaf46e5705c2e639deb0
+2008-04-17T14:54:55.897073Z
+2
+salisbjm
+
+lib
+dir
+
+Move.java
+file
+
+
+
+
+2008-04-30T21:35:42.553431Z
+e783faf5bf37b64aae0877cef32d8309
+2008-04-30T19:57:56.615583Z
+96
+pickdp
+
+README.docx
+file
+
+
+
+
+2008-04-30T21:35:42.569057Z
+3aae45acf033b5f47f5033fefd95d719
+2008-04-27T23:58:24.734938Z
+80
+salisbjm
+has-props
+
+Block.java
+file
+99
+
+
+
+2008-04-30T22:45:42.329450Z
+bb7c96c265c40da30e0e4c33ffae1dc7
+2008-05-01T03:16:24.258002Z
+99
+pickdp
+
+Solver.java
+file
+105
+
+
+
+2008-05-01T18:16:59.872639Z
+b62408e3c5059e20b554daa019ca2ca5
+2008-05-01T18:16:51.975708Z
+105
+pickdp
+
+TestBlock.java
+file
+102
+
+
+delete
+2008-05-01T17:27:15.745590Z
+19c76bdf8030f4d0ae3a6311727f0986
+2008-05-01T17:42:33.178057Z
+102
+pickdp
+
+hard
+dir
+

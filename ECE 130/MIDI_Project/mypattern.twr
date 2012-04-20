@@ -1,0 +1,144 @@
+--------------------------------------------------------------------------------
+Release 7.1.04i Trace H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+C:/Xilinx/bin/nt/trce.exe -ise
+c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\MIDI_Project.ise
+-intstyle ise -e 3 -l 3 -s 4 -xml MyPattern MyPattern.ncd -o MyPattern.twr
+MyPattern.pcf
+
+
+Design file:              mypattern.ncd
+Physical constraint file: mypattern.pcf
+Device,speed:             xc3s200,-4 (PRODUCTION 1.37 2005-07-22)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+----------------+---------+
+Source Pad     |Destination Pad |  Delay  |
+---------------+----------------+---------+
+iScheme        |oLightSelect<0> |    8.527|
+iScheme        |oLightSelect<10>|   10.140|
+iScheme        |oLightSelect<11>|    9.804|
+iScheme        |oLightSelect<12>|    8.519|
+iScheme        |oLightSelect<13>|    8.517|
+iScheme        |oLightSelect<14>|    8.302|
+iScheme        |oLightSelect<15>|   10.364|
+iScheme        |oLightSelect<1> |   10.242|
+iScheme        |oLightSelect<2> |   10.567|
+iScheme        |oLightSelect<3> |    8.519|
+iScheme        |oLightSelect<4> |   10.627|
+iScheme        |oLightSelect<5> |   10.138|
+iScheme        |oLightSelect<6> |    8.903|
+iScheme        |oLightSelect<7> |    8.275|
+iScheme        |oLightSelect<8> |   10.729|
+iScheme        |oLightSelect<9> |    8.275|
+iStatus<0>     |oLightSelect<0> |    9.585|
+iStatus<0>     |oLightSelect<10>|    9.404|
+iStatus<0>     |oLightSelect<11>|   10.205|
+iStatus<0>     |oLightSelect<12>|    9.255|
+iStatus<0>     |oLightSelect<13>|   10.192|
+iStatus<0>     |oLightSelect<14>|    8.975|
+iStatus<0>     |oLightSelect<15>|   10.389|
+iStatus<0>     |oLightSelect<1> |   10.643|
+iStatus<0>     |oLightSelect<2> |   10.575|
+iStatus<0>     |oLightSelect<3> |    9.593|
+iStatus<0>     |oLightSelect<4> |   11.338|
+iStatus<0>     |oLightSelect<5> |   10.539|
+iStatus<0>     |oLightSelect<6> |    9.639|
+iStatus<0>     |oLightSelect<7> |    8.201|
+iStatus<0>     |oLightSelect<8> |   10.737|
+iStatus<0>     |oLightSelect<9> |    8.201|
+iStatus<1>     |oLightSelect<0> |    9.984|
+iStatus<1>     |oLightSelect<10>|    9.570|
+iStatus<1>     |oLightSelect<11>|    9.235|
+iStatus<1>     |oLightSelect<12>|    9.991|
+iStatus<1>     |oLightSelect<13>|   10.445|
+iStatus<1>     |oLightSelect<14>|    9.157|
+iStatus<1>     |oLightSelect<15>|   10.254|
+iStatus<1>     |oLightSelect<1> |    9.582|
+iStatus<1>     |oLightSelect<2> |    9.817|
+iStatus<1>     |oLightSelect<3> |   10.325|
+iStatus<1>     |oLightSelect<4> |   10.485|
+iStatus<1>     |oLightSelect<5> |    9.569|
+iStatus<1>     |oLightSelect<6> |    9.713|
+iStatus<1>     |oLightSelect<7> |    9.142|
+iStatus<1>     |oLightSelect<8> |   10.412|
+iStatus<1>     |oLightSelect<9> |    9.142|
+iStatus<2>     |oLightSelect<0> |    9.639|
+iStatus<2>     |oLightSelect<10>|    9.933|
+iStatus<2>     |oLightSelect<11>|    9.011|
+iStatus<2>     |oLightSelect<12>|    9.644|
+iStatus<2>     |oLightSelect<13>|   10.585|
+iStatus<2>     |oLightSelect<14>|    9.276|
+iStatus<2>     |oLightSelect<15>|    9.700|
+iStatus<2>     |oLightSelect<1> |    9.364|
+iStatus<2>     |oLightSelect<2> |   10.458|
+iStatus<2>     |oLightSelect<3> |    9.977|
+iStatus<2>     |oLightSelect<4> |   11.414|
+iStatus<2>     |oLightSelect<5> |    9.345|
+iStatus<2>     |oLightSelect<6> |    9.659|
+iStatus<2>     |oLightSelect<7> |    8.792|
+iStatus<2>     |oLightSelect<8> |   10.638|
+iStatus<2>     |oLightSelect<9> |    8.792|
+iStatus<3>     |oLightSelect<0> |    9.486|
+iStatus<3>     |oLightSelect<10>|   11.250|
+iStatus<3>     |oLightSelect<11>|    9.009|
+iStatus<3>     |oLightSelect<12>|    9.491|
+iStatus<3>     |oLightSelect<13>|   10.653|
+iStatus<3>     |oLightSelect<14>|    9.471|
+iStatus<3>     |oLightSelect<15>|   10.094|
+iStatus<3>     |oLightSelect<1> |    9.432|
+iStatus<3>     |oLightSelect<2> |   10.330|
+iStatus<3>     |oLightSelect<3> |    9.856|
+iStatus<3>     |oLightSelect<4> |   11.842|
+iStatus<3>     |oLightSelect<5> |    9.343|
+iStatus<3>     |oLightSelect<6> |    9.845|
+iStatus<3>     |oLightSelect<7> |    8.639|
+iStatus<3>     |oLightSelect<8> |   10.853|
+iStatus<3>     |oLightSelect<9> |    8.639|
+iStatus<4>     |oLightOFF       |   11.490|
+iStatus<4>     |oLightON        |   12.933|
+iVelocity<0>   |oLightOFF       |   10.392|
+iVelocity<0>   |oLightON        |   10.632|
+iVelocity<0>   |oLightSelect<15>|   10.702|
+iVelocity<1>   |oLightOFF       |   10.381|
+iVelocity<1>   |oLightON        |   10.871|
+iVelocity<1>   |oLightSelect<15>|   10.690|
+iVelocity<2>   |oLightOFF       |   10.332|
+iVelocity<2>   |oLightON        |    9.783|
+iVelocity<2>   |oLightSelect<15>|   11.034|
+iVelocity<3>   |oLightOFF       |   11.650|
+iVelocity<3>   |oLightON        |   13.093|
+iVelocity<3>   |oLightSelect<15>|   10.560|
+iVelocity<4>   |oLightOFF       |   11.717|
+iVelocity<4>   |oLightON        |   13.160|
+iVelocity<5>   |oLightOFF       |   10.368|
+iVelocity<5>   |oLightON        |   11.811|
+iVelocity<6>   |oLightOFF       |   10.438|
+iVelocity<6>   |oLightON        |   11.881|
+iVelocity<7>   |oLightOFF       |    9.861|
+iVelocity<7>   |oLightON        |   11.304|
+---------------+----------------+---------+
+
+Analysis completed Sun Jan 13 20:35:49 2008
+--------------------------------------------------------------------------------
+
+
+
+Peak Memory Usage: 80 MB

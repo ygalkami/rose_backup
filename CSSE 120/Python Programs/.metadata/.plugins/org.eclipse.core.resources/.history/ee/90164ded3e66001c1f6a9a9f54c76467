@@ -1,0 +1,3 @@
+x, y = raw_input("Enter two integers comma separated: ")
+
+print "The sum of the integers you entered is " + (int(x)+int(y))

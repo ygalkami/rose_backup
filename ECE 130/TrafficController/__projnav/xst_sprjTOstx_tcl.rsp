@@ -1,0 +1,1 @@
+set allSynthModules {Op1_Buffer.MOD Reg_w4_iv0.MOD Op2_NSD.MOD Op1_OD.MOD TrafficSignalController_FSM.MOD TrafficSignalController_TOPLEVEL.MOD}

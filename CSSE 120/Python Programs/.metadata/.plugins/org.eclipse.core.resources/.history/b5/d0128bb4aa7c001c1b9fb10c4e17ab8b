@@ -1,0 +1,132 @@
+# This program implements the game Quixo.
+# It was written as a team project for CSSE 120, Fall 2007.
+# TODO: REPLACE THE SECTION AND TEAM NUMBER IN THE FOLLOWING LINE
+# Section 1, Team 13
+# Team members:
+# David Pick
+# Aaron Blankenbaker
+
+from graphics import *
+
+win = GraphWin("Quixo", 500, 500)
+boardsize = 5
+pps = 100
+inset = 15
+board = [0] * boardsize
+for i in range(boardsize):
+    board[i] = [0] * boardsize
+
+class block():
+    def __init__(self, piece, row, col, placerow, placecol):
+        if piece == "X":
+            self.turn = True
+        else:
+            self.turn = False
+            
+    def drawX(self, row, col):
+        image = Image(Point(row * pps, col * pps), filename)
+        image.draw(win)
+        
+    def drawO(self, row, col):
+        image = Image(Point(row * pps, col * pps), filename)
+        image.draw(win)
+        
+def drawboard(boardsize):
+    for i in range(boardsize):
+        x1 = 0
+        x2 = boardsize * pps
+        y1 = i * pps
+        y2 = i * pps
+        line = Line(Point(x1, y1), Point(x2, y2))
+        line.draw(win)
+
+    for i in range(boardsize):
+        x1 = i * pps
+        x2 = i * pps
+        y1 = 0
+        y2 = boardsize * pps
+        line = Line(Point(x1, y1), Point(x2, y2))
+        line.draw(win)
+
+def getmouse():
+    turn = True
+    count = 0
+    
+    while gameover() != True:
+        clickpoint = win.getMouse()
+        x = clickpoint.getX()
+        y = clickpoint.getY()
+        
+        col = x / pps
+        row = y / pps
+        placepoint = win.getMouse()
+        x = placepoint.getX()
+        y = placepoint.getY()
+        
+        placerow = x / pps
+        placerow = y / pps
+        block(turn, row, col, placerow, placecol)
+        
+drawboard(boardsize)
+win.getMouse()
+
+def getUpperLeft(row,col):
+    x1 = pps * (col + 1) - inset
+    y1 = pps * (row + 1) - inset
+    return Point(x1, y1)
+
+def getLowerLeft(row, col):
+    x2 = pps * (col + 1) - inset
+    y2 = pps * row + inset
+    return Point(x2, y2)
+
+def getUpperRight(row, col):
+    x1 = pps * col + inset
+    y1 = pps * (row + 1) - inset
+    return Point(x1, y1)
+    
+def getLowerRight(row, col):
+    x2 = pps * col + inset
+    y2 = pps * row + inset
+    return Point(x2, y2)
+
+def DrawX(row, col):
+    #draw a X in a specified row and col
+    line1 = Line(getUpperLeft(row, col), getLowerRight(row, col))
+    line2 = Line(getUpperRight(row, col), getLowerLeft(row, col))
+    line1.draw(win)
+    line2.draw(win)
+
+def DrawO(row, col):
+    #draw an O in a specified row and col
+    x = pps * col + 50
+    y = pps * row + 50
+    circle = Circle(Point(x, y), 35)
+    circle.draw(win)
+
+def createBoard(board):
+    newboard = [0]
+    for i in range(boardsize):
+        tempstring = board[i]
+        for j in range(boardsize):
+            if tempstring[j] == "X":
+                DrawX(i, j)
+            if tempstring[j] == "O":
+                DrawO(i, j)
+    return newboard
+
+def printBoard(board):
+    for i in range(boardsize):
+        strng=""
+        for j in range(boardsize):
+            if board[i][j] == 0:
+                strng += "-"
+            if board[i][j] == 1:
+                strng += "x"
+            if board[i][j] == 2:
+                strng += "o"
+        print strng
+    
+printBoard(board)
+createBoard(['----O', 'XX--X', 'XO---', 'OO---', 'X----'])
+win.getMouse()

@@ -1,0 +1,89 @@
+<head>
+<link rel="stylesheet" type="text/css" href="../../style/style.css" />
+</head>
+
+
+
+<h1> Markov Program Turnin Instructions</h1>
+
+Markov documents:&nbsp;&nbsp; <a href="index-Markov.html">index</a>&nbsp;&nbsp;
+<a href="overview.html">overview</a>&nbsp;&nbsp;&nbsp; <a href="markov.html">
+markov</a>&nbsp;&nbsp;&nbsp; <a href="justification.html">justification</a>&nbsp;&nbsp;
+<a href="turnin-instructions.html">turnin-instructions</a>&nbsp;&nbsp;&nbsp;
+<a href="examples.html">code examples</a>
+&nbsp;&nbsp;&nbsp; <a href="MarkovPartners.xls">partners</a>
+&nbsp;&nbsp;&nbsp; <a href="importingEclipseClasses.html">importing classes</a>
+&nbsp;&nbsp;&nbsp; <a href="multiset/index.html">MultiSet</a>
+
+
+<h2> Turning in your program and testing it.
+</h2>
+
+We have attempted to set up a test framework that you can use.  It should catch the most glaring errors that your program may have.  You should write some test files of your own in order to make sure that your program is tested thoroughly; we reserve the right to run the same script with different input files.&nbsp;
+
+You'll have to follow the instructions very carefully in order to run our script, but we think it will be worthwhile to do that.
+
+
+<p>If you work with a partner ( you may be allowed to do this in some terms), 
+only one partner should submit the program; include a comment near the beginning 
+that lists the names of both partners.</p>
+
+
+<h2>Copying files to your turnin directory on AFS:</h2>
+
+<b>For Milestone 2</b>, use AFS Drive Mapper or Network Identity Manager or an FTP program such as SecureFX&nbsp; to connect&nbsp; to AFS.&nbsp; If you 
+use&nbsp; FTP, the address is <b>
+afs.rose-hulman.edu</b>.&nbsp; Whichever you choose, you must copy all of the <b>.java</b> files from your project (<b>and 
+no other files or folders</b>)  to your turnin folder on AFS, 
+which is <tt><br>
+/class/cs/csse220/csse220-200810/turnin/your_user_name/Markov</tt> .&nbsp; Be sure that you copy 
+<tt>FixedLengthQueue.java.&nbsp; </tt>
+<p>Only one partner should actually submit it to AFS.&nbsp; If both of you are 
+submitting it during the testing phase so you can run the grading script, make 
+sure that one of you removes the files from AFS before the due date.</p>
+<p>Each partner's name should be in a comment at the beginning of your <b>
+Markov.java </b>file.</p>
+<p><b>For Milestone 2</b>, the instructions are the same, but put your files in the <b>MarkovPart2</b> folder.</p>
+
+
+<h2>Using  MultiSet in your turnin:</h2>
+
+When you run our script, the two <b>Multiset</b>&nbsp; .class files will be copied into your turnin 
+folder.
+
+<p>You do not need to put them there yourself, but if you do, be aware that 
+they may be overwritten by our files. </p>
+
+<h2>Running the check script (be sure to run it soon, even if your program is 
+not completely working yet):</h2>
+
+Open SecureCRT (or another ssh program, such as puTTY), and connect to 
+<b>addiator.rose-hulman.edu</b>. Type (everything is case-sensitive) <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <tt>cd /class/csse/csse220/csse220-200810</tt> 
+(or whatever the current term number is)<br>
+
+to navigate to the class folder. 
+Note that you can often type part of a folder/file name and press the TAB key to 
+let the LINUX shell complete the name for you.<p>Then the commands
+
+  <tt>./check Markov</tt>
+
+or
+
+  <tt>./check MarkovPart2</tt>
+
+will run the test scripts. (For Milestone 1, it is only necessary to run the part 1
+test. To view your results, go to your results folder: <tt>cd turnin/your_user_name/Markov/Results</tt>
+
+and type
+
+    <tt>cat compile-errors</tt>
+
+followed by
+
+    <tt>cat AAA-grading-report.html</tt>
+
+to view your report. Alternatively you can open these files in an easier-to-read format through SecureFX or Leash/AFSDriveMapper/NetworkIdentityManager (depending on your computer vintage).
+<br>
+If you have any questions,  post to the Markov discussion forum in our ANGEL course, 
+or e-mail me or a course assistant.</p>

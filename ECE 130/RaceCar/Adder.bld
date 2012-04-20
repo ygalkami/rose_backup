@@ -1,0 +1,22 @@
+Release 7.1.04i ngdbuild H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\courses\ece 130\racecar/_ngo" -nt timestamp -i -p xc3s200-ft256-4
+Adder.ngc Adder.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/Courses/ECE
+130/RaceCar/Adder.ngc' ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 59868 kilobytes
+
+Writing NGD file "Adder.ngd" ...
+
+Writing NGDBUILD log file "Adder.bld"...

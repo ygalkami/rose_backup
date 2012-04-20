@@ -1,0 +1,87 @@
+import java.awt.FlowLayout;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import java.awt.geom.Point2D;
+import java.util.ArrayList;
+
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+
+public class Window {
+	
+	static int EASY_FRAME_WIDTH = 160;
+	static int EASY_FRAME_HEIGHT = 255;
+	
+	static int MEDIUM_FRAME_WIDTH = 280;
+	static int MEDIUM_FRAME_HEIGHT = 375;
+	
+	static int EXPERT_FRAME_WIDTH = 500;
+	static int EXPERT_FRAME_HEIGHT = 595;
+
+	//implement user choice of difficulity
+
+	static int easy = 9;
+	static int medium = 16;
+	static int expert = 25;
+	
+	static int easybombs = 12;
+	static int mediumbombs = 44;
+	static int expertbombs = 99;
+	
+	static Square [][] board = new Square[expert][expert];
+	
+	static JFrame frame_Easy = new MenuFrame();
+	static JFrame frame_Medium = new MenuFrame();
+	static JFrame frame_Expert = new MenuFrame();
+
+	
+	public static void createboard(JFrame frame, int pieces, int frame_width, int frame_height) {
+		frame.setSize(frame_width, frame_height);
+		frame.setTitle("Minesweeper");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
+		JPanel panel = new JPanel();
+		
+		for (int i=0; i<pieces; i++) {
+			for (int j=0; j<pieces; j++) {
+				board[i][j] = new Square();
+				board[i][j].setText("test");
+				panel.add(board[i][j]);
+			}
+		}
+		
+		panel.setLayout(new GridLayout(pieces, pieces));
+		frame.add(panel);
+		frame.setVisible(false);
+	}
+	
+	public static void setBombs (int boardSize, int numBombs){
+		Square [] Bombs = new Square [numBombs];
+		int setBombs = 1;
+		while(setBombs <=numBombs){
+				double indexRow = boardSize*Math.random();
+				double indexColumn = boardSize*Math.random();
+				Square square = board[(int)java.lang.Math.round(indexRow)][(int)java.lang.Math.round(indexColumn)];
+				square.setBomb();
+				setBombs++;
+		}
+	}
+	
+	public static void main(String [] args){
+		createboard(frame_Easy, easy, EASY_FRAME_WIDTH, EASY_FRAME_HEIGHT);
+		createboard(frame_Medium, medium, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
+		createboard(frame_Expert, expert, EXPERT_FRAME_WIDTH, EXPERT_FRAME_HEIGHT);
+		//setBombs(easy, easybombs);
+		setBombs(medium,mediumbombs);
+		//setBombs(expert, expertbombs);
+		System.out.println("This is on line 77");
+		for (int i=0; i<medium; i++){
+			for (int j=0; j<medium; j++) {
+				System.out.println(board[i][j].isBomb);
+			}
+		}
+		
+		frame_Easy.show();
+	}
+}

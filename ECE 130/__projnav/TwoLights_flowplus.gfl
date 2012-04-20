@@ -1,0 +1,12 @@
+# XST flow : Creating project file
+TwoLights.prj
+# xst flow : RunXST
+TwoLights.prj
+__projnav/TwoLights.xst
+./xst
+# XST flow : Creating project file
+TwoLights.prj
+# xst flow : RunXST
+TwoLights.prj
+__projnav/TwoLights.xst
+./xst

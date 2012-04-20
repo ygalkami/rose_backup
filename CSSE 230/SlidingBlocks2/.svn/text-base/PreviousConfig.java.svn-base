@@ -1,0 +1,37 @@
+import java.awt.geom.Point2D;
+import java.util.HashMap;
+import java.util.LinkedList;
+
+
+public class PreviousConfig {
+	public int hash;
+	public LinkedList<Move> moves;
+	public Block[] configuration;
+	
+	public PreviousConfig(Block[] config, LinkedList<Move> moves) {
+		this.moves = moves;
+		this.configuration = config;
+	}
+	
+	public PreviousConfig(Block[] config) {
+		this.configuration = config;
+		this.moves = new LinkedList<Move>();
+	}
+	
+	public PreviousConfig() {
+		this.moves = new LinkedList<Move>();
+		this.configuration = new Block[Solver.numblocks];
+	}
+	
+	public String toString() {
+		String returnString = "";
+		for (Block a : this.configuration) {
+			if (a != null)
+				returnString += a.toString() + " ";
+			else
+				break;
+		}
+		
+		return returnString;
+	}
+}

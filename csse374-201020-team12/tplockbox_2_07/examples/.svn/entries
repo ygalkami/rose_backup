@@ -1,0 +1,37 @@
+9
+
+dir
+72
+http://svn.csse.rose-hulman.edu/repos/csse374-201020-team12/tplockbox_2_07/examples
+http://svn.csse.rose-hulman.edu/repos/csse374-201020-team12
+
+
+
+2010-02-14T06:18:00.808907Z
+42
+pickdp
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+36a076bd-f613-4b8a-b4d0-e194d9bddd67
+
+Kylix
+dir
+
+Delphi
+dir
+
+CBuilder
+dir
+

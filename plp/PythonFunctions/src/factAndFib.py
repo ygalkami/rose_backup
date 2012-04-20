@@ -1,0 +1,61 @@
+# A factorial warm-up, plus a couple of implementations of Fibonacci.
+# by David Pick, 9/7/09
+
+# Very nice! --CCC
+
+import unittest
+import time
+
+def fact(n):
+    """Computes the factorial of the given number"""
+    if n == 1:
+        return 1
+    else:
+        return n * fact(n - 1)
+    
+def fib(n):
+    """Returns the nth fibionaci number"""
+    if n == 1 or n == 2:
+        return 1
+    elif n == 0:
+        return 0
+    else:
+        return fib(n - 1) + fib(n - 2)
+
+
+def cached_fib(n, cache = {0:0, 1:1}):
+    """Returns the nth fibionaci number"""
+    if not n in cache:
+        cache[n] = cached_fib(n - 1) + cached_fib(n - 2)
+    return cache[n]
+    
+# Do you find unittest nicer than doctest?  I haven't used unittest before. --CCC
+class TestFunctions(unittest.TestCase):
+
+    def test_fact(self):
+        self.assertEqual(fact(4), 24)
+        self.assertEqual(fact(5), 120)
+        self.assertEqual(fact(6), 720)
+        self.assertNotEqual(fact(1), 5)
+        self.assertNotEqual(fact(10), 42)
+        
+    def test_fib(self):
+        start = time.time()
+        self.assertEqual(fib(1), 1)
+        self.assertEqual(fib(6), 8)
+        self.assertNotEqual(fib(10), 42)
+        end = time.time()
+        print "Regular fib took " + str(end - start) + " sec to run"
+        
+    def test_cached_fib(self):
+        start = time.time()
+        self.assertEqual(cached_fib(1), 1)
+        self.assertEqual(cached_fib(6), 8)
+        self.assertNotEqual(cached_fib(10), 42)
+        end = time.time()
+        print "Cached fib took " + str(end - start) + " sec to run"
+        
+        
+        
+"The cached version of fib, runs much much faster"
+unittest.main()

@@ -1,0 +1,76 @@
+# This program implements the game Quixo.
+# It was written as a team project for CSSE 120, Fall 2007.
+# TODO: REPLACE THE SECTION AND TEAM NUMBER IN THE FOLLOWING LINE
+# Section 1, Team 13
+# Team members:
+# David Pick
+
+from graphics import *
+
+win = GraphWin("Quixo", 500, 500)
+boardsize = 5
+pps = 100
+board = [0] * boardsize
+for i in range(boardsize):
+    board[i] = [0] * boardsize
+
+class block():
+    def __init__(self, piece, row, col, rotate):
+        if piece == "X":
+            self.turn = True
+        else:
+            self.turn = False
+            
+    def drawX(self, row, col):
+        image = Image(Point(row * pps, col * pps), filename)
+        image.draw(win)
+        
+    def drawO(self, row, col):
+        image = Image(Point(row * pps, col * pps), filename)
+        image.draw(win)
+        
+def drawboard(boardsize):
+    for i in range(boardsize):
+        x1 = 0
+        x2 = boardsize * pps
+        y1 = i * pps
+        y2 = i * pps
+        line = Line(Point(x1, y1), Point(x2, y2))
+        line.draw(win)
+
+    for i in range(boardsize):
+        x1 = i * pps
+        x2 = i * pps
+        y1 = 0
+        y2 = boardsize * pps
+        line = Line(Point(x1, y1), Point(x2, y2))
+        line.draw(win)
+
+def getmouse():
+    turn = True
+    count = 0
+    
+    while gameover() != True:
+        point = win.getMouse()
+        x = point.getX()
+        y = point.getY()
+        
+        col = x / pps
+        row = y / pps
+        
+        
+drawboard(boardsize)
+win.getMouse()
+
+def printBoard(board):
+    for i in range(boardsize):
+        for j in range(boardsize):
+            if board[i][j] == 0:
+                board[i][j] = "-"
+            if board[i][j] == 1:
+                board[i][j] = "x"
+            if board[i][j] == 2:
+                board[i][j] - "o"
+    print board
+    
+printBoard(board)

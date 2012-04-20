@@ -1,0 +1,1569 @@
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Compiling verilog file "SimpleGateCircuit.v"
+tdtfi(verilog) completed successfully.
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SimpleGateCircuit.v"
+Module <SimpleGateCircuit> compiled
+No errors in compilation
+Analysis of file <"SimpleGateCircuit.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <SimpleGateCircuit>.
+Module <SimpleGateCircuit> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SimpleGateCircuit>.
+    Related source file is "SimpleGateCircuit.v".
+WARNING:Xst:1306 - Output <oMidLeft> is never assigned.
+WARNING:Xst:647 - Input <iA> is never used.
+WARNING:Xst:647 - Input <iB> is never used.
+WARNING:Xst:1306 - Output <oLeft> is never assigned.
+WARNING:Xst:647 - Input <iC> is never used.
+WARNING:Xst:647 - Input <iD> is never used.
+WARNING:Xst:1306 - Output <oRight> is never assigned.
+WARNING:Xst:1306 - Output <oMidRight> is never assigned.
+Unit <SimpleGateCircuit> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SimpleGateCircuit> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SimpleGateCircuit, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of bonded IOBs:                  8  out of    173     4%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+=========================================================================
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Generate Post-Synthesis Simulation Model".
+
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\ece 130\simplegatecircuit\simplegatecircuit/_ngo" -nt timestamp -uc
+SimpleGateCircuit.ucf -p xc3s200-ft256-4 SimpleGateCircuit.ngc
+SimpleGateCircuit.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/ECE
+130/SimpleGateCircuit/SimpleGateCircuit/SimpleGateCircuit.ngc' ...
+Loading design module "C:\Documents and Settings\pickdp\My Documents\ECE
+130\SimpleGateCircuit\SimpleGateCircuit/SimpleGateCircuit.ngc"...
+WARNING:NgdBuild:578 - Design contains no instances.
+
+Applying constraints in "SimpleGateCircuit.ucf" to the design...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Writing NGD file "SimpleGateCircuit.ngd" ...
+
+Writing NGDBUILD log file "SimpleGateCircuit.bld"...
+
+NGDBUILD done.
+
+
+
+
+Started process "Map".
+
+Using target part "3s200ft256-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   10
+Logic Utilization:
+Logic Distribution:
+    Number of Slices containing only related logic:       0 out of       0    0%
+    Number of Slices containing unrelated logic:          0 out of       0    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+  Number of bonded IOBs:                8 out of     173    4%
+
+Total equivalent gate count for design:  0
+Additional JTAG gate count for IOBs:  384
+Peak Memory Usage:  104 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "SimpleGateCircuit_map.mrp" for details.
+
+
+
+
+Started process "Place & Route".
+
+
+
+
+Constraints file: SimpleGateCircuit.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "SimpleGateCircuit" is an NCD, version 3.1, device xc3s200, package ft256,
+speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.37 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs             8 out of 173     4%
+      Number of LOCed IOBs             8 out of 8     100%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+WARNING:Par:276 - The signal iA_IBUF has no load
+WARNING:Par:276 - The signal iB_IBUF has no load
+WARNING:Par:275 - The signal oMidRight_OBUF has no driver
+WARNING:Par:276 - The signal iC_IBUF has no load
+WARNING:Par:276 - The signal iD_IBUF has no load
+WARNING:Par:275 - The signal oRight_OBUF has no driver
+WARNING:Par:275 - The signal oMidLeft_OBUF has no driver
+WARNING:Par:275 - The signal oLeft_OBUF has no driver
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:989687) REAL time: 1 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 1 secs 
+
+Phase 3.2
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 1 secs 
+
+Phase 4.8
+Phase 4.8 (Checksum:26259fc) REAL time: 1 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 1 secs 
+
+Phase 6.18
+Phase 6.18 (Checksum:39386fa) REAL time: 1 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 1 secs 
+
+Writing design to file SimpleGateCircuit.ncd
+
+
+Total REAL time to Placer completion: 1 secs 
+Total CPU time to Placer completion: 0 secs 
+
+Starting Router
+
+Phase 1: 4 unrouted;       REAL time: 1 secs 
+
+Phase 2: 4 unrouted;       REAL time: 1 secs 
+
+Phase 3: 4 unrouted;       REAL time: 1 secs 
+
+Phase 4: 4 unrouted;       REAL time: 1 secs 
+
+
+Total REAL time to Router completion: 1 secs 
+Total CPU time to Router completion: 0 secs 
+
+Generating "PAR" statistics.
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 2 secs 
+Total CPU time to PAR completion: 0 secs 
+
+Peak Memory Usage:  70 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 8
+Number of info messages: 1
+
+Writing design to file SimpleGateCircuit.ncd
+
+
+
+PAR done!
+
+Started process "Generate Post-Place & Route Static Timing".
+
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "SimpleGateCircuit" is an NCD, version 3.1, device xc3s200, package ft256,
+speed -4
+
+Analysis completed Fri Dec 07 16:10:29 2007
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 1 secs 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+WARNING:PhysDesignRules:367 - The signal <iA_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <iB_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+ERROR:PhysDesignRules:368 - The signal <oMidRight_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:367 - The signal <iC_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <iD_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+ERROR:PhysDesignRules:368 - The signal <oRight_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <oMidLeft_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <oLeft_OBUF> is incomplete. The signal is
+   not driven by any source pin in the design.
+ERROR:PhysDesignRules:10 - The network <oMidRight_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <oRight_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <oMidLeft_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <oLeft_OBUF> is completely unrouted.
+ERROR:Bitgen:25 - DRC detected 8 errors and 4 warnings.
+Error: bitgen failed
+Reason: 
+Process "Generate Programming File" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SimpleGateCircuit.v"
+Module <SimpleGateCircuit> compiled
+No errors in compilation
+Analysis of file <"SimpleGateCircuit.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <SimpleGateCircuit>.
+Module <SimpleGateCircuit> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SimpleGateCircuit>.
+    Related source file is "SimpleGateCircuit.v".
+WARNING:Xst:1306 - Output <oMidLeft> is never assigned.
+WARNING:Xst:647 - Input <iA> is never used.
+WARNING:Xst:647 - Input <iB> is never used.
+WARNING:Xst:1306 - Output <oLeft> is never assigned.
+WARNING:Xst:647 - Input <iC> is never used.
+WARNING:Xst:647 - Input <iD> is never used.
+WARNING:Xst:1306 - Output <oRight> is never assigned.
+WARNING:Xst:1306 - Output <oMidRight> is never assigned.
+Unit <SimpleGateCircuit> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SimpleGateCircuit> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SimpleGateCircuit, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of bonded IOBs:                  8  out of    173     4%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: No path found
+
+=========================================================================
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\ece 130\simplegatecircuit\simplegatecircuit/_ngo" -nt timestamp -uc
+SimpleGateCircuit.ucf -p xc3s200-ft256-4 SimpleGateCircuit.ngc
+SimpleGateCircuit.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/ECE
+130/SimpleGateCircuit/SimpleGateCircuit/SimpleGateCircuit.ngc' ...
+Loading design module "C:\Documents and Settings\pickdp\My Documents\ECE
+130\SimpleGateCircuit\SimpleGateCircuit/SimpleGateCircuit.ngc"...
+WARNING:NgdBuild:578 - Design contains no instances.
+
+Applying constraints in "SimpleGateCircuit.ucf" to the design...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   1
+
+Writing NGD file "SimpleGateCircuit.ngd" ...
+
+Writing NGDBUILD log file "SimpleGateCircuit.bld"...
+
+NGDBUILD done.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Generate Post-Synthesis Simulation Model".
+
+INFO:NetListWriters:633 - The generated Verilog netlist contains Xilinx UNISIM
+   simulation primitives and has to be used with UNISIM simulation library for
+   correct compilation and simulation. 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Map".
+
+Using target part "3s200ft256-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:   10
+Logic Utilization:
+Logic Distribution:
+    Number of Slices containing only related logic:       0 out of       0    0%
+    Number of Slices containing unrelated logic:          0 out of       0    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+  Number of bonded IOBs:                8 out of     173    4%
+
+Total equivalent gate count for design:  0
+Additional JTAG gate count for IOBs:  384
+Peak Memory Usage:  104 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "SimpleGateCircuit_map.mrp" for details.
+
+
+
+
+Started process "Place & Route".
+
+
+
+
+Constraints file: SimpleGateCircuit.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "SimpleGateCircuit" is an NCD, version 3.1, device xc3s200, package ft256,
+speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.37 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs             8 out of 173     4%
+      Number of LOCed IOBs             8 out of 8     100%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+WARNING:Par:276 - The signal iA_IBUF has no load
+WARNING:Par:276 - The signal iB_IBUF has no load
+WARNING:Par:275 - The signal oMidRight_OBUF has no driver
+WARNING:Par:276 - The signal iC_IBUF has no load
+WARNING:Par:276 - The signal iD_IBUF has no load
+WARNING:Par:275 - The signal oRight_OBUF has no driver
+WARNING:Par:275 - The signal oMidLeft_OBUF has no driver
+WARNING:Par:275 - The signal oLeft_OBUF has no driver
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:989687) REAL time: 1 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 1 secs 
+
+Phase 3.2
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 1 secs 
+
+Phase 4.8
+Phase 4.8 (Checksum:26259fc) REAL time: 1 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 1 secs 
+
+Phase 6.18
+Phase 6.18 (Checksum:39386fa) REAL time: 1 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 1 secs 
+
+Writing design to file SimpleGateCircuit.ncd
+
+
+Total REAL time to Placer completion: 1 secs 
+Total CPU time to Placer completion: 0 secs 
+
+Starting Router
+
+Phase 1: 4 unrouted;       REAL time: 1 secs 
+
+Phase 2: 4 unrouted;       REAL time: 1 secs 
+
+Phase 3: 4 unrouted;       REAL time: 1 secs 
+
+Phase 4: 4 unrouted;       REAL time: 1 secs 
+
+
+Total REAL time to Router completion: 1 secs 
+Total CPU time to Router completion: 0 secs 
+
+Generating "PAR" statistics.
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 2 secs 
+Total CPU time to PAR completion: 0 secs 
+
+Peak Memory Usage:  70 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 8
+Number of info messages: 1
+
+Writing design to file SimpleGateCircuit.ncd
+
+
+
+PAR done!
+
+Started process "Generate Post-Place & Route Static Timing".
+
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "SimpleGateCircuit" is an NCD, version 3.1, device xc3s200, package ft256,
+speed -4
+
+Analysis completed Mon Dec 10 19:55:43 2007
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 1 secs 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+WARNING:PhysDesignRules:367 - The signal <iA_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <iB_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+ERROR:PhysDesignRules:368 - The signal <oMidRight_OBUF> is incomplete. The
+   signal is not driven by any source pin in the design.
+WARNING:PhysDesignRules:367 - The signal <iC_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+WARNING:PhysDesignRules:367 - The signal <iD_IBUF> is incomplete. The signal
+   does not drive any load pins in the design.
+ERROR:PhysDesignRules:368 - The signal <oRight_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <oMidLeft_OBUF> is incomplete. The signal
+   is not driven by any source pin in the design.
+ERROR:PhysDesignRules:368 - The signal <oLeft_OBUF> is incomplete. The signal is
+   not driven by any source pin in the design.
+ERROR:PhysDesignRules:10 - The network <oMidRight_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <oRight_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <oMidLeft_OBUF> is completely unrouted.
+ERROR:PhysDesignRules:10 - The network <oLeft_OBUF> is completely unrouted.
+ERROR:Bitgen:25 - DRC detected 8 errors and 4 warnings.
+Error: bitgen failed
+Reason: 
+Process "Generate Programming File" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SimpleGateCircuit.v"
+ERROR:HDLCompilers:26 - "SimpleGateCircuit.v" line 21 expecting ')', found 'wire'
+Module <SimpleGateCircuit> compiled
+ERROR:HDLCompilers:26 - "SimpleGateCircuit.v" line 39 expecting 'endmodule', found ')'
+Analysis of file <"SimpleGateCircuit.prj"> failed.
+--> 
+
+Total memory usage is 75336 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SimpleGateCircuit.v"
+ERROR:HDLCompilers:26 - "SimpleGateCircuit.v" line 21 expecting ')', found 'wire'
+Module <SimpleGateCircuit> compiled
+ERROR:HDLCompilers:26 - "SimpleGateCircuit.v" line 39 expecting 'endmodule', found ')'
+Analysis of file <"SimpleGateCircuit.prj"> failed.
+--> 
+
+Total memory usage is 75336 kilobytes
+
+Number of errors   :    2 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SimpleGateCircuit.v"
+ERROR:HDLCompilers:26 - "SimpleGateCircuit.v" line 21 expecting ')', found 'wire'
+Module <SimpleGateCircuit> compiled
+Analysis of file <"SimpleGateCircuit.prj"> failed.
+--> 
+
+Total memory usage is 75336 kilobytes
+
+Number of errors   :    1 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SimpleGateCircuit.v"
+Module <SimpleGateCircuit> compiled
+No errors in compilation
+Analysis of file <"SimpleGateCircuit.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <SimpleGateCircuit>.
+Module <SimpleGateCircuit> is correct for synthesis.
+ 
+    Set property "resynthesize = true" for unit <SimpleGateCircuit>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SimpleGateCircuit>.
+    Related source file is "SimpleGateCircuit.v".
+WARNING:Xst:1306 - Output <oMidRight> is never assigned.
+Unit <SimpleGateCircuit> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+ERROR:Xst:528 - Multi-source in Unit <SimpleGateCircuit> on signal <oMidLeft>
+Sources are: 
+   Signal <oMidLeft> is assigned to logic
+   Signal <oMidLeft> is assigned to logic
+CPU : 1.06 / 1.31 s | Elapsed : 1.00 / 1.00 s
+ 
+--> 
+
+Total memory usage is 79432 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    1 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+
+ERROR: XST failed
+Process "Synthesize" did not complete.
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SimpleGateCircuit.v"
+Module <SimpleGateCircuit> compiled
+No errors in compilation
+Analysis of file <"SimpleGateCircuit.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <SimpleGateCircuit>.
+Module <SimpleGateCircuit> is correct for synthesis.
+ 
+    Set property "resynthesize = true" for unit <SimpleGateCircuit>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SimpleGateCircuit>.
+    Related source file is "SimpleGateCircuit.v".
+Unit <SimpleGateCircuit> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SimpleGateCircuit> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SimpleGateCircuit, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       1  out of   1920     0%  
+ Number of 4 input LUTs:                 2  out of   3840     0%  
+ Number of bonded IOBs:                  8  out of    173     4%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 9.063ns
+
+=========================================================================
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\ece 130\simplegatecircuit\simplegatecircuit/_ngo" -nt timestamp -uc
+SimpleGateCircuit.ucf -p xc3s200-ft256-4 SimpleGateCircuit.ngc
+SimpleGateCircuit.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/ECE
+130/SimpleGateCircuit/SimpleGateCircuit/SimpleGateCircuit.ngc' ...
+
+Applying constraints in "SimpleGateCircuit.ucf" to the design...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "SimpleGateCircuit.ngd" ...
+
+Writing NGDBUILD log file "SimpleGateCircuit.bld"...
+
+NGDBUILD done.
+
+
+
+
+Started process "Map".
+
+Using target part "3s200ft256-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:               2 out of   3,840    1%
+Logic Distribution:
+  Number of occupied Slices:                            1 out of   1,920    1%
+    Number of Slices containing only related logic:       1 out of       1  100%
+    Number of Slices containing unrelated logic:          0 out of       1    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:           2 out of   3,840    1%
+  Number of bonded IOBs:                8 out of     173    4%
+
+Total equivalent gate count for design:  12
+Additional JTAG gate count for IOBs:  384
+Peak Memory Usage:  104 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "SimpleGateCircuit_map.mrp" for details.
+
+
+
+
+Started process "Place & Route".
+
+
+
+
+Constraints file: SimpleGateCircuit.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "SimpleGateCircuit" is an NCD, version 3.1, device xc3s200, package ft256,
+speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.37 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs             8 out of 173     4%
+      Number of LOCed IOBs             8 out of 8     100%
+
+   Number of Slices                    1 out of 1920    1%
+      Number of SLICEMs                0 out of 960     0%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:989691) REAL time: 0 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 0 secs 
+
+Phase 3.2
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 0 secs 
+
+Phase 4.8
+.
+Phase 4.8 (Checksum:98aa2f) REAL time: 0 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 0 secs 
+
+Phase 6.18
+Phase 6.18 (Checksum:39386fa) REAL time: 0 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 0 secs 
+
+Writing design to file SimpleGateCircuit.ncd
+
+
+Total REAL time to Placer completion: 0 secs 
+Total CPU time to Placer completion: 0 secs 
+
+Starting Router
+
+Phase 1: 10 unrouted;       REAL time: 0 secs 
+
+Phase 2: 10 unrouted;       REAL time: 0 secs 
+
+Phase 3: 2 unrouted;       REAL time: 0 secs 
+
+Phase 4: 0 unrouted;       REAL time: 0 secs 
+
+
+Total REAL time to Router completion: 0 secs 
+Total CPU time to Router completion: 0 secs 
+
+Generating "PAR" statistics.
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 secs 
+Total CPU time to PAR completion: 0 secs 
+
+Peak Memory Usage:  71 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file SimpleGateCircuit.ncd
+
+
+
+PAR done!
+
+Started process "Generate Post-Place & Route Static Timing".
+
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "SimpleGateCircuit" is an NCD, version 3.1, device xc3s200, package ft256,
+speed -4
+
+Analysis completed Mon Dec 10 20:06:57 2007
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 1 secs 
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "SimpleGateCircuit.v"
+Module <SimpleGateCircuit> compiled
+No errors in compilation
+Analysis of file <"SimpleGateCircuit.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <SimpleGateCircuit>.
+Module <SimpleGateCircuit> is correct for synthesis.
+ 
+    Set property "resynthesize = true" for unit <SimpleGateCircuit>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <SimpleGateCircuit>.
+    Related source file is "SimpleGateCircuit.v".
+Unit <SimpleGateCircuit> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <SimpleGateCircuit> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block SimpleGateCircuit, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       1  out of   1920     0%  
+ Number of 4 input LUTs:                 2  out of   3840     0%  
+ Number of bonded IOBs:                  8  out of    173     4%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 8.957ns
+
+=========================================================================
+
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\ece 130\simplegatecircuit\simplegatecircuit/_ngo" -nt timestamp -uc
+SimpleGateCircuit.ucf -p xc3s200-ft256-4 SimpleGateCircuit.ngc
+SimpleGateCircuit.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/ECE
+130/SimpleGateCircuit/SimpleGateCircuit/SimpleGateCircuit.ngc' ...
+
+Applying constraints in "SimpleGateCircuit.ucf" to the design...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "SimpleGateCircuit.ngd" ...
+
+Writing NGDBUILD log file "SimpleGateCircuit.bld"...
+
+NGDBUILD done.
+
+
+
+
+Started process "Map".
+
+Using target part "3s200ft256-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:               2 out of   3,840    1%
+Logic Distribution:
+  Number of occupied Slices:                            1 out of   1,920    1%
+    Number of Slices containing only related logic:       1 out of       1  100%
+    Number of Slices containing unrelated logic:          0 out of       1    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:           2 out of   3,840    1%
+  Number of bonded IOBs:                8 out of     173    4%
+
+Total equivalent gate count for design:  12
+Additional JTAG gate count for IOBs:  384
+Peak Memory Usage:  104 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "SimpleGateCircuit_map.mrp" for details.
+
+
+
+
+Started process "Place & Route".
+
+
+
+
+Constraints file: SimpleGateCircuit.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "SimpleGateCircuit" is an NCD, version 3.1, device xc3s200, package ft256,
+speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.37 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs             8 out of 173     4%
+      Number of LOCed IOBs             8 out of 8     100%
+
+   Number of Slices                    1 out of 1920    1%
+      Number of SLICEMs                0 out of 960     0%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:989691) REAL time: 0 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 0 secs 
+
+Phase 3.2
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 0 secs 
+
+Phase 4.8
+.
+Phase 4.8 (Checksum:98aa2f) REAL time: 0 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 0 secs 
+
+Phase 6.18
+Phase 6.18 (Checksum:39386fa) REAL time: 0 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 0 secs 
+
+Writing design to file SimpleGateCircuit.ncd
+
+
+Total REAL time to Placer completion: 0 secs 
+Total CPU time to Placer completion: 0 secs 
+
+Starting Router
+
+Phase 1: 10 unrouted;       REAL time: 0 secs 
+
+Phase 2: 10 unrouted;       REAL time: 0 secs 
+
+Phase 3: 2 unrouted;       REAL time: 0 secs 
+
+Phase 4: 0 unrouted;       REAL time: 0 secs 
+
+
+Total REAL time to Router completion: 0 secs 
+Total CPU time to Router completion: 0 secs 
+
+Generating "PAR" statistics.
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 secs 
+Total CPU time to PAR completion: 0 secs 
+
+Peak Memory Usage:  71 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file SimpleGateCircuit.ncd
+
+
+
+PAR done!
+
+Started process "Generate Post-Place & Route Static Timing".
+
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "SimpleGateCircuit" is an NCD, version 3.1, device xc3s200, package ft256,
+speed -4
+
+Analysis completed Mon Dec 10 20:24:13 2007
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 1 secs 
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+

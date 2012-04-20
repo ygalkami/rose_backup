@@ -1,0 +1,120 @@
+import java.awt.Color;
+import java.awt.FlowLayout;
+import java.awt.GridBagLayout;
+import java.awt.GridLayout;
+import java.awt.geom.Point2D;
+import java.util.ArrayList;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JPanel;
+
+
+public class Window {
+	
+	static final int SPECIAL_KEY = 'c';
+	
+	static int EASY_FRAME_WIDTH = 500;
+	static int EASY_FRAME_HEIGHT = 500;
+	
+	static int MEDIUM_FRAME_WIDTH = 750;
+	static int MEDIUM_FRAME_HEIGHT = 750;
+	
+	static int EXPERT_FRAME_WIDTH = 1100;
+	static int EXPERT_FRAME_HEIGHT = 1100;
+
+	static int easy = 9;
+	static int medium = 16;
+	static int expert = 25;
+	
+	static int easybombs = 9;
+	static int mediumbombs = 40;
+	static int expertbombs = 99;
+	
+	static Square [][] easyboard = new Square[easy][easy];
+	static Square [][] mediumboard = new Square[medium][medium];
+	static Square [][] expertboard = new Square[expert][expert];
+	
+	static JFrame frame_Easy = new MenuFrame();
+	static JFrame frame_Medium = new MenuFrame();
+	static JFrame frame_Expert = new MenuFrame();
+	
+	static ImageIcon bomb = new ImageIcon("bomb.jpg");
+
+	public static void createboard(JFrame frame, int pieces, int frame_width, int frame_height, Square[][] board) {
+		frame.setSize(frame_width, frame_height);
+		frame.setTitle("Minesweeper");
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		JPanel panel = new JPanel();
+		
+		panel.setFocusable(false);
+		
+		for (int i=0; i<pieces; i++) {
+			for (int j=0; j<pieces; j++) {
+//				if (i == 0 && j == 0 || i == pieces && j == pieces || i == 0 && j == pieces || i == pieces && j == 0)
+//					board[i][j] = new Square(i, j, pieces, true ,true);
+//				else if (i == pieces && j != 0 || j == pieces && i != 0)
+//					board[i][j] = new Square(i, j, pieces, true, false);
+//				else
+				board[i][j] = new Square(i, j, pieces, board);
+				board[i][j].addActionListener(board[i][j]);
+				panel.add(board[i][j]);
+			}
+		}
+		
+		panel.setLayout(new GridLayout(pieces, pieces));
+		frame.add(panel);
+		frame.setVisible(false);
+	}
+	
+	
+	public static void setBombs (int boardSize, int numBombs, Square[][] board){
+		boardSize = boardSize - 1;
+		Square [] Bombs = new Square [numBombs];
+		int setBombs = 1;
+		while(setBombs <= numBombs){
+				double indexRow = boardSize*Math.random();
+				double indexColumn = boardSize*Math.random();
+				Square square = board[(int)java.lang.Math.round(indexRow)][(int)java.lang.Math.round(indexColumn)];
+				if(square.isBomb)
+					continue;
+				square.setBomb(board);
+				setBombs++;
+		}
+	}
+	
+	public static void showbombs(int difficulity, Square [][] board) {
+		for (int i=0; i<difficulity; i++) {
+			for (int j=0; j<difficulity; j++) {
+				if(board[i][j].isBomb)
+					board[i][j].setIcon(bomb);
+			}
+		}
+	}
+	
+	public static void hidebombs(int difficulity, Square [][] board) {
+		for (int i=0; i<difficulity; i++) {
+			for (int j=0; j<difficulity; j++) {
+				if(board[i][j].isBomb)
+					board[i][j].setIcon(null);
+			}
+		}
+	}
+	
+	public static void main(String [] args){
+		createboard(frame_Easy, easy, EASY_FRAME_WIDTH, EASY_FRAME_HEIGHT, easyboard);
+		createboard(frame_Medium, medium, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT, mediumboard);
+		createboard(frame_Expert, expert, EXPERT_FRAME_WIDTH, EXPERT_FRAME_HEIGHT, expertboard);
+		
+		setBombs(easy, easybombs, easyboard);
+		setBombs(medium, mediumbombs, mediumboard);
+		setBombs(expert, expertbombs, expertboard);
+		
+		frame_Easy.show();
+		
+		//showbombs(easy, easyboard);
+	}
+}

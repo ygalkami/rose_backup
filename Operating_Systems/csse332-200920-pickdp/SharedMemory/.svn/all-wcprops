@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/repos/csse332-200920-pickdp/!svn/ver/48/SharedMemory
+END
+client.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/csse332-200920-pickdp/!svn/ver/48/SharedMemory/client.c
+END
+server.c
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/csse332-200920-pickdp/!svn/ver/48/SharedMemory/server.c
+END
+README.txt
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/repos/csse332-200920-pickdp/!svn/ver/48/SharedMemory/README.txt
+END
+Makefile
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/repos/csse332-200920-pickdp/!svn/ver/48/SharedMemory/Makefile
+END

@@ -1,0 +1,55 @@
+8
+
+dir
+61
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/Exam2
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-10-16T23:04:45.534730Z
+61
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+.project
+file
+
+
+
+
+2007-10-16T23:20:39.890270Z
+c4451d9da6ec944884bd566df7feb7e8
+2007-10-16T23:04:45.534730Z
+61
+clifton
+
+src
+dir
+
+.pydevproject
+file
+
+
+
+
+2007-10-16T23:20:39.890270Z
+66d86ad82c340e415c80446b491adb49
+2007-10-16T23:04:45.534730Z
+61
+clifton
+

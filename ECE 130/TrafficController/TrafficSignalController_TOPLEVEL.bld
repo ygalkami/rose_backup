@@ -1,0 +1,25 @@
+Release 7.1.04i ngdbuild H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\courses\ece 130\trafficcontroller/_ngo" -nt timestamp -uc
+TrafficSignalController_TOPLEVEL.ucf -p xc3s200-ft256-4
+TrafficSignalController_TOPLEVEL.ngc TrafficSignalController_TOPLEVEL.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/Courses/ECE
+130/TrafficController/TrafficSignalController_TOPLEVEL.ngc' ...
+
+Applying constraints in "TrafficSignalController_TOPLEVEL.ucf" to the design...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 62940 kilobytes
+
+Writing NGD file "TrafficSignalController_TOPLEVEL.ngd" ...
+
+Writing NGDBUILD log file "TrafficSignalController_TOPLEVEL.bld"...

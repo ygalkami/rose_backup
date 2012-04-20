@@ -1,0 +1,39 @@
+#!/bin/csh
+# ------------------------------------------------------------------
+# Shell script to try solving the puzzles in the hard subdirectory
+# ------------------------------------------------------------------
+# Make sure this script is executable by saying
+#	chmod +x runtests
+# if necessary.  
+# You may also need to make the auxilliary script executable:
+#   chmod +x runsuccess.csh
+# Then just say
+#	./runtests
+# to try them all.
+# ------------------------------------------------------------------
+echo '===================================================================='
+echo '=== century (100 moves) and century 1.5 (150 moves)'
+echo '--- test 1'
+./runsuccess.csh handout.config.2 goal.1.from.handout
+echo '--- test 2'
+./runsuccess.csh handout.config.2 century.1.5.goal
+
+echo '=== tests with lots of blocks or space'
+echo '--- test 3'
+./runsuccess.csh big.tray.4 many.blocks.20.goal
+echo '--- test 4'
+./runsuccess.csh big.tray.4 many.blocks.20+180.goal
+echo '--- test 5'
+./runsuccess.csh big.tray.4 many.blocks.100.goal
+echo '--- test 6'
+./runsuccess.csh big.tray.1 big.tray.1.goal
+echo '--- test 7'
+./runsuccess.csh big.tray.3 big.tray.3.goal
+
+echo '=== more hard puzzles'
+echo '--- test 8 (needs 81 moves)'
+./runsuccess.csh lane.rouge lane.rouge.goal
+echo '--- test 9 (needs 231 moves)'
+./runsuccess.csh little.house little.house.goal
+echo '--- test 10 (needs 138 moves)'
+./runsuccess.csh super.century super.century.goal

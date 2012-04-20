@@ -1,0 +1,8 @@
+-- Answers by David Pick
+
+--multiples :: Int -> [Int]
+multiples n = map (n*) [0, 1 ..]
+
+test = do
+    putStrLn "Multiples"
+    putStrLn ("take 5 (multiples 5) = " ++ show (take 5 (multiples 5)))

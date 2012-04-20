@@ -1,0 +1,47 @@
+
+xssh readme:
+build the shell using 'make' in the src directory
+run the shell using ./xssh
+test the shell using the scripts in the tests folder
+for example, assuming the xssh binary was in the test folder: ./xssh m1test0.xssh
+
+in addition to the features specified to work in milestone 4, the following
+features are operational
+
+a -zsh option
+----
+example: ./xssh -zsh
+this changes the appearance of the prompt to mirror a modified zsh prompt
+it also changes the appearance of processes spawned in the background
+
+a built-in brainfuck interpreter
+----
+example: >> bf ++++++++++[>+++++++>++++++++++>+++>+<<<<-]>++.>+.+++++++..+++.>++.<<+++++++++++++++.>.+++.------.--------.>+.>.
+this is a built-in interpreter for the turning complete brainfuck programming language
+the operators are:
++ 	increment the current cell
+-	decrement the current cell
+>	shift current cell to right one
+<	shift current cell to left one
+[	on current cell 0, branch to ]
+]	unconditional branch to [
+,	place character from input to current cell
+.	output an ASCII character based off the current cell
+in addition to the standard brainfuck operators, the following have been
+added to aid debugging:
+#	output the value of the current cell
+	all other characters are discarded as comments.
+
+this functionality gives xssh a scripting language
+programs cannot start with a < or >, these be interpreted as redirection.
+instead, start programs with a useless sequence like +- or [-]
+
+three design/implementation features to remember:
+1) remember to keep adding debugging messages where needed.
+2) automated tests that compare expected output with output would be helpful.
+3) remember to keep a coherent design and keep branching off functions from large chunks of code.
+
+top three unanswered questions:
+1) what extra features will be added if time permits?
+2) what testing should be performed to ensure compliance with the rubric?
+3) comments?

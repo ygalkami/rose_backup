@@ -1,0 +1,87 @@
+1 d)
+index_name		index_keys
+LastName		LastName
+PK_Employees	EmployeeID
+PostalCode		PostalCode
+
+1 f)
+USE NWindPickdp82
+GO
+
+--SELECT t.name AS Table1, i.name AS Index1, i.*
+SELECT Count(i.name)
+FROM sysobjects AS t JOIN sysindexes AS i ON t.id = i.id
+WHERE t.name = 'Customers' and t.id > 100
+--ORDER BY t.name
+
+Number of indices = 5
+
+1 g)
+USE NWindPickdp82[
+GO
+
+--SELECT t.name AS Table1, i.name AS Index1, i.*
+SELECT Count(i.name)
+FROM sysobjects AS t JOIN sysindexes AS i ON t.id = i.id
+WHERE t.name = 'Suppliers' and t.id > 100
+--ORDER BY t.name
+
+Number of indices = 3
+
+2 c)
+USE NWindPickdp82
+GO
+
+CREATE NONCLUSTERED INDEX Orders_Customers_link
+ON Orders (CustomerID)
+WITH FILLFACTOR = 75
+
+2 f)
+USE NWindPickdp82
+GO
+
+CREATE NONCLUSTERED INDEX Products_SupplierID_link
+ON Products (SupplierID)
+WITH FILLFACTOR = 100
+
+3 b)
+i)
+USE Nwindpickdp82
+
+Select ProductName, UnitPrice
+from Products
+Where UnitPrice > 10
+ORDER BY UnitPrice DESC
+
+ii)
+USE NWindpickdp82
+
+Update Products
+SET UnitPrice = UnitPrice + (UnitPrice * .02)
+
+3 c)
+i) Clustered Index Scan -> Sort -> Select
+ii) sorting
+iii) Because it actually has to do the sort, while scanning the indexes is only doing a comparision
+iv) Clustered Index Scan -> Top -> Computer Scalar -> Clustered Index Update -> Assert -> Update
+v) Clustered Index Update
+vi) It must update the indicies of the affected rows (all of them in this case)
+
+3 e)
+i) No
+ii) Because the steps to retrive index information haven't changed.
+iii) Yes, Clustered Index Scan -> Compute Scalar -> Top -> Compute Scalar -> Compute Scalar -> Compute Scalar -> Clustered Index Update -> Compute Scalar -> Assert -> Update
+iv) Because now there are more indicies and to get to the correct ones more work has to be done.
+v) Clustered Index Update
+
+4 a)
+Indicies are part of a data structure. They are a way of keeping information about a database in an organized way.
+They are useful, because they can greatly increase the speed at which certain operations run.
+4 b)
+It is useful to store an index, when few updates are being made to the database, and lookups happen often.
+4 c)
+When the database is being updated often, and lookups rarely happen (an archive).
+4 d)
+A clustered index reorders the way records in the table are physically stored. In a non-clustered index the logical order of the index does not match the physical stored order of the rows on the disk and the leaf nodes contain index rows.
+4 e)
+The fillfactor specifies how much free space should aways be available on each leaf level to accomate future expansion.

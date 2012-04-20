@@ -1,0 +1,218 @@
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Arrays;
+//
+//
+//public class Hardy {
+//	RootClass nullRoot = null;
+//	
+//	public Hardy() {
+//		//does nothing
+//	}
+//		
+//	public ArrayList findroots(int n) {
+//		ArrayList<RootClass> roots = new ArrayList<RootClass>();
+//		ArrayList<Integer> finallist = new ArrayList<Integer>();
+//		int i = 1, j = 1;
+//		int startingPoint = 0;
+//		while( true ) {
+//			int cubed = i*i*i + j*j*j;
+//			
+//			if( finallist.size() == n )
+//				return finallist;
+//			
+//			if( cubed > roots.size() )
+//				for( int k = roots.size(); k <= cubed+3; k++) {
+//					roots.add( nullRoot );
+//				}
+//			
+//			
+//			RootClass temp = roots.get(cubed - startingPoint);
+//			
+//			if ( temp != nullRoot ) {
+//				if( temp.check( new RootClass( i, j )) && !temp.added() ) {
+//					finallist.add(cubed);
+//					temp.setAdded();
+//					startingPoint = clearArray( roots, roots.size()/2 );
+//				}
+//			} else {
+//				roots.set(cubed - startingPoint, new RootClass( i, j ));
+//			}
+//			
+//			
+//			if( j == i ) {
+//				i++;
+//				j = 0;
+//			}
+//			j++;
+//		}
+//	}
+//	
+//	private int clearArray(ArrayList<RootClass> roots, int size) {
+//		int i = 0;
+//		while( i < size ) {
+//			roots.remove(0);
+//			i++;
+//		}
+//		return i;
+//	}
+//
+//	public static void main(String[] args) {
+//		int[] finalArray = new int[500];
+//		int[][] test = new int[500][500];
+//		int k = 0;
+//		
+//		for( int i = 1; i < 500; i++ )
+//			for( int j = 1; j < 500; j++ )
+//				test[i][j] = i*i*i + j*j*j;
+//		
+//
+//		for( int i = 1; i < 500; i++ )
+//			for( int j = 1; j < 500; j++ ) {
+//				if( k == 500 )
+//					break;
+//				if( search( test[i][j], test, i, j ) )
+//					finalArray[k++] = test[i][j];
+//			}
+//		
+//		for(int i = 0; i < 500; i++)
+//			System.out.println( finalArray[i] );
+////		int n = 10;
+////		Hardy hardyTest = new Hardy();
+////		ArrayList test = hardyTest.findroots(n);
+////		for (int i = 0; i < test.size(); i++) {
+////			System.out.println(test.get(i));
+////		}
+//	}
+//	
+//	private static boolean search(int check, int[][] test, int first, int second) {
+//		for( int i = 1; i < 500; i++ )
+//			for( int j = 1; j < 500; j++ )
+//				if( check == test[i][j] && ( i != first && j != second ) && ( j != first && i != second ) ){
+//					if (check == 106243219) {
+//						System.out.println("here..........................");
+//					}
+//					return true;
+//				}
+//		
+//		return false;
+//	}
+//
+//	private class RootClass {
+//		private int i;
+//		private int j;
+//		private boolean added = false;
+//		
+//		public RootClass( int i, int j ) {
+//			this.i = i;
+//			this.j = j;
+//		}
+//		
+//		public boolean added() {
+//			return this.added;
+//		}
+//		
+//		public void setAdded() {
+//			this.added = true;
+//		}
+//
+//		private boolean check( RootClass against ) {
+//			if( 	against.i == this.j
+//				&&	against.j == this.i	)
+//				return false;
+//						
+//			if(		against.j == this.j
+//				&&  against.i == this.i )
+//				return false;
+//
+//			return true;
+//		}
+//	}
+//}
+
+
+public class Hardy {
+	public static boolean exists (ArrayList<Integer> finallist, int check) {
+		for (int i = 0; i < finallist.size(); i++) {
+			if (finallist.get(i) == check) {
+				return true;
+			}
+		}
+		return false;
+	}
+	
+	public static void bubbleSort1(ArrayList<Integer> finallist) {
+	    int n = finallist.size();
+	    for (int pass=1; pass < n; pass++) {  // count how many times
+	        // This next loop becomes shorter and shorter
+	        for (int i=0; i < n-pass; i++) {
+	            if (finallist.get(i) > finallist.get(i+1)) {
+	                // exchange elements
+	                int temp = finallist.get(i);  finallist.set(i, finallist.get(i+1));  finallist.set(i+1, temp);
+	            }
+	        }
+	    }
+	}
+
+	
+   public static void main(String[] args) { 
+
+      // read in one command-line argument
+      // int N = Integer.parseInt(args[0]);
+	   int nums = 5;
+	   int matches = 0;
+	   int N = 50000;
+	   ArrayList<Integer> finallist = new ArrayList<Integer>();
+	   while (matches < nums) {
+		   N += 100;
+	   
+      // for each a, b, c, d, check whether a^3 + b^3 = c^3 + d^3
+      for (int a = 1; a <= N; a++) {
+         int a3 = a*a*a;
+         if (a3 > N) break;
+
+         // start at a to avoid print out duplicate
+         for (int b = a; b <= N; b++) {
+            int b3 = b*b*b;
+            if (a3 + b3 > N) break;
+
+            // start at a + 1 to avoid printing out duplicates
+            for (int c = a + 1; c <= N; c++) {
+               int c3 = c*c*c;
+               if (c3 > a3 + b3) break;
+
+               // start at c to avoid printing out duplicates
+               for (int d = c; d <= N; d++) {
+                  int d3 = d*d*d;
+                  if (c3 + d3 > a3 + b3) break;
+
+                  if (c3 + d3 == a3 + b3) {
+                	if (exists(finallist, (c3+d3))) {
+                		
+                	}
+                	else {
+                		matches++;
+                		finallist.add((c3+d3));
+                	}
+                	
+                	 //if (matches == nums) {
+//	                     System.out.print((a3+b3) + " = ");
+//	                     System.out.print(a + "^3 + " + b + "^3 = "); 
+//	                     System.out.print(c + "^3 + " + d + "^3"); 
+//	                     System.out.println();
+	                     //System.out.println(matches);
+                	 //}
+                  }
+                  }
+               }
+            }
+         }
+      bubbleSort1(finallist);
+      for (int i = 0; i < finallist.size(); i++) {
+    	  System.out.println(i + " " finallist.get(i));
+      }
+      }
+   }
+}
+
+

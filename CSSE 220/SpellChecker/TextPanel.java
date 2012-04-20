@@ -1,0 +1,258 @@
+import java.awt.Dimension;
+import java.io.File;
+import java.io.FileNotFoundException;
+import java.util.ArrayList;
+import java.util.Scanner;
+
+import javax.swing.JList;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+
+
+public class TextPanel extends JPanel {
+	//text box in the frame.  
+	JTextArea textBox;
+
+	//Scroller for the text box.  
+	JScrollPane scroller;
+
+	//List of misspelled words.  
+	ArrayList<String> missspelledWordsList;
+
+	//positions of misspelled Words.
+	ArrayList<Integer> missspelledWordsListPositions;
+
+	//Dictionary used to check words.  
+	Dictionary dictionary;
+
+	//position of misspelled words in the misspelled array list.  
+	protected int indexOfMissspelledWord;
+
+	//List of suggested words to replace misspelled word.  
+	public JList suggestedList;
+
+	/**
+	 * Creates the text panel for storing text.  
+	 * @param dictionary used to check for misspelled words.  
+	 */
+	public TextPanel(Dictionary dictionary) {
+		this.setPreferredSize(new Dimension(600, 400));
+		
+		//initializes Array Lists
+		this.missspelledWordsList = new ArrayList<String>();
+		this.missspelledWordsListPositions = new ArrayList<Integer>();
+
+		//Creates the text box size and styles.
+		this.textBox = new JTextArea();
+		this.textBox.setWrapStyleWord(true);
+		this.textBox.setLineWrap(true);
+		this.textBox.setEditable(false);
+		this.scroller = new JScrollPane(this.textBox);
+		this.scroller.setVerticalScrollBarPolicy(JScrollPane.VERTICAL_SCROLLBAR_AS_NEEDED);
+		this.scroller.setPreferredSize(new Dimension(400, 400));
+
+		this.add(this.scroller);
+
+		this.dictionary = dictionary;
+
+		this.indexOfMissspelledWord = -1;
+
+		suggestedList = new JList();
+		this.suggestedList.setPreferredSize(new Dimension(100, 400));
+		this.suggestedList.setFocusable(false);
+
+		this.add(this.suggestedList);
+		
+	}
+	
+	/**
+	 * Copies the text file into the text box.  
+	 * @param file to store in text box.  
+	 * @throws FileNotFoundException if the file can't be found.  
+	 */
+	public void setFile(File file) throws FileNotFoundException {
+		Scanner sc = new Scanner(file);
+		StringBuffer text = new StringBuffer("");
+		StringBuffer text2 = new StringBuffer("");
+		String line = "";
+		while (sc.hasNextLine()) {
+			line = sc.nextLine();
+			text.append(line + "\n");
+			text2.append(line + "\n");
+		}
+		textBox.setText(text.toString());
+		sc.close();
+	}
+
+	/**
+	 * Updates the highlighted word to the one that is being focused on.  
+	 * @param wordToHighlight is the next word that needs to be highlighted.  
+	 */
+	public void updateTextHighlighting(String wordToHighlight) {
+		if (this.missspelledWordsList.contains(wordToHighlight)) {
+				this.textBox.setSelectionStart(this.missspelledWordsListPositions.get(this.indexOfMissspelledWord));
+
+				this.textBox.setSelectionEnd(this.missspelledWordsListPositions.get(this.indexOfMissspelledWord) + wordToHighlight.length());
+		}
+	}
+
+	/**
+	 * Highlights the next word.  
+	 * @return the index of the highlighted word.  
+	 */
+	public int highlightNextWord() {
+		if (this.missspelledWordsList.size() > 0) {
+			if (this.indexOfMissspelledWord >= 
+				this.missspelledWordsList.size() - 1) {
+				this.indexOfMissspelledWord = 0;
+			} else {
+				this.indexOfMissspelledWord++;
+			}
+			this.suggestedList.setListData(this.dictionary.generateSuggestions(this.missspelledWordsList.get(this.indexOfMissspelledWord)).toArray());
+			this.suggestedList.setSelectedIndex(0);
+			this.updateTextHighlighting(this.missspelledWordsList.get(this.indexOfMissspelledWord));
+		}
+
+		return this.indexOfMissspelledWord;
+	}
+	
+	/**
+	 * Clears the highlighting when there are no more misspelled words.
+	*/
+	public void clearHighlighting(){
+		this.textBox.setSelectionStart(0);
+		this.textBox.setSelectionEnd(0);
+	}
+
+	/**
+	 * Clears the list of suggestions off of the screen when there are no more misspelled words.
+	 */
+	public void clearSuggestionList(){
+		Object[] emptyArray = {};
+		this.suggestedList.setListData(emptyArray);
+	}
+	
+	public String removePuncation(String str) {
+		boolean check = false;
+		String tempstr;
+		tempstr = str;
+		
+		if (str.charAt(0) == '"' || str.charAt(0) == '(') {
+			System.out.println("first " + str);
+			str = str.substring(1, str.length());
+			System.out.println("Second " + str);
+		}
+		
+		while (check == false) {
+			check = true;
+			if (str.charAt(str.length() - 1) == '1'
+						|| str.charAt(str.length() - 1) == '2'
+						|| str.charAt(str.length() - 1) == '3'
+						|| str.charAt(str.length() - 1) == '4'
+						|| str.charAt(str.length() - 1) == '5'
+						|| str.charAt(str.length() - 1) == '6'
+						|| str.charAt(str.length() - 1) == '7'
+						|| str.charAt(str.length() - 1) == '8'
+						|| str.charAt(str.length() - 1) == '9'
+						|| str.charAt(str.length() - 1) == '0'
+						|| str.charAt(str.length() - 1) == '-') {
+				tempstr = tempstr.substring(0, tempstr.length() - 1);
+				check = false;
+				if (tempstr.length() == 0) {
+					return "";
+				}
+			}
+		}
+		//5str = tempstr;
+		check = false;
+		while (check == false) {
+			check = true;
+			if (str.charAt(str.length() - 1) == '.'
+					|| str.charAt(str.length() - 1) == ','
+					|| str.charAt(str.length() - 1) == ')'
+					|| str.charAt(str.length() - 1) == '?'
+					|| str.charAt(str.length() - 1) == '"'
+					|| str.charAt(str.length() - 1) == ':'
+					|| str.charAt(str.length() - 1) == ';'
+					|| str.charAt(str.length() - 1) == '!') {
+				str = str.substring(0, str.length() - 1);
+				check = false;
+			}
+		}
+		return str;
+	}
+	
+	/**
+	 * Checks for all of the misspellings in the text box.  
+	 */
+	public void checkMissspellings() {
+		Scanner sc = new Scanner(this.textBox.getText());
+		String nextWord;
+
+		this.missspelledWordsList = new ArrayList<String>();
+		this.missspelledWordsListPositions = new ArrayList<Integer>();
+
+		//System.out.println("IN CHECKMISSSPELLINGS");
+		while (sc.hasNext()) {
+			nextWord = sc.next().toLowerCase().trim();
+			nextWord = removePuncation(nextWord);
+			if (nextWord.length() > 0) { // remove extraneous punctuation
+				if (!this.dictionary.contains(nextWord)) {
+					if (!this.missspelledWordsList.contains(nextWord)) {
+						this.missspelledWordsListPositions.add(this.textBox.getText().toLowerCase().indexOf(nextWord));
+					} else {
+						this.missspelledWordsListPositions.add(this.textBox.getText().toLowerCase().indexOf(nextWord,this.missspelledWordsListPositions.get(
+								this.missspelledWordsList.lastIndexOf(nextWord)) + 1));
+					}
+					this.missspelledWordsList.add(nextWord);
+
+				}
+			}
+		}
+		//System.out.println(this.missspelledWordsList.size());
+	}
+
+	/**
+	 * Replaces all of the same misspelled words in the text box.  
+	 */
+	public void replaceAll() {
+		String wordToReplace = this.missspelledWordsList.get(this.indexOfMissspelledWord);
+		
+		int newIndexOfMissspelledWord = this.indexOfMissspelledWord;
+		int previousIndexInText = this.missspelledWordsListPositions.get(this.indexOfMissspelledWord);
+		
+		for(this.indexOfMissspelledWord = 0; this.indexOfMissspelledWord < this.missspelledWordsList.size(); this.indexOfMissspelledWord++){
+			if(this.missspelledWordsList.get(this.indexOfMissspelledWord).equals(wordToReplace)){
+				
+				//we need to subtract a certain number of times from the index to account for removed words, but only those in front of where we are
+				if(this.missspelledWordsListPositions.get(this.indexOfMissspelledWord) < previousIndexInText){
+					newIndexOfMissspelledWord--;
+				}
+				
+				this.replace();
+			}
+		}
+		this.indexOfMissspelledWord = newIndexOfMissspelledWord - 1;
+		
+		this.checkMissspellings();
+	}
+
+	/**
+	 *replaces the word in the text box with the selected word.  
+	 */
+	public void replace() {
+		String stringToReplaceWith = this.suggestedList.getSelectedValue().toString();
+		String wordToReplace = this.missspelledWordsList.get(this.indexOfMissspelledWord);
+
+		String begin = this.textBox.getText().substring(0,this.missspelledWordsListPositions.get(this.indexOfMissspelledWord));
+		String end = this.textBox.getText().substring(this.missspelledWordsListPositions.get(this.indexOfMissspelledWord)+ wordToReplace.length());
+		this.textBox.setText(begin + stringToReplaceWith + end);
+		this.missspelledWordsList.remove(this.indexOfMissspelledWord);
+		this.missspelledWordsListPositions.remove(this.indexOfMissspelledWord);
+		
+		this.indexOfMissspelledWord--;
+
+		this.checkMissspellings();
+	}
+}

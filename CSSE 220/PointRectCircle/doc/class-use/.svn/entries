@@ -1,0 +1,40 @@
+8
+
+dir
+3
+http://svn.cs.rose-hulman.edu/repos/csse220-winter2008-pickdp/PointRectCircle/doc/class-use
+http://svn.cs.rose-hulman.edu/repos/csse220-winter2008-pickdp
+
+
+
+2007-12-04T22:36:01.325689Z
+3
+pickdp
+
+
+svn:special svn:externals svn:needs-lock
+
+Rectangle.html
+file
+4
+
+
+
+2007-12-04T22:37:54.793868Z
+fec3755ad9cfe45fb58f7fbc3f990b15
+2007-12-04T22:37:05.592754Z
+4
+pickdp
+
+Point.html
+file
+
+
+
+
+2007-12-03T16:03:45.095938Z
+9bf3a9f21de04b2c0ae63228256b438e
+2007-12-04T22:36:01.325689Z
+3
+pickdp
+

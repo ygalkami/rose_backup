@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
+		<item value="253" key="DIALOG_Y_ORIGIN"/>
+		<item value="1284" key="DIALOG_X_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
+		<item value="false" key="wrap"/>
+		<item value="false" key="isRegEx"/>
+		<item value="false" key="casesensitive"/>
+		<item value="false" key="incremental"/>
+		<item value="false" key="wholeword"/>
+		<item value="str" key="selection"/>
+		<list key="findhistory">
+			<item value="nextWord"/>
+			<item value="printers"/>
+			<item value="of flat country that reached to"/>
+			<item value="System.out.println"/>
+			<item value="&quot;1&quot;"/>
+			<item value="&quot;0&quot;"/>
+			<item value="b[i]"/>
+			<item value="a.charAt(i)"/>
+		</list>
+		<list key="replacehistory">
+			<item value="str"/>
+			<item value="&apos;1&apos;"/>
+			<item value="&apos;0&apos;"/>
+			<item value="s2.charAt(i)"/>
+			<item value="s1.charAt(i)"/>
+			<item value="a.charAt(i)"/>
+			<item value="this.monthLength[this.month]"/>
+			<item value="this.monthLenght[this.month]"/>
+		</list>
+	</section>
+</section>

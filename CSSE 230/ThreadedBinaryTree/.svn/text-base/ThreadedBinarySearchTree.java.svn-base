@@ -1,0 +1,120 @@
+import weiss.nonstandard.DuplicateItemException;
+
+// Put your name here.
+
+public class ThreadedBinarySearchTree<T extends Comparable<? super T>> {
+
+  ThreadedBinaryNode<T> root;  // The only instance variable; do not add others.
+
+  //Constructor
+  ThreadedBinarySearchTree() {
+      root = null;
+  }
+
+  // insert a node containing x into its proper position in the tree
+  // no balancing required.  Update left and right thread information properly.
+
+  public void insert(T x) throws DuplicateItem {
+  
+    if (root == null)
+      root = new ThreadedBinaryNode<T>( x );
+    else
+      insert(x, root);
+  }
+
+  void insert (T x, ThreadedBinaryNode<T> t) throws DuplicateItem {
+    // You fill in the details.
+		  if (x.compareTo(t.element) > 0) {
+			  if (t.isRightThread) {
+				  t.right = new ThreadedBinaryNode<T>(x, t, t.right);
+				  t.isRightThread = false;
+			  }
+			  else
+				  insert(x, t.right);
+		  }
+		  else if (x.compareTo(t.element) < 0){
+			  if (t.isLeftThread) {
+				t.left = new ThreadedBinaryNode<T>(x, t.left, t);
+			  	t.isLeftThread = false;
+			  }
+			  else
+				  insert(x, t.left);
+		  }
+		  else
+			  throw new DuplicateItem("Cannont insert a duplicate item");
+
+  }
+
+  // Print in inorder (forward and backwards) without using a stack, 
+  // recursion or extra storage space for more than a constant number
+  // of node contents.
+
+  public void printTree()   {
+  
+    ThreadedBinaryNode<T> t = root;
+    if (t == null)
+        return;  // print nothing if tree is empty.
+
+    System.out.println("\nFORWARD:");
+    while (!t.isLeftThread)
+    	while(!t.isLeftThread)
+    		t = t.left;  // We now have the first inorder node.
+    
+    	while (t != null) {
+    		System.out.println(t);
+    		if (t.isRightThread)
+    			t = t.right;
+    		else {
+    			t = t.right;
+    			while (!t.isLeftThread)
+    				t = t.left;
+    		}
+    	}
+
+    System.out.println("\n\nBACKWARD:");
+    t = root;
+    
+    while (!t.isRightThread)
+    	t = t.right;
+    
+    while (t!= null) {
+    	System.out.println(t);
+	    if (t.isLeftThread)
+	    	t = t.left;
+	    else {
+	    	t = t.left;
+	    	while (!t.isRightThread)
+	    		t = t.right;
+	    }
+    }
+
+  }
+
+// You don't really need to do anything with the following code.
+// It is simply here to give you some insight into working with
+// threaded binary trees.
+
+  public  T find(T x) throws ItemNotFound  {
+    if (root == null)
+      throw new ItemNotFound("Empty Tree");
+    else
+      return find (x, root);
+  }
+
+  private T find(T x, ThreadedBinaryNode<T> t)
+    throws ItemNotFound   {
+    if (x.compareTo(t.element) < 0)
+      if(t.isLeftThread)
+        throw new ItemNotFound("Item " + x + "  not found");
+      else
+        return find(x, t.left);
+    else if (x.compareTo(t.element) > 0)
+      if(t.isRightThread)
+        throw new ItemNotFound("Item " + x + " not found");
+      else
+        return find(x, t.right);
+    else
+      return t.element;
+  }
+
+}

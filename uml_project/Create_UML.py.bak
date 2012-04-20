@@ -1,0 +1,57 @@
+import re, Image, ImageDraw
+from uml_objects import *
+        
+def createObject(string):
+    #A := [Name | Attributes | Methods]
+    if len(string) < 4:
+        return "you broke me"
+    name, rest = string.split(':=')
+    long_name, attributes, methods = rest[2:-2].split('|')
+    attributes = attributes.split(',')
+    methods = [str(x) + ")" for x in methods.split('),')]
+    methods = [createMethod(x) for x in methods]
+    
+    return Object(name, long_name, attributes, methods)
+    
+def createMethod(string):
+    string = string.split('(')
+    name = string[0]
+    params = string[1][:-1].split(',')
+    
+    return Method(name, params)
+    
+f = open('/home/david/Documents/uml_project/uml', 'r')
+
+lines = f.read().split('\n')
+
+objects = {}
+nodes = []
+
+for line in lines:
+    line = line.replace(' ', "")
+    temp = createObject(line)
+
+    if temp != "you broke me":
+        objects[temp.short_name] = []
+        
+print [x.short_name for x in nodes]
+
+f = open('/home/david/Documents/uml_project/uml2', 'r')
+
+lines = f.read().split('\n')
+
+for line in lines:
+    #print line
+    line = line.replace(' ', "")
+    if len(line) > 3:
+        m = re.search('(.*)\[(.*)\](.*)', line) #m.group(2) = start_class, m.group(1) = connection_info, m.group(3) = end_class
+        objects[str(m.group(1))].append([str(m.group(2)), str(m.group(3))])
+
+print objects
+
+im = Image.new("RGB", [1000, 1000])
+draw = ImageDraw.Draw(im)
+draw.line([(0, 0), (1000, 1000)], fill=128)
+draw.line([(1000, 0), (0, 1000)], fill=128)
+
+im.save("test.png")

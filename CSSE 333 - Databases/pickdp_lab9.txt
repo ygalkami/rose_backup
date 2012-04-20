@@ -1,0 +1,31 @@
+use nwindpickdp82
+go
+
+alter trigger new2 on [Order Details]
+instead of insert
+as
+
+DECLARE @q as integer, @id as integer
+DECLARE @units_remaining as integer
+
+SELECT @q = Quantity, @id = ProductID FROM inserted
+
+
+select @units_remaining = UnitsInStock
+from [Products]
+where ProductID = @id
+
+if @units_remaining < @q
+begin
+	print 'There are not that many products left, make a smaller order'
+end
+else
+begin
+	SELECT @units_remaining = @units_remaining - @q
+
+	update Products
+	set UnitsInStock = @units_remaining
+	where ProductID = @id
+
+	INSERT INTO [Order Details] SELECT * FROM inserted
+end

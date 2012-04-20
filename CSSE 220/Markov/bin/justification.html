@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html PUBLIC
+          "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Text Justification Algorithm</title>
+<link rel="stylesheet" type="text/css" href="../../style/style.css" />
+ 
+ </head>
+
+<body>
+
+<h1>Text Justification Algorithm &mdash; Markov Chain Programming Assignment</h1>
+
+
+Markov documents:&nbsp;&nbsp; <a href="index-Markov.html">index</a>&nbsp;&nbsp;
+<a href="overview.html">overview</a>&nbsp;&nbsp;&nbsp; <a href="markov.html">
+markov</a>&nbsp;&nbsp;&nbsp; <a href="justification.html">justification</a>&nbsp;&nbsp;
+<a href="turnin-instructions.html">turnin-instructions</a>&nbsp;&nbsp;&nbsp;
+<a href="examples.html">code examples</a>
+&nbsp;&nbsp;&nbsp; <a href="MarkovPartners.xls">partners</a>
+&nbsp;&nbsp;&nbsp; <a href="importingEclipseClasses.html">importing classes</a>
+&nbsp;&nbsp;&nbsp; <a href="multiset/index.html">MultiSet</a>
+
+
+<h2>Purpose</h2>
+
+<pre>
+The Text Justification algorithm will ensure that the output from
+your program is both left and right justified when displayed in a
+mono-spaced font  such as Courier.  This  paragraph is an example
+of such  justification.  All the  lines (except  the last) of the
+output from  a given run  of your  program should  have the  same
+length, and  the last  line is  to be  no longer  than the  other
+lines.
+</pre>
+
+<h2>Overview</h2>
+
+<p>This pseudocode illustrates the Text Justification algorithm at a
+high level and how it should fit in to the Markov Chain programming
+assignment as a whole.  The following sections describe the steps in
+more detail.</p>
+
+<pre>
+Initialize the Markov data structures;</pre>
+<pre>
+foreach word in the input</pre>
+<pre>
+   Read the word, add appropriate prefix and/or suffix to the data structures;
+while( more words to generate ) {
+   generate next output word;
+   if( word is short enough to fit on current output line )
+      add word and trailing space(s) to the line's linked list;
+        <font color=blue> // Two spaces if it is the end of a sentence.  One space otherwise See below.</font>
+   else {
+      add enough spaces to justify the line; <font color="#0000FF">// details of where to add them are discussed in phase 3</font>
+      print the line;
+      clear the linked list;
+      add the word and its trailing space(s) to the empty linked list;
+   }
+}
+if( output line is not empty ) <font color="#0000FF">// last output line</font>
+   print output line;
+</pre>
+
+<h2>Algorithm Description</h2>
+
+<p>Construct a linked list (<code>new LinkedList&lt;String&gt;)</code> that represents the current line of output.
+For each word in the output, add a node to the end of the list
+representing that word, then add another node to the end to signify
+the amount of space between that word and the next (initially, this is
+one space).  You should also keep references these space nodes in an ArrayList, to facilitate fast random access 
+to those nodes.  Whenever
+adding a new word would cause the combined length of all the words and
+spaces in the list to exceed the line length, stop.  Remove the last
+node of the list (remember, this is the space that follows the last word on
+the line).  Then distribute additional spaces among the line's space nodes
+(you can choose a reference randomly from the ArrayList mentioned above
+and add a space to that node) until the combined length of the words
+and spaces in the list is exactly equal to the prescribed line length. Actually, 
+that is an approximation of what you want to do;&nbsp; you don't want all the spaces to be distributed 
+completely randomly;
+see phase 3 below.  Traverse the list, and output each word String and spaces 
+String in order.  Output a newline and reset to a new empty line.  When you run
+out of words, output whatever is in the list without adding any extra spaces,
+then terminate the program.</p>
+
+<h2>Incremental Enhancement Plan for the Justification Algorithm</h2>
+
+<p>You are allowed to jump directly to Phase 3 if you wish, but the
+intermediate approaches may help you to get there a step at a time.</p>
+
+<p><strong>Phase 1.</strong> Simply output one word per line. Or perhaps a fixed 
+number (12 will probably work well) of words per line. Then you can debug the 
+Markov Chain parts of your code before worrying about justifying the output. </p>
+
+<p><strong>Phase 2.</strong> Don't output each word as you generate it. Instead, 
+add it to a linked list of strings, one node for each word. Keep track of the 
+total width of all of the words in your list (plus the spaces that will separate 
+them when they are printed). When the width exceeds the output width, print all 
+but the last word, and begin a new linked list containing just that last word. </p>
+
+<p><strong>Phase 3.</strong> Add (to your linked list of strings)
+nodes containing the spaces that separate the words (after you add a
+word to your list, you can add the space(s) that follow it).  There
+will normally be one space, but if the word ends with a period,
+exclamation point, or question mark, there <i>must</i> be two spaces.  For
+example, if the text in the line so far is "<tt>Hello.  I love you</tt>" The list
+will look like:</p>
+
+<img src="img/LinkedListDiagram.jpg" alt="Linked List Diagram" />
+
+<p>Next, create an <tt>ArrayList</tt> of <i>N</i>
+references to the "space nodes" in the list (where <i>N</i>+1 is the
+number of words on this line).  Calculate  how many additional spaces
+(call this number <i>M</i>) must be added to the line in order to
+obtain a justified line.</p>
+<ul class="inline">
+<li>If M = 0, you are ready to output the line.</li>
+<li>If <i>M</i> = <i>N</i>, add one space to each of the <i>N</i>
+space nodes, then terminate.</li>
+<li>If <i>M</i> &lt; <i>N</i>, randomly select <i>M</i> <i>different</i>
+array positions, and add one space to the string stored in each of the
+corresponding "space nodes".</li> <li>If <i>M</i> &gt; <i>N</i>, add
+one space to <i>each</i> of the <i>N</i> space nodes, subtract <i>N</i> from
+<i>M</i>. Repeat this process until <i>M &lt; </i>N or <i>M</i> = 0;
+then do the above <i>M</i> &lt; <i>N</i>&nbsp; or <i>M</i> = <i>N </i>case..</li>
+</ul>
+<p>The reason for randomly choosing which space nodes to enlarge is to avoid
+the appearance of more white space on one side of the text than on the
+other side, which would happen if you always added the spaces in the
+same places first.  Notice that this approach also avoids adding too many
+spaces in the same place; the number of added spaces in any two space
+nodes from the same line will either be the same or differ by one.</p>
+
+<p>Once enough spaces have been added, traverse the list and print the
+strings, including the strings of spaces.</p>
+
+<h2>Implementation</h2>
+
+<p>Obviously, you will need to utilize a linked list class to use
+this algorithm.  The specifics of which library class to use are found
+in the <a href="overview.html">main document</a>.</p>
+
+</body>
+
+</html>

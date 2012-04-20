@@ -1,0 +1,78 @@
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo" -nt timestamp -uc TrafficSignalController_TOPLEVEL.ucf  -p xc3s200-ft256-4 TrafficSignalController_TOPLEVEL.ngc TrafficSignalController_TOPLEVEL.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ngd TrafficSignalController_TOPLEVEL.pcf
+par -w -intstyle ise -ol std -t 1 TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ncd TrafficSignalController_TOPLEVEL.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml TrafficSignalController_TOPLEVEL TrafficSignalController_TOPLEVEL.ncd -o TrafficSignalController_TOPLEVEL.twr TrafficSignalController_TOPLEVEL.pcf
+bitgen -intstyle ise -f TrafficSignalController_TOPLEVEL.ut TrafficSignalController_TOPLEVEL.ncd
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo" -nt timestamp -uc TrafficSignalController_TOPLEVEL.ucf  -p xc3s200-ft256-4 TrafficSignalController_TOPLEVEL.ngc TrafficSignalController_TOPLEVEL.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ngd TrafficSignalController_TOPLEVEL.pcf
+par -w -intstyle ise -ol std -t 1 TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ncd TrafficSignalController_TOPLEVEL.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml TrafficSignalController_TOPLEVEL TrafficSignalController_TOPLEVEL.ncd -o TrafficSignalController_TOPLEVEL.twr TrafficSignalController_TOPLEVEL.pcf
+bitgen -intstyle ise -f TrafficSignalController_TOPLEVEL.ut TrafficSignalController_TOPLEVEL.ncd
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo" -nt timestamp -uc TrafficSignalController_TOPLEVEL.ucf  -p xc3s200-ft256-4 TrafficSignalController_TOPLEVEL.ngc TrafficSignalController_TOPLEVEL.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ngd TrafficSignalController_TOPLEVEL.pcf
+par -w -intstyle ise -ol std -t 1 TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ncd TrafficSignalController_TOPLEVEL.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml TrafficSignalController_TOPLEVEL TrafficSignalController_TOPLEVEL.ncd -o TrafficSignalController_TOPLEVEL.twr TrafficSignalController_TOPLEVEL.pcf
+bitgen -intstyle ise -f TrafficSignalController_TOPLEVEL.ut TrafficSignalController_TOPLEVEL.ncd
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo" -nt timestamp -uc TrafficSignalController_TOPLEVEL.ucf  -p xc3s200-ft256-4 TrafficSignalController_TOPLEVEL.ngc TrafficSignalController_TOPLEVEL.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ngd TrafficSignalController_TOPLEVEL.pcf
+par -w -intstyle ise -ol std -t 1 TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ncd TrafficSignalController_TOPLEVEL.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml TrafficSignalController_TOPLEVEL TrafficSignalController_TOPLEVEL.ncd -o TrafficSignalController_TOPLEVEL.twr TrafficSignalController_TOPLEVEL.pcf
+bitgen -intstyle ise -f TrafficSignalController_TOPLEVEL.ut TrafficSignalController_TOPLEVEL.ncd
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo" -nt timestamp -uc TrafficSignalController_TOPLEVEL.ucf  -p xc3s200-ft256-4 TrafficSignalController_TOPLEVEL.ngc TrafficSignalController_TOPLEVEL.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ngd TrafficSignalController_TOPLEVEL.pcf
+par -w -intstyle ise -ol std -t 1 TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ncd TrafficSignalController_TOPLEVEL.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml TrafficSignalController_TOPLEVEL TrafficSignalController_TOPLEVEL.ncd -o TrafficSignalController_TOPLEVEL.twr TrafficSignalController_TOPLEVEL.pcf
+bitgen -intstyle ise -f TrafficSignalController_TOPLEVEL.ut TrafficSignalController_TOPLEVEL.ncd
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo" -nt timestamp -uc TrafficSignalController_TOPLEVEL.ucf  -p xc3s200-ft256-4 TrafficSignalController_TOPLEVEL.ngc TrafficSignalController_TOPLEVEL.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ngd TrafficSignalController_TOPLEVEL.pcf
+par -w -intstyle ise -ol std -t 1 TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ncd TrafficSignalController_TOPLEVEL.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml TrafficSignalController_TOPLEVEL TrafficSignalController_TOPLEVEL.ncd -o TrafficSignalController_TOPLEVEL.twr TrafficSignalController_TOPLEVEL.pcf
+bitgen -intstyle ise -f TrafficSignalController_TOPLEVEL.ut TrafficSignalController_TOPLEVEL.ncd
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo" -nt timestamp -uc TrafficSignalController_TOPLEVEL.ucf  -p xc3s200-ft256-4 TrafficSignalController_TOPLEVEL.ngc TrafficSignalController_TOPLEVEL.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ngd TrafficSignalController_TOPLEVEL.pcf
+par -w -intstyle ise -ol std -t 1 TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ncd TrafficSignalController_TOPLEVEL.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml TrafficSignalController_TOPLEVEL TrafficSignalController_TOPLEVEL.ncd -o TrafficSignalController_TOPLEVEL.twr TrafficSignalController_TOPLEVEL.pcf
+bitgen -intstyle ise -f TrafficSignalController_TOPLEVEL.ut TrafficSignalController_TOPLEVEL.ncd
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo" -nt timestamp -uc TrafficSignalController_TOPLEVEL.ucf  -p xc3s200-ft256-4 TrafficSignalController_TOPLEVEL.ngc TrafficSignalController_TOPLEVEL.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ngd TrafficSignalController_TOPLEVEL.pcf
+par -w -intstyle ise -ol std -t 1 TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ncd TrafficSignalController_TOPLEVEL.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml TrafficSignalController_TOPLEVEL TrafficSignalController_TOPLEVEL.ncd -o TrafficSignalController_TOPLEVEL.twr TrafficSignalController_TOPLEVEL.pcf
+bitgen -intstyle ise -f TrafficSignalController_TOPLEVEL.ut TrafficSignalController_TOPLEVEL.ncd
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo" -nt timestamp -uc TrafficSignalController_TOPLEVEL.ucf  -p xc3s200-ft256-4 TrafficSignalController_TOPLEVEL.ngc TrafficSignalController_TOPLEVEL.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ngd TrafficSignalController_TOPLEVEL.pcf
+par -w -intstyle ise -ol std -t 1 TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ncd TrafficSignalController_TOPLEVEL.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml TrafficSignalController_TOPLEVEL TrafficSignalController_TOPLEVEL.ncd -o TrafficSignalController_TOPLEVEL.twr TrafficSignalController_TOPLEVEL.pcf
+bitgen -intstyle ise -f TrafficSignalController_TOPLEVEL.ut TrafficSignalController_TOPLEVEL.ncd
+xst -intstyle ise -ifn __projnav/TrafficSignalController_TOPLEVEL.xst -ofn TrafficSignalController_TOPLEVEL.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo" -nt timestamp -uc TrafficSignalController_TOPLEVEL.ucf  -p xc3s200-ft256-4 TrafficSignalController_TOPLEVEL.ngc TrafficSignalController_TOPLEVEL.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ngd TrafficSignalController_TOPLEVEL.pcf
+par -w -intstyle ise -ol std -t 1 TrafficSignalController_TOPLEVEL_map.ncd TrafficSignalController_TOPLEVEL.ncd TrafficSignalController_TOPLEVEL.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml TrafficSignalController_TOPLEVEL TrafficSignalController_TOPLEVEL.ncd -o TrafficSignalController_TOPLEVEL.twr TrafficSignalController_TOPLEVEL.pcf
+bitgen -intstyle ise -f TrafficSignalController_TOPLEVEL.ut TrafficSignalController_TOPLEVEL.ncd

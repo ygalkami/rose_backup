@@ -1,0 +1,15 @@
+from graphics import *
+
+win = GraphWin()
+
+imgfile = raw_input("Enter the name of the file with the image names in it: ")
+sleeptime = raw_input("Enter an amount of time to wait inbetween slides: ")
+
+file = open(imgfile + ".txt", 'r')
+
+for i in range(4):
+    curline = file.readline()
+    imgname = curline
+    Image(Point(100, 100), imgname)
+    time.sleep(sleeptime)
+    

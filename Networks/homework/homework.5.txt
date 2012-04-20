@@ -1,0 +1,42 @@
+1 - R7) MAC - 2^48 possibilties, IPv4 - 2^32, IPv6 - 2^128
+
+2 - R8) Node C will recieve the datagrams but since they aren't intended for
+	  C's MAC address they will be dropped and not enter C's network layer
+	
+	  If the frame is sent with the broadcast address then all the nodes will
+	  accept the frames and move them into the network layer.
+
+3 - R10) Since ARP tables are cleared intermittently, so it is possible to have a small overlap period
+
+4 - R13) dealy = 4 * 512 = 204.8 micro seconds
+
+
+5 - P25)  
+BEFORE
+Address	|	Interface	|	Time	|
+
+
+AFTER
+Address		|	Interface	|	Time	|
+AA-AA-AA-AA-AA-AA		A			0-1 A->D	
+BB-BB-BB-BB-BB-BB		D
+CC-CC-CC-CC-CC-CC		C			2 C->D
+
+
+6 - P16)
+No the retransmissions will not collide.
+B will schedule its retransmission one bit time later. Because of the prop delay A will be using the 
+link so its transmission will get sent at 274 bit times.
+A's signal reaches B in 273 bit times.
+
+
+7 - A) DHCP provides configuration parameters for Internet Hosts
+7 - B) Automatic Allocation
+	 Automatic Allocation
+	 Manual Allocation
+7 - C)
+i) Find out what addresses are in use
+ii) How long assigned address can be kept before they need to be renewed
+iii) get an address
+iv) let hosts know you have recieved your lease offer
+ 

@@ -1,0 +1,79 @@
+8
+
+dir
+96
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/FinalExam
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-11-12T23:15:32.672702Z
+96
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+.cdtproject
+file
+
+
+
+
+2007-11-12T23:47:49.870501Z
+adbc35fe466217ef2b27ec9cd7c43c12
+2007-11-12T23:15:32.672702Z
+96
+clifton
+
+.project
+file
+
+
+
+
+2007-11-12T23:47:49.870501Z
+ee46051c14ff755d92dab720922b61b1
+2007-11-12T23:15:32.672702Z
+96
+clifton
+
+.cdtbuild
+file
+
+
+
+
+2007-11-12T23:47:49.886127Z
+79803c12673daac6ca7c9c989e715fef
+2007-11-12T23:15:32.672702Z
+96
+clifton
+
+fe-main.c
+file
+98
+
+
+
+2007-11-13T01:25:00.046875Z
+09caa6ac7f9ac038108ad83f30fac0cf
+2007-11-13T01:24:09.555329Z
+98
+pickdp
+
+.settings
+dir
+

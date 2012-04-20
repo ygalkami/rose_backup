@@ -1,0 +1,22 @@
+# XST flow : Creating project file
+Glitch.prj
+# xst flow : Check Syntax
+Glitch.sprj
+__projnav/Glitch.xst
+xst
+# xst flow : RunXST
+Glitch.prj
+__projnav/Glitch.xst
+./xst
+# XST flow : Creating project file
+Glitch.prj
+# xst flow : RunXST
+Glitch.prj
+__projnav/Glitch.xst
+./xst
+# XST flow : Creating project file
+Glitch.prj
+# xst flow : RunXST
+Glitch.prj
+__projnav/Glitch.xst
+./xst

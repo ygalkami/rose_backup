@@ -1,0 +1,45 @@
+
+public class LinkedList<T> {
+	private ListNode<T> first, last;
+	
+	public LinkedList() {
+		first = last = null;
+	}
+	
+	public LinkedList(T e) {
+		first = last = new ListNode (e);
+	}
+	
+	public boolean add(T e) {
+		if (this.first == null) {
+			first = last = new ListNode<T>(e);
+		}
+		else {
+			last = last.next = new ListNode<T>(e);
+		}
+		return true;
+	}
+	
+	public int size() {
+		if (this.first == null) 
+			return 0;
+		else {
+			int counter = 0;
+			ListNode<T> current = this.first;
+			while (current != null) {
+				counter++;
+				current = current.next;
+			}
+			return counter;
+		}
+	}
+	@Override
+	public String toString() {
+		String result = "[ ";
+		for (ListNode<T> p = first; p != null; p = p.next) {
+			result += (p.element + " ");
+		}
+		return result;
+	}
+	
+}

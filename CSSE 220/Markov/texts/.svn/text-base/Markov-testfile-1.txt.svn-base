@@ -1,0 +1,15 @@
+abc def
+This file is a file of nonesnse but a file of nonsense that is short
+should be better for the initial test than a file of brilliant prose
+that is long.   This file is short enough to be fairly easy to check
+but I don't think it is short enough to miss catching a few silly
+mistakes that might be hard to see in a file that is not short enough
+to view by hand.
+
+The file space tends to grow at a files pace.
+(Yes I know there should have been an apostrophe,
+ but that would have messed up what I am trying to test).
+
+abc def
+times low one times low two times low three time slow four
+time slow five time slow six 

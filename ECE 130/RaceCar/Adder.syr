@@ -1,0 +1,275 @@
+Release 7.1.04i - xst H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to __projnav
+CPU : 0.00 / 0.23 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Parameter xsthdpdir set to ./xst
+CPU : 0.00 / 0.23 s | Elapsed : 0.00 / 0.00 s
+ 
+--> Reading design: Adder.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) HDL Analysis
+  4) HDL Synthesis
+  5) Advanced HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Final Report
+     7.1) Device utilization summary
+     7.2) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Adder.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Adder"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : Adder
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+FSM Style                          : lut
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+ROM Style                          : Auto
+Mux Extraction                     : YES
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : YES
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+Resource Sharing                   : YES
+Multiplier Style                   : auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Equivalent register Removal        : YES
+Slice Packing                      : YES
+Pack IO Registers into IOBs        : auto
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : NO
+Global Optimization                : AllClockNets
+RTL Output                         : Yes
+Write Timing Constraints           : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : maintain
+Slice Utilization Ratio            : 100
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+lso                                : Adder.lso
+Read Cores                         : YES
+cross_clock_analysis               : NO
+verilog2001                        : YES
+safe_implementation                : No
+Optimize Instantiated Primitives   : NO
+use_clock_enable                   : Yes
+use_sync_set                       : Yes
+use_sync_reset                     : Yes
+enable_auto_floorplanning          : No
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "130d.v"
+Module <JKFF> compiled
+Module <TFF> compiled
+Module <DLatch> compiled
+Module <DFF> compiled
+Module <Adder> compiled
+Module <Comparator> compiled
+Module <Counter> compiled
+Module <CounterUpDown> compiled
+Module <Decode2to4> compiled
+Module <Decode3to8> compiled
+Module <Encode4to2> compiled
+Module <Encode8to3> compiled
+Module <Synchronizer> compiled
+Module <FrequencyDivider> compiled
+Module <MUX2> compiled
+Module <MUX4> compiled
+Module <MUX8> compiled
+Module <MUX16> compiled
+Module <Register> compiled
+Module <Register4> compiled
+Module <TransitionDetector> compiled
+Module <Display> compiled
+Module <DisplayHex> compiled
+Module <Debouncer> compiled
+Module <OneShot> compiled
+Module <ClockEnabler> compiled
+No errors in compilation
+Analysis of file <"Adder.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Adder>.
+	pWidth = 8
+Module <Adder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Adder>.
+    Related source file is "130d.v".
+    Found 8-bit adder carry in/out for signal <$n0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors               : 1
+ 8-bit adder carry in/out          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Adder> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Adder, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Adder.ngr
+Top Level Output File Name         : Adder
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : NO
+
+Design Statistics
+# IOs                              : 26
+
+Macro Statistics :
+# Adders/Subtractors               : 1
+#      8-bit adder carry in/out    : 1
+
+Cell Usage :
+# BELS                             : 24
+#      LUT2                        : 8
+#      MUXCY                       : 8
+#      XORCY                       : 8
+# IO Buffers                       : 26
+#      IBUF                        : 17
+#      OBUF                        : 9
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       4  out of   1920     0%  
+ Number of 4 input LUTs:                 8  out of   3840     0%  
+ Number of bonded IOBs:                 26  out of    173    15%  
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.745ns
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default path analysis
+  Total number of paths / destination ports: 133 / 9
+-------------------------------------------------------------------------
+Delay:               10.745ns (Levels of Logic = 11)
+  Source:            iB<0> (PAD)
+  Destination:       oSum<7> (PAD)
+
+  Data Path: iB<0> to oSum<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             1   0.821   1.140  iB_0_IBUF (iB_0_IBUF)
+     LUT2:I0->O            1   0.551   0.000  Adder_oSum<0>lut (N3)
+     MUXCY:S->O            1   0.500   0.000  Adder_oSum<0>cy (Adder_oSum<0>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  Adder_oSum<1>cy (Adder_oSum<1>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  Adder_oSum<2>cy (Adder_oSum<2>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  Adder_oSum<3>cy (Adder_oSum<3>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  Adder_oSum<4>cy (Adder_oSum<4>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  Adder_oSum<5>cy (Adder_oSum<5>_cyo)
+     MUXCY:CI->O           1   0.064   0.000  Adder_oSum<6>cy (Adder_oSum<6>_cyo)
+     XORCY:CI->O           1   0.904   0.801  Adder_oSum<7>_xor (oSum_7_OBUF)
+     OBUF:I->O                 5.644          oSum_7_OBUF (oSum<7>)
+    ----------------------------------------
+    Total                     10.745ns (8.804ns logic, 1.941ns route)
+                                       (81.9% logic, 18.1% route)
+
+=========================================================================
+CPU : 4.77 / 5.01 s | Elapsed : 5.00 / 5.00 s
+ 
+--> 
+
+Total memory usage is 97080 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    0 (   0 filtered)
+

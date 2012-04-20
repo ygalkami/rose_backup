@@ -1,0 +1,15 @@
+Run make to compile the program.
+
+Run the program by issuing the command:
+
+./thread n inFile outFile
+
+Where:
+N = the number of threads to spawn
+inFile is the file to copy to the outFile
+
+Average time for N = 35
+Processes = 3056
+Threads = 97
+
+Spawning threads is much faster than spawning child processes.

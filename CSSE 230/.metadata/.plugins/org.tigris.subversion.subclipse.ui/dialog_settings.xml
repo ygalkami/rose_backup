@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="1736" key="RevertDialog.location.x"/>
+	<item value="375" key="RevertDialog.location.y"/>
+	<item value="1" key="RevertDialog.sortColumn"/>
+	<item value="200" key="HistoryDialog.weights.2"/>
+	<item value="200" key="HistoryDialog.weights.1"/>
+	<item value="200" key="HistoryDialog.weights.0"/>
+	<item value="1007" key="RevertDialog.size.x"/>
+	<item value="450" key="RevertDialog.size.y"/>
+	<item value="1" key="CommitDialog.sortColumn"/>
+	<item value="150" key="CommitDialog.column2"/>
+	<item value="150" key="CommitDialog.column1"/>
+	<item value="150" key="CommitDialog.column3"/>
+	<item value="20" key="CommitDialog.column0"/>
+	<item value="555" key="CommitDialog.weights.0"/>
+	<item value="444" key="CommitDialog.weights.1"/>
+	<item value="http://svn.cs.rose-hulman.edu/repos/csse230-sliding-200830-28/SlidingBlocks" key="UrlCombo.SlidingBlocks.0"/>
+	<item value="400" key="HistoryDialog.size.x"/>
+	<item value="400" key="HistoryDialog.size.y"/>
+	<item value="150" key="RevertDialog.column3"/>
+	<item value="150" key="RevertDialog.column2"/>
+	<item value="false" key="CommitDialog.sortReversed"/>
+	<item value="229" key="CommitDialog.location.y"/>
+	<item value="150" key="RevertDialog.column1"/>
+	<item value="681" key="CommitDialog.location.x"/>
+	<item value="20" key="RevertDialog.column0"/>
+	<item value="559" key="CommitDialog.size.x"/>
+	<item value="535" key="CommitDialog.size.y"/>
+	<item value="false" key="RevertDialog.sortReversed"/>
+	<item value="303" key="HistoryDialog.location.y"/>
+	<item value="2040" key="HistoryDialog.location.x"/>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="http://project3wjeoin.googlecode.com/svn/trunk/"/>
+			<item value="http://svn.cs.rose-hulman.edu/repos/csse230-sliding-200830-28"/>
+			<item value="http://svn.cs.rose-hulman.edu/repos/csse230-200830-pickdp"/>
+		</list>
+	</section>
+</section>

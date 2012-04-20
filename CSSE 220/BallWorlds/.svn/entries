@@ -1,0 +1,74 @@
+8
+
+dir
+27
+http://svn.cs.rose-hulman.edu/repos/csse220-winter2008-pickdp/Ballworlds
+http://svn.cs.rose-hulman.edu/repos/csse220-winter2008-pickdp
+
+
+
+2008-01-07T10:05:57.867944Z
+27
+richarme
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bdb6ebd3-5640-0410-bb24-fb6c758ba0c5
+
+.classpath
+file
+
+
+
+
+2007-12-13T16:05:35.136977Z
+faad576c953ac0f96b6adfb7e2e3bf8f
+2007-12-12T22:42:19.592655Z
+14
+anderson
+
+.project
+file
+
+
+
+
+2007-12-13T16:05:35.152601Z
+142dda513fcc9938fedb26ac9ea8ccd7
+2007-12-12T22:42:19.592655Z
+14
+anderson
+
+doc
+dir
+
+src
+dir
+
+bin
+dir
+
+DavidPick.docx
+file
+
+
+
+
+2008-01-07T20:42:57.515625Z
+db9eac95c58c877f41577a5e3a5bcb89
+2008-01-07T10:05:57.867944Z
+27
+richarme
+has-props
+

@@ -1,0 +1,8 @@
+echo approaching blank lines
+
+
+
+
+echo passed blank lines
+echo not quitting with status of 40
+#quit 40

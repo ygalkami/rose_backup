@@ -1,0 +1,6 @@
+xst -intstyle ise -ifn __projnav/MyPattern.xst -ofn MyPattern.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project/_ngo" -nt timestamp -i  -p xc3s200-ft256-4 MyPattern.ngc MyPattern.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o MyPattern_map.ncd MyPattern.ngd MyPattern.pcf
+par -w -intstyle ise -ol std -t 1 MyPattern_map.ncd MyPattern.ncd MyPattern.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml MyPattern MyPattern.ncd -o MyPattern.twr MyPattern.pcf
+bitgen -intstyle ise -f MyPattern.ut MyPattern.ncd

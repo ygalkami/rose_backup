@@ -1,0 +1,33 @@
+# Points: 10/10
+# Add your code for the homework to this module.
+from zellegraphics import *
+win = GraphWin('Soccer' , 800, 350)
+line = Line(Point(100, 120), Point(100, 250))
+line.draw(win)
+leg1 = Line(Point(100,250), Point(100, 350))
+leg1.draw(win)
+leg2 = Line(Point(100,250), Point(80, 350))
+leg2.draw(win)
+head = Circle(Point(100, 70), 50)
+head.draw(win)
+ball = Circle(Point(125, 330), 20)
+ball.setFill('white')
+ball.draw(win)
+Leye = Point(80, 55)
+Leye.draw(win)
+Reye = Point(120, 55)
+Reye.draw(win)
+mouth = Line(Point(80, 90), Point(120, 90))
+mouth.draw(win)
+arm = Line(Point(50, 200), Point(150, 200))
+arm.draw(win)
+for i in range(20):
+ leg1.undraw()
+ leg1 = Line(Point(100, 250), Point(100 + i, 350))
+ leg1.draw(win)
+ ball.move(1,0)
+ time.sleep(.01)
+for i in range(500):
+ ball.move(1,0)
+ time.sleep(.01 + (i / 497))
+win.getMouse()

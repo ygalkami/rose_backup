@@ -1,0 +1,116 @@
+8
+
+dir
+19
+http://svn.cs.rose-hulman.edu/repos/csse220-winter2008-pickdp/BigRational
+http://svn.cs.rose-hulman.edu/repos/csse220-winter2008-pickdp
+
+
+
+2007-12-16T03:49:51.092634Z
+18
+mrozekma
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+bdb6ebd3-5640-0410-bb24-fb6c758ba0c5
+
+.classpath
+file
+
+
+
+
+2007-12-09T20:12:32.179685Z
+6a13348aa4a2d3a120e8971e6a0940fb
+2007-12-10T23:24:28.834690Z
+10
+pickdp
+
+ArithmeticObject.java
+file
+
+
+
+
+2007-12-04T15:49:15.975505Z
+df95313d41e20c451592e2c447b959eb
+2007-12-03T20:26:29.926467Z
+1
+anderson
+
+ArithmeticObject.html
+file
+
+
+
+
+2007-12-04T15:49:15.975505Z
+46d0c0662553ecc3cecb7de56c6201a1
+2007-12-03T20:26:29.926467Z
+1
+anderson
+
+.project
+file
+
+
+
+
+2007-12-04T15:49:15.991131Z
+681be73ad8a33248b76c46f53819996b
+2007-12-03T20:26:29.926467Z
+1
+anderson
+
+doc
+dir
+
+BigRational.java
+file
+
+
+
+
+2007-12-11T00:52:48.477638Z
+6d661cc7dd7ffcd7fb93ae8632253318
+2007-12-11T00:52:00.512041Z
+12
+pickdp
+
+BigRationalTest.java
+file
+
+
+
+
+2007-12-11T00:52:39.647309Z
+6109c6e254f81378e0176b4e9398a6b0
+2007-12-11T00:52:23.574767Z
+13
+pickdp
+
+BigRational Sheet.pdf
+file
+
+
+
+
+2007-12-17T14:58:56.593750Z
+085aa2e21090a5a84edf16cd41b07260
+2007-12-16T03:49:51.092634Z
+18
+mrozekma
+has-props
+

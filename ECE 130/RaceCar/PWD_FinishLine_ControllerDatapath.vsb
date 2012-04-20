@@ -1,0 +1,138 @@
+<Cluster>
+<Name></Name>
+<NumElts>6</NumElts>
+<String>
+<Name>description</Name>
+<Val></Val>
+</String>
+<String>
+<Name>Value</Name>
+<Val>PWD_FinishLine</Val>
+</String>
+<String>
+<Name>Value</Name>
+<Val>iLaneSensor:4
+iLaneSensorP:4
+iGate
+</Val>
+</String>
+<Cluster>
+<Name>Value</Name>
+<NumElts>4</NumElts>
+<String>
+<Name>controller</Name>
+<Val>0 -&amp;gt; iGate ? 1 : 0; iState=&apos;b00;
+1 -&amp;gt; iGate ? 2 : (|iLaneSensorP ? 0 : 1); iState=&apos;b10;
+2 -&amp;gt; |iLaneSensorP ? 3 : (oRaceDone ? 4 : 2); iState=&apos;b01;
+3 -&amp;gt; oRaceDone ? 4 : 2; iState=&apos;b01, iCarCrosses=1;
+4 -&amp;gt; 4; iState=&apos;b11;</Val>
+</String>
+<String>
+<Name>controller outputs</Name>
+<Val>iState:2
+iCarCrosses</Val>
+</String>
+<String>
+<Name>reset state</Name>
+<Val>0</Val>
+</String>
+<U32>
+<Name> SR width</Name>
+<Val>4</Val>
+</U32>
+</Cluster>
+<Cluster>
+<Name>Value</Name>
+<NumElts>2</NumElts>
+<String>
+<Name>datapath</Name>
+<Val>opAllLanes = {PLane1 , PLane2, PLane3, PLane4};
+
+PLane1&amp;lt;- iLaneSensor[3]==1 ? 8&apos;b01111111 : 8&apos;b00110110;
+
+PLane2&amp;lt;- iLaneSensor[2]==1 ? 8&apos;b01111111 : 8&apos;b00110110;
+
+PLane3&amp;lt;- iLaneSensor[1]==1 ? 8&apos;b01111111 : 8&apos;b00110110;
+
+PLane4&amp;lt;- iLaneSensor[0]==1 ? 8&apos;b01111111 : 8&apos;b00110110;
+
+oDisplay&amp;lt;- iState==2&apos;b10 ? 32&apos;b01011011010110110101101101011011 : opAllLanes;
+
+Place&amp;lt;- iCarCrosses ? Place+1 : Place;
+
+Lane1.8&apos;b11111110&amp;lt;- (Place==0 &amp;amp;&amp;amp; iLaneSensorP[3]==1) ? 8&apos;b00110000: Lane1&amp;lt;- (Place==1 &amp;amp;&amp;amp; iLaneSensorP[3]) ? 8&apos;b01101101 : Lane1&amp;lt;- (Place==2 &amp;amp;&amp;amp; iLaneSensorP[3]) ? 8&apos;b01111001 : Lane1&amp;lt;- (Place==3 &amp;amp;&amp;amp; iLaneSensorP[3]) ? 8&apos;b00110011 : Lane1;
+
+Lane2.8&apos;b11111110&amp;lt;- (Place==0 &amp;amp;&amp;amp; iLaneSensorP[2]==1) ? 8&apos;b00110000: Lane2&amp;lt;- (Place==1 &amp;amp;&amp;amp; iLaneSensorP[2]) ? 8&apos;b01101101 : Lane2&amp;lt;- (Place==2 &amp;amp;&amp;amp; iLaneSensorP[2]) ? 8&apos;b01111001 : Lane2&amp;lt;- (Place==3 &amp;amp;&amp;amp; iLaneSensorP[2]) ? 8&apos;b00110011 : Lane2;
+
+Lane3.8&apos;b11111110&amp;lt;- (Place==0 &amp;amp;&amp;amp; iLaneSensorP[1]==1) ? 8&apos;b00110000: Lane3&amp;lt;- (Place==1 &amp;amp;&amp;amp; iLaneSensorP[1]) ? 8&apos;b01101101 : Lane3&amp;lt;- (Place==2 &amp;amp;&amp;amp; iLaneSensorP[1]) ? 8&apos;b01111001 : Lane3&amp;lt;- (Place==3 &amp;amp;&amp;amp; iLaneSensorP[1]) ? 8&apos;b00110011 : Lane3;
+
+Lane4.8&apos;b11111110&amp;lt;- (Place==0 &amp;amp;&amp;amp; iLaneSensorP[0]==1) ? 8&apos;b00110000: Lane4&amp;lt;- (Place==1 &amp;amp;&amp;amp; iLaneSensorP[0]) ? 8&apos;b01101101 : Lane4&amp;lt;- (Place==2 &amp;amp;&amp;amp; iLaneSensorP[0]) ? 8&apos;b01111001 : Lane4&amp;lt;- (Place==3 &amp;amp;&amp;amp; iLaneSensorP[0]) ? 8&apos;b00110011 : Lane4;
+
+oRaceDone&amp;lt;- &amp;amp;iLaneSensor==1 ? 1 : 0;
+oDisplay= {Lane1 , Lane2, Lane3, Lane4};</Val>
+</String>
+<String>
+<Name>datapath outputs</Name>
+<Val>opAllLanes:32
+PLane1:8 
+PLane2:8 
+PLane3:8 
+PLane4:8
+*oDisplay:32
+Lane1:8
+Lane2:8
+Lane3:8
+Lane4:8
+Place:2
+oRaceDone</Val>
+</String>
+</Cluster>
+<Cluster>
+<Name>Value</Name>
+<NumElts>3</NumElts>
+<String>
+<Name>declarations</Name>
+<Val>task LaneSensor (input integer lane);
+ begin
+iLaneSensorP=lane;
+#1 iLaneSensorP=0;
+end
+endtask</Val>
+</String>
+<String>
+<Name>testbench</Name>
+<Val>iLaneSensorP = 4&apos;b0000;
+iLaneSensor[3] = 0;
+iLaneSensor[2] = 0;
+iLaneSensor[1] = 0;
+iLaneSensor[0] = 0;
+iGate = 0;
+
+#1
+iGate = 1;
+
+#10
+
+LaneSensor(4&apos;b1000) ;
+iLaneSensor[3] = 1;
+#1
+
+LaneSensor(4&apos;b0100);
+iLaneSensor[2]=1;
+#1
+
+LaneSensor(4&apos;b0010);
+iLaneSensor[1] = 1;
+#1
+
+LaneSensor(4&apos;b0001);
+iLaneSensor[0] =1;
+
+#5 $stop;</Val>
+</String>
+<Boolean>
+<Name>absolute time</Name>
+<Val>0</Val>
+</Boolean>
+</Cluster>
+</Cluster>

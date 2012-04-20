@@ -1,0 +1,52 @@
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo" -nt timestamp -uc StageLights_TOP.ucf  -p xc3s200-ft256-4 StageLights_TOP.ngc StageLights_TOP.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o StageLights_TOP_map.ncd StageLights_TOP.ngd StageLights_TOP.pcf
+par -w -intstyle ise -ol std -t 1 StageLights_TOP_map.ncd StageLights_TOP.ncd StageLights_TOP.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml StageLights_TOP StageLights_TOP.ncd -o StageLights_TOP.twr StageLights_TOP.pcf
+bitgen -intstyle ise -f StageLights_TOP.ut StageLights_TOP.ncd
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo" -nt timestamp -uc StageLights_TOP.ucf  -p xc3s200-ft256-4 StageLights_TOP.ngc StageLights_TOP.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o StageLights_TOP_map.ncd StageLights_TOP.ngd StageLights_TOP.pcf
+par -w -intstyle ise -ol std -t 1 StageLights_TOP_map.ncd StageLights_TOP.ncd StageLights_TOP.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml StageLights_TOP StageLights_TOP.ncd -o StageLights_TOP.twr StageLights_TOP.pcf
+bitgen -intstyle ise -f StageLights_TOP.ut StageLights_TOP.ncd
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo" -nt timestamp -uc StageLights_TOP.ucf  -p xc3s200-ft256-4 StageLights_TOP.ngc StageLights_TOP.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o StageLights_TOP_map.ncd StageLights_TOP.ngd StageLights_TOP.pcf
+par -w -intstyle ise -ol std -t 1 StageLights_TOP_map.ncd StageLights_TOP.ncd StageLights_TOP.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml StageLights_TOP StageLights_TOP.ncd -o StageLights_TOP.twr StageLights_TOP.pcf
+bitgen -intstyle ise -f StageLights_TOP.ut StageLights_TOP.ncd
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo" -nt timestamp -uc StageLights_TOP.ucf  -p xc3s200-ft256-4 StageLights_TOP.ngc StageLights_TOP.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o StageLights_TOP_map.ncd StageLights_TOP.ngd StageLights_TOP.pcf
+par -w -intstyle ise -ol std -t 1 StageLights_TOP_map.ncd StageLights_TOP.ncd StageLights_TOP.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml StageLights_TOP StageLights_TOP.ncd -o StageLights_TOP.twr StageLights_TOP.pcf
+bitgen -intstyle ise -f StageLights_TOP.ut StageLights_TOP.ncd
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo" -nt timestamp -uc StageLights_TOP.ucf  -p xc3s200-ft256-4 StageLights_TOP.ngc StageLights_TOP.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o StageLights_TOP_map.ncd StageLights_TOP.ngd StageLights_TOP.pcf
+par -w -intstyle ise -ol std -t 1 StageLights_TOP_map.ncd StageLights_TOP.ncd StageLights_TOP.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml StageLights_TOP StageLights_TOP.ncd -o StageLights_TOP.twr StageLights_TOP.pcf
+bitgen -intstyle ise -f StageLights_TOP.ut StageLights_TOP.ncd
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo" -nt timestamp -uc StageLights_TOP.ucf  -p xc3s200-ft256-4 StageLights_TOP.ngc StageLights_TOP.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o StageLights_TOP_map.ncd StageLights_TOP.ngd StageLights_TOP.pcf
+par -w -intstyle ise -ol std -t 1 StageLights_TOP_map.ncd StageLights_TOP.ncd StageLights_TOP.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml StageLights_TOP StageLights_TOP.ncd -o StageLights_TOP.twr StageLights_TOP.pcf
+bitgen -intstyle ise -f StageLights_TOP.ut StageLights_TOP.ncd
+xst -intstyle ise -ifn __projnav/StageLights_TOP.xst -ofn StageLights_TOP.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo" -nt timestamp -uc StageLights_TOP.ucf  -p xc3s200-ft256-4 StageLights_TOP.ngc StageLights_TOP.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o StageLights_TOP_map.ncd StageLights_TOP.ngd StageLights_TOP.pcf
+par -w -intstyle ise -ol std -t 1 StageLights_TOP_map.ncd StageLights_TOP.ncd StageLights_TOP.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml StageLights_TOP StageLights_TOP.ncd -o StageLights_TOP.twr StageLights_TOP.pcf
+bitgen -intstyle ise -f StageLights_TOP.ut StageLights_TOP.ncd

@@ -1,0 +1,59 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/repos/csse120-fall07-pickdp/!svn/ver/88/CharsStringsFiles
+END
+.cdtproject
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/repos/csse120-fall07-pickdp/!svn/ver/88/CharsStringsFiles/.cdtproject
+END
+EXPECTED_OUTPUT.txt
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/repos/csse120-fall07-pickdp/!svn/ver/88/CharsStringsFiles/EXPECTED_OUTPUT.txt
+END
+string-functions.h
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/csse120-fall07-pickdp/!svn/ver/88/CharsStringsFiles/string-functions.h
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/repos/csse120-fall07-pickdp/!svn/ver/88/CharsStringsFiles/.project
+END
+file-functions.c
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/csse120-fall07-pickdp/!svn/ver/88/CharsStringsFiles/file-functions.c
+END
+.cdtbuild
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/csse120-fall07-pickdp/!svn/ver/88/CharsStringsFiles/.cdtbuild
+END
+file-functions.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/csse120-fall07-pickdp/!svn/ver/88/CharsStringsFiles/file-functions.h
+END
+string-functions.c
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/repos/csse120-fall07-pickdp/!svn/ver/93/CharsStringsFiles/string-functions.c
+END
+csf-main.c
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/csse120-fall07-pickdp/!svn/ver/88/CharsStringsFiles/csf-main.c
+END

@@ -1,0 +1,2803 @@
+    ____  ____
+   /   /\/   /
+  /___/  \  /    VENDOR      : Xilinx Inc.
+  \   \   \/     VERSION     : 7.1i (H.42)
+   \   \         APPLICATION : compxlib
+   /   /         CONTENTS    : Compilation Log
+  /___/   /\     FILENAME    : compxlib.log
+  \   \  /  \    CREATED ON  : Mon Oct 23 08:50:32 2006
+   \___\/\___\
+
+XILINX = 'C:\Xilinx'
+Library Source => 'C:\Xilinx'
+
+Compilation Mode = FAST
+Scheduling library compilation for SPARTAN-3 
+
+Signature:-
+------------------------------------------------------------------------------
+compxlib -s ncsim
+         -arch spartan3
+          -lib unisim
+          -lib simprim
+          -lib xilinxcorelib
+         -l verilog
+         -dir C:\Xilinx
+         -log compxlib.log
+         -w
+------------------------------------------------------------------------------
+Compiling Xilinx HDL Libraries for NCSim (NC-Verilog) Simulator
+Language => verilog
+Backing up setup files if any...
+Output directory => 'C:\Xilinx\verilog\ncsim'
+
+--> Compiling verilog unisim library
+    > Unisim compiled to C:\Xilinx\verilog\ncsim\unisims_ver
+
+==============================================================================
+"START_COMPILE<unisim>" 
+ncvlog: 05.40-s011: (c) Copyright 1995-2005 Cadence Design Systems, Inc.
+file: C:/DOCUME~1/doering/LOCALS~1/Temp/xil_3480_6
+	module unisims_ver.AND2
+		errors: 0, warnings: 0
+	module unisims_ver.AND2B1
+		errors: 0, warnings: 0
+	module unisims_ver.AND2B2
+		errors: 0, warnings: 0
+	module unisims_ver.AND3
+		errors: 0, warnings: 0
+	module unisims_ver.AND3B1
+		errors: 0, warnings: 0
+	module unisims_ver.AND3B2
+		errors: 0, warnings: 0
+	module unisims_ver.AND3B3
+		errors: 0, warnings: 0
+	module unisims_ver.AND4
+		errors: 0, warnings: 0
+	module unisims_ver.AND4B1
+		errors: 0, warnings: 0
+	module unisims_ver.AND4B2
+		errors: 0, warnings: 0
+	module unisims_ver.AND4B3
+		errors: 0, warnings: 0
+	module unisims_ver.AND4B4
+		errors: 0, warnings: 0
+	module unisims_ver.AND5
+		errors: 0, warnings: 0
+	module unisims_ver.AND5B1
+		errors: 0, warnings: 0
+	module unisims_ver.AND5B2
+		errors: 0, warnings: 0
+	module unisims_ver.AND5B3
+		errors: 0, warnings: 0
+	module unisims_ver.AND5B4
+		errors: 0, warnings: 0
+	module unisims_ver.AND5B5
+		errors: 0, warnings: 0
+	module unisims_ver.BSCAN_FPGACORE
+		errors: 0, warnings: 0
+	module unisims_ver.BSCAN_SPARTAN2
+		errors: 0, warnings: 0
+	module unisims_ver.BSCAN_SPARTAN3
+		errors: 0, warnings: 0
+	module unisims_ver.BSCAN_VIRTEX
+		errors: 0, warnings: 0
+	module unisims_ver.BSCAN_VIRTEX2
+		errors: 0, warnings: 0
+	module unisims_ver.BSCAN_VIRTEX4
+		errors: 0, warnings: 0
+	module unisims_ver.BUF
+		errors: 0, warnings: 0
+	module unisims_ver.BUFCF
+		errors: 0, warnings: 0
+	module unisims_ver.BUFE
+		errors: 0, warnings: 0
+	module unisims_ver.BUFG
+		errors: 0, warnings: 0
+	module unisims_ver.BUFGCE
+		errors: 0, warnings: 0
+	module unisims_ver.BUFGCE_1
+		errors: 0, warnings: 0
+	module unisims_ver.BUFGCTRL
+		errors: 0, warnings: 0
+	module unisims_ver.BUFGDLL
+		errors: 0, warnings: 0
+	module unisims_ver.BUFGMUX
+		errors: 0, warnings: 0
+	module unisims_ver.BUFGMUX_1
+		errors: 0, warnings: 0
+	module unisims_ver.BUFGMUX_VIRTEX4
+		errors: 0, warnings: 0
+	module unisims_ver.BUFGP
+		errors: 0, warnings: 0
+	module unisims_ver.BUFIO
+		errors: 0, warnings: 0
+	module unisims_ver.BUFR
+		errors: 0, warnings: 0
+	module unisims_ver.BUFT
+		errors: 0, warnings: 0
+	module unisims_ver.CAPTURE_FPGACORE
+		errors: 0, warnings: 0
+	module unisims_ver.CAPTURE_SPARTAN2
+		errors: 0, warnings: 0
+	module unisims_ver.CAPTURE_SPARTAN3
+		errors: 0, warnings: 0
+	module unisims_ver.CAPTURE_VIRTEX
+		errors: 0, warnings: 0
+	module unisims_ver.CAPTURE_VIRTEX2
+		errors: 0, warnings: 0
+	module unisims_ver.CAPTURE_VIRTEX4
+		errors: 0, warnings: 0
+	module unisims_ver.CLKDLL
+		errors: 0, warnings: 0
+	module unisims_ver.clkdll_maximum_period_check
+		errors: 0, warnings: 0
+	module unisims_ver.CLKDLLE
+		errors: 0, warnings: 0
+	module unisims_ver.clkdlle_maximum_period_check
+		errors: 0, warnings: 0
+	module unisims_ver.CLKDLLHF
+		errors: 0, warnings: 0
+	module unisims_ver.clkdllhf_maximum_period_check
+		errors: 0, warnings: 0
+	module unisims_ver.CONFIG
+		errors: 0, warnings: 0
+	module unisims_ver.DCIRESET
+		errors: 0, warnings: 0
+	module unisims_ver.DCM
+		errors: 0, warnings: 0
+	module unisims_ver.dcm_clock_divide_by_2
+		errors: 0, warnings: 0
+	module unisims_ver.dcm_maximum_period_check
+		errors: 0, warnings: 0
+	module unisims_ver.dcm_clock_lost
+		errors: 0, warnings: 0
+	module unisims_ver.DCM_ADV
+		errors: 0, warnings: 0
+	module unisims_ver.dcm_adv_clock_divide_by_2
+		errors: 0, warnings: 0
+	module unisims_ver.dcm_adv_maximum_period_check
+		errors: 0, warnings: 0
+	module unisims_ver.dcm_adv_clock_lost
+		errors: 0, warnings: 0
+	module unisims_ver.DCM_BASE
+		errors: 0, warnings: 0
+	module unisims_ver.DCM_PS
+		errors: 0, warnings: 0
+	module unisims_ver.DSP48
+		errors: 0, warnings: 0
+	module unisims_ver.FD
+		errors: 0, warnings: 0
+	module unisims_ver.FDC
+		errors: 0, warnings: 0
+	module unisims_ver.FDCE
+		errors: 0, warnings: 0
+	module unisims_ver.FDCE_1
+		errors: 0, warnings: 0
+	module unisims_ver.FDCP
+		errors: 0, warnings: 0
+	module unisims_ver.FDCPE
+		errors: 0, warnings: 0
+	module unisims_ver.FDCPE_1
+		errors: 0, warnings: 0
+	module unisims_ver.FDCP_1
+		errors: 0, warnings: 0
+	module unisims_ver.FDC_1
+		errors: 0, warnings: 0
+	module unisims_ver.FDDRCPE
+		errors: 0, warnings: 0
+	module unisims_ver.FDDRRSE
+		errors: 0, warnings: 0
+	module unisims_ver.FDE
+		errors: 0, warnings: 0
+	module unisims_ver.FDE_1
+		errors: 0, warnings: 0
+	module unisims_ver.FDP
+		errors: 0, warnings: 0
+	module unisims_ver.FDPE
+		errors: 0, warnings: 0
+	module unisims_ver.FDPE_1
+		errors: 0, warnings: 0
+	module unisims_ver.FDP_1
+		errors: 0, warnings: 0
+	module unisims_ver.FDR
+		errors: 0, warnings: 0
+	module unisims_ver.FDRE
+		errors: 0, warnings: 0
+	module unisims_ver.FDRE_1
+		errors: 0, warnings: 0
+	module unisims_ver.FDRS
+		errors: 0, warnings: 0
+	module unisims_ver.FDRSE
+		errors: 0, warnings: 0
+	module unisims_ver.FDRSE_1
+		errors: 0, warnings: 0
+	module unisims_ver.FDRS_1
+		errors: 0, warnings: 0
+	module unisims_ver.FDR_1
+		errors: 0, warnings: 0
+	module unisims_ver.FDS
+		errors: 0, warnings: 0
+	module unisims_ver.FDSE
+		errors: 0, warnings: 0
+	module unisims_ver.FDSE_1
+		errors: 0, warnings: 0
+	module unisims_ver.FDS_1
+		errors: 0, warnings: 0
+	module unisims_ver.FD_1
+		errors: 0, warnings: 0
+	module unisims_ver.FIFO16
+		errors: 0, warnings: 0
+	module unisims_ver.FMAP
+		errors: 0, warnings: 0
+	module unisims_ver.FRAME_ECC_VIRTEX4
+		errors: 0, warnings: 0
+	module unisims_ver.GND
+		errors: 0, warnings: 0
+	module unisims_ver.GT11CLK
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_BLVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_DIFF_OUT
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_LDT_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_LVDSEXT_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_LVDSEXT_25_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_LVDSEXT_33
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_LVDSEXT_33_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_LVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_LVDS_25_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_LVDS_33
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_LVDS_33_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_LVPECL_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_LVPECL_33
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFDS_ULVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_BLVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_DIFF_OUT
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_LDT_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_LVDSEXT_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_LVDSEXT_25_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_LVDSEXT_33
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_LVDSEXT_33_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_LVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_LVDS_25_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_LVDS_33
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_LVDS_33_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_LVPECL_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_LVPECL_33
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFGDS_ULVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_AGP
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_CTT
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_GTL
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_GTLP
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_GTLP_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_GTL_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_I
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_II
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_III
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_III_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_III_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_III_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_II_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_II_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_IV
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_IV_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_IV_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_IV_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_I_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_HSTL_I_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVCMOS12
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVCMOS15
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVCMOS18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVCMOS2
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVCMOS25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVCMOS33
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVDCI_15
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVDCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVDCI_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVDCI_33
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVDCI_DV2_15
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVDCI_DV2_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVDCI_DV2_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVDCI_DV2_33
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVDS
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVPECL
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_LVTTL
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_PCI33_3
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_PCI33_5
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_PCI66_3
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_PCIX
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_PCIX66_3
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_SSTL18_I
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_SSTL18_II
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_SSTL18_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_SSTL18_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_SSTL2_I
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_SSTL2_II
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_SSTL2_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_SSTL2_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_SSTL3_I
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_SSTL3_II
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_SSTL3_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUFG_SSTL3_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_AGP
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_CTT
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_GTL
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_GTLP
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_GTLP_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_GTL_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_I
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_II
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_III
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_III_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_III_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_III_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_II_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_II_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_IV
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_IV_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_IV_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_IV_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_I_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_HSTL_I_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVCMOS12
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVCMOS15
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVCMOS18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVCMOS2
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVCMOS25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVCMOS33
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVDCI_15
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVDCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVDCI_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVDCI_33
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVDCI_DV2_15
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVDCI_DV2_18
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVDCI_DV2_25
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVDCI_DV2_33
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVDS
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVPECL
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_LVTTL
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_PCI33_3
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_PCI33_5
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_PCI66_3
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_PCIX
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_PCIX66_3
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_SSTL18_I
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_SSTL18_II
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_SSTL18_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_SSTL18_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_SSTL2_I
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_SSTL2_II
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_SSTL2_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_SSTL2_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_SSTL3_I
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_SSTL3_II
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_SSTL3_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IBUF_SSTL3_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.ICAP_VIRTEX2
+		errors: 0, warnings: 0
+	module unisims_ver.ICAP_VIRTEX4
+		errors: 0, warnings: 0
+	module unisims_ver.IDDR
+		errors: 0, warnings: 0
+	module unisims_ver.IDDR2
+		errors: 0, warnings: 0
+	module unisims_ver.IDELAY
+		errors: 0, warnings: 0
+	module unisims_ver.IDELAYCTRL
+		errors: 0, warnings: 0
+	module unisims_ver.IFDDRCPE
+		errors: 0, warnings: 0
+	module unisims_ver.IFDDRRSE
+		errors: 0, warnings: 0
+	module unisims_ver.INV
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUFDS
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUFDS_BLVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_AGP
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_CTT
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_F_24
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_GTL
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_GTLP
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_GTLP_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_GTL_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_HSTL_I
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_HSTL_II
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_HSTL_III
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_HSTL_III_18
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_HSTL_II_18
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_HSTL_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_HSTL_II_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_HSTL_IV
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_HSTL_IV_18
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_HSTL_IV_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_HSTL_IV_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_HSTL_I_18
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS12_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS12_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS12_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS12_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS12_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS12_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS12_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS12_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS15_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS18_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_F_24
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_S_24
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS25_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_F_24
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_S_24
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVCMOS33_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVDCI_15
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVDCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVDCI_25
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVDCI_33
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVDCI_DV2_15
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVDCI_DV2_18
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVDCI_DV2_25
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVDCI_DV2_33
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVDS
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVPECL
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_F_24
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_S_24
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_LVTTL_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_PCI33_3
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_PCI33_5
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_PCI66_3
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_PCIX
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_PCIX66_3
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_SSTL18_I
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_SSTL18_II
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_SSTL18_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_SSTL2_I
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_SSTL2_II
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_SSTL2_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_SSTL3_I
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_SSTL3_II
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_SSTL3_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_S_24
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.IOBUF_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.ISERDES
+		errors: 0, warnings: 0
+	module unisims_ver.JTAGPPC
+		errors: 0, warnings: 0
+	module unisims_ver.JTAG_SIM_VIRTEX4
+		errors: 0, warnings: 0
+	module unisims_ver.KEEPER
+		errors: 0, warnings: 0
+	module unisims_ver.LD
+		errors: 0, warnings: 0
+	module unisims_ver.LDC
+		errors: 0, warnings: 0
+	module unisims_ver.LDCE
+		errors: 0, warnings: 0
+	module unisims_ver.LDCE_1
+		errors: 0, warnings: 0
+	module unisims_ver.LDCP
+		errors: 0, warnings: 0
+	module unisims_ver.LDCPE
+		errors: 0, warnings: 0
+	module unisims_ver.LDCPE_1
+		errors: 0, warnings: 0
+	module unisims_ver.LDCP_1
+		errors: 0, warnings: 0
+	module unisims_ver.LDC_1
+		errors: 0, warnings: 0
+	module unisims_ver.LDE
+		errors: 0, warnings: 0
+	module unisims_ver.LDE_1
+		errors: 0, warnings: 0
+	module unisims_ver.LDP
+		errors: 0, warnings: 0
+	module unisims_ver.LDPE
+		errors: 0, warnings: 0
+	module unisims_ver.LDPE_1
+		errors: 0, warnings: 0
+	module unisims_ver.LDP_1
+		errors: 0, warnings: 0
+	module unisims_ver.LD_1
+		errors: 0, warnings: 0
+	module unisims_ver.LUT1
+		errors: 0, warnings: 0
+	primitive unisims_ver.lut1_mux2
+		errors: 0, warnings: 0
+	module unisims_ver.LUT1_D
+		errors: 0, warnings: 0
+	primitive unisims_ver.lut1_d_mux2
+		errors: 0, warnings: 0
+	module unisims_ver.LUT1_L
+		errors: 0, warnings: 0
+	primitive unisims_ver.lut1_l_mux2
+		errors: 0, warnings: 0
+	module unisims_ver.LUT2
+		errors: 0, warnings: 0
+	primitive unisims_ver.lut2_mux4
+		errors: 0, warnings: 0
+	module unisims_ver.LUT2_D
+		errors: 0, warnings: 0
+	primitive unisims_ver.lut2_d_mux4
+		errors: 0, warnings: 0
+	module unisims_ver.LUT2_L
+		errors: 0, warnings: 0
+	primitive unisims_ver.lut2_l_mux4
+		errors: 0, warnings: 0
+	module unisims_ver.LUT3
+		errors: 0, warnings: 0
+	primitive unisims_ver.lut3_mux4
+		errors: 0, warnings: 0
+	module unisims_ver.LUT3_D
+		errors: 0, warnings: 0
+	primitive unisims_ver.lut3_d_mux4
+		errors: 0, warnings: 0
+	module unisims_ver.LUT3_L
+		errors: 0, warnings: 0
+	primitive unisims_ver.lut3_l_mux4
+		errors: 0, warnings: 0
+	module unisims_ver.LUT4
+		errors: 0, warnings: 0
+	primitive unisims_ver.lut4_mux4
+		errors: 0, warnings: 0
+	module unisims_ver.LUT4_D
+		errors: 0, warnings: 0
+	primitive unisims_ver.lut4_d_mux4
+		errors: 0, warnings: 0
+	module unisims_ver.LUT4_L
+		errors: 0, warnings: 0
+	primitive unisims_ver.lut4_l_mux4
+		errors: 0, warnings: 0
+	module unisims_ver.MULT18X18
+		errors: 0, warnings: 0
+	module unisims_ver.MULT18X18S
+		errors: 0, warnings: 0
+	module unisims_ver.MULT18X18SIO
+		errors: 0, warnings: 0
+	module unisims_ver.MULT_AND
+		errors: 0, warnings: 0
+	module unisims_ver.MUXCY
+		errors: 0, warnings: 0
+	module unisims_ver.MUXCY_D
+		errors: 0, warnings: 0
+	module unisims_ver.MUXCY_L
+		errors: 0, warnings: 0
+	module unisims_ver.MUXF5
+		errors: 0, warnings: 0
+	module unisims_ver.MUXF5_D
+		errors: 0, warnings: 0
+	module unisims_ver.MUXF5_L
+		errors: 0, warnings: 0
+	module unisims_ver.MUXF6
+		errors: 0, warnings: 0
+	module unisims_ver.MUXF6_D
+		errors: 0, warnings: 0
+	module unisims_ver.MUXF6_L
+		errors: 0, warnings: 0
+	module unisims_ver.MUXF7
+		errors: 0, warnings: 0
+	module unisims_ver.MUXF7_D
+		errors: 0, warnings: 0
+	module unisims_ver.MUXF7_L
+		errors: 0, warnings: 0
+	module unisims_ver.MUXF8
+		errors: 0, warnings: 0
+	module unisims_ver.MUXF8_D
+		errors: 0, warnings: 0
+	module unisims_ver.MUXF8_L
+		errors: 0, warnings: 0
+	module unisims_ver.NAND2
+		errors: 0, warnings: 0
+	module unisims_ver.NAND2B1
+		errors: 0, warnings: 0
+	module unisims_ver.NAND2B2
+		errors: 0, warnings: 0
+	module unisims_ver.NAND3
+		errors: 0, warnings: 0
+	module unisims_ver.NAND3B1
+		errors: 0, warnings: 0
+	module unisims_ver.NAND3B2
+		errors: 0, warnings: 0
+	module unisims_ver.NAND3B3
+		errors: 0, warnings: 0
+	module unisims_ver.NAND4
+		errors: 0, warnings: 0
+	module unisims_ver.NAND4B1
+		errors: 0, warnings: 0
+	module unisims_ver.NAND4B2
+		errors: 0, warnings: 0
+	module unisims_ver.NAND4B3
+		errors: 0, warnings: 0
+	module unisims_ver.NAND4B4
+		errors: 0, warnings: 0
+	module unisims_ver.NAND5
+		errors: 0, warnings: 0
+	module unisims_ver.NAND5B1
+		errors: 0, warnings: 0
+	module unisims_ver.NAND5B2
+		errors: 0, warnings: 0
+	module unisims_ver.NAND5B3
+		errors: 0, warnings: 0
+	module unisims_ver.NAND5B4
+		errors: 0, warnings: 0
+	module unisims_ver.NAND5B5
+		errors: 0, warnings: 0
+	module unisims_ver.NOR2
+		errors: 0, warnings: 0
+	module unisims_ver.NOR2B1
+		errors: 0, warnings: 0
+	module unisims_ver.NOR2B2
+		errors: 0, warnings: 0
+	module unisims_ver.NOR3
+		errors: 0, warnings: 0
+	module unisims_ver.NOR3B1
+		errors: 0, warnings: 0
+	module unisims_ver.NOR3B2
+		errors: 0, warnings: 0
+	module unisims_ver.NOR3B3
+		errors: 0, warnings: 0
+	module unisims_ver.NOR4
+		errors: 0, warnings: 0
+	module unisims_ver.NOR4B1
+		errors: 0, warnings: 0
+	module unisims_ver.NOR4B2
+		errors: 0, warnings: 0
+	module unisims_ver.NOR4B3
+		errors: 0, warnings: 0
+	module unisims_ver.NOR4B4
+		errors: 0, warnings: 0
+	module unisims_ver.NOR5
+		errors: 0, warnings: 0
+	module unisims_ver.NOR5B1
+		errors: 0, warnings: 0
+	module unisims_ver.NOR5B2
+		errors: 0, warnings: 0
+	module unisims_ver.NOR5B3
+		errors: 0, warnings: 0
+	module unisims_ver.NOR5B4
+		errors: 0, warnings: 0
+	module unisims_ver.NOR5B5
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFDS
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFDS_BLVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFDS_LDT_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFDS_LVDSEXT_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFDS_LVDSEXT_33
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFDS_LVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFDS_LVDS_33
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFDS_LVPECL_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFDS_LVPECL_33
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFDS_ULVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFTDS
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFTDS_BLVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFTDS_LDT_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFTDS_LVDSEXT_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFTDS_LVDSEXT_33
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFTDS_LVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFTDS_LVDS_33
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFTDS_LVPECL_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFTDS_LVPECL_33
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFTDS_ULVDS_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_AGP
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_CTT
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_F_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_GTL
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_GTLP
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_GTLP_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_GTL_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_I
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_II
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_III
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_III_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_III_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_III_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_II_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_II_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_IV
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_IV_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_IV_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_IV_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_I_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_HSTL_I_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS12_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS12_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS12_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS12_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS12_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS12_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS12_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS12_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS15_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS18_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_F_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_S_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS25_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_F_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_S_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVCMOS33_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVDCI_15
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVDCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVDCI_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVDCI_33
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVDCI_DV2_15
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVDCI_DV2_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVDCI_DV2_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVDCI_DV2_33
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVDS
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVPECL
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_F_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_S_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_LVTTL_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_PCI33_3
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_PCI33_5
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_PCI66_3
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_PCIX
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_PCIX66_3
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_SSTL18_I
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_SSTL18_II
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_SSTL18_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_SSTL18_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_SSTL2_I
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_SSTL2_II
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_SSTL2_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_SSTL2_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_SSTL3_I
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_SSTL3_II
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_SSTL3_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_SSTL3_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_S_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUFT_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_AGP
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_CTT
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_F_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_GTL
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_GTLP
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_GTLP_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_GTL_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_I
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_II
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_III
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_III_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_III_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_III_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_II_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_II_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_IV
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_IV_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_IV_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_IV_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_I_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_HSTL_I_DCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS12_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS12_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS12_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS12_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS12_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS12_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS12_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS12_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS15_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS18_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_F_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_S_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS25_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_F_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_S_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVCMOS33_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVDCI_15
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVDCI_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVDCI_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVDCI_33
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVDCI_DV2_15
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVDCI_DV2_18
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVDCI_DV2_25
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVDCI_DV2_33
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVDS
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVPECL
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_F_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_F_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_F_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_F_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_F_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_F_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_F_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_S_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_LVTTL_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_PCI33_3
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_PCI33_5
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_PCI66_3
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_PCIX
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_PCIX66_3
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_SSTL18_I
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_SSTL18_II
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_SSTL18_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_SSTL18_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_SSTL2_I
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_SSTL2_II
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_SSTL2_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_SSTL2_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_SSTL3_I
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_SSTL3_II
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_SSTL3_II_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_SSTL3_I_DCI
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_S_12
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_S_16
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_S_2
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_S_24
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_S_4
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_S_6
+		errors: 0, warnings: 0
+	module unisims_ver.OBUF_S_8
+		errors: 0, warnings: 0
+	module unisims_ver.ODDR
+		errors: 0, warnings: 0
+	module unisims_ver.ODDR2
+		errors: 0, warnings: 0
+	module unisims_ver.OFDDRCPE
+		errors: 0, warnings: 0
+	module unisims_ver.OFDDRRSE
+		errors: 0, warnings: 0
+	module unisims_ver.OFDDRTCPE
+		errors: 0, warnings: 0
+	module unisims_ver.OFDDRTRSE
+		errors: 0, warnings: 0
+	module unisims_ver.OR2
+		errors: 0, warnings: 0
+	module unisims_ver.OR2B1
+		errors: 0, warnings: 0
+	module unisims_ver.OR2B2
+		errors: 0, warnings: 0
+	module unisims_ver.OR3
+		errors: 0, warnings: 0
+	module unisims_ver.OR3B1
+		errors: 0, warnings: 0
+	module unisims_ver.OR3B2
+		errors: 0, warnings: 0
+	module unisims_ver.OR3B3
+		errors: 0, warnings: 0
+	module unisims_ver.OR4
+		errors: 0, warnings: 0
+	module unisims_ver.OR4B1
+		errors: 0, warnings: 0
+	module unisims_ver.OR4B2
+		errors: 0, warnings: 0
+	module unisims_ver.OR4B3
+		errors: 0, warnings: 0
+	module unisims_ver.OR4B4
+		errors: 0, warnings: 0
+	module unisims_ver.OR5
+		errors: 0, warnings: 0
+	module unisims_ver.OR5B1
+		errors: 0, warnings: 0
+	module unisims_ver.OR5B2
+		errors: 0, warnings: 0
+	module unisims_ver.OR5B3
+		errors: 0, warnings: 0
+	module unisims_ver.OR5B4
+		errors: 0, warnings: 0
+	module unisims_ver.OR5B5
+		errors: 0, warnings: 0
+	module unisims_ver.ORCY
+		errors: 0, warnings: 0
+	module unisims_ver.OSERDES
+		errors: 0, warnings: 0
+	module unisims_ver.PMCD
+		errors: 0, warnings: 0
+	module unisims_ver.PULLDOWN
+		errors: 0, warnings: 0
+	module unisims_ver.PULLUP
+		errors: 0, warnings: 0
+	module unisims_ver.RAM128X1S
+		errors: 0, warnings: 0
+	module unisims_ver.RAM128X1S_1
+		errors: 0, warnings: 0
+	module unisims_ver.RAM16X1D
+		errors: 0, warnings: 0
+	module unisims_ver.RAM16X1D_1
+		errors: 0, warnings: 0
+	module unisims_ver.RAM16X1S
+		errors: 0, warnings: 0
+	module unisims_ver.RAM16X1S_1
+		errors: 0, warnings: 0
+	module unisims_ver.RAM16X2S
+		errors: 0, warnings: 0
+	module unisims_ver.RAM16X4S
+		errors: 0, warnings: 0
+	module unisims_ver.RAM16X8S
+		errors: 0, warnings: 0
+	module unisims_ver.RAM32X1D
+		errors: 0, warnings: 0
+	module unisims_ver.RAM32X1D_1
+		errors: 0, warnings: 0
+	module unisims_ver.RAM32X1S
+		errors: 0, warnings: 0
+	module unisims_ver.RAM32X1S_1
+		errors: 0, warnings: 0
+	module unisims_ver.RAM32X2S
+		errors: 0, warnings: 0
+	module unisims_ver.RAM32X4S
+		errors: 0, warnings: 0
+	module unisims_ver.RAM32X8S
+		errors: 0, warnings: 0
+	module unisims_ver.RAM64X1D
+		errors: 0, warnings: 0
+	module unisims_ver.RAM64X1D_1
+		errors: 0, warnings: 0
+	module unisims_ver.RAM64X1S
+		errors: 0, warnings: 0
+	module unisims_ver.RAM64X1S_1
+		errors: 0, warnings: 0
+	module unisims_ver.RAM64X2S
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S1
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S18
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S18_S18
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S18_S36
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S1_S1
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S1_S18
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S1_S2
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S1_S36
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S1_S4
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S1_S9
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S2
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S2_S18
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S2_S2
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S2_S36
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S2_S4
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S2_S9
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S36
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S36_S36
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S4
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S4_S18
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S4_S36
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S4_S4
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S4_S9
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S9
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S9_S18
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S9_S36
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB16_S9_S9
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB32_S64_ECC
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S1
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S16
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S16_S16
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S1_S1
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S1_S16
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S1_S2
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S1_S4
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S1_S8
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S2
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S2_S16
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S2_S2
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S2_S4
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S2_S8
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S4
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S4_S16
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S4_S4
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S4_S8
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S8
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S8_S16
+		errors: 0, warnings: 0
+	module unisims_ver.RAMB4_S8_S8
+		errors: 0, warnings: 0
+	module unisims_ver.ROM128X1
+		errors: 0, warnings: 0
+	module unisims_ver.ROM16X1
+		errors: 0, warnings: 0
+	module unisims_ver.ROM256X1
+		errors: 0, warnings: 0
+	module unisims_ver.ROM32X1
+		errors: 0, warnings: 0
+	module unisims_ver.ROM64X1
+		errors: 0, warnings: 0
+	module unisims_ver.SRL16
+		errors: 0, warnings: 0
+	module unisims_ver.SRL16E
+		errors: 0, warnings: 0
+	module unisims_ver.SRL16E_1
+		errors: 0, warnings: 0
+	module unisims_ver.SRL16_1
+		errors: 0, warnings: 0
+	module unisims_ver.SRLC16
+		errors: 0, warnings: 0
+	module unisims_ver.SRLC16E
+		errors: 0, warnings: 0
+	module unisims_ver.SRLC16E_1
+		errors: 0, warnings: 0
+	module unisims_ver.SRLC16_1
+		errors: 0, warnings: 0
+	module unisims_ver.STARTUP_FPGACORE
+		errors: 0, warnings: 0
+	module unisims_ver.STARTUP_SPARTAN2
+		errors: 0, warnings: 0
+	module unisims_ver.STARTUP_SPARTAN3
+		errors: 0, warnings: 0
+	module unisims_ver.STARTUP_SPARTAN3E
+		errors: 0, warnings: 0
+	module unisims_ver.STARTUP_VIRTEX
+		errors: 0, warnings: 0
+	module unisims_ver.STARTUP_VIRTEX2
+		errors: 0, warnings: 0
+	module unisims_ver.STARTUP_VIRTEX4
+		errors: 0, warnings: 0
+	module unisims_ver.TBLOCK
+		errors: 0, warnings: 0
+	module unisims_ver.TIMEGRP
+		errors: 0, warnings: 0
+	module unisims_ver.TIMESPEC
+		errors: 0, warnings: 0
+	module unisims_ver.USR_ACCESS_VIRTEX4
+		errors: 0, warnings: 0
+	module unisims_ver.VCC
+		errors: 0, warnings: 0
+	module unisims_ver.XNOR2
+		errors: 0, warnings: 0
+	module unisims_ver.XNOR3
+		errors: 0, warnings: 0
+	module unisims_ver.XNOR4
+		errors: 0, warnings: 0
+	module unisims_ver.XNOR5
+		errors: 0, warnings: 0
+	module unisims_ver.XOR2
+		errors: 0, warnings: 0
+	module unisims_ver.XOR3
+		errors: 0, warnings: 0
+	module unisims_ver.XOR4
+		errors: 0, warnings: 0
+	module unisims_ver.XOR5
+		errors: 0, warnings: 0
+	module unisims_ver.XORCY
+		errors: 0, warnings: 0
+	module unisims_ver.XORCY_D
+		errors: 0, warnings: 0
+	module unisims_ver.XORCY_L
+		errors: 0, warnings: 0
+"END_COMPILE<unisim>" 
+==============================================================================
+
+    > Log file C:\Xilinx\verilog\ncsim\unisims_ver\cxl_unisim.log generated
+    > Library mapping successful, setup file(s) cds.lib, hdl.var updated
+
+compxlib[unisims_ver]: No error(s), no warning(s)
+
+--> Compiling verilog simprim library
+    > Simprim compiled to C:\Xilinx\verilog\ncsim\simprims_ver
+
+==============================================================================
+"START_COMPILE<simprim>" 
+ncvlog: 05.40-s011: (c) Copyright 1995-2005 Cadence Design Systems, Inc.
+file: C:/DOCUME~1/doering/LOCALS~1/Temp/xil_3480_6
+	module simprims_ver.X_AND16
+		errors: 0, warnings: 0
+	module simprims_ver.X_AND2
+		errors: 0, warnings: 0
+	module simprims_ver.X_AND3
+		errors: 0, warnings: 0
+	module simprims_ver.X_AND32
+		errors: 0, warnings: 0
+	module simprims_ver.X_AND4
+		errors: 0, warnings: 0
+	module simprims_ver.X_AND5
+		errors: 0, warnings: 0
+	module simprims_ver.X_AND6
+		errors: 0, warnings: 0
+	module simprims_ver.X_AND7
+		errors: 0, warnings: 0
+	module simprims_ver.X_AND8
+		errors: 0, warnings: 0
+	module simprims_ver.X_AND9
+		errors: 0, warnings: 0
+	module simprims_ver.X_BPAD
+		errors: 0, warnings: 0
+	module simprims_ver.X_BUF
+		errors: 0, warnings: 0
+	module simprims_ver.X_BUFGCTRL
+		errors: 0, warnings: 0
+	module simprims_ver.X_BUFGMUX
+		errors: 0, warnings: 0
+	module simprims_ver.X_BUFGMUX_1
+		errors: 0, warnings: 0
+	module simprims_ver.X_BUFR
+		errors: 0, warnings: 0
+	module simprims_ver.X_CKBUF
+		errors: 0, warnings: 0
+	module simprims_ver.X_CLKDLL
+		errors: 0, warnings: 0
+	module simprims_ver.x_clkdll_maximum_period_check
+		errors: 0, warnings: 0
+	module simprims_ver.X_CLKDLLE
+		errors: 0, warnings: 0
+	module simprims_ver.x_clkdlle_maximum_period_check
+		errors: 0, warnings: 0
+	module simprims_ver.X_CLK_DIV
+		errors: 0, warnings: 0
+	module simprims_ver.X_DCM
+		errors: 0, warnings: 0
+	module simprims_ver.x_dcm_clock_divide_by_2
+		errors: 0, warnings: 0
+	module simprims_ver.x_dcm_maximum_period_check
+		errors: 0, warnings: 0
+	module simprims_ver.x_dcm_clock_lost
+		errors: 0, warnings: 0
+	module simprims_ver.X_DCM_ADV
+		errors: 0, warnings: 0
+	module simprims_ver.x_dcm_adv_clock_divide_by_2
+		errors: 0, warnings: 0
+	module simprims_ver.x_dcm_adv_maximum_period_check
+		errors: 0, warnings: 0
+	module simprims_ver.x_dcm_adv_clock_lost
+		errors: 0, warnings: 0
+	module simprims_ver.X_DSP48
+		errors: 0, warnings: 0
+	module simprims_ver.X_FDD
+		errors: 0, warnings: 0
+	primitive simprims_ver.ffsrced
+		errors: 0, warnings: 0
+	module simprims_ver.X_FDDRCPE
+		errors: 0, warnings: 0
+	module simprims_ver.X_FDDRRSE
+		errors: 0, warnings: 0
+	module simprims_ver.X_FF
+		errors: 0, warnings: 0
+	primitive simprims_ver.ffsrce
+		errors: 0, warnings: 0
+	module simprims_ver.X_FIFO16
+		errors: 0, warnings: 0
+	module simprims_ver.X_GT11CLK
+		errors: 0, warnings: 0
+	module simprims_ver.X_IBUFDS
+		errors: 0, warnings: 0
+	module simprims_ver.X_IDDR
+		errors: 0, warnings: 0
+	module simprims_ver.X_IDDR2
+		errors: 0, warnings: 0
+	module simprims_ver.X_IDELAY
+		errors: 0, warnings: 0
+	module simprims_ver.X_IDELAYCTRL
+		errors: 0, warnings: 0
+	module simprims_ver.X_INV
+		errors: 0, warnings: 0
+	module simprims_ver.X_IPAD
+		errors: 0, warnings: 0
+	module simprims_ver.X_ISERDES
+		errors: 0, warnings: 0
+	module simprims_ver.X_KEEPER
+		errors: 0, warnings: 0
+	module simprims_ver.X_LATCH
+		errors: 0, warnings: 0
+	primitive simprims_ver.latchsr
+		errors: 0, warnings: 0
+	module simprims_ver.X_LATCHE
+		errors: 0, warnings: 0
+	primitive simprims_ver.latchsre
+		errors: 0, warnings: 0
+	module simprims_ver.X_LUT2
+		errors: 0, warnings: 0
+	primitive simprims_ver.x_lut2_mux4
+		errors: 0, warnings: 0
+	module simprims_ver.X_LUT3
+		errors: 0, warnings: 0
+	primitive simprims_ver.x_lut3_mux4
+		errors: 0, warnings: 0
+	module simprims_ver.X_LUT4
+		errors: 0, warnings: 0
+	primitive simprims_ver.x_lut4_mux4
+		errors: 0, warnings: 0
+	module simprims_ver.X_LUT5
+		errors: 0, warnings: 0
+	primitive simprims_ver.x_lut5_mux4
+		errors: 0, warnings: 0
+	module simprims_ver.X_LUT6
+		errors: 0, warnings: 0
+	primitive simprims_ver.x_lut6_mux4
+		errors: 0, warnings: 0
+	module simprims_ver.X_LUT7
+		errors: 0, warnings: 0
+	primitive simprims_ver.x_lut7_mux4
+		errors: 0, warnings: 0
+	module simprims_ver.X_LUT8
+		errors: 0, warnings: 0
+	primitive simprims_ver.x_lut8_mux4
+		errors: 0, warnings: 0
+	module simprims_ver.X_MULT18X18
+		errors: 0, warnings: 0
+	module simprims_ver.X_MULT18X18S
+		errors: 0, warnings: 0
+	module simprims_ver.X_MULT18X18SIO
+		errors: 0, warnings: 0
+	module simprims_ver.X_MUX2
+		errors: 0, warnings: 0
+	primitive simprims_ver.mux
+		errors: 0, warnings: 0
+	module simprims_ver.X_MUXDDR
+		errors: 0, warnings: 0
+	module simprims_ver.X_OBUFDS
+		errors: 0, warnings: 0
+	module simprims_ver.X_OBUFTDS
+		errors: 0, warnings: 0
+	module simprims_ver.X_ODDR
+		errors: 0, warnings: 0
+	module simprims_ver.X_ODDR2
+		errors: 0, warnings: 0
+	module simprims_ver.X_ONE
+		errors: 0, warnings: 0
+	module simprims_ver.X_OPAD
+		errors: 0, warnings: 0
+	module simprims_ver.X_OR16
+		errors: 0, warnings: 0
+	module simprims_ver.X_OR2
+		errors: 0, warnings: 0
+	module simprims_ver.X_OR3
+		errors: 0, warnings: 0
+	module simprims_ver.X_OR32
+		errors: 0, warnings: 0
+	module simprims_ver.X_OR4
+		errors: 0, warnings: 0
+	module simprims_ver.X_OR5
+		errors: 0, warnings: 0
+	module simprims_ver.X_OR6
+		errors: 0, warnings: 0
+	module simprims_ver.X_OR7
+		errors: 0, warnings: 0
+	module simprims_ver.X_OR8
+		errors: 0, warnings: 0
+	module simprims_ver.X_OR9
+		errors: 0, warnings: 0
+	module simprims_ver.X_OSERDES
+		errors: 0, warnings: 0
+	module simprims_ver.X_PD
+		errors: 0, warnings: 0
+	module simprims_ver.X_PMCD
+		errors: 0, warnings: 0
+	module simprims_ver.X_PU
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S1
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S18
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S18_S18
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S18_S36
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S1_S1
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S1_S18
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S1_S2
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S1_S36
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S1_S4
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S1_S9
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S2
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S2_S18
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S2_S2
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S2_S36
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S2_S4
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S2_S9
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S36
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S36_S36
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S4
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S4_S18
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S4_S36
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S4_S4
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S4_S9
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S9
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S9_S18
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S9_S36
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB16_S9_S9
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S1
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S16
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S16_S16
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S1_S1
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S1_S16
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S1_S2
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S1_S4
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S1_S8
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S2
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S2_S16
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S2_S2
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S2_S4
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S2_S8
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S4
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S4_S16
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S4_S4
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S4_S8
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S8
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S8_S16
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMB4_S8_S8
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMD16
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMD32
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMD64
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMS128
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMS16
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMS32
+		errors: 0, warnings: 0
+	module simprims_ver.X_RAMS64
+		errors: 0, warnings: 0
+	module simprims_ver.X_SFF
+		errors: 0, warnings: 0
+	primitive simprims_ver.sffsrce
+		errors: 0, warnings: 0
+	module simprims_ver.X_SRL16E
+		errors: 0, warnings: 0
+	module simprims_ver.X_SRLC16E
+		errors: 0, warnings: 0
+	module simprims_ver.X_SUH
+		errors: 0, warnings: 0
+	module simprims_ver.X_TRI
+		errors: 0, warnings: 0
+	module simprims_ver.X_UPAD
+		errors: 0, warnings: 0
+	module simprims_ver.X_XOR16
+		errors: 0, warnings: 0
+	module simprims_ver.X_XOR2
+		errors: 0, warnings: 0
+	module simprims_ver.X_XOR3
+		errors: 0, warnings: 0
+	module simprims_ver.X_XOR32
+		errors: 0, warnings: 0
+	module simprims_ver.X_XOR4
+		errors: 0, warnings: 0
+	module simprims_ver.X_XOR5
+		errors: 0, warnings: 0
+	module simprims_ver.X_XOR6
+		errors: 0, warnings: 0
+	module simprims_ver.X_XOR7
+		errors: 0, warnings: 0
+	module simprims_ver.X_XOR8
+		errors: 0, warnings: 0
+	module simprims_ver.X_ZERO
+		errors: 0, warnings: 0
+"END_COMPILE<simprim>" 
+==============================================================================
+
+    > Log file C:\Xilinx\verilog\ncsim\simprims_ver\cxl_simprim.log generated
+    > Library mapping successful, setup file(s) cds.lib, hdl.var updated
+
+compxlib[simprims_ver]: No error(s), no warning(s)
+
+--> Compiling verilog XilinxCoreLib library
+    > XilinxCoreLib compiled to C:\Xilinx\verilog\ncsim\XilinxCoreLib_ver
+
+==============================================================================
+"START_COMPILE<XilinxCoreLib>" 
+ncvlog: 05.40-s011: (c) Copyright 1995-2005 Cadence Design Systems, Inc.
+file: C:/DOCUME~1/doering/LOCALS~1/Temp/xil_3480_6
+	module xilinxcorelib_ver.ENCODE_8B10B_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.encode_8b10b_v5_0_base
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.ENCODE_8B10B_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.encode_8b10b_v4_0_base
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.DECODE_8B10B_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.decode_8b10b_v7_0_base
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.DECODE_8B10B_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.decode_8b10b_v6_0_base
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.DECODE_8B10B_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.decode_8b10b_v5_0_base
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.family
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.SYNC_FIFO_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MEM_BLK_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.SYNC_FIFO_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MEM_BLK_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.SYNC_FIFO_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MEM_BLK
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MULT_GEN_V7_0_SEQ
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MULT_GEN_V7_0_NON_SEQ
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MULT_GEN_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MULT_GEN_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MULT_GEN_V6_0_SEQ
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MULT_GEN_V6_0_NON_SEQ
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MULT_GEN_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MULT_GEN_V5_0_SEQ
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MULT_GEN_V5_0_NON_SEQ
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.MULT_GEN_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.LFSR_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.LFSR_V3_0_DVUNIT_VER
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.LFSR_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.LFSR_V2_0_DVUNIT_VER
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.FIFO_GENERATOR_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.fifo_generator_v2_0_bhv_ver_as
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.fifo_generator_v2_0_bhv_ver_ss
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.fifo_generator_v2_0_bhv_ver_fifo16
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.FIFO_GENERATOR_V1_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.fifo_generator_v1_1_bhv_ver_as
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.fifo_generator_v1_1_bhv_ver_ss
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.fifo_generator_v1_1_bhv_ver_fifo16
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.FIFO_GENERATOR_V1_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.fifo_generator_v1_0_bhv_ver_as
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.fifo_generator_v1_0_bhv_ver_ss
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.fifo_generator_v1_0_bhv_ver_fifo16
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.CAM_V5_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.CAM_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.CAM_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DIST_MEM_V7_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DIST_MEM_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DIST_MEM_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DIST_MEM_V5_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DIST_MEM_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DIST_MEM_V4_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DIST_MEM_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.BLKMEMSP_V6_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.BLKMEMSP_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.BLKMEMSP_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.BLKMEMSP_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.BLKMEMSP_V3_2
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.BLKMEMDP_V6_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.BLKMEMDP_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.BLKMEMDP_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.BLKMEMDP_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.BLKMEMDP_V3_2
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_COMPARE_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_SLICE_BUFE_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_COUNTER_BINARY_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_BIT_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BUS_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_TWOS_COMP_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BIT_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SHIFT_FD_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ADDSUB_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BIT_BUS_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ACCUM_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_REG_FD_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_SLICE_BUFT_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_REG_LD_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_BUS_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SHIFT_RAM_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DECODE_BINARY_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.PIPELINE_V7_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SHIFT_RAM_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_COUNTER_BINARY_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BIT_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_SLICE_BUFE_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DECODE_BINARY_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_REG_LD_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_SLICE_BUFT_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SHIFT_FD_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_REG_FD_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_TWOS_COMP_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BIT_BUS_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_BIT_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_BUS_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BUS_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ADDSUB_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_COMPARE_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.PIPELINE_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ACCUM_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SHIFT_RAM_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ADDSUB_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BIT_BUS_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_COMPARE_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_REG_FD_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DECODE_BINARY_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SHIFT_FD_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_COUNTER_BINARY_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_SLICE_BUFT_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_REG_LD_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BIT_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_BIT_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_BUS_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_TWOS_COMP_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BUS_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ACCUM_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.PIPELINE_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ACCUM_V5_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_SLICE_BUFE_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.PIPELINE_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_REG_FD_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_BIT_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_COUNTER_BINARY_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ACCUM_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SHIFT_RAM_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_REG_LD_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_COMPARE_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_TWOS_COMP_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DECODE_BINARY_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ADDSUB_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BUS_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SHIFT_FD_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BIT_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_SLICE_BUFT_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BIT_BUS_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_SLICE_BUFE_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_BUS_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BIT_BUS_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_BUS_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.PIPELINE_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ACCUM_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_SLICE_BUFE_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SHIFT_FD_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ADDSUB_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_REG_FD_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BIT_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BUS_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_TWOS_COMP_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_REG_LD_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_COMPARE_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_BIT_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_SLICE_BUFT_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_COUNTER_BINARY_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DECODE_BINARY_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DIST_MEM_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SHIFT_RAM_V3_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BUS_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BIT_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_TWOS_COMP_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_REG_LD_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_BIT_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DIST_MEM_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SHIFT_FD_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_SLICE_BUFT_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_BUS_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SHIFT_RAM_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_COMPARE_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DECODE_BINARY_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_MUX_SLICE_BUFE_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ADDSUB_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_COUNTER_BINARY_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_ACCUM_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_GATE_BIT_BUS_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.PIPELINE_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_REG_FD_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.ASYNC_FIFO_V6_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.ASYNC_FIFO_V6_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.ASYNC_FIFO_V5_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.ASYNC_FIFO_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.ASYNC_FIFO_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.fifoctlr_ns_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.memory_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.bcount_up_ainit_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.binary_to_gray_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.eq_compare_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.reg_ainit_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.and_a_notb_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.and_a_notb_fd_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.nand_a_notb_fd_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.and_a_b_notc_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.and_a_b_c_notd_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.or_fd_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.and_fd_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.nand_fd_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.almost_reg_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.and_a_b_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.or3_fd_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.count_sub_reg_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.or_a_b_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.xor_gate_bit_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.gray_to_binary_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.full_flag_reg_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.empty_flag_reg_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.almst_full_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.almst_empty_v4
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.PIPE_BHV_V4_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.TRIG_TABLE_V4_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SIN_COS_V4_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.DITHER_V4_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.DITHER_ADD_V4_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DDS_V4_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.DDS_ROUND_V4_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_EFF_V4_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.DITHER_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.DITHER_ADD_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DDS_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.XFFT1024_V1_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.PE1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.PE0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.unbias_round
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.arithmetic_shift
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.cmplx_mult
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.signed_mult
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.dragonfly
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.butterfly
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.inverter
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.PIPE_BHV_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.TRIG_TABLE_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SIN_COS_V5_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SIN_COS_V4_2
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.PIPE_BHV_V4_2
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.TRIG_TABLE_V4_2
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.PIPE_BHV_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_SIN_COS_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.TRIG_TABLE_V4_0
+		errors: 0, warnings: 0
+II0000OII1l1LLLOI1LL0Ll1OO;started=set_value;for(i=0;i<II0000OII1l1LLLOI1LL0Ll1OO*IOO0LOILl1lO0I1010L0LOI00O;i=i+1)begin parity_buffer[i]={(IOOLLI0OlILIOIO10lIlL11L1O){set_value}};end data_next={(IOOLLI0OlILIOIO10lIlL11L1O){set_value}};if(set_value==0'b0)begin
+                                                                                                                                                                                                                                                          |
+ncvlog: *W,MAXBSZ (C:/DOCUME~1/doering/LOCALS~1/Temp/xil_3480_6,116023|250): zero width prefix to based number ignored [2.5(IEEE)].
+	module xilinxcorelib_ver.RS_ENCODER_V4_1
+		errors: 0, warnings: 1
+	module xilinxcorelib_ver.RS_ENCODER_V4_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.RS_DECODER_V4_0
+		errors: 0, warnings: 0
+`define true 1'b1
+                 |
+ncvlog: *W,MACRDF (C:/DOCUME~1/doering/LOCALS~1/Temp/xil_3480_6,116443|17): text macro 'true' redefined - replaced with new definition.
+`define false 1'b0
+                  |
+ncvlog: *W,MACRDF (C:/DOCUME~1/doering/LOCALS~1/Temp/xil_3480_6,116444|18): text macro 'false' redefined - replaced with new definition.
+	module xilinxcorelib_ver.C_DA_FIR_V9_0
+		errors: 0, warnings: 0
+`define MAX_NUMBER_SAMPLES 9          // Maximum number of samples that can be stored in the last input FIFO  
+                                                                                                              |
+ncvlog: *W,MACRDF (C:/DOCUME~1/doering/LOCALS~1/Temp/xil_3480_6,117808|110): text macro 'MAX_NUMBER_SAMPLES' redefined - replaced with new definition.
+	module xilinxcorelib_ver.C_DA_FIR_V8_0
+		errors: 0, warnings: 1
+	module xilinxcorelib_ver.C_DA_FIR_V7_0
+		errors: 0, warnings: 0
+`define all0s 'b0
+                 |
+ncvlog: *W,MACRDF (C:/DOCUME~1/doering/LOCALS~1/Temp/xil_3480_6,120135|17): text macro 'all0s' redefined - replaced with new definition.
+	module xilinxcorelib_ver.C_DA_FIR_V6_0
+		errors: 0, warnings: 1
+	module xilinxcorelib_ver.C_DA_2D_DCT_V2_0
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_DA_1D_DCT_V2_1
+		errors: 0, warnings: 0
+	module xilinxcorelib_ver.C_CIC_V3_0
+		errors: 0, warnings: 0
+`define c_enable_rlocs   0
+                          |
+ncvlog: *W,MACRDF (C:/DOCUME~1/doering/LOCALS~1/Temp/xil_3480_6,122531|26): text macro 'c_enable_rlocs' redefined - replaced with new definition.
+	module xilinxcorelib_ver.C_BIT_CORRELATOR_V3_0
+		errors: 0, warnings: 0
+	Total errors/warnings found outside modules and primitives:
+		errors: 0, warnings: 3
+"END_COMPILE<XilinxCoreLib>" 
+==============================================================================
+
+    > Log file C:\Xilinx\verilog\ncsim\XilinxCoreLib_ver\cxl_XilinxCoreLib.log generated
+    > Library mapping successful, setup file(s) cds.lib, hdl.var updated
+
+compxlib[XilinxCoreLib_ver]: No error(s), 6 warning(s)
+
+**************************************************************************
+*                         COMPILATION SUMMARY                            *
+*                                                                        *
+*  Simulator used: ncsim                                                 *
+*  Compiled on: Mon Oct 23 08:50:59 2006                                 *
+*                                                                        *
+**************************************************************************
+*     Library      |  Lang   |  Mapped Name(s)   | Err#(s)  |  Warn#(s)  *
+*------------------------------------------------------------------------*
+*  unisim          | verilog | unisims_ver       | 0        | 0          *
+*------------------------------------------------------------------------*
+*  simprim         | verilog | simprims_ver      | 0        | 0          *
+*------------------------------------------------------------------------*
+*  XilinxCoreLib   | verilog | XilinxCoreLib_ver | 0        | 6          *
+*------------------------------------------------------------------------*

@@ -1,0 +1,6 @@
+N = 45
+Max: 266
+Min: 79
+Mean: 101.000000
+Standard Deviation: 29.223278
+The parent took 4949 to run.

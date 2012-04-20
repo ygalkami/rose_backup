@@ -1,0 +1,2 @@
+#!/bin/bash
+zip blah.zip parse.ss interpreter.ss env.ss main.ss datatypes.ss

@@ -1,0 +1,8 @@
+echo displaying environmental variables
+set
+set foo bar
+echo set foo to bar, displaying again
+set
+echo unsetting foo, displaying one last time
+unset foo
+set

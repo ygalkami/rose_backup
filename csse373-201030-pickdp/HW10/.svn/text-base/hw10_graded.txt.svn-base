@@ -1,0 +1,68 @@
+Amount.java
+
+____ Invariants added (9 pts.)
+
+excellent
+
+
+
+
+Pre- and post-conditions for every method (1 pt. each):
+            pre    post
+  Amount    ____   ____
+  negate    ____   ____
+  subtract  ____   _-1_ doesn't handle cases like -0.99 - 0.99.
+  add       ____   ____
+  equal     ____   ____
+
+
+Bugs fixed (all in add method, 4 pts. each):
+
+	____ reversed arguments in constructor call for negate
+
+  ____ …new_cents <= -100…  // was <
+
+  ____ …new_euros = new_euros + 1 // was -
+
+  ____ …new_cents > 0 && new_euros < 0… // was … >= … <= …
+
+
+-----------------------------------------------------------------------------
+Bag.java
+
+_-10_ Invariants added (20 pts.)
+
+Missing contents != null and contents.owner == this.
+
+
+
+
+Pre- and post-conditions for every method (1 pt. each): 
+                pre    post
+  Bag(int[])    ____   _-1_ no constraint on contents of contents
+  Bag()         _-1_   _-1_
+  removeOnce    ____   _-1_ no constraint on contents of contents
+  removeAll     ____   _-1_ no constraint on contents of contents
+  getCount      _-1_   ____ over-constrained contents.length
+  add(int)      ____   _-1_ no constraint on contents of contents
+  add(Bag)      ____   _-1_ no constraint on contents of contents
+  add(int[])    ____   _-1_ missing
+  Bag(Bag)      ____   _-1_ no constraint on contents of contents
+  arraycopy     ____   _-1_ no constraint on contents of contents
+  
+  
+Bugs fixed (4 pts. each):
+
+  _-4_ (in removeOnce) for (int i = 0; i < n; i++)  // was <=
+  _-4_ (in removeAll) for (int i = 0; i < n; i++)  // was <=
+  _-4_ (in getCount) for (int i = 0; i < n; i++)  // was <=
+  _-4_ (in add(int)) need to handle array of length 0, doubling doesn't
+                     help with that
+  _-4_ (in add(Bag)) arraycopy(b.contents, 0, new_contents, n  , b.n); 
+                     // was:                                n+1
+  _-4_ (in Bag(Bag)) this is a constructor, need to call no-arg constructor 
+                     before adding
+
+
+
+Total: _54__ / 80

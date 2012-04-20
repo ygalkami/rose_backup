@@ -1,0 +1,7 @@
+from graphics import *
+wind = GraphWin("An Alien Face", 200, 200)
+
+head = Oval(Point(5,10), Point(100, 150))
+head.draw(wind)
+
+wind.getMouse()

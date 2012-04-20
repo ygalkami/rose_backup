@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE abiword PUBLIC "-//ABISOURCE//DTD AWML 1.0 Strict//EN" "http://www.abisource.com/awml.dtd">
+<abiword template="false" xmlns:fo="http://www.w3.org/1999/XSL/Format" xmlns:math="http://www.w3.org/1998/Math/MathML" xid-max="7" xmlns:dc="http://purl.org/dc/elements/1.1/" fileformat="1.1" xmlns:svg="http://www.w3.org/2000/svg" xmlns:awml="http://www.abisource.com/awml.dtd" xmlns="http://www.abisource.com/awml.dtd" xmlns:xlink="http://www.w3.org/1999/xlink" version="2.6.4" xml:space="preserve" props="dom-dir:ltr; document-footnote-restart-section:0; document-endnote-type:numeric; document-endnote-place-enddoc:1; document-endnote-initial:1; lang:en-US; document-endnote-restart-section:0; document-footnote-restart-page:0; document-footnote-type:numeric; document-footnote-initial:1; document-endnote-place-endsection:0">
+<!-- ======================================================================== -->
+<!-- This file is an AbiWord document.                                        -->
+<!-- AbiWord is a free, Open Source word processor.                           -->
+<!-- More information about AbiWord is available at http://www.abisource.com/ -->
+<!-- You should not edit this file by hand.                                   -->
+<!-- ======================================================================== -->
+
+<metadata>
+<m key="dc.format">application/x-abiword</m>
+<m key="abiword.generator">AbiWord</m>
+<m key="dc.date">2009-05-16T03:35:00Z</m>
+<m key="abiword.date_last_changed">2009-05-16T06:19:00Z</m>
+<m key="dc.creator">Emily Dosmar</m>
+</metadata>
+<styles>
+<s type="P" name="Normal" followedby="Normal" props="font-family:Calibri; font-size:11pt; dom-dir:ltr; margin-bottom:10pt; lang:en-US; line-height:1.1; text-align:left"/>
+<s type="P" name="Heading" basedon="Normal" followedby="Text body" props="keep-with-next:yes; font-size:14pt; dom-dir:ltr; margin-bottom:6pt; lang:en-US; line-height:1.1; text-align:left; margin-top:12pt; font-family:Arial"/>
+<s type="P" name="Text body" basedon="Normal" followedby="Text body" props="font-family:Calibri; font-size:11pt; dom-dir:ltr; margin-bottom:6pt; lang:en-US; line-height:1.1; text-align:left"/>
+<s type="P" name="Caption" basedon="Normal" followedby="Caption" props="font-family:Calibri; font-size:12pt; dom-dir:ltr; margin-bottom:6pt; lang:en-US; line-height:1.1; text-align:left; font-style:italic; margin-top:6pt"/>
+<s type="P" name="Index" basedon="Normal" followedby="Index" props="font-family:Calibri; font-size:11pt; dom-dir:ltr; margin-bottom:10pt; lang:en-US; line-height:1.1; text-align:left"/>
+<s type="P" name="List" basedon="Text body" followedby="List" props="font-family:Calibri; font-size:11pt; dom-dir:ltr; margin-bottom:6pt; lang:en-US; line-height:1.1; text-align:left"/>
+</styles>
+<pagesize pagetype="Letter" orientation="portrait" width="8.500000" height="11.000000" units="in" page-scale="1.000000"/>
+<section xid="1" props="page-margin-right:1.0000in; section-restart-value:1; dom-dir:ltr; section-space-after:0.0000in; page-margin-footer:0.5000in; page-margin-header:0.5000in; page-margin-left:1.0000in; page-margin-top:1.0000in; page-margin-bottom:1.0000in">
+<p style="Normal" xid="2" props="text-align:right; line-height:1.1; margin-bottom:10pt; dom-dir:ltr"><c props="lang:en-US; font-size:12pt; font-family:Times New Roman">David Pick</c></p>
+<p style="Normal" xid="3" props="text-align:left; dom-dir:ltr"><c props="lang:en-US; font-size:12pt; font-family:Times New Roman">In the genetic engineering and biotechnology news article “Stem Cells Continue March Toward Clinic” the methodologies and technological advances in the field of stem cell research are discussed and evaluated. This article highlights the potential that continued work with stem cells research holds and suggests the implications for strides in the medical field through examples. While this article takes a definite stance in favor of stem cell technologies this topic has been a long time debated and controversial issue both across and within social and academic groups. Primarily religious based groups oppose work done with stem cells  on the grounds that it is in conflict with nature and with g-d. Other groups take a moral stance against stem cell research and technologies because of their belief that stem cells are harvested from embryos and result in death. Still other groups oppose this emerging field because of its potential to lead to human cloning. This paper intends to argue however that advances in stem cell research has the potential to revolutionize the way that modern scientists and doctors approach medical technologies and disease treatments. Additionally through the progress made in the acquisition of stem cells and the regulations on them ethical and moral opposition is based on fallacies and archaic notions. </c></p>
+<p style="Normal" xid="4" props="text-align:left; dom-dir:ltr"><c props="lang:en-US; font-size:12pt; font-family:Times New Roman">Stem cells are unique because they are capable of dividing and renewing themselves for long periods of time. Unlike most other cells, a few stem cells can turn into millions in a relativity short amount of time. This combined with the fact that stem cells have the ability to transform into most other cans of cells, is extremely interesting to scientists. Scientists hope to use stem cells to regenerate failing organs and treat types of cancer. By studying stem cells scientists want to learn how to make other cells replicate in a similar way to stem cells, which could lead to better self-healing abilities for humans. Using stem cells scientists also hope to learn more about how human development, than is currently known.</c></p>
+<p style="Normal" xid="5" props="text-align:left; dom-dir:ltr"><c props="lang:en-US; font-size:12pt; font-family:Times New Roman">In order to use embryonic stem cells, researchers must destroy blastocysts which are formed from laboratory-fertilized human eggs. Many people who oppose stem cell research believe that life begins at conception, the blastocyst is a human life, and destroying it is the same as ending a life. They believe this action to be immoral and unacceptable.</c></p>
+<p style="Normal" xid="6" props="text-align:left; dom-dir:ltr"><c props="lang:en-US; font-size:12pt; font-family:Times New Roman">	When the concept of stem cells related treatments first emerged in the public eye, little was known about the origins of these cells and it was commonly thought that embryonic cells  were the only stem cells usable for regeneration. The paradigm surrounding stem cell research has since shifted leading to the knowledge adult stem cells can be used for many of the same purposes as embryonic stem cells thus allowing for more research in the field.</c></p>
+<p xid="7"></p>
+</section>
+</abiword>

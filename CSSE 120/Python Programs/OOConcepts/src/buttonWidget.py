@@ -1,0 +1,88 @@
+# Button class.  Written by Claude Anderson, Sept 30, 2007.
+# Modified by Delvin Defoe, October 8, 2007
+# Similar to the class developed in Zelle Section 10.6, but with enhancements:
+# If the user does not specify a button height or width (or specifies height and 
+# width that are too small, the constructor adjusts the size to the minimum height 
+# and width needed to enclose the text.
+
+#------------------------------------------------
+# FOR HW18 DO NOT MODIFY THE CODE IN THIS FILE.
+#------------------------------------------------
+
+from graphics import  *
+
+class Button:
+    """ A Button widget similar to the one in Zelle 10.6, 
+       but with the extra property of making sure the 
+       Button's text fits inside the rectangle """
+
+    # A button should be at least MIN_HEIGHT tall, in order to comfortably surround label.
+    MIN_HEIGHT = 38  
+    FONT_NAME = 'courier'  
+    FONT_SIZE = 20
+    CHAR_WIDTH = 16  # The width of a character (in pixels) of the chosen font face/size.
+    EXTRA_HORZ_SPACE = 6  # Put in this much extra horizontal space so that 
+                         # the label doesn't run into the boundary of the rectangle.
+   
+     
+    def __init__(self, win, label, center):
+      """Initialize a Button with the given characteristics.
+         If the default values for width and height are used, 
+         these dimensions are chosen so the rectangle barely encloses its label."""
+      self.label = label
+      self.center = center
+      self.__setRectDimensions()
+      self.__setRect()
+      self.__setText()
+      self.enable()
+      self.rect.draw(win)
+      self.text.draw(win)
+      
+    def enable(self):
+      """ Enable this button so it responds to clicks """
+      self.enabled = True
+      self.rect.setWidth(3)
+      self.text.setOutline('black')
+
+    def __str__(self):
+      return "Button: (%d, %d) %s" % (self.rect.getCenter().getX(), \
+                                      self.rect.getCenter().getY(), self.label)
+ 
+    def disable(self):
+      """ Disable this button so it does not respond to clicks """
+      self.enabled = False
+      self.rect.setWidth(1)
+      self.text.setOutline('darkgrey')
+      
+    def clicked(self, clickPoint):
+      """" Is this button enabled, and is the clickPoint within the button? """
+      return self.enabled and  \
+         self.minX <= clickPoint.getX() <= self.maxX and \
+         self.minY <= clickPoint.getY() <= self.maxY
+
+    def __setRectDimensions(self):
+      """ Internal method.  Called by the constructor. 
+      Calculate dimensions that barely enclose the text """
+          
+      minWidth = Button.CHAR_WIDTH * len(self.label) + Button.EXTRA_HORZ_SPACE
+      width = minWidth
+      height = Button.MIN_HEIGHT
+      centerX, centerY = self.center.getX(), self.center.getY()
+      self.minX = centerX - width/2     
+      self.minY = centerY - height/2
+      self.maxX = centerX + width/2     
+      self.maxY = centerY + height/2
+         
+    def __setRect(self):
+      """ Internal method.  Called by the constructor. 
+          Create the rectangular border of the button """
+      self.rect = Rectangle(Point(self.minX, self.minY),Point(self.maxX, self.maxY))
+#      self.rect.setOutline('red')
+  
+    def __setText(self):
+      """ Internal method.  Called by the constructor. 
+          Create the Text object for the button's label"""
+      self.text = Text(self.center, self.label)
+      self.text.setFace(Button.FONT_NAME)
+      self.text.setSize(Button.FONT_SIZE)
+      

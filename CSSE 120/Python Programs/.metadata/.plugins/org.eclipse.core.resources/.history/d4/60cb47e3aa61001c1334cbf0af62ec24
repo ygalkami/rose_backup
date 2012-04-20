@@ -1,0 +1,15 @@
+from graphics import *
+
+win = GraphWin('Plot a Function', 720, 400)
+filename = raw_input("Enter a filename to open: ")
+
+file = open(filename + ".txt", 'w')
+
+for i in range(720):
+    curline = file.readline(i)
+    x = curline[0:3]
+    print x
+    y = curline[10:16]
+    
+    dot = Point(x, y)
+    dot.draw(win)

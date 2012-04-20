@@ -1,0 +1,79 @@
+8
+
+dir
+78
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/ThatsPerfect
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-10-25T14:43:05.522113Z
+69
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+.cdtproject
+file
+
+
+
+
+2007-10-26T13:18:23.638804Z
+adbc35fe466217ef2b27ec9cd7c43c12
+2007-10-25T14:43:05.522113Z
+69
+clifton
+
+.project
+file
+
+
+
+
+2007-10-26T13:18:23.638804Z
+74de2d71faa65be29ff35674c358c21d
+2007-10-25T14:43:05.522113Z
+69
+clifton
+
+.cdtbuild
+file
+
+
+
+
+2007-10-26T13:18:23.638804Z
+02bb0254679ad12370db5adc27f332df
+2007-10-25T14:43:05.522113Z
+69
+clifton
+
+perfect.c
+file
+81
+
+
+
+2007-10-26T16:12:47.823250Z
+22ae0092f4be483fce76fec066617278
+2007-10-26T16:11:16.602739Z
+81
+pickdp
+
+.settings
+dir
+

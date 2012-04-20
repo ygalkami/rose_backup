@@ -1,0 +1,52 @@
+Q1) The query that runs on the indexed table must sort the data.
+
+Q2) 
+I/0 cost for indexed query = .0046
+I/0 cost for unidexed query = .0098
+CPU cost for indexed query = .0025
+CPU cost for unidexed query = .0038
+
+Q3)
+Indecies improve the efficiency of queries that use aggregate data.
+
+Q4)
+The estimated I/O cost for Table scans on the unindexed tables, was very similar to the I/O cost for Index scans on the indexed tables
+
+Q5)
+These similarities exist because CustomerID is not indexed in the customer table.
+
+Q6)
+SELECT count(*) FROM table_name 
+will run faster because it is performing fewer comparisions. It only needs to run through the table, incrementing a variable for each row.
+
+Q7)
+SELECT employeeid
+FROM employees
+WHERE TitleofCourtesy='MS.' and City = 'Seattle'
+Will run faster because TitleofCourtesy and City do not have to be written to memory, and then read from memory.
+
+Q8)
+DECLARE @InvoiceTotal money
+SELECT @InvoiceTotal = sum(UnitPrice*Quantity)
+FROM [order details]
+WHERE orderid = 10248
+SELECT @InvoiceTotal InvoiceTotal
+Will run faster because it does not use a cursor. Curors run lots of select statments while the query above will only run one.
+
+Q9)
+UPDATE Products
+SET UnitPrice = ROUND(UnitPrice * 1.06, 2)
+WHERE UnitPrice > 5
+GO
+Will be faster because it only reads through the table once.
+
+
+Q10)
+SELECT column_name1, column_name2
+FROM table_name1
+WHERE column_name1 = some_value
+UNION
+SELECT column_name1, column_name2
+FROM table_name1
+WHERE column_name2 = some_value
+Will run faster because it does not have to use an or.

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="555" key="CommitDialog.weights.0"/>
+	<item value="691" key="RevertDialog.location.x"/>
+	<item value="444" key="CommitDialog.weights.1"/>
+	<item value="http://svn.cs.rose-hulman.edu/repos/220-2008-spell11/SpellChecker" key="UrlCombo.SpellChecker.0"/>
+	<item value="1" key="RevertDialog.sortColumn"/>
+	<item value="296" key="RevertDialog.location.y"/>
+	<item value="150" key="RevertDialog.column3"/>
+	<item value="150" key="RevertDialog.column2"/>
+	<item value="150" key="RevertDialog.column1"/>
+	<item value="false" key="CommitDialog.sortReversed"/>
+	<item value="322" key="CommitDialog.location.y"/>
+	<item value="20" key="RevertDialog.column0"/>
+	<item value="607" key="CommitDialog.location.x"/>
+	<item value="539" key="RevertDialog.size.x"/>
+	<item value="434" key="RevertDialog.size.y"/>
+	<item value="1" key="CommitDialog.sortColumn"/>
+	<item value="150" key="CommitDialog.column2"/>
+	<item value="150" key="CommitDialog.column1"/>
+	<item value="559" key="CommitDialog.size.x"/>
+	<item value="150" key="CommitDialog.column3"/>
+	<item value="535" key="CommitDialog.size.y"/>
+	<item value="false" key="RevertDialog.sortReversed"/>
+	<item value="20" key="CommitDialog.column0"/>
+	<section name="NewLocationWizard">
+		<list key="ConfigurationWizardMainPage.STORE_URL_ID">
+			<item value="http://svn.cs.rose-hulman.edu/repos/220-2008-spell11"/>
+			<item value="http://svn.cs.rose-hulman.edu/repos/220-200820-spell11"/>
+			<item value="http://svn.cs.rose-hulman.edu/repos/220-200820-markov20"/>
+			<item value="http://svn.cs.rose-hulman.edu/repos/220-200820-Markov21"/>
+			<item value="http://svn.cs.rose-hulman.edu/repos/220-200820-Markov20"/>
+		</list>
+	</section>
+</section>

@@ -1,0 +1,17 @@
+#
+echo spawning xclocks in background
+xclock &
+xclock &
+xclock &
+echo waiting on all:
+wait 0
+echo spawning more:
+xclock &
+xclock &
+xclock &
+echo waiting any:
+wait -1
+echo waiting rest:
+wait 0
+echo quitting...
+quit 0

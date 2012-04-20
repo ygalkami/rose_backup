@@ -1,0 +1,79 @@
+9
+
+dir
+100
+http://svn.cs.rose-hulman.edu/repos/csse403-201010-pickdp
+http://svn.cs.rose-hulman.edu/repos/csse403-201010-pickdp
+
+
+
+2009-11-10T17:34:49.444278Z
+100
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+905e6b2d-85d9-46bd-a4f2-2c6ab32a5b1c
+
+PythonAnimation
+dir
+
+ErlangHomework
+dir
+
+objc-in-class
+dir
+
+ErlangInClass
+dir
+
+PythonObjectsSolution
+dir
+
+ErlangSolutions
+dir
+
+PythonObjects
+dir
+
+PythonOOIntro
+dir
+
+PythonReflection
+dir
+
+HaskellHomework
+dir
+
+HaskellInClass
+dir
+
+HaskellSolutions
+dir
+
+PythonEtudeSolution
+dir
+
+PythonFunctionsSolution
+dir
+
+PythonEtude
+dir
+
+PythonFunctions
+dir
+
+PythonIterators
+dir
+

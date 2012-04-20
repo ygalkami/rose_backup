@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+
+int main()
+{
+  char *s, *t;
+  
+  s = "hi";
+  t = " there";
+  
+  printf("test - %s", *strcat(&s, &t));
+  
+  return 0;
+}
+
+char *strcat(char *s, char *t)
+{  
+  while (*s++ != '\0') ;
+  
+  s = t;
+  
+  return s;
+}

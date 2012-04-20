@@ -1,0 +1,7 @@
+echo testing -x mode
+set foo bar
+echo $foo
+echo should have said echo bar, not `$foo`
+echo my pid is: $$ ... running ps
+ps
+echo return of ps: $?

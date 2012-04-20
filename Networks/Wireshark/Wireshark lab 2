@@ -1,0 +1,42 @@
+1)[1] [david@david-laptop ~] % nslookup f.root-servers.net
+Server:         137.112.4.196
+Address:        137.112.4.196#53
+
+Non-authoritative answer:
+Name:   f.root-servers.net
+Address: 192.5.5.241
+
+2)[2] [david@david-laptop ~] % nslookup cambridge.org
+Server:         137.112.4.196
+Address:        137.112.4.196#53
+
+Non-authoritative answer:
+Name:   cambridge.org
+Address: 128.232.233.16
+
+[3] [david@david-laptop ~] % nslookup 128.232.233.16 
+Server:         137.112.4.196
+Address:        137.112.4.196#53
+
+Non-authoritative answer:
+16.233.232.128.in-addr.arpa     name = www.cup.cam.ac.uk.
+
+Authoritative answers can be found from:
+233.232.128.in-addr.arpa        nameserver = ns2.ic.ac.uk.
+233.232.128.in-addr.arpa        nameserver = dns0.cl.cam.ac.uk.
+233.232.128.in-addr.arpa        nameserver = authdns0.csx.cam.ac.uk.
+233.232.128.in-addr.arpa        nameserver = authdns1.csx.cam.ac.uk.
+authdns1.csx.cam.ac.uk  internet address = 131.111.12.37
+authdns1.csx.cam.ac.uk  has AAAA address 2001:630:200:8120::d:a1
+
+3)
+[9] [david@david-laptop ~] % nslookup mail.yahoo.com 208.67.222.222
+;; connection timed out; no servers could be reached
+
+4) UDP
+5) Destination Port = 53
+   Source Port = 53
+6) 137.112.4.196, yes
+9) Yes, it is the IP Address of www.itef.org
+12) 137.112.4.196, yes
+18) BITSY.mit.edu; W20NS.mit.edu; STRAWB.mit.edu; No IP addresses were provided

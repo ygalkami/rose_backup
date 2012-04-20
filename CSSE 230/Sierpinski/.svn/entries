@@ -1,0 +1,60 @@
+8
+
+dir
+5
+http://svn.cs.rose-hulman.edu/repos/csse230-200830-pickdp/Sierpinski
+http://svn.cs.rose-hulman.edu/repos/csse230-200830-pickdp
+
+
+
+2008-03-14T21:05:38.664639Z
+5
+anderson
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9932ecd4-5247-0410-88c8-8fdb18627565
+
+.classpath
+file
+
+
+
+
+2008-03-17T16:19:28.386581Z
+faad576c953ac0f96b6adfb7e2e3bf8f
+2008-03-14T21:05:38.664639Z
+5
+anderson
+has-props
+
+.project
+file
+
+
+
+
+2008-03-17T16:19:28.402206Z
+27a46f5f1c79e791a19e2f814707bbcc
+2008-03-14T21:05:38.664639Z
+5
+anderson
+has-props
+
+src
+dir
+
+bin
+dir
+

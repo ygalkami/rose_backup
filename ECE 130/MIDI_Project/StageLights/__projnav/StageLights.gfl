@@ -1,0 +1,649 @@
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+StageLights_TOP.ngr
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+StageLights_TOP.ngc
+StageLights_TOP.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo"
+StageLights_TOP.ngd
+StageLights_TOP_ngdbuild.nav
+StageLights_TOP.bld
+StageLights_TOP.ucf.untf
+StageLights_TOP.cmd_log
+# Implementation : Map
+StageLights_TOP_summary.html
+# Implementation : Map
+StageLights_TOP_map.ncd
+StageLights_TOP.ngm
+StageLights_TOP.pcf
+StageLights_TOP.nc1
+StageLights_TOP.mrp
+StageLights_TOP_map.mrp
+StageLights_TOP.mdf
+StageLights_TOP.cmd_log
+MAP_NO_GUIDE_FILE_CPF "StageLights_TOP"
+StageLights_TOP_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+StageLights_TOP.twr
+StageLights_TOP.twx
+StageLights_TOP.tsi
+StageLights_TOP.cmd_log
+# Implementation : Place & Route
+StageLights_TOP_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+StageLights_TOP.ncd
+StageLights_TOP.par
+StageLights_TOP.pad
+StageLights_TOP_pad.txt
+StageLights_TOP_pad.csv
+StageLights_TOP.pad_txt
+StageLights_TOP.dly
+reportgen.log
+StageLights_TOP.xpi
+StageLights_TOP.grf
+StageLights_TOP.itr
+StageLights_TOP_last_par.ncd
+StageLights_TOP.placed_ncd_tracker
+StageLights_TOP.routed_ncd_tracker
+StageLights_TOP.cmd_log
+PAR_NO_GUIDE_FILE_CPF "StageLights_TOP"
+# Generate Programming File
+__projnav/StageLights_TOP_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+StageLights_TOP.ut
+# Generate Programming File
+StageLights_TOP.bgn
+StageLights_TOP.rbt
+StageLights_TOP.ll
+StageLights_TOP.msk
+StageLights_TOP.drc
+StageLights_TOP.nky
+StageLights_TOP.bit
+StageLights_TOP.bin
+StageLights_TOP.isc
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+StageLights_TOP.ngc
+StageLights_TOP.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo"
+StageLights_TOP.ngd
+StageLights_TOP_ngdbuild.nav
+StageLights_TOP.bld
+StageLights_TOP.ucf.untf
+StageLights_TOP.cmd_log
+# Implementation : Map
+StageLights_TOP_summary.html
+# Implementation : Map
+StageLights_TOP_map.ncd
+StageLights_TOP.ngm
+StageLights_TOP.pcf
+StageLights_TOP.nc1
+StageLights_TOP.mrp
+StageLights_TOP_map.mrp
+StageLights_TOP.mdf
+StageLights_TOP.cmd_log
+MAP_NO_GUIDE_FILE_CPF "StageLights_TOP"
+StageLights_TOP_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+StageLights_TOP.twr
+StageLights_TOP.twx
+StageLights_TOP.tsi
+StageLights_TOP.cmd_log
+# Implementation : Place & Route
+StageLights_TOP_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+StageLights_TOP.ncd
+StageLights_TOP.par
+StageLights_TOP.pad
+StageLights_TOP_pad.txt
+StageLights_TOP_pad.csv
+StageLights_TOP.pad_txt
+StageLights_TOP.dly
+reportgen.log
+StageLights_TOP.xpi
+StageLights_TOP.grf
+StageLights_TOP.itr
+StageLights_TOP_last_par.ncd
+StageLights_TOP.placed_ncd_tracker
+StageLights_TOP.routed_ncd_tracker
+StageLights_TOP.cmd_log
+PAR_NO_GUIDE_FILE_CPF "StageLights_TOP"
+# Generate Programming File
+__projnav/StageLights_TOP_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+StageLights_TOP.ut
+# Generate Programming File
+StageLights_TOP.bgn
+StageLights_TOP.rbt
+StageLights_TOP.ll
+StageLights_TOP.msk
+StageLights_TOP.drc
+StageLights_TOP.nky
+StageLights_TOP.bit
+StageLights_TOP.bin
+StageLights_TOP.isc
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+StageLights_TOP.ngc
+StageLights_TOP.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo"
+StageLights_TOP.ngd
+StageLights_TOP_ngdbuild.nav
+StageLights_TOP.bld
+StageLights_TOP.ucf.untf
+StageLights_TOP.cmd_log
+# Implementation : Map
+StageLights_TOP_summary.html
+# Implementation : Map
+StageLights_TOP_map.ncd
+StageLights_TOP.ngm
+StageLights_TOP.pcf
+StageLights_TOP.nc1
+StageLights_TOP.mrp
+StageLights_TOP_map.mrp
+StageLights_TOP.mdf
+StageLights_TOP.cmd_log
+MAP_NO_GUIDE_FILE_CPF "StageLights_TOP"
+StageLights_TOP_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+StageLights_TOP.twr
+StageLights_TOP.twx
+StageLights_TOP.tsi
+StageLights_TOP.cmd_log
+# Implementation : Place & Route
+StageLights_TOP_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+StageLights_TOP.ncd
+StageLights_TOP.par
+StageLights_TOP.pad
+StageLights_TOP_pad.txt
+StageLights_TOP_pad.csv
+StageLights_TOP.pad_txt
+StageLights_TOP.dly
+reportgen.log
+StageLights_TOP.xpi
+StageLights_TOP.grf
+StageLights_TOP.itr
+StageLights_TOP_last_par.ncd
+StageLights_TOP.placed_ncd_tracker
+StageLights_TOP.routed_ncd_tracker
+StageLights_TOP.cmd_log
+PAR_NO_GUIDE_FILE_CPF "StageLights_TOP"
+# Generate Programming File
+__projnav/StageLights_TOP_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+StageLights_TOP.ut
+# Generate Programming File
+StageLights_TOP.bgn
+StageLights_TOP.rbt
+StageLights_TOP.ll
+StageLights_TOP.msk
+StageLights_TOP.drc
+StageLights_TOP.nky
+StageLights_TOP.bit
+StageLights_TOP.bin
+StageLights_TOP.isc
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+StageLights_TOP.ngc
+StageLights_TOP.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo"
+StageLights_TOP.ngd
+StageLights_TOP_ngdbuild.nav
+StageLights_TOP.bld
+StageLights_TOP.ucf.untf
+StageLights_TOP.cmd_log
+# Implementation : Map
+StageLights_TOP_summary.html
+# Implementation : Map
+StageLights_TOP_map.ncd
+StageLights_TOP.ngm
+StageLights_TOP.pcf
+StageLights_TOP.nc1
+StageLights_TOP.mrp
+StageLights_TOP_map.mrp
+StageLights_TOP.mdf
+StageLights_TOP.cmd_log
+MAP_NO_GUIDE_FILE_CPF "StageLights_TOP"
+StageLights_TOP_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+StageLights_TOP.twr
+StageLights_TOP.twx
+StageLights_TOP.tsi
+StageLights_TOP.cmd_log
+# Implementation : Place & Route
+StageLights_TOP_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+StageLights_TOP.ncd
+StageLights_TOP.par
+StageLights_TOP.pad
+StageLights_TOP_pad.txt
+StageLights_TOP_pad.csv
+StageLights_TOP.pad_txt
+StageLights_TOP.dly
+reportgen.log
+StageLights_TOP.xpi
+StageLights_TOP.grf
+StageLights_TOP.itr
+StageLights_TOP_last_par.ncd
+StageLights_TOP.placed_ncd_tracker
+StageLights_TOP.routed_ncd_tracker
+StageLights_TOP.cmd_log
+PAR_NO_GUIDE_FILE_CPF "StageLights_TOP"
+# Generate Programming File
+__projnav/StageLights_TOP_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+StageLights_TOP.ut
+# Generate Programming File
+StageLights_TOP.bgn
+StageLights_TOP.rbt
+StageLights_TOP.ll
+StageLights_TOP.msk
+StageLights_TOP.drc
+StageLights_TOP.nky
+StageLights_TOP.bit
+StageLights_TOP.bin
+StageLights_TOP.isc
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+StageLights_TOP.ngc
+StageLights_TOP.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo"
+StageLights_TOP.ngd
+StageLights_TOP_ngdbuild.nav
+StageLights_TOP.bld
+StageLights_TOP.ucf.untf
+StageLights_TOP.cmd_log
+# Implementation : Map
+StageLights_TOP_summary.html
+# Implementation : Map
+StageLights_TOP_map.ncd
+StageLights_TOP.ngm
+StageLights_TOP.pcf
+StageLights_TOP.nc1
+StageLights_TOP.mrp
+StageLights_TOP_map.mrp
+StageLights_TOP.mdf
+StageLights_TOP.cmd_log
+MAP_NO_GUIDE_FILE_CPF "StageLights_TOP"
+StageLights_TOP_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+StageLights_TOP.twr
+StageLights_TOP.twx
+StageLights_TOP.tsi
+StageLights_TOP.cmd_log
+# Implementation : Place & Route
+StageLights_TOP_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+StageLights_TOP.ncd
+StageLights_TOP.par
+StageLights_TOP.pad
+StageLights_TOP_pad.txt
+StageLights_TOP_pad.csv
+StageLights_TOP.pad_txt
+StageLights_TOP.dly
+reportgen.log
+StageLights_TOP.xpi
+StageLights_TOP.grf
+StageLights_TOP.itr
+StageLights_TOP_last_par.ncd
+StageLights_TOP.placed_ncd_tracker
+StageLights_TOP.routed_ncd_tracker
+StageLights_TOP.cmd_log
+PAR_NO_GUIDE_FILE_CPF "StageLights_TOP"
+# Generate Programming File
+__projnav/StageLights_TOP_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+StageLights_TOP.ut
+# Generate Programming File
+StageLights_TOP.bgn
+StageLights_TOP.rbt
+StageLights_TOP.ll
+StageLights_TOP.msk
+StageLights_TOP.drc
+StageLights_TOP.nky
+StageLights_TOP.bit
+StageLights_TOP.bin
+StageLights_TOP.isc
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+StageLights_TOP.ngc
+StageLights_TOP.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo"
+StageLights_TOP.ngd
+StageLights_TOP_ngdbuild.nav
+StageLights_TOP.bld
+StageLights_TOP.ucf.untf
+StageLights_TOP.cmd_log
+# Implementation : Map
+StageLights_TOP_summary.html
+# Implementation : Map
+StageLights_TOP_map.ncd
+StageLights_TOP.ngm
+StageLights_TOP.pcf
+StageLights_TOP.nc1
+StageLights_TOP.mrp
+StageLights_TOP_map.mrp
+StageLights_TOP.mdf
+StageLights_TOP.cmd_log
+MAP_NO_GUIDE_FILE_CPF "StageLights_TOP"
+StageLights_TOP_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+StageLights_TOP.twr
+StageLights_TOP.twx
+StageLights_TOP.tsi
+StageLights_TOP.cmd_log
+# Implementation : Place & Route
+StageLights_TOP_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+StageLights_TOP.ncd
+StageLights_TOP.par
+StageLights_TOP.pad
+StageLights_TOP_pad.txt
+StageLights_TOP_pad.csv
+StageLights_TOP.pad_txt
+StageLights_TOP.dly
+reportgen.log
+StageLights_TOP.xpi
+StageLights_TOP.grf
+StageLights_TOP.itr
+StageLights_TOP_last_par.ncd
+StageLights_TOP.placed_ncd_tracker
+StageLights_TOP.routed_ncd_tracker
+StageLights_TOP.cmd_log
+PAR_NO_GUIDE_FILE_CPF "StageLights_TOP"
+# Generate Programming File
+__projnav/StageLights_TOP_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+StageLights_TOP.ut
+# Generate Programming File
+StageLights_TOP.bgn
+StageLights_TOP.rbt
+StageLights_TOP.ll
+StageLights_TOP.msk
+StageLights_TOP.drc
+StageLights_TOP.nky
+StageLights_TOP.bit
+StageLights_TOP.bin
+StageLights_TOP.isc
+StageLights_TOP.cmd_log
+# XST (Creating Lso File) : 
+StageLights_TOP.lso
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP.syr
+StageLights_TOP.prj
+StageLights_TOP.sprj
+StageLights_TOP.ana
+StageLights_TOP.stx
+StageLights_TOP.cmd_log
+StageLights_TOP.ngc
+StageLights_TOP.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project\stagelights/_ngo"
+StageLights_TOP.ngd
+StageLights_TOP_ngdbuild.nav
+StageLights_TOP.bld
+StageLights_TOP.ucf.untf
+StageLights_TOP.cmd_log
+# Implementation : Map
+StageLights_TOP_summary.html
+# Implementation : Map
+StageLights_TOP_map.ncd
+StageLights_TOP.ngm
+StageLights_TOP.pcf
+StageLights_TOP.nc1
+StageLights_TOP.mrp
+StageLights_TOP_map.mrp
+StageLights_TOP.mdf
+StageLights_TOP.cmd_log
+MAP_NO_GUIDE_FILE_CPF "StageLights_TOP"
+StageLights_TOP_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+StageLights_TOP.twr
+StageLights_TOP.twx
+StageLights_TOP.tsi
+StageLights_TOP.cmd_log
+# Implementation : Place & Route
+StageLights_TOP_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+StageLights_TOP.ncd
+StageLights_TOP.par
+StageLights_TOP.pad
+StageLights_TOP_pad.txt
+StageLights_TOP_pad.csv
+StageLights_TOP.pad_txt
+StageLights_TOP.dly
+reportgen.log
+StageLights_TOP.xpi
+StageLights_TOP.grf
+StageLights_TOP.itr
+StageLights_TOP_last_par.ncd
+StageLights_TOP.placed_ncd_tracker
+StageLights_TOP.routed_ncd_tracker
+StageLights_TOP.cmd_log
+PAR_NO_GUIDE_FILE_CPF "StageLights_TOP"
+# Generate Programming File
+__projnav/StageLights_TOP_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+StageLights_TOP.ut
+# Generate Programming File
+StageLights_TOP.bgn
+StageLights_TOP.rbt
+StageLights_TOP.ll
+StageLights_TOP.msk
+StageLights_TOP.drc
+StageLights_TOP.nky
+StageLights_TOP.bit
+StageLights_TOP.bin
+StageLights_TOP.isc
+StageLights_TOP.cmd_log
+# xst flow : RunXST
+StageLights_TOP_summary.html
+# xst flow : RunXST
+StageLights_TOP_summary.html

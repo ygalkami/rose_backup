@@ -1,0 +1,40 @@
+8
+
+dir
+13
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/TicTacToe/src
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-09-25T17:19:38.499508Z
+7
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+TicTacToe.py
+file
+64
+
+
+
+2007-09-30T18:21:59.488903Z
+bdb5f148240cd487cf5768b1ae29556f
+2007-09-30T18:19:59.681190Z
+23
+pickdp
+

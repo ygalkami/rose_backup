@@ -1,0 +1,235 @@
+# This program implements the game Quixo.
+# It was written as a team project for CSSE 120, Fall 2007.
+# TODO: REPLACE THE SECTION AND TEAM NUMBER IN THE FOLLOWING LINE
+# Section 1, Team 13
+# Team members:
+# David Pick
+# Aaron Blankenbaker
+# John Lee Burns
+
+from graphics import *
+
+win = GraphWin("Quixo", 500, 500)
+boardsize = 5
+pps = 100
+inset = 15
+board = [0] * boardsize
+for i in range(boardsize):
+    board[i] = [0] * boardsize
+
+class block():
+    def __init__(self, piece, row, col, placerow, placecol):
+        if piece == True:
+            self.drawX(row, col)
+        else:
+            self.drawO(row, col)
+            
+    def drawX(self, row, col):
+        self.line1 = Line(self.getUpperLeft(row, col), self.getLowerRight(row, col))
+        self.line2 = Line(self.getUpperRight(row, col), self.getLowerLeft(row, col))
+        self.line1.draw(win)
+        self.line2.draw(win)
+
+    def drawO(self, row, col):
+        x = pps * col + 50
+        y = pps * row + 50
+        self.circle = Circle(Point(x, y), 35)
+        self.circle.draw(win)
+        
+    def getUpperLeft(self, row,col):
+        x1 = pps * (col + 1) - inset
+        y1 = pps * (row + 1) - inset
+        return Point(x1, y1)
+
+    def getLowerLeft(self, row, col):
+        x2 = pps * (col + 1) - inset
+        y2 = pps * row + inset
+        return Point(x2, y2)
+    
+    def getUpperRight(self, row, col):
+        x1 = pps * col + inset
+        y1 = pps * (row + 1) - inset
+        return Point(x1, y1)
+        
+    def getLowerRight(self, row, col):
+        x2 = pps * col + inset
+        y2 = pps * row + inset
+        return Point(x2, y2)
+    
+    def undraw(self):
+        if piece == "X":
+            self.line1.undraw()
+            self.line2.undraw()
+        else:
+            self.circle.undraw()
+        
+def drawboard(boardsize):
+    for i in range(boardsize):
+        x1 = 0
+        x2 = boardsize * pps
+        y1 = i * pps
+        y2 = i * pps
+        line = Line(Point(x1, y1), Point(x2, y2))
+        line.draw(win)
+
+    for i in range(boardsize):
+        x1 = i * pps
+        x2 = i * pps
+        y1 = 0
+        y2 = boardsize * pps
+        line = Line(Point(x1, y1), Point(x2, y2))
+        line.draw(win)
+
+def getmouse():
+    turn = True
+    count = 0
+    gameover = False
+    
+    while gameover != True:
+        clickpoint = mouseinput(win)
+        x = clickpoint.getX()
+        y = clickpoint.getY()
+        
+        col = x / pps
+        row = y / pps
+        placepoint = mouseinput(win)
+        x = placepoint.getX()
+        y = placepoint.getY()
+        
+        placecol = x / pps
+        placerow = y / pps
+        rotate = whichrotate(row, col, placerow, placecol)
+        if turn == True:
+            board[row][col] = block(turn, row, col, placerow, placecol)
+            turn = False
+            print "Got here"
+            rotateList(rotate, row, col)
+        elif turn == False:
+            board[row][col] = block(turn, row, col, placerow, placecol)
+            turn = True
+            rotateList(rotate, row, col)
+        print board
+    
+drawboard(boardsize)
+win.getMouse()
+
+def mouseinput(window):
+    ok=False
+    while ok==False:
+          point = window.getMouse()
+          x1 = point.getX()
+          y1 = point.getY()
+          if x1<100 or x1>400 or y1<100 or y1>400:
+              ok = True
+    return point
+
+def whichrotate(row, col, placerow, placecol):
+    if row - placerow < 0 and col - placecol == 0:
+        rotate = "Vertical From Bottom"
+        print row, col
+        print placerow, placecol
+    if row - placerow > 0 and col - placecol == 0:
+        rotate = "Vertical From Top"
+    if row - placerow == 0 and col - placecol > 0:
+        rotate = "Right to Left"
+    if row - placerow == 0 and col - placecol < 0:
+        rotate = "Left to Right"
+        
+    return rotate
+
+
+def createBoard(board):
+    for i in range(boardsize):
+        tempstring = board[i]
+        for j in range(boardsize):
+            if tempstring[j] == "X":
+                DrawX(i, j)
+            if tempstring[j] == "O":
+                DrawO(i, j)
+    return board
+
+def printBoard(board):
+    for i in range(boardsize):
+        print board[i]
+        
+def rotateFromRight(alist):
+    """Rotates alist so that the rightmost element appears at the left end of 
+    the list and the other elements are pushed toward the right end of the list"""
+    #TO DO:  Complete this function.  Delete the return statement
+    temp=alist[-1]
+    for i in range(len(alist)-2,-1,-1):
+        alist[i+1]=alist[i]
+    alist[0]=temp
+
+def rotateFromLeft(alist):
+    """Rotates alist so that the leftmost element appears at the right end of 
+    the list and the other elements are pushed toward the left end of the list"""
+    temp=alist[0]
+    for i in range(len(alist)-1):
+        alist[i]=alist[i+1]
+    alist[len(alist)-1]=temp
+    
+def rotateRow(alist, side):  
+    """Rotates alist from side where side == left or side == right"""  
+    if(side==left):
+        rotateFromLeft(alist)
+    if(side==right):
+        rotateFromRight(alist)
+    
+        
+def rotateAnyRow(atable, row, side):  
+    """Rotates a given row of atable from side where side == left or side == right.
+    row is given as an integer value. atable is a list of list of elements""" 
+    list1=atable[row]
+    rotateRow(list1,side)
+  
+        
+def rotateFromTop(atable, col = 0):
+    """Rotates a given column (col) of atable so that the topmost element 
+    appears at the bottom of the column and the other elements are pushed toward
+    the top of the column.  col is given as an integer value. atable is a list 
+    of list of elements."""
+    temp=atable[0][col]
+    for i in range(len(atable)-1):
+        atable[i][col]=atable[i+1][col]
+    atable[len(atable)-1][col]=temp
+
+    
+def rotateFromBottom(atable, col = 0):
+    """Rotates a given column (col) of atable so that the bottommost element 
+    appears at the top of the column and the other elements are pushed toward 
+    the bottom of the column. col is given as an integer value. atable is a list 
+    of list of elements."""
+    temp=atable[-1][col]
+    for i in range(len(atable)-2,-1,-1):
+        atable[i+1][col]=atable[i][col]
+    atable[0][col]=temp
+   
+        
+def rotateAnyColumn(atable, col, side):  
+    """Rotates a given column (col) of atable from side where side == top or 
+    side == bottom.  col is given as an integer value. atable is a list 
+    of list of elements."""  
+    if(side==top):
+        rotateFromTop(atable,col)
+    if(side==bottom):
+        rotateFromBottom(atable,col)
+        
+        
+def rotateList(which,row,col):
+    if which == "Vertical From Bottom":
+        rotateAnyColumn(board, col, top)
+        
+    if which == "Vertical From Top":
+        rotateAnyColumn(board,col,bottom)
+        
+    if which == "Right to Left":
+        rotateAnyRow(board, row, "right")
+    
+    if which == "Left to Right":
+        rotateAnyRow(board, row, "left")
+
+#printBoard(board)
+#b = createBoard(['----O', 'XX--X', 'XO---', 'OO---', 'X----'])
+#printBoard(b)
+getmouse()

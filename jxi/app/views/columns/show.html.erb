@@ -1,0 +1,14 @@
+<h1>Column on <%= @table.name %></h1>
+
+<p>
+  <b>Column:</b>
+  <%=h @column.name %><br />
+	<b>Type:</b>
+	<%=h @column.type %><br />
+	<b>Null:</b>
+	<%=h @column.null %><br />
+</p>
+
+
+<%= link_to 'Edit', edit_table_column_path(@table, @column) %> |
+<%= link_to 'Back', table_columns_path(@table) %>

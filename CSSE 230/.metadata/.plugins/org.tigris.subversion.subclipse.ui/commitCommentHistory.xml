@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>Added more comments</CommitComment>
+	<CommitComment>solved dads</CommitComment>
+	<CommitComment>fixed move issue</CommitComment>
+	<CommitComment>commented out debugging statements</CommitComment>
+	<CommitComment>removed some debugging statements</CommitComment>
+	<CommitComment>Solved dads</CommitComment>
+	<CommitComment>almost fixed currentconfig linkedlist issue</CommitComment>
+	<CommitComment>new find moves method appears to be working, backtracking 
+does not work</CommitComment>
+	<CommitComment>find moves still not working</CommitComment>
+	<CommitComment>Updated block class with move methods and contains</CommitComment>
+</CommitComments>

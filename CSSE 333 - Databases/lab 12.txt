@@ -1,0 +1,43 @@
+Q1)
+Store -> Address, Manager is a functional dependancy for the promotions relation
+because address and manager can be uniquely determined given a store.
+
+Q2)
+FD1 violates third normal form for the promotions relation because multiple stores can 
+have the same promotion, so Store is not a superkey for the Promotions relation.
+
+Q3)
+Manager -> ManagerPh is a function dependency for the Promotions relation because
+ManagerPh can be uniquely determined given a Manager.
+
+Q4)
+FD2 violates 3NF because a manager can manage multiple stores.
+
+Q5)
+Promotion Name -> Promotion Terms is a functional dependancy for the promotions relation
+because given a promotionName, the promotionTerms can be uniquely determined.
+
+Q6)
+FD3 violates 3NF because given a promotion can occur at multiple stores.
+
+Q7)
+Store, Promotion Name -> Total Sales For Promotion because given a store and a promotion name
+the total sales for that promotion can be uniquely determined.
+
+Q8)
+FD4 satisfies 3NF because given a store and a promotion name, every other attirbute of the promotions
+relation can be uniquely determined.
+
+Q9)
+(Store)+ = {Address, Manager, ManagerPh}
+
+Q10)
+Store, Address, Manager, ManagerPh	|	Store, PName, PTerms, PTotal
+
+Q11)
+(Manager)+ = {ManagerPh}
+Manager, ManagerPh	|	Manager, Store, Address
+
+(PName)+ = {PTerms, PTotal}
+PName, PTerms, PTotal	|	PName, Store
+

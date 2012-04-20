@@ -1,0 +1,6 @@
+sch2verilog -intstyle ise   -family spartan3 -w TrafficSignalController_FSM.sch TrafficSignalController_FSM.vf
+sch2verilog -intstyle ise   -family spartan3 -w TrafficSignalController_FSM.sch TrafficSignalController_FSM.vf
+sch2verilog -intstyle ise   -family spartan3 -w TrafficSignalController_FSM.sch TrafficSignalController_FSM.vf
+sch2verilog -intstyle ise   -family spartan3 -w TrafficSignalController_FSM.sch TrafficSignalController_FSM.vf
+xst -intstyle ise -ifn __projnav/TrafficSignalController_FSM.xst -ofn TrafficSignalController_FSM.syr
+sch2verilog -intstyle ise   -family spartan3 -w TrafficSignalController_FSM.sch TrafficSignalController_FSM.vf

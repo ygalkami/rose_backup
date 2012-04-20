@@ -1,0 +1,163 @@
+body {
+	color: #443A2F;
+	background-color: #FEF9F3;
+	font-size: 90%;
+	font-family: "Palatino", "Times New Roman", "Serif";	
+}
+
+li {
+	margin-top: 0.5ex;
+}
+
+h1 {
+	text-align: center;
+	font-size: 150%;
+	color: #443A2F;
+	background-color: #D2C8BC;
+	border-top: 3px #B6AA9D solid;
+	border-bottom: 3px #B6AA9D solid;
+	padding: 1ex;
+	clear: both;
+}
+
+h2 {
+	text-align: center;
+	font-size: 150%;
+	clear: both;
+	padding-top: 0.25ex;
+	padding-bottom: 0.25ex;
+	border-top: #443A2F 2px solid;
+	border-bottom: #443A2F 2px solid;
+}
+
+h3 {
+	font-size: 135%;
+	clear: both;
+	padding-bottom: 0.25ex;
+	border-bottom: #443A2F 1px solid;
+}
+
+h4 {
+	font-size: 120%;
+	font-style: italic;
+	font-weight: bold;
+	clear: both;
+	border-bottom: #333333 1px solid;
+	margin-bottom: 1ex;
+}
+
+h5 {
+	font-size: 100%;
+	font-weight: bold;
+	margin-top: 1ex;
+	margin-bottom: 0ex;
+}
+
+p.link {
+	margin-left: 4ex;
+	color: blue;
+}
+
+p.code {
+	margin-left: 4ex;
+	font-family: "courier";
+	color: blue;
+}
+
+pre {
+	margin-top: 0.5ex;
+	margin-bottom: 0.5ex;
+}
+
+div.sample {
+	border: #333333 2px solid;
+	padding: 0.5ex 2ex 0.5ex 2ex;
+	margin: 1ex 6ex 1ex 6ex;
+}
+
+table.addresses {
+	margin-left: 2ex;
+	margin-right: 2ex;
+}
+
+table.bordered {
+	margin-left: auto;
+	margin-right: auto;
+	border-top: #443A2F 2px solid;
+	border-bottom: #443A2F 2px solid;
+}
+
+td {
+	vertical-align: top;
+	padding-left: 1ex;
+	padding-right: 1ex;
+}
+
+th {
+	margin-left: 1ex;
+	margin-right: 1ex;
+	border-bottom: #443A2F 1px solid;
+}
+
+td.addrKinds {
+	width: 6em;
+}
+
+p {
+	margin-top: 1ex;
+	margin-bottom: 1ex;
+}
+
+.note {
+	font-size: 85%;
+	color: #666666;
+}
+
+.left {
+	float: left;
+	clear: left;
+	padding-right: 10px;
+}
+
+.right {
+	float: right;
+	padding-left: 10px;
+}
+
+img {
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.clear {
+	clear: both;
+}
+
+.indented {
+	margin-left: 2em;
+	margin-right: 2em;
+}
+
+.rightJustify {
+	text-align: right;
+}
+
+.centered {
+	text-align: center;
+}
+
+ol ol {
+	list-style-type: lower-alpha;
+}
+
+/*
+code {
+	font-family: "Lucida Sans Typewriter", "Helvetica", "Arial", "monospace";
+	font-weight: bold;
+	font-size: 90%;
+}
+*/
+
+.input {
+	color: green;
+}

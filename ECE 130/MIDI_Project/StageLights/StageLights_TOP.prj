@@ -1,0 +1,6 @@
+verilog verilog "130d.v"
+verilog work "MyPattern.v"
+verilog work "kcuart_rx.v"
+verilog work "bbfifo_16x8.v"
+verilog work "uart_rx.v"
+verilog work "StageLights_TOP.v"

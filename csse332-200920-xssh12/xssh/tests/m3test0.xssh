@@ -1,0 +1,3 @@
+set foo hello
+echo should say hello:
+echo $foo

@@ -1,0 +1,58 @@
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\Poker.exe
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\Poker.pdb
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\obj\x86\Debug\Poker.exe
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\obj\x86\Debug\Poker.pdb
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\obj\x86\Debug\MainWindow.baml
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\obj\x86\Debug\MainWindow.g.cs
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\obj\x86\Debug\App.g.cs
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\obj\x86\Debug\Poker_MarkupCompile.cache
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\obj\x86\Debug\Poker.g.resources
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\bin\Debug\Poker.exe
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\bin\Debug\Poker.pdb
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\obj\x86\Debug\Poker.Properties.Resources.resources
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\jennemj\Documents\Rose Work\Course Work\Junior Year\Winter 2009_2010\CSSE 374\Repository\Poker\Poker\obj\x86\Debug\GenerateResource.write.1.tlog
+I:\Documents\csse374-201020-team23\Poker\Poker\bin\Debug\Poker.exe
+I:\Documents\csse374-201020-team23\Poker\Poker\bin\Debug\Poker.pdb
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\ResolveAssemblyReference.cache
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\MainWindow.baml
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\MainWindow.g.cs
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\App.g.cs
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\Poker_MarkupCompile.cache
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\Poker.g.resources
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\Poker.Properties.Resources.resources
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\GenerateResource.read.1.tlog
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\Poker.exe
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\Poker.pdb
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\bin\Debug\Poker.exe
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\bin\Debug\Poker.pdb
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\MainWindow.baml
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\App.g.cs
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\Poker_MarkupCompile.cache
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\Poker.g.resources
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\Poker.Properties.Resources.resources
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\GenerateResource.write.1.tlog
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\MoveDialogBox.baml
+I:\Documents\csse374-201020-team23\Poker\Poker\obj\x86\Debug\MoveDialogBox.g.cs
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\MoveDialogBox.baml
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\Poker\Poker\obj\x86\Debug\MoveDialogBox.g.cs
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\bin\Debug\Poker.exe
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\bin\Debug\Poker.pdb
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\MainWindow.baml
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\MoveDialogBox.baml
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\MainWindow.g.cs
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\MoveDialogBox.g.cs
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\App.g.cs
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\Poker_MarkupCompile.cache
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\Poker.g.resources
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\Poker.Properties.Resources.resources
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\GenerateResource.write.1.tlog
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\Poker.exe
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\Poker\Poker\obj\x86\Debug\Poker.pdb

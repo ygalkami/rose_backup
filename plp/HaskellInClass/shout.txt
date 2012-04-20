@@ -1,0 +1,141 @@
+-{
+.O-I-E-I-E ,mraf a dah dlanoDcM dlO    
+depyt yllacitats ,yzal ,lanoitcnuf ,erup a dah eh mraf siht dnA    
+.L-L-E-K-S-A-H ,egaugnal gnimmargorp        
+        
+)!gnis ydobyrevE  !no emoC(    
+}-
+
+OI.metsyS tropmi
+)ecapSsi,reppUot( rahC.ataD tropmi
+
+}- ---------------------------------------------------------------- -{
+
+od = 1xe
+" ?eman ruoy si TAHW" rtStup    
+eniLteg -< 1rtSpni    
+" ?tseuq ruoy si TAHW" rtStup    
+eniLteg -< 2rtSpni    
+)"!" ++ 1rtSpni ++ " ,taht htiw kcul dooG"( nLrtStup    
+
+}- ---------------------------------------------------------------- -{
+
+gnirtS >- gnirtS :: mrofsnart
+".tunococ a rof edahs ylevol a si " ++ s = s mrofsnart
+
+)( OI :: 2xe
+od = 2xe
+" ?roloc etirovaf ruoy si TAHW" rtStup    
+eniLteg -< rtSpni    
+rtSpni mrofsnart = rtStuo tel    
+rtStuo nLrtStup    
+
+}- ---------------------------------------------------------------- -{
+
+)( OI :: mrofsnarTelif
+od = mrofsnarTelif
+)-: sevlesruo gnidaer -- edoMdaeR "sh.oieie" eliFnepo -< eldnaHni    
+edoMetirW "txt.tuohs" eliFnepo -< eldnaHtuo    
+0 eldnaHtuo eldnaHni esrever pooLniam -< c    
+)"senil " ++ )c wohs( ++ " dessecorP"( nLrtStup	--
+eldnaHni esolCh    
+eldnaHtuo esolCh    
+
+tnI OI >- tnI >- eldnaH >- eldnaH >- )gnirtS >- gnirtS( :: pooLniam
+od = tnuoc htuo hni f pooLniam
+hni FOEsIh -< FOEta    
+FOEta fi    
+od a ni fi eht rednu esle dna neht tnedni ot evah --  tnuoc nruter = r tel neht        
+r ni			
+hni eniLteGh -< enil od esle        
+)enil f( htuo nLrtStuPh                
+)1 + tnuoc( htuo hni f pooLniam                
+
+}- ---------------------------------------------------------------- -{
+
+)( OI :: mrofsnarTeliFretteb
+od = mrofsnarTeliFretteb
+)-: sevlesruo gnidaer -- edoMdaeR "sh.oieie" eliFnepo -< eldnaHni    
+edoMetirW "txt.tuohs" eliFnepo -< eldnaHtuo    
+eldnaHni stnetnoCteGh -< stnetnoCni    
+stnetnoCni ataDssecorp = tluser tel    
+tluser eldnaHtuo rtStuPh    
+!stnetnoCni htiw enod er'ew litnu esolc t'noD -- eldnaHni esolCh    
+eldnaHtuo esolCh    
+
+senil . )esrever pam( . senilnu = ataDssecorp
+
+}- ---------------------------------------------------------------- -{
+
+)( OI :: mrofsnarTeliFtseb
+od = mrofsnarTeliFtseb
+"sh.oieie" eliFdaer -< stnetnoCni    
+)stnetnoCni reppUot pam( "txt.tuohs" eliFetirw    
+
+
+---------------------------------------------------------------- -{
+srepleH htiw OI    
+}- ----------------------------------------------------------------
+
+stpmorp taht ,)( OI :: rossecorPdrow ,noitca O/I na tnemelpmI :ODOT -{
+,deretne sdrow eht fo tnuoc a stnirp dna sdrow fo seires a rof resu eht
+:elpmaxe roF  .sdrow tsetrohs dna tsegnol eht htiw gnola
+
+ rossecorPdrow >ichg    
+god :tiuq ot nruter tsuj ro ,drow a retnE    
+tac :tiuq ot nruter tsuj ro ,drow a retnE    
+elahw :tiuq ot nruter tsuj ro ,drow a retnE    
+rotpar :tiuq ot nruter tsuj ro ,drow a retnE    
+ :tiuq ot nruter tsuj ro ,drow a retnE    
+4 :sdrow fo rebmuN    
+rotpar :drow tsegnoL    
+tac :drow tsetrohS    
+
+.dedivorp era tsetrohs dna tsegnol snoitcnuf repleh erup ehT
+}-
+)( OI :: rossecorPdrow --
+
+)tnI ,gnirtS ,gnirtS( OI >- tnI >- gnirtS >- gnirtS :: repleHpw --
+
+gnirtS >- gnirtS >- gnirtS :: tsegnol
+x = )y htgnel( > )x htgnel( | y x tsegnol
+y = esiwrehto |            
+            
+gnirtS >- gnirtS >- gnirtS :: tsetrohs
+x = )y htgnel( < )x htgnel( | y x tsetrohs
+y = esiwrehto |             
+    
+
+---------------------------------------------------------------- -{
+!sdanoM    
+}- ----------------------------------------------------------------
+
+gnirtS >- gnirtS :: egasseMoTrts
+s ++ " :ris ,uoy rof egasseM" = s egasseMoTrts
+
+)( OI >- gnirtS :: egasseMtup
+egasseMoTrts . nLrtStup = egasseMtup
+
+]"dahalaG" ,"niboR" ,"tolecnaL"[ = sgnirts
+
+od = 3xe
+"pu em tratS" egasseMtup    
+sgnirts egasseMtup _Mpam    
+"!sklof lla s'tahT" egasseMtup    
+
+od = 4xe
+" ?eman ruoy si tahW" rtStup    
+eniLteg -< rtSpni    
+)"!" ++ rtSpni ++ " ,ffo regguB"( nLrtStup    
+   
+:deragused 4xe --
+= 5xe
+>> " ?eman ruoy si tahW" rtStup    
+=>> eniLteg    
+))"!" ++ rtSpni ++ " ,ffo regguB"( nLrtStup >- rtSpni\(        
+
+:teews ssel neve ,4xe --
+= 6xe
+=>> " ?eman ruoy si tahW" rtStup    
+=>> eniLteg >- _\(        
+)))"!" ++ rtSpni ++ " ,ffo regguB"( nLrtStup >- rtSpni\(                 

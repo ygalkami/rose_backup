@@ -1,0 +1,2428 @@
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+Compiling verilog file "MyPattern.v"
+tdtfi(verilog) completed successfully.
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../130.v"
+Module <JKFF> compiled
+Module <TFF> compiled
+Module <DLatch> compiled
+Module <DFF> compiled
+Module <Adder> compiled
+Module <Comparator> compiled
+Module <Counter> compiled
+Module <CounterUpDown> compiled
+Module <Decode2to4> compiled
+Module <Decode3to8> compiled
+Module <Encode4to2> compiled
+Module <Encode8to3> compiled
+Module <Synchronizer> compiled
+Module <FrequencyDivider> compiled
+Module <MUX2> compiled
+Module <MUX4> compiled
+Module <MUX8> compiled
+Module <MUX16> compiled
+Module <Register> compiled
+Module <Register4> compiled
+Module <TransitionDetector> compiled
+Module <Display> compiled
+Module <DisplayHex> compiled
+Module <Debouncer> compiled
+Module <OneShot> compiled
+Module <ClockEnabler> compiled
+No errors in compilation
+Analysis of file <"Adder.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Adder>.
+	pWidth = 8
+Module <Adder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Adder>.
+    Related source file is "../130.v".
+    Found 8-bit adder carry in/out for signal <$n0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors               : 1
+ 8-bit adder carry in/out          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Adder> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Adder, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       4  out of   1920     0%  
+ Number of 4 input LUTs:                 8  out of   3840     0%  
+ Number of bonded IOBs:                 26  out of    173    15%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.745ns
+
+=========================================================================
+
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\courses\ece 130\midi_project/_ngo" -nt timestamp -i -p xc3s200-ft256-4
+Adder.ngc Adder.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/Courses/ECE
+130/MIDI_Project/Adder.ngc' ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "Adder.ngd" ...
+
+Writing NGDBUILD log file "Adder.bld"...
+
+NGDBUILD done.
+
+
+
+
+Started process "Map".
+
+Using target part "3s200ft256-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:               8 out of   3,840    1%
+Logic Distribution:
+  Number of occupied Slices:                            4 out of   1,920    1%
+    Number of Slices containing only related logic:       4 out of       4  100%
+    Number of Slices containing unrelated logic:          0 out of       4    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:           8 out of   3,840    1%
+  Number of bonded IOBs:               26 out of     173   15%
+
+Total equivalent gate count for design:  96
+Additional JTAG gate count for IOBs:  1,248
+Peak Memory Usage:  105 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "Adder_map.mrp" for details.
+
+
+
+
+Started process "Place & Route".
+
+
+
+
+Constraints file: Adder.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "Adder" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.37 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs            26 out of 173    15%
+      Number of LOCed IOBs             0 out of 26      0%
+
+   Number of Slices                    4 out of 1920    1%
+      Number of SLICEMs                0 out of 960     0%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:9896b5) REAL time: 0 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 0 secs 
+
+Phase 3.2
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 0 secs 
+
+Phase 4.3
+Phase 4.3 (Checksum:26259fc) REAL time: 0 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 0 secs 
+
+Phase 6.8
+.
+Phase 6.8 (Checksum:99e3c7) REAL time: 0 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 0 secs 
+
+Phase 8.18
+Phase 8.18 (Checksum:4c4b3f8) REAL time: 0 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:55d4a77) REAL time: 0 secs 
+
+Writing design to file Adder.ncd
+
+
+Total REAL time to Placer completion: 0 secs 
+Total CPU time to Placer completion: 0 secs 
+
+Starting Router
+
+Phase 1: 29 unrouted;       REAL time: 0 secs 
+
+Phase 2: 29 unrouted;       REAL time: 0 secs 
+
+Phase 3: 6 unrouted;       REAL time: 0 secs 
+
+Phase 4: 0 unrouted;       REAL time: 0 secs 
+
+
+Total REAL time to Router completion: 0 secs 
+Total CPU time to Router completion: 0 secs 
+
+Generating "PAR" statistics.
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 secs 
+Total CPU time to PAR completion: 1 secs 
+
+Peak Memory Usage:  71 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file Adder.ncd
+
+
+
+PAR done!
+
+Started process "Generate Post-Place & Route Static Timing".
+
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "Adder" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Analysis completed Sun Jan 13 20:34:27 2008
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 1 secs 
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../130.v"
+Module <JKFF> compiled
+Module <TFF> compiled
+Module <DLatch> compiled
+Module <DFF> compiled
+Module <Adder> compiled
+Module <Comparator> compiled
+Module <Counter> compiled
+Module <CounterUpDown> compiled
+Module <Decode2to4> compiled
+Module <Decode3to8> compiled
+Module <Encode4to2> compiled
+Module <Encode8to3> compiled
+Module <Synchronizer> compiled
+Module <FrequencyDivider> compiled
+Module <MUX2> compiled
+Module <MUX4> compiled
+Module <MUX8> compiled
+Module <MUX16> compiled
+Module <Register> compiled
+Module <Register4> compiled
+Module <TransitionDetector> compiled
+Module <Display> compiled
+Module <DisplayHex> compiled
+Module <Debouncer> compiled
+Module <OneShot> compiled
+Module <ClockEnabler> compiled
+Compiling verilog file "MyPattern.v"
+Module <MyPattern> compiled
+No errors in compilation
+Analysis of file <"MyPattern.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <MyPattern>.
+Module <MyPattern> is correct for synthesis.
+ 
+Analyzing module <Decode3to8>.
+Module <Decode3to8> is correct for synthesis.
+ 
+Analyzing module <MUX2>.
+	pWidth = 16
+Module <MUX2> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <MUX2>.
+    Related source file is "../130.v".
+Unit <MUX2> synthesized.
+
+
+Synthesizing Unit <Decode3to8>.
+    Related source file is "../130.v".
+Unit <Decode3to8> synthesized.
+
+
+Synthesizing Unit <MyPattern>.
+    Related source file is "MyPattern.v".
+WARNING:Xst:647 - Input <iStatus<7:5>> is never used.
+WARNING:Xst:647 - Input <iNote> is never used.
+Unit <MyPattern> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Found no macro
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <MyPattern> ...
+
+Optimizing unit <Decode3to8> ...
+
+Optimizing unit <MUX2> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block MyPattern, actual ratio is 1.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                      18  out of   1920     0%  
+ Number of 4 input LUTs:                32  out of   3840     0%  
+ Number of bonded IOBs:                 43  out of    173    24%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 11.789ns
+
+=========================================================================
+
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\courses\ece 130\midi_project/_ngo" -nt timestamp -i -p xc3s200-ft256-4
+MyPattern.ngc MyPattern.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/Courses/ECE
+130/MIDI_Project/MyPattern.ngc' ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "MyPattern.ngd" ...
+
+Writing NGDBUILD log file "MyPattern.bld"...
+
+NGDBUILD done.
+
+
+
+
+Started process "Map".
+
+Using target part "3s200ft256-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    2
+Logic Utilization:
+  Number of 4 input LUTs:              32 out of   3,840    1%
+Logic Distribution:
+  Number of occupied Slices:                           18 out of   1,920    1%
+    Number of Slices containing only related logic:      18 out of      18  100%
+    Number of Slices containing unrelated logic:          0 out of      18    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:          32 out of   3,840    1%
+  Number of bonded IOBs:               32 out of     173   18%
+
+Total equivalent gate count for design:  198
+Additional JTAG gate count for IOBs:  1,536
+Peak Memory Usage:  105 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "MyPattern_map.mrp" for details.
+
+
+
+
+Started process "Place & Route".
+
+
+
+
+Constraints file: MyPattern.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "MyPattern" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.37 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs            32 out of 173    18%
+      Number of LOCed IOBs             0 out of 32      0%
+
+   Number of Slices                   18 out of 1920    1%
+      Number of SLICEMs                0 out of 960     0%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:9896e3) REAL time: 0 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 0 secs 
+
+Phase 3.2
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 0 secs 
+
+Phase 4.3
+Phase 4.3 (Checksum:26259fc) REAL time: 0 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 0 secs 
+
+Phase 6.8
+.
+Phase 6.8 (Checksum:997941) REAL time: 0 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 0 secs 
+
+Phase 8.18
+Phase 8.18 (Checksum:4c4b3f8) REAL time: 0 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:55d4a77) REAL time: 0 secs 
+
+Writing design to file MyPattern.ncd
+
+
+Total REAL time to Placer completion: 0 secs 
+Total CPU time to Placer completion: 0 secs 
+
+Starting Router
+
+Phase 1: 125 unrouted;       REAL time: 0 secs 
+
+Phase 2: 125 unrouted;       REAL time: 0 secs 
+
+Phase 3: 59 unrouted;       REAL time: 0 secs 
+
+Phase 4: 0 unrouted;       REAL time: 0 secs 
+
+
+Total REAL time to Router completion: 0 secs 
+Total CPU time to Router completion: 0 secs 
+
+Generating "PAR" statistics.
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 secs 
+Total CPU time to PAR completion: 1 secs 
+
+Peak Memory Usage:  71 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file MyPattern.ncd
+
+
+
+PAR done!
+
+Started process "Generate Post-Place & Route Static Timing".
+
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "MyPattern" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Analysis completed Sun Jan 13 20:35:49 2008
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 1 secs 
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../130.v"
+Module <JKFF> compiled
+Module <TFF> compiled
+Module <DLatch> compiled
+Module <DFF> compiled
+Module <Adder> compiled
+Module <Comparator> compiled
+Module <Counter> compiled
+Module <CounterUpDown> compiled
+Module <Decode2to4> compiled
+Module <Decode3to8> compiled
+Module <Encode4to2> compiled
+Module <Encode8to3> compiled
+Module <Synchronizer> compiled
+Module <FrequencyDivider> compiled
+Module <MUX2> compiled
+Module <MUX4> compiled
+Module <MUX8> compiled
+Module <MUX16> compiled
+Module <Register> compiled
+Module <Register4> compiled
+Module <TransitionDetector> compiled
+Module <Display> compiled
+Module <DisplayHex> compiled
+Module <Debouncer> compiled
+Module <OneShot> compiled
+Module <ClockEnabler> compiled
+No errors in compilation
+Analysis of file <"Adder.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Adder>.
+	pWidth = 8
+Module <Adder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Adder>.
+    Related source file is "../130.v".
+    Found 8-bit adder carry in/out for signal <$n0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors               : 1
+ 8-bit adder carry in/out          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Adder> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Adder, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       4  out of   1920     0%  
+ Number of 4 input LUTs:                 8  out of   3840     0%  
+ Number of bonded IOBs:                 26  out of    173    15%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.745ns
+
+=========================================================================
+
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\courses\ece 130\midi_project/_ngo" -nt timestamp -i -p xc3s200-ft256-4
+Adder.ngc Adder.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/Courses/ECE
+130/MIDI_Project/Adder.ngc' ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "Adder.ngd" ...
+
+Writing NGDBUILD log file "Adder.bld"...
+
+NGDBUILD done.
+
+
+
+
+Started process "Map".
+
+Using target part "3s200ft256-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:               8 out of   3,840    1%
+Logic Distribution:
+  Number of occupied Slices:                            4 out of   1,920    1%
+    Number of Slices containing only related logic:       4 out of       4  100%
+    Number of Slices containing unrelated logic:          0 out of       4    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:           8 out of   3,840    1%
+  Number of bonded IOBs:               26 out of     173   15%
+
+Total equivalent gate count for design:  96
+Additional JTAG gate count for IOBs:  1,248
+Peak Memory Usage:  105 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "Adder_map.mrp" for details.
+
+
+
+
+Started process "Place & Route".
+
+
+
+
+Constraints file: Adder.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "Adder" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.37 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs            26 out of 173    15%
+      Number of LOCed IOBs             0 out of 26      0%
+
+   Number of Slices                    4 out of 1920    1%
+      Number of SLICEMs                0 out of 960     0%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:9896b5) REAL time: 0 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 0 secs 
+
+Phase 3.2
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 0 secs 
+
+Phase 4.3
+Phase 4.3 (Checksum:26259fc) REAL time: 0 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 0 secs 
+
+Phase 6.8
+.
+Phase 6.8 (Checksum:99e3c7) REAL time: 0 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 0 secs 
+
+Phase 8.18
+Phase 8.18 (Checksum:4c4b3f8) REAL time: 0 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:55d4a77) REAL time: 0 secs 
+
+Writing design to file Adder.ncd
+
+
+Total REAL time to Placer completion: 0 secs 
+Total CPU time to Placer completion: 0 secs 
+
+Starting Router
+
+Phase 1: 29 unrouted;       REAL time: 0 secs 
+
+Phase 2: 29 unrouted;       REAL time: 0 secs 
+
+Phase 3: 6 unrouted;       REAL time: 0 secs 
+
+Phase 4: 0 unrouted;       REAL time: 0 secs 
+
+
+Total REAL time to Router completion: 0 secs 
+Total CPU time to Router completion: 0 secs 
+
+Generating "PAR" statistics.
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 secs 
+Total CPU time to PAR completion: 1 secs 
+
+Peak Memory Usage:  71 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file Adder.ncd
+
+
+
+PAR done!
+
+Started process "Generate Post-Place & Route Static Timing".
+
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "Adder" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Analysis completed Sun Jan 13 20:42:33 2008
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 1 secs 
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../130.v"
+Module <JKFF> compiled
+Module <TFF> compiled
+Module <DLatch> compiled
+Module <DFF> compiled
+Module <Adder> compiled
+Module <Comparator> compiled
+Module <Counter> compiled
+Module <CounterUpDown> compiled
+Module <Decode2to4> compiled
+Module <Decode3to8> compiled
+Module <Encode4to2> compiled
+Module <Encode8to3> compiled
+Module <Synchronizer> compiled
+Module <FrequencyDivider> compiled
+Module <MUX2> compiled
+Module <MUX4> compiled
+Module <MUX8> compiled
+Module <MUX16> compiled
+Module <Register> compiled
+Module <Register4> compiled
+Module <TransitionDetector> compiled
+Module <Display> compiled
+Module <DisplayHex> compiled
+Module <Debouncer> compiled
+Module <OneShot> compiled
+Module <ClockEnabler> compiled
+No errors in compilation
+Analysis of file <"Adder.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Adder>.
+	pWidth = 8
+Module <Adder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Adder>.
+    Related source file is "../130.v".
+    Found 8-bit adder carry in/out for signal <$n0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors               : 1
+ 8-bit adder carry in/out          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Adder> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Adder, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       4  out of   1920     0%  
+ Number of 4 input LUTs:                 8  out of   3840     0%  
+ Number of bonded IOBs:                 26  out of    173    15%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.745ns
+
+=========================================================================
+
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\courses\ece 130\midi_project/_ngo" -nt timestamp -i -p xc3s200-ft256-4
+Adder.ngc Adder.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/Courses/ECE
+130/MIDI_Project/Adder.ngc' ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "Adder.ngd" ...
+
+Writing NGDBUILD log file "Adder.bld"...
+
+NGDBUILD done.
+
+
+
+
+Started process "Map".
+
+Using target part "3s200ft256-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:               8 out of   3,840    1%
+Logic Distribution:
+  Number of occupied Slices:                            4 out of   1,920    1%
+    Number of Slices containing only related logic:       4 out of       4  100%
+    Number of Slices containing unrelated logic:          0 out of       4    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:           8 out of   3,840    1%
+  Number of bonded IOBs:               26 out of     173   15%
+
+Total equivalent gate count for design:  96
+Additional JTAG gate count for IOBs:  1,248
+Peak Memory Usage:  105 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "Adder_map.mrp" for details.
+
+
+
+
+Started process "Place & Route".
+
+
+
+
+Constraints file: Adder.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "Adder" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.37 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs            26 out of 173    15%
+      Number of LOCed IOBs             0 out of 26      0%
+
+   Number of Slices                    4 out of 1920    1%
+      Number of SLICEMs                0 out of 960     0%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:9896b5) REAL time: 0 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 0 secs 
+
+Phase 3.2
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 0 secs 
+
+Phase 4.3
+Phase 4.3 (Checksum:26259fc) REAL time: 0 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 0 secs 
+
+Phase 6.8
+.
+Phase 6.8 (Checksum:99e3c7) REAL time: 0 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 0 secs 
+
+Phase 8.18
+Phase 8.18 (Checksum:4c4b3f8) REAL time: 0 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:55d4a77) REAL time: 0 secs 
+
+Writing design to file Adder.ncd
+
+
+Total REAL time to Placer completion: 0 secs 
+Total CPU time to Placer completion: 0 secs 
+
+Starting Router
+
+Phase 1: 29 unrouted;       REAL time: 0 secs 
+
+Phase 2: 29 unrouted;       REAL time: 0 secs 
+
+Phase 3: 6 unrouted;       REAL time: 0 secs 
+
+Phase 4: 0 unrouted;       REAL time: 0 secs 
+
+
+Total REAL time to Router completion: 0 secs 
+Total CPU time to Router completion: 0 secs 
+
+Generating "PAR" statistics.
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 1 secs 
+Total CPU time to PAR completion: 1 secs 
+
+Peak Memory Usage:  71 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file Adder.ncd
+
+
+
+PAR done!
+
+Started process "Generate Post-Place & Route Static Timing".
+
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "Adder" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Analysis completed Sun Jan 13 20:47:22 2008
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 1 secs 
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../130.v"
+Module <JKFF> compiled
+Module <TFF> compiled
+Module <DLatch> compiled
+Module <DFF> compiled
+Module <Adder> compiled
+Module <Comparator> compiled
+Module <Counter> compiled
+Module <CounterUpDown> compiled
+Module <Decode2to4> compiled
+Module <Decode3to8> compiled
+Module <Encode4to2> compiled
+Module <Encode8to3> compiled
+Module <Synchronizer> compiled
+Module <FrequencyDivider> compiled
+Module <MUX2> compiled
+Module <MUX4> compiled
+Module <MUX8> compiled
+Module <MUX16> compiled
+Module <Register> compiled
+Module <Register4> compiled
+Module <TransitionDetector> compiled
+Module <Display> compiled
+Module <DisplayHex> compiled
+Module <Debouncer> compiled
+Module <OneShot> compiled
+Module <ClockEnabler> compiled
+No errors in compilation
+Analysis of file <"Adder.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Adder>.
+	pWidth = 8
+Module <Adder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Adder>.
+    Related source file is "../130.v".
+    Found 8-bit adder carry in/out for signal <$n0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors               : 1
+ 8-bit adder carry in/out          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Adder> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Adder, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       4  out of   1920     0%  
+ Number of 4 input LUTs:                 8  out of   3840     0%  
+ Number of bonded IOBs:                 26  out of    173    15%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.745ns
+
+=========================================================================
+
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\courses\ece 130\midi_project/_ngo" -nt timestamp -i -p xc3s200-ft256-4
+Adder.ngc Adder.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/Courses/ECE
+130/MIDI_Project/Adder.ngc' ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "Adder.ngd" ...
+
+Writing NGDBUILD log file "Adder.bld"...
+
+NGDBUILD done.
+
+
+
+
+Started process "Map".
+
+Using target part "3s200ft256-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:               8 out of   3,840    1%
+Logic Distribution:
+  Number of occupied Slices:                            4 out of   1,920    1%
+    Number of Slices containing only related logic:       4 out of       4  100%
+    Number of Slices containing unrelated logic:          0 out of       4    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:           8 out of   3,840    1%
+  Number of bonded IOBs:               26 out of     173   15%
+
+Total equivalent gate count for design:  96
+Additional JTAG gate count for IOBs:  1,248
+Peak Memory Usage:  105 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "Adder_map.mrp" for details.
+
+
+
+
+Started process "Place & Route".
+
+
+
+
+Constraints file: Adder.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "Adder" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.37 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs            26 out of 173    15%
+      Number of LOCed IOBs             0 out of 26      0%
+
+   Number of Slices                    4 out of 1920    1%
+      Number of SLICEMs                0 out of 960     0%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:9896b5) REAL time: 2 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 2 secs 
+
+Phase 3.2
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 2 secs 
+
+Phase 4.3
+Phase 4.3 (Checksum:26259fc) REAL time: 2 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 2 secs 
+
+Phase 6.8
+.
+Phase 6.8 (Checksum:99e3c7) REAL time: 2 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 2 secs 
+
+Phase 8.18
+Phase 8.18 (Checksum:4c4b3f8) REAL time: 2 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:55d4a77) REAL time: 2 secs 
+
+Writing design to file Adder.ncd
+
+
+Total REAL time to Placer completion: 2 secs 
+Total CPU time to Placer completion: 1 secs 
+
+Starting Router
+
+Phase 1: 29 unrouted;       REAL time: 2 secs 
+
+Phase 2: 29 unrouted;       REAL time: 2 secs 
+
+Phase 3: 6 unrouted;       REAL time: 2 secs 
+
+Phase 4: 0 unrouted;       REAL time: 2 secs 
+
+
+Total REAL time to Router completion: 2 secs 
+Total CPU time to Router completion: 1 secs 
+
+Generating "PAR" statistics.
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 3 secs 
+Total CPU time to PAR completion: 1 secs 
+
+Peak Memory Usage:  71 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file Adder.ncd
+
+
+
+PAR done!
+
+Started process "Generate Post-Place & Route Static Timing".
+
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "Adder" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Analysis completed Sun Jan 13 22:50:18 2008
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 3 secs 
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../130.v"
+Module <JKFF> compiled
+Module <TFF> compiled
+Module <DLatch> compiled
+Module <DFF> compiled
+Module <Adder> compiled
+Module <Comparator> compiled
+Module <Counter> compiled
+Module <CounterUpDown> compiled
+Module <Decode2to4> compiled
+Module <Decode3to8> compiled
+Module <Encode4to2> compiled
+Module <Encode8to3> compiled
+Module <Synchronizer> compiled
+Module <FrequencyDivider> compiled
+Module <MUX2> compiled
+Module <MUX4> compiled
+Module <MUX8> compiled
+Module <MUX16> compiled
+Module <Register> compiled
+Module <Register4> compiled
+Module <TransitionDetector> compiled
+Module <Display> compiled
+Module <DisplayHex> compiled
+Module <Debouncer> compiled
+Module <OneShot> compiled
+Module <ClockEnabler> compiled
+No errors in compilation
+Analysis of file <"Adder.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Adder>.
+	pWidth = 8
+Module <Adder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Adder>.
+    Related source file is "../130.v".
+    Found 8-bit adder carry in/out for signal <$n0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors               : 1
+ 8-bit adder carry in/out          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Adder> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Adder, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       4  out of   1920     0%  
+ Number of 4 input LUTs:                 8  out of   3840     0%  
+ Number of bonded IOBs:                 26  out of    173    15%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.745ns
+
+=========================================================================
+
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\courses\ece 130\midi_project/_ngo" -nt timestamp -i -p xc3s200-ft256-4
+Adder.ngc Adder.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/Courses/ECE
+130/MIDI_Project/Adder.ngc' ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "Adder.ngd" ...
+
+Writing NGDBUILD log file "Adder.bld"...
+
+NGDBUILD done.
+
+
+
+
+Started process "Map".
+
+Using target part "3s200ft256-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:               8 out of   3,840    1%
+Logic Distribution:
+  Number of occupied Slices:                            4 out of   1,920    1%
+    Number of Slices containing only related logic:       4 out of       4  100%
+    Number of Slices containing unrelated logic:          0 out of       4    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:           8 out of   3,840    1%
+  Number of bonded IOBs:               26 out of     173   15%
+
+Total equivalent gate count for design:  96
+Additional JTAG gate count for IOBs:  1,248
+Peak Memory Usage:  105 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "Adder_map.mrp" for details.
+
+
+
+
+Started process "Place & Route".
+
+
+
+
+Constraints file: Adder.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "Adder" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.37 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs            26 out of 173    15%
+      Number of LOCed IOBs             0 out of 26      0%
+
+   Number of Slices                    4 out of 1920    1%
+      Number of SLICEMs                0 out of 960     0%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:9896b5) REAL time: 2 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 2 secs 
+
+Phase 3.2
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 2 secs 
+
+Phase 4.3
+Phase 4.3 (Checksum:26259fc) REAL time: 2 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 2 secs 
+
+Phase 6.8
+.
+Phase 6.8 (Checksum:99e3c7) REAL time: 2 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 2 secs 
+
+Phase 8.18
+Phase 8.18 (Checksum:4c4b3f8) REAL time: 2 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:55d4a77) REAL time: 2 secs 
+
+Writing design to file Adder.ncd
+
+
+Total REAL time to Placer completion: 2 secs 
+Total CPU time to Placer completion: 1 secs 
+
+Starting Router
+
+Phase 1: 29 unrouted;       REAL time: 2 secs 
+
+Phase 2: 29 unrouted;       REAL time: 2 secs 
+
+Phase 3: 6 unrouted;       REAL time: 2 secs 
+
+Phase 4: 0 unrouted;       REAL time: 2 secs 
+
+
+Total REAL time to Router completion: 2 secs 
+Total CPU time to Router completion: 1 secs 
+
+Generating "PAR" statistics.
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 3 secs 
+Total CPU time to PAR completion: 1 secs 
+
+Peak Memory Usage:  71 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file Adder.ncd
+
+
+
+PAR done!
+
+Started process "Generate Post-Place & Route Static Timing".
+
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "Adder" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Analysis completed Sun Jan 13 23:02:47 2008
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 2 secs 
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+
+
+Project Navigator Auto-Make Log File
+-------------------------------------
+
+
+
+
+
+
+
+
+
+
+Started process "Synthesize".
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling verilog file "../130.v"
+Module <JKFF> compiled
+Module <TFF> compiled
+Module <DLatch> compiled
+Module <DFF> compiled
+Module <Adder> compiled
+Module <Comparator> compiled
+Module <Counter> compiled
+Module <CounterUpDown> compiled
+Module <Decode2to4> compiled
+Module <Decode3to8> compiled
+Module <Encode4to2> compiled
+Module <Encode8to3> compiled
+Module <Synchronizer> compiled
+Module <FrequencyDivider> compiled
+Module <MUX2> compiled
+Module <MUX4> compiled
+Module <MUX8> compiled
+Module <MUX16> compiled
+Module <Register> compiled
+Module <Register4> compiled
+Module <TransitionDetector> compiled
+Module <Display> compiled
+Module <DisplayHex> compiled
+Module <Debouncer> compiled
+Module <OneShot> compiled
+Module <ClockEnabler> compiled
+No errors in compilation
+Analysis of file <"Adder.prj"> succeeded.
+ 
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing top module <Adder>.
+	pWidth = 8
+Module <Adder> is correct for synthesis.
+ 
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <Adder>.
+    Related source file is "../130.v".
+    Found 8-bit adder carry in/out for signal <$n0000>.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+Unit <Adder> synthesized.
+
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Advanced RAM inference ...
+Advanced multiplier inference ...
+Advanced Registered AddSub inference ...
+Dynamic shift register inference ...
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors               : 1
+ 8-bit adder carry in/out          : 1
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <Adder> ...
+Loading device for application Rf_Device from file '3s200.nph' in environment C:/Xilinx.
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Adder, actual ratio is 0.
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                       4  out of   1920     0%  
+ Number of 4 input LUTs:                 8  out of   3840     0%  
+ Number of bonded IOBs:                 26  out of    173    15%  
+
+
+=========================================================================
+TIMING REPORT
+
+
+Clock Information:
+------------------
+No clock signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: No path found
+   Minimum input arrival time before clock: No path found
+   Maximum output required time after clock: No path found
+   Maximum combinational path delay: 10.745ns
+
+=========================================================================
+
+
+
+
+Started process "Translate".
+
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\courses\ece 130\midi_project/_ngo" -nt timestamp -i -p xc3s200-ft256-4
+Adder.ngc Adder.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/Courses/ECE
+130/MIDI_Project/Adder.ngc' ...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Writing NGD file "Adder.ngd" ...
+
+Writing NGDBUILD log file "Adder.bld"...
+
+NGDBUILD done.
+
+
+
+
+Started process "Map".
+
+Using target part "3s200ft256-4".
+Mapping design into LUTs...
+Running directed packing...
+Running delay-based LUT packing...
+Running related packing...
+
+Design Summary:
+Number of errors:      0
+Number of warnings:    0
+Logic Utilization:
+  Number of 4 input LUTs:               8 out of   3,840    1%
+Logic Distribution:
+  Number of occupied Slices:                            4 out of   1,920    1%
+    Number of Slices containing only related logic:       4 out of       4  100%
+    Number of Slices containing unrelated logic:          0 out of       4    0%
+      *See NOTES below for an explanation of the effects of unrelated logic
+Total Number of 4 input LUTs:           8 out of   3,840    1%
+  Number of bonded IOBs:               26 out of     173   15%
+
+Total equivalent gate count for design:  96
+Additional JTAG gate count for IOBs:  1,248
+Peak Memory Usage:  105 MB
+
+NOTES:
+
+   Related logic is defined as being logic that shares connectivity - e.g. two
+   LUTs are "related" if they share common inputs.  When assembling slices,
+   Map gives priority to combine logic that is related.  Doing so results in
+   the best timing performance.
+
+   Unrelated logic shares no connectivity.  Map will only begin packing
+   unrelated logic into a slice once 99% of the slices are occupied through
+   related logic packing.
+
+   Note that once logic distribution reaches the 99% level through related
+   logic packing, this does not mean the device is completely utilized.
+   Unrelated logic packing will then begin, continuing until all usable LUTs
+   and FFs are occupied.  Depending on your timing budget, increased levels of
+   unrelated logic packing may adversely affect the overall timing performance
+   of your design.
+
+Mapping completed.
+See MAP report file "Adder_map.mrp" for details.
+
+
+
+
+Started process "Place & Route".
+
+
+
+
+Constraints file: Adder.pcf.
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "Adder" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Initializing temperature to 85.000 Celsius. (default - Range: 0.000 to 85.000
+Celsius)
+Initializing voltage to 1.140 Volts. (default - Range: 1.140 to 1.260 Volts)
+
+
+Device speed data version:  "PRODUCTION 1.37 2005-07-22".
+
+
+Device Utilization Summary:
+
+   Number of External IOBs            26 out of 173    15%
+      Number of LOCed IOBs             0 out of 26      0%
+
+   Number of Slices                    4 out of 1920    1%
+      Number of SLICEMs                0 out of 960     0%
+
+
+
+Overall effort level (-ol):   Standard (set by user)
+Placer effort level (-pl):    Standard (set by user)
+Placer cost table entry (-t): 1
+Router effort level (-rl):    Standard (set by user)
+
+
+Starting Placer
+
+Phase 1.1
+Phase 1.1 (Checksum:9896b5) REAL time: 3 secs 
+
+Phase 2.31
+Phase 2.31 (Checksum:1312cfe) REAL time: 3 secs 
+
+Phase 3.2
+
+
+Phase 3.2 (Checksum:1c9c37d) REAL time: 3 secs 
+
+Phase 4.3
+Phase 4.3 (Checksum:26259fc) REAL time: 3 secs 
+
+Phase 5.5
+Phase 5.5 (Checksum:2faf07b) REAL time: 3 secs 
+
+Phase 6.8
+.
+Phase 6.8 (Checksum:99e3c7) REAL time: 3 secs 
+
+Phase 7.5
+Phase 7.5 (Checksum:42c1d79) REAL time: 3 secs 
+
+Phase 8.18
+Phase 8.18 (Checksum:4c4b3f8) REAL time: 3 secs 
+
+Phase 9.5
+Phase 9.5 (Checksum:55d4a77) REAL time: 3 secs 
+
+Writing design to file Adder.ncd
+
+
+Total REAL time to Placer completion: 3 secs 
+Total CPU time to Placer completion: 1 secs 
+
+Starting Router
+
+Phase 1: 29 unrouted;       REAL time: 3 secs 
+
+Phase 2: 29 unrouted;       REAL time: 3 secs 
+
+Phase 3: 6 unrouted;       REAL time: 3 secs 
+
+Phase 4: 0 unrouted;       REAL time: 3 secs 
+
+
+Total REAL time to Router completion: 3 secs 
+Total CPU time to Router completion: 1 secs 
+
+Generating "PAR" statistics.
+
+Generating Pad Report.
+
+All signals are completely routed.
+
+Total REAL time to PAR completion: 4 secs 
+Total CPU time to PAR completion: 1 secs 
+
+Peak Memory Usage:  71 MB
+
+Placement: Completed - No errors found.
+Routing: Completed - No errors found.
+
+Number of error messages: 0
+Number of warning messages: 0
+Number of info messages: 1
+
+Writing design to file Adder.ncd
+
+
+
+PAR done!
+
+Started process "Generate Post-Place & Route Static Timing".
+
+Loading device for application Rf_Device from file '3s200.nph' in environment
+C:/Xilinx.
+   "Adder" is an NCD, version 3.1, device xc3s200, package ft256, speed -4
+
+Analysis completed Sun Jan 13 23:18:47 2008
+--------------------------------------------------------------------------------
+
+Generating Report ...
+
+Number of warnings: 0
+Total time: 2 secs 
+
+
+
+
+
+
+
+Started process "Generate Programming File".
+
+

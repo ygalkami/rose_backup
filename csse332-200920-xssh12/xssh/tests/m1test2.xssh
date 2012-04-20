@@ -1,0 +1,8 @@
+echo quitting, you should not see any more messages 
+#
+#
+#
+#
+quit 0
+echo quit must have failed, 'cause you are seeing this
+quit 10

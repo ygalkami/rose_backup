@@ -1,0 +1,7 @@
+Usuage Instructions:
+
+Run processes using the following command
+./processes
+
+When prompted enter a number of child processes to spawn. Each child process
+will run the myCopy program, this program will copy in.txt into out.txt.

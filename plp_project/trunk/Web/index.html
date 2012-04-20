@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+        "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+	<title> Language Installation Instructions </title> 
+	<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+	<h1>Language Installation Instructions<br />
+	Programming Language Paradigms</h1> 
+
+	
+	<h4> Installing Groovy in Eclipse</h4> 
+	Groovy requires Java, so you need to have a version available (1.4 or greater is required).  
+	If you do not already have it installed follow this <b><a href="http://www.rose-hulman.edu/class/csse/resources/JavaDevKit/installation.htm">Java</a></b> installation tutorial for instructions on how to do so.
+	There is a Groovy plugin for the Eclipse development environment v3.4 and up. To install it, 
+	<br /><br />
+	<ol class="steps">
+		<li>
+			Open eclipse. 
+		</li>
+		<li>
+			Navigate to <b>Help</b> then to <b>Software Updates</b>
+		</li>
+		<li>
+			Click on the <b>Available Software</b> and click on the <b> Add Site...</b> button and add one of the following sources.
+		</li>
+			<ol type="a">
+				<li>
+					Location for Eclipse v3.4: <p class="link">http://ci.repository.codehaus.org/greclipse/snapshot/e34/</p>
+				</li>
+				<li>
+					Location for Eclipse v3.5: <p class="link">http://ci.repository.codehaus.org/greclipse/snapshot/e35/</p>
+				</li>
+			</ol>
+		<br />
+		<img src="images\install_1.jpg" />
+		<br /><br />
+		<li>
+			You should now see an entry <i>Groovy update Site.</i>
+		</li>
+		<li>
+			Expand it and select <i>Groovy-Eclipse Plugin.</i>
+		</li>
+		<br /><br />
+		<img src="images\install_2.jpg" />
+		<br /><br />
+		<li>
+			Click <b>Install</b> and click through until the installation is complete
+		</li>
+	</ol>
+	<br />
+	<h4> Testing the Groovy Installation in Eclipse</h4> 
+	Here we will validate that the Groovy plugin has been succesffuly installed.
+	<ol class="steps">
+		<li>
+			Make sure that you are in the Java Perspective in Eclipse
+		</li>
+		<li>
+			Click on the <i>Create New Project Wizard</i> button and select Groovy Project and give your new project a title.
+		</li>
+		<li>
+			Right click on the src folder in the project and select <i>New</i> and add a new blank file.  
+			What you name the file is of your choice, but you must give it a .groovy extension.
+		</li>
+		<li>
+			In the new groovy file add the following line of code. 
+			<p class="code">
+			println "Hello, World!"
+			</p>
+		</li>
+		<li>
+			Save the file and right-click on it.  Click <i>Run As</i> and select Groovy.
+		</li>
+	</ol>
+	<br />
+	<h4>Alternative to Using Eclipse</h4>
+	If you do not have a compatable version of Eclipse for the Groovy plugin 
+	or for whatever matter simply do not want to use Eclipse, follow these instructions to setup the Groovy console.  
+	Groovy requires Java, so you need to have a version available (1.4 or greater is required). 
+	If you do not already have it installed follow this <b><a href="http://www.rose-hulman.edu/class/csse/resources/JavaDevKit/installation.htm">Java</a></b> installation tutorial for instructions on how to do so.
+	<ol class="steps">
+	<li>
+		Setup Java environment variables on Windows.
+		<ol class="a">
+			<li>
+				Go to your control panel and open up <i>System Properties</i>.
+			</li>
+			<li>
+				Click on the <i>Advanced</i> tab and then on the <i>Environment Variables</i> button.
+			</li>
+			<li>
+				Add a new System variable with the name JAVA_HOME with the value of the directory Java was installed in (point it to the <i>folder</i>).
+			</li>
+		</ol>
+	</li>
+		<li>
+			Follow this <b><a href="http://dist.codehaus.org/groovy/distributions/installers/windows/nsis/groovy-1.6.4-installer.exe">Download Link</a></b>
+			to get the windows installer for Groovy 1.6.4.
+		</li>
+		<li>
+			Run the executable and follow the typical installation instructions until you get to <i>Environment Variables</i> setup.
+		</li>
+		<li>
+			Setting the Groovy environment variables on Windows.
+			<ol class="a">
+				<li>
+					The Groovy installer will set these for you.  Your task is simply to verify that it is named GROOVY_HOME and that the
+					path points to the location of your installation.
+				</li>
+				<img src="images\install_3.jpg" />
+				<li>
+					Start a command prompt, and type "set" and hit return to see that your Java and Groovy environment variables were set correctly.
+				</li>
+				</ol>
+		</li>
+		<li>
+			Once the installation is finished, open a Groovy Console and type in the following line of code.
+			<p class="code">
+			println "Hello, World!"
+			</p>
+		</li>
+		<li>
+			Click on the <i>Execute Groovy Script</i> button (far-right).
+		</li>
+		<img src="images\install_4.jpg" />
+	</ol>
+	<br />
+	
+	
+	<h4>Having a Groovy Time!</h4> 
+	Please contact one of our team members if you have any trouble with the installation or have any other questions, comments, or concerns for us. <br /><br />
+	<b>Team Name:</b> The Groove Monitors  <br />
+	<b>Team Members:</b> David Pick, Patrick Nowicki, and Mark Jenne
+
+</body>
+</html>

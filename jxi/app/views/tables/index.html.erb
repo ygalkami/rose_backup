@@ -1,0 +1,26 @@
+<h1>Tables for <%= @database.name %></h1>
+
+<table>
+  <tr>
+    <th>Table</th>
+  </tr>
+
+<% for table in @tables %>
+  <tr>
+    <td><%=h table.name %></td>
+    <td><%= link_to 'Show', database_table_path(@database, table) %></td>
+    <td>
+        <%= link_to 'Edit', edit_database_table_path(@database, table) %>
+    </td>
+    <td>
+        <%= link_to 'Destroy', database_table_path(@database, table),
+            :confirm => 'Are you sure?', :method => :delete %>
+    </td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Table', new_database_table_path(@database) %>
+<%= link_to 'Back to Database', @database %>

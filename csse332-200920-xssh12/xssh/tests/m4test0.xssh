@@ -1,0 +1,4 @@
+pwd
+cd ..
+echo Should be in parent directory now
+pwd

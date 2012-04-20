@@ -1,0 +1,39 @@
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\bin\Release\AnimationPractice.exe
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\bin\Release\AnimationPractice.pdb
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\obj\x86\Release\MainWindow.baml
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\obj\x86\Release\MainWindow.g.cs
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\obj\x86\Release\App.g.cs
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice_MarkupCompile.cache
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice.g.resources
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice.Properties.Resources.resources
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice.exe
+C:\Users\jabonsa\documents\visual studio 10\Projects\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice.pdb
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice.exe
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice.pdb
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\bin\Release\AnimationPractice.exe
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\bin\Release\AnimationPractice.pdb
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\MainWindow.baml
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\MainWindow.g.cs
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\App.g.cs
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice_MarkupCompile.cache
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice.g.resources
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice.Properties.Resources.resources
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\Bennie\Documents\Courses\CSSE 374\Poker Repository\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\GenerateResource.write.1.tlog
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice.exe
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice.pdb
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\bin\Release\AnimationPractice.exe
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\bin\Release\AnimationPractice.pdb
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\ResolveAssemblyReference.cache
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\MainWindow.baml
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\MainWindow.g.cs
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\App.g.cs
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice_MarkupCompile.cache
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice.g.resources
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\AnimationPractice.Properties.Resources.resources
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\GenerateResource.read.1.tlog
+C:\Users\jabonsa\Documents\CSSE374\Poker Player Repos\WPF Practice\AnimationPractice\AnimationPractice\obj\x86\Release\GenerateResource.write.1.tlog

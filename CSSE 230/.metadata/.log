@@ -1,0 +1,1179 @@
+!SESSION 2008-03-06 19:32:00.199 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.jobs 4 2 2008-03-06 21:12:18.302
+!MESSAGE An internal error occurred during: "Updating Change Sets for SVNStatusSubscriber".
+!STACK 0
+java.lang.NoClassDefFoundError: org/eclipse/team/core/diff/ITwoWayDiff
+	at org.eclipse.team.core.subscribers.Subscriber.getDiff(Subscriber.java:368)
+	at org.eclipse.team.internal.core.subscribers.SubscriberChangeSetManager.getDiff(SubscriberChangeSetManager.java:302)
+	at org.eclipse.team.internal.core.subscribers.SubscriberChangeSetManager$EventHandler.handleChange(SubscriberChangeSetManager.java:183)
+	at org.eclipse.team.internal.core.subscribers.SubscriberChangeSetManager$EventHandler.doDispatchEvents(SubscriberChangeSetManager.java:80)
+	at org.eclipse.team.internal.core.BackgroundEventHandler.dispatchEvents(BackgroundEventHandler.java:354)
+	at org.eclipse.team.internal.core.BackgroundEventHandler.processEvents(BackgroundEventHandler.java:334)
+	at org.eclipse.team.internal.core.BackgroundEventHandler$1.run(BackgroundEventHandler.java:173)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+Caused by: java.lang.ClassNotFoundException: org.eclipse.team.core.diff.ITwoWayDiff
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:402)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClassInternal(Unknown Source)
+	... 8 more
+!SESSION 2008-03-18 18:43:10.622 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2008-03-18 18:43:14.560
+!MESSAGE A workspace crash was detected. The previous session did not exit normally.
+!SESSION 2008-04-17 10:29:06.360 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2008-04-17 10:53:29.656
+!MESSAGE cannot checkout
+!SESSION 2008-04-21 18:05:25.456 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2008-04-21 20:47:11.210
+!MESSAGE org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: PROPFIND request failed on '/repos/csse230-sliding-200830-28/SlidingBlocks'
+svn: PROPFIND of '/repos/csse230-sliding-200830-28/SlidingBlocks': Could not read status line: An existing connection was forcibly closed by the remote host.   (http://svn.cs.rose-hulman.edu)
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: PROPFIND request failed on '/repos/csse230-sliding-200830-28/SlidingBlocks'
+svn: PROPFIND of '/repos/csse230-sliding-200830-28/SlidingBlocks': Could not read status line: An existing connection was forcibly closed by the remote host.   (http://svn.cs.rose-hulman.edu)
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.commit(AbstractJhlClientAdapter.java:274)
+	at org.tigris.subversion.subclipse.core.commands.CheckinResourcesCommand$1.run(CheckinResourcesCommand.java:98)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin$5.run(SVNProviderPlugin.java:456)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1719)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.run(SVNProviderPlugin.java:451)
+	at org.tigris.subversion.subclipse.core.commands.CheckinResourcesCommand.run(CheckinResourcesCommand.java:90)
+	at org.tigris.subversion.subclipse.core.SVNTeamProvider.checkin(SVNTeamProvider.java:139)
+	at org.tigris.subversion.subclipse.ui.operations.CommitOperation.execute(CommitOperation.java:108)
+	at org.tigris.subversion.subclipse.ui.operations.SVNOperation.run(SVNOperation.java:89)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext.run(JobRunnableContext.java:144)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext$ResourceJob.runInWorkspace(JobRunnableContext.java:72)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+Caused by: org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: PROPFIND request failed on '/repos/csse230-sliding-200830-28/SlidingBlocks'
+svn: PROPFIND of '/repos/csse230-sliding-200830-28/SlidingBlocks': Could not read status line: An existing connection was forcibly closed by the remote host.   (http://svn.cs.rose-hulman.edu)
+
+	at org.tigris.subversion.javahl.SVNClient.commit(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.commit(AbstractJhlClientAdapter.java:268)
+	... 13 more
+!SESSION 2008-04-24 13:20:18.640 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2008-04-24 14:08:41.868
+!MESSAGE org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: OPTIONS request failed on '/repos/csse230-sliding-200830-28/SlidingBlocks'
+svn: OPTIONS of '/repos/csse230-sliding-200830-28/SlidingBlocks': Could not resolve hostname `svn.cs.rose-hulman.edu': The requested name is valid and was found in the database, but it does not have the correct associated data being resolved for.   (http://svn.cs.rose-hulman.edu)
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: OPTIONS request failed on '/repos/csse230-sliding-200830-28/SlidingBlocks'
+svn: OPTIONS of '/repos/csse230-sliding-200830-28/SlidingBlocks': Could not resolve hostname `svn.cs.rose-hulman.edu': The requested name is valid and was found in the database, but it does not have the correct associated data being resolved for.   (http://svn.cs.rose-hulman.edu)
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.commit(AbstractJhlClientAdapter.java:274)
+	at org.tigris.subversion.subclipse.core.commands.CheckinResourcesCommand$1.run(CheckinResourcesCommand.java:98)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin$5.run(SVNProviderPlugin.java:456)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1719)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.run(SVNProviderPlugin.java:451)
+	at org.tigris.subversion.subclipse.core.commands.CheckinResourcesCommand.run(CheckinResourcesCommand.java:90)
+	at org.tigris.subversion.subclipse.core.SVNTeamProvider.checkin(SVNTeamProvider.java:139)
+	at org.tigris.subversion.subclipse.ui.operations.CommitOperation.execute(CommitOperation.java:108)
+	at org.tigris.subversion.subclipse.ui.operations.SVNOperation.run(SVNOperation.java:89)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext.run(JobRunnableContext.java:144)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext$ResourceJob.runInWorkspace(JobRunnableContext.java:72)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+Caused by: org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: OPTIONS request failed on '/repos/csse230-sliding-200830-28/SlidingBlocks'
+svn: OPTIONS of '/repos/csse230-sliding-200830-28/SlidingBlocks': Could not resolve hostname `svn.cs.rose-hulman.edu': The requested name is valid and was found in the database, but it does not have the correct associated data being resolved for.   (http://svn.cs.rose-hulman.edu)
+
+	at org.tigris.subversion.javahl.SVNClient.commit(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.commit(AbstractJhlClientAdapter.java:268)
+	... 13 more
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2008-04-24 15:06:50.189
+!MESSAGE org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: OPTIONS request failed on '/repos/csse230-sliding-200830-28/SlidingBlocks'
+svn: OPTIONS of '/repos/csse230-sliding-200830-28/SlidingBlocks': Could not resolve hostname `svn.cs.rose-hulman.edu': The requested name is valid and was found in the database, but it does not have the correct associated data being resolved for.   (http://svn.cs.rose-hulman.edu)
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: OPTIONS request failed on '/repos/csse230-sliding-200830-28/SlidingBlocks'
+svn: OPTIONS of '/repos/csse230-sliding-200830-28/SlidingBlocks': Could not resolve hostname `svn.cs.rose-hulman.edu': The requested name is valid and was found in the database, but it does not have the correct associated data being resolved for.   (http://svn.cs.rose-hulman.edu)
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.commit(AbstractJhlClientAdapter.java:274)
+	at org.tigris.subversion.subclipse.core.commands.CheckinResourcesCommand$1.run(CheckinResourcesCommand.java:98)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin$5.run(SVNProviderPlugin.java:456)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1719)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.run(SVNProviderPlugin.java:451)
+	at org.tigris.subversion.subclipse.core.commands.CheckinResourcesCommand.run(CheckinResourcesCommand.java:90)
+	at org.tigris.subversion.subclipse.core.SVNTeamProvider.checkin(SVNTeamProvider.java:139)
+	at org.tigris.subversion.subclipse.ui.operations.CommitOperation.execute(CommitOperation.java:108)
+	at org.tigris.subversion.subclipse.ui.operations.SVNOperation.run(SVNOperation.java:89)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext.run(JobRunnableContext.java:144)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext$ResourceJob.runInWorkspace(JobRunnableContext.java:72)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+Caused by: org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: OPTIONS request failed on '/repos/csse230-sliding-200830-28/SlidingBlocks'
+svn: OPTIONS of '/repos/csse230-sliding-200830-28/SlidingBlocks': Could not resolve hostname `svn.cs.rose-hulman.edu': The requested name is valid and was found in the database, but it does not have the correct associated data being resolved for.   (http://svn.cs.rose-hulman.edu)
+
+	at org.tigris.subversion.javahl.SVNClient.commit(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.commit(AbstractJhlClientAdapter.java:268)
+	... 13 more
+!SESSION 2008-04-25 14:35:42.137 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui.workbench 4 0 2008-04-25 14:40:13.204
+!MESSAGE WARNING: Prevented recursive attempt to activate part org.eclipse.jdt.ui.PackageExplorer while still in the middle of activating part org.eclipse.ui.systemInPlaceEditor
+!STACK 0
+java.lang.RuntimeException: WARNING: Prevented recursive attempt to activate part org.eclipse.jdt.ui.PackageExplorer while still in the middle of activating part org.eclipse.ui.systemInPlaceEditor
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3157)
+	at org.eclipse.ui.internal.WorkbenchPage.requestActivation(WorkbenchPage.java:2750)
+	at org.eclipse.ui.internal.PartPane.requestActivation(PartPane.java:256)
+	at org.eclipse.ui.internal.PartPane.handleEvent(PartPane.java:220)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:928)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:952)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:933)
+	at org.eclipse.swt.widgets.Shell.setActiveControl(Shell.java:1199)
+	at org.eclipse.swt.widgets.Control.sendFocusEvent(Control.java:1984)
+	at org.eclipse.swt.widgets.Widget.wmSetFocus(Widget.java:2145)
+	at org.eclipse.swt.widgets.Control.WM_SETFOCUS(Control.java:3860)
+	at org.eclipse.swt.widgets.Tree.WM_SETFOCUS(Tree.java:5960)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3312)
+	at org.eclipse.swt.widgets.Tree.windowProc(Tree.java:4783)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4025)
+	at org.eclipse.swt.internal.win32.OS.SetFocus(Native Method)
+	at org.eclipse.swt.widgets.Control.forceFocus(Control.java:735)
+	at org.eclipse.swt.widgets.Control.setSavedFocus(Control.java:2546)
+	at org.eclipse.swt.widgets.Decorations.restoreFocus(Decorations.java:759)
+	at org.eclipse.swt.widgets.Decorations.WM_ACTIVATE(Decorations.java:1580)
+	at org.eclipse.swt.widgets.Shell.WM_ACTIVATE(Shell.java:1714)
+	at org.eclipse.swt.widgets.Control.windowProc(Control.java:3244)
+	at org.eclipse.swt.widgets.Decorations.windowProc(Decorations.java:1539)
+	at org.eclipse.swt.widgets.Shell.windowProc(Shell.java:1634)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:4025)
+	at org.eclipse.swt.internal.ole.win32.COM.VtblCall(Native Method)
+	at org.eclipse.swt.internal.ole.win32.IOleObject.DoVerb(IOleObject.java:27)
+	at org.eclipse.swt.ole.win32.OleClientSite.doVerb(OleClientSite.java:574)
+	at org.eclipse.ui.internal.editorsupport.win32.OleEditor.oleActivate(OleEditor.java:641)
+	at org.eclipse.ui.internal.editorsupport.win32.OleEditor.activateClient(OleEditor.java:209)
+	at org.eclipse.ui.internal.editorsupport.win32.OleEditor.access$3(OleEditor.java:207)
+	at org.eclipse.ui.internal.editorsupport.win32.OleEditor$4.partActivated(OleEditor.java:165)
+	at org.eclipse.ui.internal.PartListenerList$1.run(PartListenerList.java:72)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.PartListenerList.fireEvent(PartListenerList.java:57)
+	at org.eclipse.ui.internal.PartListenerList.firePartActivated(PartListenerList.java:70)
+	at org.eclipse.ui.internal.PartService.firePartActivated(PartService.java:73)
+	at org.eclipse.ui.internal.PartService.setActivePart(PartService.java:171)
+	at org.eclipse.ui.internal.WorkbenchPagePartList.fireActivePartChanged(WorkbenchPagePartList.java:56)
+	at org.eclipse.ui.internal.PartList.setActivePart(PartList.java:126)
+	at org.eclipse.ui.internal.WorkbenchPage.setActivePart(WorkbenchPage.java:3207)
+	at org.eclipse.ui.internal.WorkbenchPage.activate(WorkbenchPage.java:588)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2604)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2528)
+	at org.eclipse.ui.internal.WorkbenchPage.access$10(WorkbenchPage.java:2520)
+	at org.eclipse.ui.internal.WorkbenchPage$9.run(WorkbenchPage.java:2505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2500)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2485)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:388)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:350)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:275)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:139)
+	at org.eclipse.jdt.internal.ui.actions.OpenActionUtil.open(OpenActionUtil.java:49)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:190)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:174)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:267)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:243)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:306)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:653)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:817)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:44)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:149)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:815)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1069)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1168)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:249)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:243)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:283)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:928)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3348)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2968)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+!SESSION 2008-04-27 17:58:27.563 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2008-04-27 18:54:00.109
+!MESSAGE org.tigris.subversion.javahl.ClientException: Merge conflict during commit
+svn: Commit failed (details follow):
+svn: Your file or directory 'Solver.java' is probably out-of-date
+svn: The version resource does not correspond to the resource within the transaction.  Either the requested version resource is out of date (needs to be updated), or the requested version resource is newer than the transaction root (restart the commit).
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: Merge conflict during commit
+svn: Commit failed (details follow):
+svn: Your file or directory 'Solver.java' is probably out-of-date
+svn: The version resource does not correspond to the resource within the transaction.  Either the requested version resource is out of date (needs to be updated), or the requested version resource is newer than the transaction root (restart the commit).
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.commit(AbstractJhlClientAdapter.java:274)
+	at org.tigris.subversion.subclipse.core.commands.CheckinResourcesCommand$1.run(CheckinResourcesCommand.java:98)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin$5.run(SVNProviderPlugin.java:456)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1719)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.run(SVNProviderPlugin.java:451)
+	at org.tigris.subversion.subclipse.core.commands.CheckinResourcesCommand.run(CheckinResourcesCommand.java:90)
+	at org.tigris.subversion.subclipse.core.SVNTeamProvider.checkin(SVNTeamProvider.java:139)
+	at org.tigris.subversion.subclipse.ui.operations.CommitOperation.execute(CommitOperation.java:108)
+	at org.tigris.subversion.subclipse.ui.operations.SVNOperation.run(SVNOperation.java:89)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext.run(JobRunnableContext.java:144)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext$ResourceJob.runInWorkspace(JobRunnableContext.java:72)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+Caused by: org.tigris.subversion.javahl.ClientException: Merge conflict during commit
+svn: Commit failed (details follow):
+svn: Your file or directory 'Solver.java' is probably out-of-date
+svn: The version resource does not correspond to the resource within the transaction.  Either the requested version resource is out of date (needs to be updated), or the requested version resource is newer than the transaction root (restart the commit).
+
+	at org.tigris.subversion.javahl.SVNClient.commit(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.commit(AbstractJhlClientAdapter.java:268)
+	... 13 more
+!SESSION 2008-04-29 13:03:05.296 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 0 2008-04-29 16:05:56.608
+!MESSAGE Unable to create editor ID org.eclipse.jdt.ui.ClassFileEditor: Operation not supported for specified element type(s):<project root> [in Project3]
+!STACK 1
+Java Model Exception: Java Model Status [Operation not supported for specified element type(s):<project root> [in Project3]]
+	at org.eclipse.jdt.internal.core.ClassFile.getBuffer(ClassFile.java:315)
+	at org.eclipse.jdt.internal.core.ClassFile.getSourceRange(ClassFile.java:465)
+	at org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor.probeInputForSource(ClassFileEditor.java:681)
+	at org.eclipse.jdt.internal.ui.javaeditor.ClassFileEditor.doSetInput(ClassFileEditor.java:610)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$17.run(AbstractTextEditor.java:2396)
+	at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:369)
+	at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:313)
+	at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:763)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:760)
+	at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2283)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:2414)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:2441)
+	at org.eclipse.ui.internal.EditorManager.createSite(EditorManager.java:842)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:583)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:372)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:566)
+	at org.eclipse.ui.internal.EditorReference.getEditor(EditorReference.java:214)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2595)
+	at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2528)
+	at org.eclipse.ui.internal.WorkbenchPage.access$10(WorkbenchPage.java:2520)
+	at org.eclipse.ui.internal.WorkbenchPage$9.run(WorkbenchPage.java:2505)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2500)
+	at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2485)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:388)
+	at org.eclipse.ui.ide.IDE.openEditor(IDE.java:350)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:275)
+	at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:139)
+	at org.eclipse.jdt.internal.ui.actions.OpenActionUtil.open(OpenActionUtil.java:49)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:190)
+	at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:174)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:267)
+	at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:243)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:306)
+	at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:653)
+	at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:817)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:44)
+	at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:149)
+	at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:815)
+	at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1069)
+	at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1168)
+	at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:249)
+	at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:243)
+	at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:283)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:928)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3348)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2968)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+!SUBENTRY 1 org.eclipse.jdt.core 4 967 2008-04-29 16:05:56.608
+!MESSAGE Operation not supported for specified element type(s):<project root> [in Project3]
+
+!ENTRY org.tigris.subversion.subclipse.core 4 368 2008-04-29 16:06:13.311
+!MESSAGE Resource /Project3/bin does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource /Project3/bin does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:311)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:187)
+	at org.eclipse.core.internal.resources.Synchronizer.setSyncInfo(Synchronizer.java:243)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache$SyncInfoSynchronizedAccessor.flushPendingCacheWrites(SynchronizerSyncInfoCache.java:250)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache$1.run(SynchronizerSyncInfoCache.java:195)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1719)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache.flushPendingStatuses(SynchronizerSyncInfoCache.java:193)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.resourceChanged(StatusCacheManager.java:335)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:280)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:274)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:240)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:151)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2008-04-29 16:06:13.311
+!MESSAGE Resource /Project3/bin does not exist.
+
+!ENTRY org.tigris.subversion.subclipse.core 4 368 2008-04-29 16:06:13.311
+!MESSAGE Resource /Project3/bin does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource /Project3/bin does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:311)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:187)
+	at org.eclipse.core.internal.resources.Synchronizer.setSyncInfo(Synchronizer.java:243)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache$SyncInfoSynchronizedAccessor.flushPendingCacheWrites(SynchronizerSyncInfoCache.java:250)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache$1.run(SynchronizerSyncInfoCache.java:195)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1719)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache.flushPendingStatuses(SynchronizerSyncInfoCache.java:193)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.resourceChanged(StatusCacheManager.java:335)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:280)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:274)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:240)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:151)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2008-04-29 16:06:13.311
+!MESSAGE Resource /Project3/bin does not exist.
+
+!ENTRY org.tigris.subversion.subclipse.core 4 368 2008-04-29 16:06:13.311
+!MESSAGE Resource /Project3/bin does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource /Project3/bin does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:311)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:187)
+	at org.eclipse.core.internal.resources.Synchronizer.setSyncInfo(Synchronizer.java:243)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache$SyncInfoSynchronizedAccessor.flushPendingCacheWrites(SynchronizerSyncInfoCache.java:250)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache$1.run(SynchronizerSyncInfoCache.java:195)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1719)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache.flushPendingStatuses(SynchronizerSyncInfoCache.java:193)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.resourceChanged(StatusCacheManager.java:335)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:280)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:274)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:240)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:151)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2008-04-29 16:06:13.311
+!MESSAGE Resource /Project3/bin does not exist.
+
+!ENTRY org.tigris.subversion.subclipse.core 4 368 2008-04-29 16:06:13.311
+!MESSAGE Resource /Project3/bin does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource /Project3/bin does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:311)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:187)
+	at org.eclipse.core.internal.resources.Synchronizer.setSyncInfo(Synchronizer.java:243)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache$SyncInfoSynchronizedAccessor.flushPendingCacheWrites(SynchronizerSyncInfoCache.java:250)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache$1.run(SynchronizerSyncInfoCache.java:195)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1719)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache.flushPendingStatuses(SynchronizerSyncInfoCache.java:193)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.resourceChanged(StatusCacheManager.java:335)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:280)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:274)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:240)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:151)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2008-04-29 16:06:13.311
+!MESSAGE Resource /Project3/bin does not exist.
+
+!ENTRY org.eclipse.jdt.core 4 4 2008-04-29 16:07:38.638
+!MESSAGE JavaBuilder handling ImageBuilderInternalException while building: Project3
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource already exists on disk: /Project3/bin/run.easy.
+	at org.eclipse.core.internal.localstore.FileSystemResourceManager.copy(FileSystemResourceManager.java:177)
+	at org.eclipse.core.internal.resources.Resource.copy(Resource.java:489)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder$3.visit(BatchImageBuilder.java:215)
+	at org.eclipse.core.internal.resources.Resource$1.visitElement(Resource.java:57)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:81)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.doIteration(ElementTreeIterator.java:85)
+	at org.eclipse.core.internal.watson.ElementTreeIterator.iterate(ElementTreeIterator.java:126)
+	at org.eclipse.core.internal.resources.Resource.accept(Resource.java:67)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.copyExtraResourcesBack(BatchImageBuilder.java:184)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.cleanOutputFolders(BatchImageBuilder.java:116)
+	at org.eclipse.jdt.internal.core.builder.BatchImageBuilder.build(BatchImageBuilder.java:45)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.buildAll(JavaBuilder.java:241)
+	at org.eclipse.jdt.internal.core.builder.JavaBuilder.build(JavaBuilder.java:169)
+	at org.eclipse.core.internal.events.BuildManager$2.run(BuildManager.java:603)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:167)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:201)
+	at org.eclipse.core.internal.events.BuildManager$1.run(BuildManager.java:230)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.BuildManager.basicBuild(BuildManager.java:233)
+	at org.eclipse.core.internal.events.BuildManager.basicBuildLoop(BuildManager.java:252)
+	at org.eclipse.core.internal.events.BuildManager.build(BuildManager.java:285)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:154)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.core.resources 4 272 2008-04-29 16:07:38.638
+!MESSAGE Resource already exists on disk: /Project3/bin/run.easy.
+!SESSION 2008-04-30 12:53:48.471 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.tigris.subversion.subclipse.core 4 368 2008-04-30 17:17:23.101
+!MESSAGE Resource /SlidingBlocks does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource /SlidingBlocks does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:311)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:187)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:142)
+	at org.eclipse.core.internal.resources.Synchronizer.setSyncInfo(Synchronizer.java:243)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache$SyncInfoSynchronizedAccessor.flushPendingCacheWrites(SynchronizerSyncInfoCache.java:250)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache$1.run(SynchronizerSyncInfoCache.java:195)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1719)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache.flushPendingStatuses(SynchronizerSyncInfoCache.java:193)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.resourceChanged(StatusCacheManager.java:335)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:280)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:274)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:240)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:151)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2008-04-30 17:17:23.101
+!MESSAGE Resource /SlidingBlocks does not exist.
+
+!ENTRY org.tigris.subversion.subclipse.core 4 368 2008-04-30 17:17:23.132
+!MESSAGE Resource /SlidingBlocks does not exist.
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource /SlidingBlocks does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:311)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:187)
+	at org.eclipse.core.internal.resources.Project.checkAccessible(Project.java:142)
+	at org.eclipse.core.internal.resources.Synchronizer.setSyncInfo(Synchronizer.java:243)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache$SyncInfoSynchronizedAccessor.flushPendingCacheWrites(SynchronizerSyncInfoCache.java:250)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache$1.run(SynchronizerSyncInfoCache.java:195)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1719)
+	at org.tigris.subversion.subclipse.core.status.SynchronizerSyncInfoCache.flushPendingStatuses(SynchronizerSyncInfoCache.java:193)
+	at org.tigris.subversion.subclipse.core.status.StatusCacheManager.resourceChanged(StatusCacheManager.java:335)
+	at org.eclipse.core.internal.events.NotificationManager$2.run(NotificationManager.java:280)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.internal.events.NotificationManager.notify(NotificationManager.java:274)
+	at org.eclipse.core.internal.events.NotificationManager.broadcastChanges(NotificationManager.java:148)
+	at org.eclipse.core.internal.resources.Workspace.broadcastBuildEvent(Workspace.java:240)
+	at org.eclipse.core.internal.events.AutoBuildJob.doBuild(AutoBuildJob.java:151)
+	at org.eclipse.core.internal.events.AutoBuildJob.run(AutoBuildJob.java:217)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2008-04-30 17:17:23.132
+!MESSAGE Resource /SlidingBlocks does not exist.
+
+!ENTRY org.python.pydev.debug 4 4 2008-04-30 17:17:23.819
+!MESSAGE Unexpected getMarkers error
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException: Resource /SlidingBlocks/hard/README.txt does not exist.
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:311)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:187)
+	at org.eclipse.core.internal.resources.Resource.findMarkers(Resource.java:853)
+	at org.python.pydev.debug.ui.actions.AbstractBreakpointRulerAction.getMarkersFromEditorResource(AbstractBreakpointRulerAction.java:293)
+	at org.python.pydev.debug.ui.actions.BreakpointRulerAction.getMarkersFromCurrentFile(BreakpointRulerAction.java:78)
+	at org.python.pydev.debug.ui.actions.BreakpointRulerAction.update(BreakpointRulerAction.java:63)
+	at org.eclipse.ui.texteditor.AbstractRulerActionDelegate.update(AbstractRulerActionDelegate.java:133)
+	at org.eclipse.ui.texteditor.AbstractRulerActionDelegate.setActiveEditor(AbstractRulerActionDelegate.java:90)
+	at org.eclipse.ui.internal.EditorPluginAction.editorChanged(EditorPluginAction.java:75)
+	at org.eclipse.ui.internal.EditorPluginAction.<init>(EditorPluginAction.java:34)
+	at org.eclipse.ui.internal.ActionDescriptor.createAction(ActionDescriptor.java:256)
+	at org.eclipse.ui.internal.ActionDescriptor.<init>(ActionDescriptor.java:170)
+	at org.eclipse.ui.internal.ViewerActionBuilder.createActionDescriptor(ViewerActionBuilder.java:53)
+	at org.eclipse.ui.internal.PluginActionBuilder.readElement(PluginActionBuilder.java:158)
+	at org.eclipse.ui.internal.ViewerActionBuilder.readElement(ViewerActionBuilder.java:88)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:138)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElementChildren(RegistryReader.java:127)
+	at org.eclipse.ui.internal.PluginActionBuilder.readElement(PluginActionBuilder.java:141)
+	at org.eclipse.ui.internal.ViewerActionBuilder.readElement(ViewerActionBuilder.java:88)
+	at org.eclipse.ui.internal.registry.RegistryReader.readElements(RegistryReader.java:138)
+	at org.eclipse.ui.internal.registry.RegistryReader.readExtension(RegistryReader.java:149)
+	at org.eclipse.ui.internal.registry.RegistryReader.readRegistry(RegistryReader.java:170)
+	at org.eclipse.ui.internal.PluginActionBuilder.readContributions(PluginActionBuilder.java:112)
+	at org.eclipse.ui.internal.ViewerActionBuilder.readViewerContributions(ViewerActionBuilder.java:106)
+	at org.eclipse.ui.internal.PopupMenuExtender.readStaticActionsFor(PopupMenuExtender.java:373)
+	at org.eclipse.ui.internal.PopupMenuExtender.<init>(PopupMenuExtender.java:125)
+	at org.eclipse.ui.internal.PartSite.registerContextMenu(PartSite.java:114)
+	at org.eclipse.ui.internal.EditorSite.registerContextMenu(EditorSite.java:151)
+	at org.eclipse.ui.texteditor.AbstractTextEditor.createPartControl(AbstractTextEditor.java:2659)
+	at org.eclipse.ui.texteditor.StatusTextEditor.createPartControl(StatusTextEditor.java:53)
+	at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.createPartControl(AbstractDecoratedTextEditor.java:367)
+	at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:596)
+	at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:372)
+	at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:566)
+	at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:290)
+	at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:140)
+	at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:268)
+	at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+	at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:394)
+	at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1144)
+	at org.eclipse.ui.internal.PartStack.handleDeferredEvents(PartStack.java:1112)
+	at org.eclipse.ui.internal.LayoutPart.deferUpdates(LayoutPart.java:400)
+	at org.eclipse.ui.internal.PartSashContainer.handleDeferredEvents(PartSashContainer.java:1369)
+	at org.eclipse.ui.internal.LayoutPart.deferUpdates(LayoutPart.java:400)
+	at org.eclipse.ui.internal.WorkbenchPage.handleDeferredEvents(WorkbenchPage.java:1305)
+	at org.eclipse.ui.internal.WorkbenchPage.deferUpdates(WorkbenchPage.java:1295)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditors(WorkbenchPage.java:1269)
+	at org.eclipse.ui.internal.WorkbenchPage.closeEditor(WorkbenchPage.java:1333)
+	at org.eclipse.ui.texteditor.AbstractTextEditor$18.run(AbstractTextEditor.java:3153)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2008-04-30 17:17:23.819
+!MESSAGE Resource /SlidingBlocks/hard/README.txt does not exist.
+!SESSION 2008-05-01 13:41:00.109 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.tigris.subversion.subclipse.core 4 -6 2008-05-01 13:46:15.687
+!MESSAGE org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: OPTIONS request failed on '/repos/csse230-sliding-200830-28/SlidingBlocks'
+svn: OPTIONS of '/repos/csse230-sliding-200830-28/SlidingBlocks': Could not resolve hostname `svn.cs.rose-hulman.edu': The requested name is valid and was found in the database, but it does not have the correct associated data being resolved for.   (http://svn.cs.rose-hulman.edu)
+
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: OPTIONS request failed on '/repos/csse230-sliding-200830-28/SlidingBlocks'
+svn: OPTIONS of '/repos/csse230-sliding-200830-28/SlidingBlocks': Could not resolve hostname `svn.cs.rose-hulman.edu': The requested name is valid and was found in the database, but it does not have the correct associated data being resolved for.   (http://svn.cs.rose-hulman.edu)
+
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.commit(AbstractJhlClientAdapter.java:274)
+	at org.tigris.subversion.subclipse.core.commands.CheckinResourcesCommand$1.run(CheckinResourcesCommand.java:98)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin$5.run(SVNProviderPlugin.java:456)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1737)
+	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:1719)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.run(SVNProviderPlugin.java:451)
+	at org.tigris.subversion.subclipse.core.commands.CheckinResourcesCommand.run(CheckinResourcesCommand.java:90)
+	at org.tigris.subversion.subclipse.core.SVNTeamProvider.checkin(SVNTeamProvider.java:139)
+	at org.tigris.subversion.subclipse.ui.operations.CommitOperation.execute(CommitOperation.java:108)
+	at org.tigris.subversion.subclipse.ui.operations.SVNOperation.run(SVNOperation.java:89)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext.run(JobRunnableContext.java:144)
+	at org.eclipse.team.internal.ui.actions.JobRunnableContext$ResourceJob.runInWorkspace(JobRunnableContext.java:72)
+	at org.eclipse.core.internal.resources.InternalWorkspaceJob.run(InternalWorkspaceJob.java:38)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+Caused by: org.tigris.subversion.javahl.ClientException: RA layer request failed
+svn: Commit failed (details follow):
+svn: OPTIONS request failed on '/repos/csse230-sliding-200830-28/SlidingBlocks'
+svn: OPTIONS of '/repos/csse230-sliding-200830-28/SlidingBlocks': Could not resolve hostname `svn.cs.rose-hulman.edu': The requested name is valid and was found in the database, but it does not have the correct associated data being resolved for.   (http://svn.cs.rose-hulman.edu)
+
+	at org.tigris.subversion.javahl.SVNClient.commit(Native Method)
+	at org.tigris.subversion.svnclientadapter.javahl.AbstractJhlClientAdapter.commit(AbstractJhlClientAdapter.java:268)
+	... 13 more
+!SESSION 2008-05-01 17:49:23.625 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2008-05-01 19:08:07.433
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2008-05-01 19:08:07.449
+!MESSAGE Failed to execute runnable (java.lang.OutOfMemoryError: Java heap space)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.OutOfMemoryError: Java heap space)
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at org.eclipse.jface.text.GapTextStore.moveAndResizeGap(GapTextStore.java:103)
+	at org.eclipse.jface.text.GapTextStore.adjustGap(GapTextStore.java:70)
+	at org.eclipse.jface.text.GapTextStore.replace(GapTextStore.java:196)
+	at org.eclipse.jface.text.CopyOnWriteTextStore.replace(CopyOnWriteTextStore.java:142)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1073)
+	at org.eclipse.jface.text.AbstractDocument.replace(AbstractDocument.java:1090)
+	at org.eclipse.ui.internal.console.ConsoleDocument.replace(ConsoleDocument.java:83)
+	at org.eclipse.ui.internal.console.IOConsolePartitioner$QueueProcessingJob.runInUIThread(IOConsolePartitioner.java:537)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:94)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	... 20 more
+!SESSION 2008-05-05 11:00:40.406 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.ui 4 4 2008-05-05 12:21:05.136
+!MESSAGE Unhandled event loop exception
+
+!ENTRY org.eclipse.ui 4 0 2008-05-05 12:21:05.152
+!MESSAGE Failed to execute runnable (java.lang.OutOfMemoryError: Java heap space)
+!STACK 0
+org.eclipse.swt.SWTException: Failed to execute runnable (java.lang.OutOfMemoryError: Java heap space)
+	at org.eclipse.swt.SWT.error(SWT.java:3374)
+	at org.eclipse.swt.SWT.error(SWT.java:3297)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:126)
+	at org.eclipse.swt.widgets.Display.runAsyncMessages(Display.java:3325)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2971)
+	at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+	at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+	at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+	at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+	at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+	at org.eclipse.core.launcher.Main.run(Main.java:977)
+	at org.eclipse.core.launcher.Main.main(Main.java:952)
+Caused by: java.lang.OutOfMemoryError: Java heap space
+	at java.util.Arrays.copyOf(Unknown Source)
+	at java.lang.AbstractStringBuilder.expandCapacity(Unknown Source)
+	at java.lang.AbstractStringBuilder.append(Unknown Source)
+	at java.lang.StringBuffer.append(Unknown Source)
+	at org.eclipse.ui.internal.console.IOConsolePartitioner$QueueProcessingJob.runInUIThread(IOConsolePartitioner.java:525)
+	at org.eclipse.ui.progress.UIJob$1.run(UIJob.java:94)
+	at org.eclipse.swt.widgets.RunnableLock.run(RunnableLock.java:35)
+	at org.eclipse.swt.widgets.Synchronizer.runAsyncMessages(Synchronizer.java:123)
+	... 20 more
+!SESSION 2008-05-10 23:02:47.368 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_05
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.eclipse.core.resources 2 10035 2008-05-10 23:02:50.650
+!MESSAGE A workspace crash was detected. The previous session did not exit normally.
+
+!ENTRY org.tigris.subversion.subclipse.core 4 0 2008-05-10 23:03:15.016
+!MESSAGE No subversion client interface found.
+!STACK 0
+org.tigris.subversion.svnclientadapter.SVNClientException: No subversion client interface found.
+	at org.tigris.subversion.svnclientadapter.SVNClientAdapterFactory.getPreferredSVNClientType(SVNClientAdapterFactory.java:78)
+	at org.tigris.subversion.subclipse.core.SVNClientManager.setSvnClientInterface(SVNClientManager.java:59)
+	at org.tigris.subversion.subclipse.core.SVNClientManager.getSvnClientInterface(SVNClientManager.java:97)
+	at org.tigris.subversion.subclipse.core.SVNClientManager.createSVNClient(SVNClientManager.java:114)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.createSVNClient(SVNProviderPlugin.java:415)
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.getAdminDirectoryName(SVNProviderPlugin.java:536)
+	at org.tigris.subversion.subclipse.core.SVNClientManager.setSvnClientInterface(SVNClientManager.java:87)
+	at org.tigris.subversion.subclipse.ui.Preferences.setSvnClientInterface(Preferences.java:114)
+	at org.tigris.subversion.subclipse.ui.Preferences.initializePreferences(Preferences.java:99)
+	at org.tigris.subversion.subclipse.ui.SVNUIPlugin.start(SVNUIPlugin.java:405)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:991)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:966)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:317)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:256)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:342)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(EclipseLazyStarter.java:88)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:189)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:386)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(BundleLoader.java:278)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:227)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:147)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:759)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:242)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:49)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:238)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:117)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:113)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:241)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:71)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:336)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:322)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.eclipse.osgi 4 0 2008-05-10 23:03:15.188
+!MESSAGE An error occurred while automatically activating bundle org.tigris.subversion.subclipse.ui (155).
+!STACK 0
+org.osgi.framework.BundleException: Exception in org.tigris.subversion.subclipse.ui.SVNUIPlugin.start() of bundle org.tigris.subversion.subclipse.ui.
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:1010)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:966)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:317)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:256)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:342)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(EclipseLazyStarter.java:88)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:189)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:386)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(BundleLoader.java:278)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:227)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:147)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:759)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:242)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:49)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:238)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:117)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:113)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:241)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:71)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:336)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:322)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+Caused by: java.lang.NullPointerException
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.getAdminDirectoryName(SVNProviderPlugin.java:536)
+	at org.tigris.subversion.subclipse.core.SVNClientManager.setSvnClientInterface(SVNClientManager.java:87)
+	at org.tigris.subversion.subclipse.ui.Preferences.setSvnClientInterface(Preferences.java:114)
+	at org.tigris.subversion.subclipse.ui.Preferences.initializePreferences(Preferences.java:99)
+	at org.tigris.subversion.subclipse.ui.SVNUIPlugin.start(SVNUIPlugin.java:405)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:991)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:985)
+	... 35 more
+Root exception:
+java.lang.NullPointerException
+	at org.tigris.subversion.subclipse.core.SVNProviderPlugin.getAdminDirectoryName(SVNProviderPlugin.java:536)
+	at org.tigris.subversion.subclipse.core.SVNClientManager.setSvnClientInterface(SVNClientManager.java:87)
+	at org.tigris.subversion.subclipse.ui.Preferences.setSvnClientInterface(Preferences.java:114)
+	at org.tigris.subversion.subclipse.ui.Preferences.initializePreferences(Preferences.java:99)
+	at org.tigris.subversion.subclipse.ui.SVNUIPlugin.start(SVNUIPlugin.java:405)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl$2.run(BundleContextImpl.java:991)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.startActivator(BundleContextImpl.java:985)
+	at org.eclipse.osgi.framework.internal.core.BundleContextImpl.start(BundleContextImpl.java:966)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.startWorker(BundleHost.java:317)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.start(AbstractBundle.java:256)
+	at org.eclipse.osgi.framework.util.SecureAction.start(SecureAction.java:342)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseLazyStarter.preFindLocalClass(EclipseLazyStarter.java:88)
+	at org.eclipse.osgi.baseadaptor.loader.ClasspathManager.findLocalClass(ClasspathManager.java:412)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.findLocalClass(DefaultClassLoader.java:189)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findLocalClass(BundleLoader.java:334)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:386)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(BundleLoader.java:278)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:227)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:147)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:759)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:242)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:49)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:238)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:117)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:113)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:241)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:71)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:336)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:322)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+
+!ENTRY org.eclipse.equinox.registry 4 1 2008-05-10 23:03:15.203
+!MESSAGE Plug-in org.tigris.subversion.subclipse.ui was unable to load class org.tigris.subversion.subclipse.ui.decorator.SVNLightweightDecorator.
+!STACK 0
+java.lang.ClassNotFoundException: org.tigris.subversion.subclipse.ui.decorator.SVNLightweightDecorator
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:402)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.findClass(BundleLoader.java:347)
+	at org.eclipse.osgi.internal.baseadaptor.DefaultClassLoader.loadClass(DefaultClassLoader.java:83)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.framework.internal.core.BundleLoader.loadClass(BundleLoader.java:278)
+	at org.eclipse.osgi.framework.internal.core.BundleHost.loadClass(BundleHost.java:227)
+	at org.eclipse.osgi.framework.internal.core.AbstractBundle.loadClass(AbstractBundle.java:1245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:147)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:759)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:243)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:51)
+	at org.eclipse.ui.internal.WorkbenchPlugin$1.run(WorkbenchPlugin.java:242)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:49)
+	at org.eclipse.ui.internal.WorkbenchPlugin.createExtension(WorkbenchPlugin.java:238)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition$1.run(LightweightDecoratorDefinition.java:117)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.internalGetDecorator(LightweightDecoratorDefinition.java:113)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:241)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:71)
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+	at org.eclipse.core.runtime.Platform.run(Platform.java:843)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:336)
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:322)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:338)
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:308)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:58)
+!SESSION 2008-08-15 02:46:01.556 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.fullversion=GNU libgcj 4.2.3 (Ubuntu 4.2.3-2ubuntu6)
+BootLoader constants: OS=linux, ARCH=x86, WS=gtk, NL=en_US
+Command-line arguments:  -os linux -ws gtk -arch x86
+
+!ENTRY org.eclipse.osgi 2 1 2008-08-15 02:46:05.928
+!MESSAGE NLS missing message: initializer_error in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-08-15 02:46:05.928
+!MESSAGE NLS missing message: fileInitializer_fileNotFound in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-08-15 02:46:05.928
+!MESSAGE NLS missing message: fileInitializer_IOError in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.osgi 2 1 2008-08-15 02:46:05.928
+!MESSAGE NLS missing message: fileInitializer_missingFileName in: org.eclipse.core.internal.runtime.messages
+
+!ENTRY org.eclipse.team.core 4 0 2008-08-15 02:46:33.378
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project ThreadedTree4.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project ThreadedTree4.
+   at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:166)
+   at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:236)
+   at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:462)
+   at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+   at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+   at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:87)
+   at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:152)
+   at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1394)
+   at org.eclipse.core.internal.resources.File.refreshLocal(File.java:334)
+   at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.refreshFile(ResourceFileBuffer.java:452)
+   at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:238)
+   at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:108)
+   at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:561)
+   at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFileInfo(CompilationUnitDocumentProvider.java:909)
+   at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:482)
+   at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.connect(CompilationUnitDocumentProvider.java:1069)
+   at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:3063)
+   at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:173)
+   at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1512)
+   at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.internalDoSetInput(JavaEditor.java:2371)
+   at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.doSetInput(JavaEditor.java:2344)
+   at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSetInput(CompilationUnitEditor.java:1428)
+   at org.eclipse.ui.texteditor.AbstractTextEditor$5.run(AbstractTextEditor.java:2396)
+   at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:369)
+   at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:313)
+   at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:763)
+   at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+   at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:760)
+   at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2283)
+   at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:2414)
+   at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:2441)
+   at org.eclipse.ui.internal.EditorManager.createSite(EditorManager.java:842)
+   at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:583)
+   at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:372)
+   at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:566)
+   at org.eclipse.ui.internal.EditorAreaHelper.setVisibleEditor(EditorAreaHelper.java:263)
+   at org.eclipse.ui.internal.EditorManager.setVisibleEditor(EditorManager.java:1474)
+   at org.eclipse.ui.internal.EditorManager$5.run(EditorManager.java:1008)
+   at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+   at org.eclipse.core.runtime.Platform.run(Platform.java:858)
+   at org.eclipse.ui.internal.EditorManager.restoreState(EditorManager.java:1003)
+   at org.eclipse.ui.internal.WorkbenchPage.restoreState(WorkbenchPage.java:2843)
+   at org.eclipse.ui.internal.WorkbenchWindow.restoreState(WorkbenchWindow.java:1936)
+   at org.eclipse.ui.internal.Workbench.doRestoreState(Workbench.java:2873)
+   at org.eclipse.ui.internal.Workbench.access$14(Workbench.java:2821)
+   at org.eclipse.ui.internal.Workbench$19.run(Workbench.java:1697)
+   at org.eclipse.ui.internal.Workbench.runStartupWithProgress(Workbench.java:1437)
+   at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:1695)
+   at org.eclipse.ui.internal.Workbench.access$12(Workbench.java:1666)
+   at org.eclipse.ui.internal.Workbench$17.run(Workbench.java:1545)
+   at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+   at org.eclipse.ui.internal.Workbench.restoreState(Workbench.java:1489)
+   at org.eclipse.ui.internal.WorkbenchConfigurer.restoreState(WorkbenchConfigurer.java:183)
+   at org.eclipse.ui.application.WorkbenchAdvisor.openWindows(WorkbenchAdvisor.java:702)
+   at org.eclipse.ui.internal.Workbench.init(Workbench.java:1101)
+   at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1863)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+   at java.lang.reflect.Method.invoke(libgcj.so.81)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2008-08-15 02:46:33.966
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project ThreadedTree4.
+
+!ENTRY org.eclipse.team.core 4 0 2008-08-15 02:47:27.852
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project BST.
+!STACK 1
+org.eclipse.team.core.TeamException: Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project BST.
+   at org.eclipse.team.core.RepositoryProvider.mapNewProvider(RepositoryProvider.java:166)
+   at org.eclipse.team.core.RepositoryProvider.mapExistingProvider(RepositoryProvider.java:236)
+   at org.eclipse.team.core.RepositoryProvider.getProvider(RepositoryProvider.java:462)
+   at org.eclipse.team.internal.core.TeamHookDispatcher.getProvider(TeamHookDispatcher.java:97)
+   at org.eclipse.team.internal.core.TeamHookDispatcher.getRuleFactory(TeamHookDispatcher.java:105)
+   at org.eclipse.core.internal.resources.Rules.factoryFor(Rules.java:87)
+   at org.eclipse.core.internal.resources.Rules.refreshRule(Rules.java:152)
+   at org.eclipse.core.internal.resources.Resource.refreshLocal(Resource.java:1394)
+   at org.eclipse.core.internal.resources.File.refreshLocal(File.java:334)
+   at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.refreshFile(ResourceFileBuffer.java:452)
+   at org.eclipse.core.internal.filebuffers.ResourceFileBuffer.create(ResourceFileBuffer.java:238)
+   at org.eclipse.core.internal.filebuffers.TextFileBufferManager.connect(TextFileBufferManager.java:108)
+   at org.eclipse.ui.editors.text.TextFileDocumentProvider.createFileInfo(TextFileDocumentProvider.java:561)
+   at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.createFileInfo(CompilationUnitDocumentProvider.java:909)
+   at org.eclipse.ui.editors.text.TextFileDocumentProvider.connect(TextFileDocumentProvider.java:482)
+   at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitDocumentProvider.connect(CompilationUnitDocumentProvider.java:1069)
+   at org.eclipse.ui.texteditor.AbstractTextEditor.doSetInput(AbstractTextEditor.java:3063)
+   at org.eclipse.ui.texteditor.StatusTextEditor.doSetInput(StatusTextEditor.java:173)
+   at org.eclipse.ui.texteditor.AbstractDecoratedTextEditor.doSetInput(AbstractDecoratedTextEditor.java:1512)
+   at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.internalDoSetInput(JavaEditor.java:2371)
+   at org.eclipse.jdt.internal.ui.javaeditor.JavaEditor.doSetInput(JavaEditor.java:2344)
+   at org.eclipse.jdt.internal.ui.javaeditor.CompilationUnitEditor.doSetInput(CompilationUnitEditor.java:1428)
+   at org.eclipse.ui.texteditor.AbstractTextEditor$5.run(AbstractTextEditor.java:2396)
+   at org.eclipse.jface.operation.ModalContext.runInCurrentThread(ModalContext.java:369)
+   at org.eclipse.jface.operation.ModalContext.run(ModalContext.java:313)
+   at org.eclipse.jface.window.ApplicationWindow$1.run(ApplicationWindow.java:763)
+   at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+   at org.eclipse.jface.window.ApplicationWindow.run(ApplicationWindow.java:760)
+   at org.eclipse.ui.internal.WorkbenchWindow.run(WorkbenchWindow.java:2283)
+   at org.eclipse.ui.texteditor.AbstractTextEditor.internalInit(AbstractTextEditor.java:2414)
+   at org.eclipse.ui.texteditor.AbstractTextEditor.init(AbstractTextEditor.java:2441)
+   at org.eclipse.ui.internal.EditorManager.createSite(EditorManager.java:842)
+   at org.eclipse.ui.internal.EditorReference.createPartHelper(EditorReference.java:583)
+   at org.eclipse.ui.internal.EditorReference.createPart(EditorReference.java:372)
+   at org.eclipse.ui.internal.WorkbenchPartReference.getPart(WorkbenchPartReference.java:566)
+   at org.eclipse.ui.internal.PartPane.setVisible(PartPane.java:290)
+   at org.eclipse.ui.internal.presentations.PresentablePart.setVisible(PresentablePart.java:140)
+   at org.eclipse.ui.internal.presentations.util.PresentablePartFolder.select(PresentablePartFolder.java:268)
+   at org.eclipse.ui.internal.presentations.util.LeftToRightTabOrder.select(LeftToRightTabOrder.java:65)
+   at org.eclipse.ui.internal.presentations.util.TabbedStackPresentation.selectPart(TabbedStackPresentation.java:394)
+   at org.eclipse.ui.internal.PartStack.refreshPresentationSelection(PartStack.java:1144)
+   at org.eclipse.ui.internal.PartStack.setSelection(PartStack.java:1097)
+   at org.eclipse.ui.internal.PartStack.showPart(PartStack.java:1311)
+   at org.eclipse.ui.internal.PartStack.add(PartStack.java:455)
+   at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:102)
+   at org.eclipse.ui.internal.PartStack.add(PartStack.java:441)
+   at org.eclipse.ui.internal.EditorStack.add(EditorStack.java:111)
+   at org.eclipse.ui.internal.EditorSashContainer.addEditor(EditorSashContainer.java:60)
+   at org.eclipse.ui.internal.EditorAreaHelper.addToLayout(EditorAreaHelper.java:217)
+   at org.eclipse.ui.internal.EditorAreaHelper.addEditor(EditorAreaHelper.java:207)
+   at org.eclipse.ui.internal.EditorManager.createEditorTab(EditorManager.java:822)
+   at org.eclipse.ui.internal.EditorManager.openEditorFromDescriptor(EditorManager.java:721)
+   at org.eclipse.ui.internal.EditorManager.openEditor(EditorManager.java:682)
+   at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditorBatched(WorkbenchPage.java:2593)
+   at org.eclipse.ui.internal.WorkbenchPage.busyOpenEditor(WorkbenchPage.java:2528)
+   at org.eclipse.ui.internal.WorkbenchPage.access$10(WorkbenchPage.java:2520)
+   at org.eclipse.ui.internal.WorkbenchPage$9.run(WorkbenchPage.java:2505)
+   at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+   at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2500)
+   at org.eclipse.ui.internal.WorkbenchPage.openEditor(WorkbenchPage.java:2485)
+   at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:287)
+   at org.eclipse.jdt.internal.ui.javaeditor.EditorUtility.openInEditor(EditorUtility.java:164)
+   at org.eclipse.jdt.internal.ui.actions.OpenActionUtil.open(OpenActionUtil.java:49)
+   at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:190)
+   at org.eclipse.jdt.ui.actions.OpenAction.run(OpenAction.java:174)
+   at org.eclipse.jdt.ui.actions.SelectionDispatchAction.dispatchRun(SelectionDispatchAction.java:267)
+   at org.eclipse.jdt.ui.actions.SelectionDispatchAction.run(SelectionDispatchAction.java:243)
+   at org.eclipse.jdt.internal.ui.packageview.PackageExplorerActionGroup.handleOpen(PackageExplorerActionGroup.java:306)
+   at org.eclipse.jdt.internal.ui.packageview.PackageExplorerPart$4.open(PackageExplorerPart.java:653)
+   at org.eclipse.jface.viewers.StructuredViewer$2.run(StructuredViewer.java:817)
+   at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:37)
+   at org.eclipse.core.runtime.Platform.run(Platform.java:858)
+   at org.eclipse.ui.internal.JFaceUtil$1.run(JFaceUtil.java:44)
+   at org.eclipse.jface.util.SafeRunnable.run(SafeRunnable.java:149)
+   at org.eclipse.jface.viewers.StructuredViewer.fireOpen(StructuredViewer.java:815)
+   at org.eclipse.jface.viewers.StructuredViewer.handleOpen(StructuredViewer.java:1069)
+   at org.eclipse.jface.viewers.StructuredViewer$6.handleOpen(StructuredViewer.java:1168)
+   at org.eclipse.jface.util.OpenStrategy.fireOpenEvent(OpenStrategy.java:249)
+   at org.eclipse.jface.util.OpenStrategy.access$2(OpenStrategy.java:243)
+   at org.eclipse.jface.util.OpenStrategy$1.handleEvent(OpenStrategy.java:283)
+   at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:66)
+   at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1085)
+   at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:3180)
+   at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:2856)
+   at org.eclipse.ui.internal.Workbench.runEventLoop(Workbench.java:1930)
+   at org.eclipse.ui.internal.Workbench.runUI(Workbench.java:1894)
+   at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:422)
+   at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:149)
+   at org.eclipse.ui.internal.ide.IDEApplication.run(IDEApplication.java:95)
+   at org.eclipse.core.internal.runtime.PlatformActivator$1.run(PlatformActivator.java:78)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:92)
+   at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:68)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:400)
+   at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:177)
+   at java.lang.reflect.Method.invoke(libgcj.so.81)
+   at org.eclipse.core.launcher.Main.invokeFramework(Main.java:336)
+   at org.eclipse.core.launcher.Main.basicRun(Main.java:280)
+   at org.eclipse.core.launcher.Main.run(Main.java:977)
+   at org.eclipse.core.launcher.Main.main(Main.java:952)
+!SUBENTRY 1 org.eclipse.team.core 4 0 2008-08-15 02:47:27.854
+!MESSAGE Could not instantiate provider org.tigris.subversion.subclipse.core.svnnature for project BST.

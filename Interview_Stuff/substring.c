@@ -1,0 +1,27 @@
+#include <stdio.h>
+#include <string.h>
+
+int hasSubstring(char *str, char *find)
+{
+	char c;
+
+	while(c = *str++) {
+		if (c == *find && *find != '\0') {
+			*find++;
+		} else if (*find == '\0') {
+			return 1;
+		}
+	}
+
+	return 0;
+}
+
+int main()
+{
+	char *string = "beat";
+	char *sub = "bat";
+
+	printf("%d\n", hasSubstring(string, sub));
+
+	return 0;
+}

@@ -1,0 +1,84 @@
+import java.awt.geom.Point2D;
+import java.util.ArrayList;
+import java.util.HashMap;
+
+
+public class Block {
+	public int width;
+	public int height;
+	public int row;
+	public int col;
+	public int relativeWidth;
+//	public HashMap<Integer, Point2D.Double> allpoints = new HashMap<Integer, Point2D.Double>();
+	public ArrayList<Point2D.Double> allpoints = new ArrayList<Point2D.Double>();
+	
+	public Block(int height, int width, int row, int col){
+		this.width = width;
+		this.height = height;
+		this.col = col;
+		this.row = row;
+		this.relativeWidth = col + width;
+//		for (int i = row; i < height + row; i++) {
+//			for (int j = col; j < width + col; j++){
+//				allpoints.add(new Point2D.Double(i, j));
+//			}
+//		}
+//		System.out.println(this.toString() + " " + allpoints.toString());
+	}
+	
+	public boolean equals(Block block) {
+		if (block.row == this.row && block.col == this.col && block.height == this.height && block.width == this.width)
+			return true;
+		return false;
+	}
+	
+	public boolean contains(Point2D.Double point) {
+		if (this.row <= point.x && (this.row + this.height) > point.x && this.col <= point.y && (this.col + this.width) > point.y)
+			return true;
+		return false;
+	}
+	
+	public void Move(String Direction) {
+		if (Direction == "right") {
+			this.col += 1;
+		}
+		else if (Direction == "left")
+			this.col -= 1;
+		else if (Direction == "down")
+			this.row += 1;
+		else if (Direction == "up")
+			this.row -= 1;
+	}
+	
+	public void MoveRight() {
+		for (int i = 0; i < allpoints.size(); i++) {
+			allpoints.get(i).y += 1;
+		}
+		this.col += 1;
+	}
+	
+	public void MoveLeft() {
+		for (int i = 0; i < allpoints.size(); i++) {
+			allpoints.get(i).y -= 1;
+		}
+		this.col -= 1;
+	}
+	
+	public void MoveUp() {
+		for (int i = 0; i < allpoints.size(); i++) {
+			allpoints.get(i).x -= 1;
+		}
+		this.row -= 1;
+	}
+	
+	public void MoveDown() {
+		for (int i = 0; i < allpoints.size(); i++) {
+			allpoints.get(i).x += 1;
+		}
+		this.row += 1;
+	}
+	
+	public String toString() {
+		return "[" + this.height + ", " + this.width + ", " + this.row + ", " + this.col + "]";
+	}
+}

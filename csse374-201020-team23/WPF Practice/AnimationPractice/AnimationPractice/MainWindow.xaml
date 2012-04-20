@@ -1,0 +1,20 @@
+﻿<Window x:Class="AnimationPractice.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="691" Width="947">
+    <Grid>
+        <Image Height="652" HorizontalAlignment="Left" Name="background" Stretch="Fill" VerticalAlignment="Top" Width="925" Source="/AnimationPractice;component/Images/background.PNG" />
+        <Button Content="Start" Height="23" HorizontalAlignment="Left" Name="button1" VerticalAlignment="Top" Width="75" Click="button1_Click" />
+		<Image Height="214" HorizontalAlignment="Left" Margin="306,70,0,0" Name="cardFront" Stretch="None" VerticalAlignment="Top" Width="152" Source="/AnimationPractice;component/Images/clubs-2-150.png" Visibility="Hidden" />
+        <Image Height="108" HorizontalAlignment="Left" Margin="0,29,0,0" Name="image2" Stretch="Fill" VerticalAlignment="Top" Width="99" Source="/AnimationPractice;component/Images/deck1.png" />
+        <Image Height="108" HorizontalAlignment="Left" Margin="8,29,0,0" Name="card1" Stretch="Fill" VerticalAlignment="Top" Width="91" Source="/AnimationPractice;component/Images/back-blue-150-1.png" />
+        <Image Height="108" HorizontalAlignment="Left" Margin="8,29,0,0" Name="card2" Source="/AnimationPractice;component/Images/back-blue-150-1.png" Stretch="Fill" VerticalAlignment="Top" Width="91" />
+        <Image Height="108" HorizontalAlignment="Left" Margin="8,29,0,0" Name="card3" Source="/AnimationPractice;component/Images/back-blue-150-1.png" Stretch="Fill" VerticalAlignment="Top" Width="91" />
+        <Image Height="108" HorizontalAlignment="Left" Margin="8,29,0,0" Name="card4" Source="/AnimationPractice;component/Images/back-blue-150-1.png" Stretch="Fill" VerticalAlignment="Top" Width="91" />
+        <Image HorizontalAlignment="Left" Margin="8,29,0,515" Name="card5" Source="/AnimationPractice;component/Images/back-blue-150-1.png" Stretch="Fill" Width="91" />
+        <Image Height="108" HorizontalAlignment="Left" Margin="8,29,0,0" Name="card6" Source="/AnimationPractice;component/Images/back-blue-150-1.png" Stretch="Fill" VerticalAlignment="Top" Width="91" />
+        <Image Height="108" HorizontalAlignment="Left" Margin="8,29,0,0" Name="card7" Source="/AnimationPractice;component/Images/back-blue-150-1.png" Stretch="Fill" VerticalAlignment="Top" Width="91" />
+        <Image Height="108" HorizontalAlignment="Left" Margin="8,29,0,0" Name="card8" Source="/AnimationPractice;component/Images/back-blue-150-1.png" Stretch="Fill" VerticalAlignment="Top" Width="91" />
+        <Image Height="108" HorizontalAlignment="Left" Margin="8,29,0,0" Name="card9" Source="/AnimationPractice;component/Images/back-blue-150-1.png" Stretch="Fill" VerticalAlignment="Top" Width="91" />
+    </Grid>
+</Window>

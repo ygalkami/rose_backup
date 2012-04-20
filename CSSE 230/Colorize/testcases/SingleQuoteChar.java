@@ -1,0 +1,3 @@
+class SingleQuoteChar{
+    char c = '"';
+}

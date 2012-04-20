@@ -1,0 +1,3 @@
+A := [Customer | Values | Methods()]
+B := [Name | Attributes | Methods()]
+C := [Class | one, two, three | one(1, 2, 3), two(4, 5)]

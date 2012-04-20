@@ -1,0 +1,5 @@
+INCLUDE "C:\Program Files\Cadence Design Systems\IUS\tools\inca\files\cds.lib"
+define worklib C:\doering\Class\ECE130\2006-07_1F\xilinx\PWD_Judge_System\INCA_libs\worklib
+DEFINE unisims_ver C:\Xilinx\verilog\ncsim\unisims_ver
+DEFINE simprims_ver C:\Xilinx\verilog\ncsim\simprims_ver
+DEFINE xilinxcorelib_ver C:\Xilinx\verilog\ncsim\XilinxCoreLib_ver

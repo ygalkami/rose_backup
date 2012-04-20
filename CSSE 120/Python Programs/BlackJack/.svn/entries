@@ -1,0 +1,55 @@
+8
+
+dir
+23
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/BlackJack
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-09-28T13:54:24.540895Z
+22
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+.project
+file
+
+
+
+
+2007-09-30T18:22:31.488903Z
+60bf2d539a1b554c9ab8f81643112bee
+2007-09-28T13:54:24.540895Z
+22
+clifton
+
+src
+dir
+
+.pydevproject
+file
+
+
+
+
+2007-09-30T18:22:31.488903Z
+d22fa0b26df03babeb977d55724eadef
+2007-09-28T13:54:24.540895Z
+22
+clifton
+

@@ -1,0 +1,381 @@
+#!/bin/csh
+# ------------------------------------------------------------------
+# Shell script to try solving the puzzles in the easy subdirectory
+# ------------------------------------------------------------------
+# Make sure this script is executable by saying
+#	chmod +x runtests
+# if necessary.  Then just say
+#	./runtests
+# to try them all.
+# ------------------------------------------------------------------
+set CLASSPATH = '..:../lib'
+echo "These should all say 'Verified', without any 'Wrong exit status' messages"
+echo "*** Start with some solvable puzzles."
+echo ""
+echo "trying init.from.handout"
+java -cp ${CLASSPATH} Solver init.from.handout goal.2.from.handout \
+| java -cp ${CLASSPATH} Checker init.from.handout goal.2.from.handout
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying 1x1"
+java -cp ${CLASSPATH} Solver 1x1 1x1.goal \
+| java -cp ${CLASSPATH} Checker 1x1 1x1.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying 1x2, one block"
+java -cp ${CLASSPATH} Solver 1x2.one.block 1x2.one.block.goal \
+| java -cp ${CLASSPATH} Checker 1x2.one.block 1x2.one.block.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying 1x2, two blocks"
+java -cp ${CLASSPATH} Solver 1x2.two.blocks 1x2.two.blocks.goal \
+| java -cp ${CLASSPATH} Checker 1x2.two.blocks 1x2.two.blocks.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying easy"
+java -cp ${CLASSPATH} Solver easy easy.goal \
+| java -cp ${CLASSPATH} Checker easy easy.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying full.1"
+java -cp ${CLASSPATH} Solver full.1 easy.goal \
+| java -cp ${CLASSPATH} Checker full.1 easy.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying big.block.1"
+java -cp ${CLASSPATH} Solver big.block.1 big.block.1.goal \
+| java -cp ${CLASSPATH} Checker big.block.1 big.block.1.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying big.block.2"
+java -cp ${CLASSPATH} Solver big.block.2 big.block.2.goal \
+| java -cp ${CLASSPATH} Checker big.block.2 big.block.2.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying big.block.3"
+java -cp ${CLASSPATH} Solver big.block.3 big.block.3.goal \
+| java -cp ${CLASSPATH} Checker big.block.3 big.block.3.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying big.block.4"
+java -cp ${CLASSPATH} Solver big.block.4 big.block.4.goal \
+| java -cp ${CLASSPATH} Checker big.block.4 big.block.4.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying big.tray.2"
+java -cp ${CLASSPATH} Solver big.tray.2 big.tray.2.goal \
+| java -cp ${CLASSPATH} Checker big.tray.2 big.tray.2.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying big.search.1"
+java -cp ${CLASSPATH} Solver big.search.1 big.search.1.goal \
+| java -cp ${CLASSPATH} Checker big.search.1 big.search.1.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying big.search.2"
+java -cp ${CLASSPATH} Solver big.search.2 big.search.2.goal \
+| java -cp ${CLASSPATH} Checker big.search.2 big.search.2.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying check.diff.blocks"
+java -cp ${CLASSPATH} Solver check.diff.blocks check.diff.blocks.goal \
+| java -cp ${CLASSPATH} Checker check.diff.blocks check.diff.blocks.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying enormous.full.1"
+java -cp ${CLASSPATH} Solver enormous.full.1 enormous.full.goal.1 \
+| java -cp ${CLASSPATH} Checker enormous.full.1 enormous.full.goal.1
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying enormous.full.1"
+java -cp ${CLASSPATH} Solver enormous.full.1 enormous.full.goal.2 \
+| java -cp ${CLASSPATH} Checker enormous.full.1 enormous.full.goal.2
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying forced.match.1"
+java -cp ${CLASSPATH} Solver forced.match.1 forced.match.1.goal \
+| java -cp ${CLASSPATH} Checker forced.match.1 forced.match.1.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying forced.match.1+90"
+java -cp ${CLASSPATH} Solver forced.match.1+90 forced.match.1+90.goal \
+| java -cp ${CLASSPATH} Checker forced.match.1+90 forced.match.1+90.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying forced.match.2"
+java -cp ${CLASSPATH} Solver forced.match.2 forced.match.2.goal \
+| java -cp ${CLASSPATH} Checker forced.match.2 forced.match.2.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying immed.match.0"
+java -cp ${CLASSPATH} Solver immed.match.0 immed.match.0.goal \
+| java -cp ${CLASSPATH} Checker immed.match.0 immed.match.0.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying immed.match.1"
+java -cp ${CLASSPATH} Solver immed.match.1 immed.match.1.goal \
+| java -cp ${CLASSPATH} Checker immed.match.1 immed.match.1.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying immed.match.2"
+java -cp ${CLASSPATH} Solver immed.match.2 immed.match.2.goal \
+| java -cp ${CLASSPATH} Checker immed.match.2 immed.match.2.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying immed.match.2+90"
+java -cp ${CLASSPATH} Solver immed.match.2+90 immed.match.2+90.goal \
+| java -cp ${CLASSPATH} Checker immed.match.2+90 immed.match.2+90.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying immed.match.2+180"
+java -cp ${CLASSPATH} Solver immed.match.2+180 immed.match.2+180.goal \
+| java -cp ${CLASSPATH} Checker immed.match.2+180 immed.match.2+180.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying immed.match.2+270"
+java -cp ${CLASSPATH} Solver immed.match.2+270 immed.match.2+270.goal \
+| java -cp ${CLASSPATH} Checker immed.match.2+270 immed.match.2+270.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying instant.match.0"
+java -cp ${CLASSPATH} Solver instant.match.0 instant.match.0.goal \
+| java -cp ${CLASSPATH} Checker instant.match.0 instant.match.0.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying instant.match.1"
+java -cp ${CLASSPATH} Solver instant.match.1 instant.match.1.goal \
+| java -cp ${CLASSPATH} Checker instant.match.1 instant.match.1.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying instant.match.1+90"
+java -cp ${CLASSPATH} Solver instant.match.1+90 instant.match.1+90.goal \
+| java -cp ${CLASSPATH} Checker instant.match.1+90 instant.match.1+90.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying instant.match.2"
+java -cp ${CLASSPATH} Solver instant.match.2 instant.match.2.goal \
+| java -cp ${CLASSPATH} Checker instant.match.2 instant.match.2.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying instant.match.3"
+java -cp ${CLASSPATH} Solver instant.match.3 instant.match.3.goal \
+| java -cp ${CLASSPATH} Checker instant.match.3 instant.match.3.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying instant.match.3+90"
+java -cp ${CLASSPATH} Solver instant.match.3+90 instant.match.3+90.goal \
+| java -cp ${CLASSPATH} Checker instant.match.3+90 instant.match.3+90.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying no.move.1"
+java -cp ${CLASSPATH} Solver no.move.1 no.move.1.goal.6 \
+| java -cp ${CLASSPATH} Checker no.move.1 no.move.1.goal.6
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying no.move.2"
+java -cp ${CLASSPATH} Solver no.move.2 no.move.2.goal.6 \
+| java -cp ${CLASSPATH} Checker no.move.2 no.move.2.goal.6
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying no.move.3"
+java -cp ${CLASSPATH} Solver no.move.3 no.move.3.goal.6 \
+| java -cp ${CLASSPATH} Checker no.move.3 no.move.3.goal.6
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying 140x140"
+java -cp ${CLASSPATH} Solver 140x140 140x140.goal \
+| java -cp ${CLASSPATH} Checker 140x140 140x140.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying small.search"
+java -cp ${CLASSPATH} Solver small.search small.search.goal \
+| java -cp ${CLASSPATH} Checker small.search small.search.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "trying small.search+90"
+java -cp ${CLASSPATH} Solver small.search+90 small.search+90.goal \
+| java -cp ${CLASSPATH} Checker small.search+90 small.search+90.goal
+if ($status != 0) echo "*** Wrong exit status"
+
+echo ""
+echo "*** Now try some unsolvable puzzles."
+echo ""
+echo "trying enormous.3"
+java -cp ${CLASSPATH} Solver enormous.3 enormous.deadend.1
+if ($status == 1) then
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying enormous.full.1"
+java -cp ${CLASSPATH} Solver enormous.full.1 enormous.full.deadend.2
+if ($status == 1) then
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying full.2"
+java -cp ${CLASSPATH} Solver full.2 easy.goal 
+if ($status == 1) then 
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying impossible.1"
+java -cp ${CLASSPATH} Solver impossible.1 impossible.1.goal
+if ($status == 1) then 
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying impossible.1+90"
+java -cp ${CLASSPATH} Solver impossible.1+90 impossible.1+90.goal
+if ($status == 1) then 
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying impossible.3"
+java -cp ${CLASSPATH} Solver impossible.3 impossible.3.goal
+if ($status == 1) then 
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying impossible.3x4"
+java -cp ${CLASSPATH} Solver impossible.3x4 impossible.3x4.goal.1
+if ($status == 1) then
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying impossible.4"
+java -cp ${CLASSPATH} Solver impossible.4 impossible.4.goal
+if ($status == 1) then
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying impossible.4+90"
+java -cp ${CLASSPATH} Solver impossible.4+90 impossible.4+90.goal
+if ($status == 1) then
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying impossible.4+180"
+java -cp ${CLASSPATH} Solver impossible.4+180 impossible.4+180.goal
+if ($status == 1) then
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying impossible.4+270"
+java -cp ${CLASSPATH} Solver impossible.4+270 impossible.4+270.goal
+if ($status == 1) then
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying impossible.4x3"
+java -cp ${CLASSPATH} Solver impossible.4x3 impossible.4x3.goal.1
+if ($status == 1) then
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying no.move.1"
+java -cp ${CLASSPATH} Solver no.move.1 no.move.1.deadend.goal.6
+if ($status == 1) then
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying no.move.2"
+java -cp ${CLASSPATH} Solver no.move.2 no.move.2.deadend.goal.6
+if ($status == 1) then
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying no.move.3"
+java -cp ${CLASSPATH} Solver no.move.3 no.move.3.deadend.goal.6
+if ($status == 1) then
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+
+echo ""
+echo "trying one.move.1"
+java -cp ${CLASSPATH} Solver one.move.1 one.move.1.deadend.goal.6
+if ($status == 1) then
+    echo "Verified"
+else
+    echo "*** Wrong exit status"
+endif
+

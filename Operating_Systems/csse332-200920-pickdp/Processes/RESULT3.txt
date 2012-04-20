@@ -1,0 +1,5 @@
+45 Child processes were created.
+Max: 27449
+Min: 574
+Mean: 1557.000000
+Standard Deviation: 4175.495300

@@ -1,0 +1,1008 @@
+# Schematic : PDCL (jhdparse)
+__projnav/TrafficSignalController_FSM_jhdparse_tcl.rsp
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# Schematic : PDCL (jhdparse)
+__projnav/TrafficSignalController_FSM_jhdparse_tcl.rsp
+# Schematic : PDCL (jhdparse)
+__projnav/TrafficSignalController_FSM_jhdparse_tcl.rsp
+# Schematic : View HDL Functional Model
+TrafficSignalController_FSM.vf
+# XST (Creating Lso File) : 
+TrafficSignalController_FSM.lso
+# xst flow : RunXST
+TrafficSignalController_FSM_summary.html
+# xst flow : RunXST
+TrafficSignalController_FSM.syr
+TrafficSignalController_FSM.prj
+TrafficSignalController_FSM.sprj
+TrafficSignalController_FSM.ana
+TrafficSignalController_FSM.stx
+TrafficSignalController_FSM.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+# Schematic : PDCL (jhdparse)
+__projnav/TrafficSignalController_FSM_jhdparse_tcl.rsp
+# Schematic : View HDL Functional Model
+TrafficSignalController_FSM.vf
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo"
+TrafficSignalController_TOPLEVEL.ngd
+TrafficSignalController_TOPLEVEL_ngdbuild.nav
+TrafficSignalController_TOPLEVEL.bld
+TrafficSignalController_TOPLEVEL.ucf.untf
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_summary.html
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_map.ncd
+TrafficSignalController_TOPLEVEL.ngm
+TrafficSignalController_TOPLEVEL.pcf
+TrafficSignalController_TOPLEVEL.nc1
+TrafficSignalController_TOPLEVEL.mrp
+TrafficSignalController_TOPLEVEL_map.mrp
+TrafficSignalController_TOPLEVEL.mdf
+TrafficSignalController_TOPLEVEL.cmd_log
+MAP_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+TrafficSignalController_TOPLEVEL_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+TrafficSignalController_TOPLEVEL.twr
+TrafficSignalController_TOPLEVEL.twx
+TrafficSignalController_TOPLEVEL.tsi
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Place & Route
+TrafficSignalController_TOPLEVEL_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+TrafficSignalController_TOPLEVEL.ncd
+TrafficSignalController_TOPLEVEL.par
+TrafficSignalController_TOPLEVEL.pad
+TrafficSignalController_TOPLEVEL_pad.txt
+TrafficSignalController_TOPLEVEL_pad.csv
+TrafficSignalController_TOPLEVEL.pad_txt
+TrafficSignalController_TOPLEVEL.dly
+reportgen.log
+TrafficSignalController_TOPLEVEL.xpi
+TrafficSignalController_TOPLEVEL.grf
+TrafficSignalController_TOPLEVEL.itr
+TrafficSignalController_TOPLEVEL_last_par.ncd
+TrafficSignalController_TOPLEVEL.placed_ncd_tracker
+TrafficSignalController_TOPLEVEL.routed_ncd_tracker
+TrafficSignalController_TOPLEVEL.cmd_log
+PAR_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+# Generate Programming File
+__projnav/TrafficSignalController_TOPLEVEL_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+TrafficSignalController_TOPLEVEL.ut
+# Generate Programming File
+TrafficSignalController_TOPLEVEL.bgn
+TrafficSignalController_TOPLEVEL.rbt
+TrafficSignalController_TOPLEVEL.ll
+TrafficSignalController_TOPLEVEL.msk
+TrafficSignalController_TOPLEVEL.drc
+TrafficSignalController_TOPLEVEL.nky
+TrafficSignalController_TOPLEVEL.bit
+TrafficSignalController_TOPLEVEL.bin
+TrafficSignalController_TOPLEVEL.isc
+TrafficSignalController_TOPLEVEL.cmd_log
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo"
+TrafficSignalController_TOPLEVEL.ngd
+TrafficSignalController_TOPLEVEL_ngdbuild.nav
+TrafficSignalController_TOPLEVEL.bld
+TrafficSignalController_TOPLEVEL.ucf.untf
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_summary.html
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_map.ncd
+TrafficSignalController_TOPLEVEL.ngm
+TrafficSignalController_TOPLEVEL.pcf
+TrafficSignalController_TOPLEVEL.nc1
+TrafficSignalController_TOPLEVEL.mrp
+TrafficSignalController_TOPLEVEL_map.mrp
+TrafficSignalController_TOPLEVEL.mdf
+TrafficSignalController_TOPLEVEL.cmd_log
+MAP_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+TrafficSignalController_TOPLEVEL_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+TrafficSignalController_TOPLEVEL.twr
+TrafficSignalController_TOPLEVEL.twx
+TrafficSignalController_TOPLEVEL.tsi
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Place & Route
+TrafficSignalController_TOPLEVEL_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+TrafficSignalController_TOPLEVEL.ncd
+TrafficSignalController_TOPLEVEL.par
+TrafficSignalController_TOPLEVEL.pad
+TrafficSignalController_TOPLEVEL_pad.txt
+TrafficSignalController_TOPLEVEL_pad.csv
+TrafficSignalController_TOPLEVEL.pad_txt
+TrafficSignalController_TOPLEVEL.dly
+reportgen.log
+TrafficSignalController_TOPLEVEL.xpi
+TrafficSignalController_TOPLEVEL.grf
+TrafficSignalController_TOPLEVEL.itr
+TrafficSignalController_TOPLEVEL_last_par.ncd
+TrafficSignalController_TOPLEVEL.placed_ncd_tracker
+TrafficSignalController_TOPLEVEL.routed_ncd_tracker
+TrafficSignalController_TOPLEVEL.cmd_log
+PAR_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+# Generate Programming File
+__projnav/TrafficSignalController_TOPLEVEL_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+TrafficSignalController_TOPLEVEL.ut
+# Generate Programming File
+TrafficSignalController_TOPLEVEL.bgn
+TrafficSignalController_TOPLEVEL.rbt
+TrafficSignalController_TOPLEVEL.ll
+TrafficSignalController_TOPLEVEL.msk
+TrafficSignalController_TOPLEVEL.drc
+TrafficSignalController_TOPLEVEL.nky
+TrafficSignalController_TOPLEVEL.bit
+TrafficSignalController_TOPLEVEL.bin
+TrafficSignalController_TOPLEVEL.isc
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo"
+TrafficSignalController_TOPLEVEL.ngd
+TrafficSignalController_TOPLEVEL_ngdbuild.nav
+TrafficSignalController_TOPLEVEL.bld
+TrafficSignalController_TOPLEVEL.ucf.untf
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_summary.html
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_map.ncd
+TrafficSignalController_TOPLEVEL.ngm
+TrafficSignalController_TOPLEVEL.pcf
+TrafficSignalController_TOPLEVEL.nc1
+TrafficSignalController_TOPLEVEL.mrp
+TrafficSignalController_TOPLEVEL_map.mrp
+TrafficSignalController_TOPLEVEL.mdf
+TrafficSignalController_TOPLEVEL.cmd_log
+MAP_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+TrafficSignalController_TOPLEVEL_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+TrafficSignalController_TOPLEVEL.twr
+TrafficSignalController_TOPLEVEL.twx
+TrafficSignalController_TOPLEVEL.tsi
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Place & Route
+TrafficSignalController_TOPLEVEL_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+TrafficSignalController_TOPLEVEL.ncd
+TrafficSignalController_TOPLEVEL.par
+TrafficSignalController_TOPLEVEL.pad
+TrafficSignalController_TOPLEVEL_pad.txt
+TrafficSignalController_TOPLEVEL_pad.csv
+TrafficSignalController_TOPLEVEL.pad_txt
+TrafficSignalController_TOPLEVEL.dly
+reportgen.log
+TrafficSignalController_TOPLEVEL.xpi
+TrafficSignalController_TOPLEVEL.grf
+TrafficSignalController_TOPLEVEL.itr
+TrafficSignalController_TOPLEVEL_last_par.ncd
+TrafficSignalController_TOPLEVEL.placed_ncd_tracker
+TrafficSignalController_TOPLEVEL.routed_ncd_tracker
+TrafficSignalController_TOPLEVEL.cmd_log
+PAR_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+# Generate Programming File
+__projnav/TrafficSignalController_TOPLEVEL_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+TrafficSignalController_TOPLEVEL.ut
+# Generate Programming File
+TrafficSignalController_TOPLEVEL.bgn
+TrafficSignalController_TOPLEVEL.rbt
+TrafficSignalController_TOPLEVEL.ll
+TrafficSignalController_TOPLEVEL.msk
+TrafficSignalController_TOPLEVEL.drc
+TrafficSignalController_TOPLEVEL.nky
+TrafficSignalController_TOPLEVEL.bit
+TrafficSignalController_TOPLEVEL.bin
+TrafficSignalController_TOPLEVEL.isc
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo"
+TrafficSignalController_TOPLEVEL.ngd
+TrafficSignalController_TOPLEVEL_ngdbuild.nav
+TrafficSignalController_TOPLEVEL.bld
+TrafficSignalController_TOPLEVEL.ucf.untf
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_summary.html
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_map.ncd
+TrafficSignalController_TOPLEVEL.ngm
+TrafficSignalController_TOPLEVEL.pcf
+TrafficSignalController_TOPLEVEL.nc1
+TrafficSignalController_TOPLEVEL.mrp
+TrafficSignalController_TOPLEVEL_map.mrp
+TrafficSignalController_TOPLEVEL.mdf
+TrafficSignalController_TOPLEVEL.cmd_log
+MAP_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+TrafficSignalController_TOPLEVEL_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+TrafficSignalController_TOPLEVEL.twr
+TrafficSignalController_TOPLEVEL.twx
+TrafficSignalController_TOPLEVEL.tsi
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Place & Route
+TrafficSignalController_TOPLEVEL_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+TrafficSignalController_TOPLEVEL.ncd
+TrafficSignalController_TOPLEVEL.par
+TrafficSignalController_TOPLEVEL.pad
+TrafficSignalController_TOPLEVEL_pad.txt
+TrafficSignalController_TOPLEVEL_pad.csv
+TrafficSignalController_TOPLEVEL.pad_txt
+TrafficSignalController_TOPLEVEL.dly
+reportgen.log
+TrafficSignalController_TOPLEVEL.xpi
+TrafficSignalController_TOPLEVEL.grf
+TrafficSignalController_TOPLEVEL.itr
+TrafficSignalController_TOPLEVEL_last_par.ncd
+TrafficSignalController_TOPLEVEL.placed_ncd_tracker
+TrafficSignalController_TOPLEVEL.routed_ncd_tracker
+TrafficSignalController_TOPLEVEL.cmd_log
+PAR_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+# Generate Programming File
+__projnav/TrafficSignalController_TOPLEVEL_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+TrafficSignalController_TOPLEVEL.ut
+# Generate Programming File
+TrafficSignalController_TOPLEVEL.bgn
+TrafficSignalController_TOPLEVEL.rbt
+TrafficSignalController_TOPLEVEL.ll
+TrafficSignalController_TOPLEVEL.msk
+TrafficSignalController_TOPLEVEL.drc
+TrafficSignalController_TOPLEVEL.nky
+TrafficSignalController_TOPLEVEL.bit
+TrafficSignalController_TOPLEVEL.bin
+TrafficSignalController_TOPLEVEL.isc
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo"
+TrafficSignalController_TOPLEVEL.ngd
+TrafficSignalController_TOPLEVEL_ngdbuild.nav
+TrafficSignalController_TOPLEVEL.bld
+TrafficSignalController_TOPLEVEL.ucf.untf
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_summary.html
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_map.ncd
+TrafficSignalController_TOPLEVEL.ngm
+TrafficSignalController_TOPLEVEL.pcf
+TrafficSignalController_TOPLEVEL.nc1
+TrafficSignalController_TOPLEVEL.mrp
+TrafficSignalController_TOPLEVEL_map.mrp
+TrafficSignalController_TOPLEVEL.mdf
+TrafficSignalController_TOPLEVEL.cmd_log
+MAP_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+TrafficSignalController_TOPLEVEL_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+TrafficSignalController_TOPLEVEL.twr
+TrafficSignalController_TOPLEVEL.twx
+TrafficSignalController_TOPLEVEL.tsi
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Place & Route
+TrafficSignalController_TOPLEVEL_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+TrafficSignalController_TOPLEVEL.ncd
+TrafficSignalController_TOPLEVEL.par
+TrafficSignalController_TOPLEVEL.pad
+TrafficSignalController_TOPLEVEL_pad.txt
+TrafficSignalController_TOPLEVEL_pad.csv
+TrafficSignalController_TOPLEVEL.pad_txt
+TrafficSignalController_TOPLEVEL.dly
+reportgen.log
+TrafficSignalController_TOPLEVEL.xpi
+TrafficSignalController_TOPLEVEL.grf
+TrafficSignalController_TOPLEVEL.itr
+TrafficSignalController_TOPLEVEL_last_par.ncd
+TrafficSignalController_TOPLEVEL.placed_ncd_tracker
+TrafficSignalController_TOPLEVEL.routed_ncd_tracker
+TrafficSignalController_TOPLEVEL.cmd_log
+PAR_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+# Generate Programming File
+__projnav/TrafficSignalController_TOPLEVEL_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+TrafficSignalController_TOPLEVEL.ut
+# Generate Programming File
+TrafficSignalController_TOPLEVEL.bgn
+TrafficSignalController_TOPLEVEL.rbt
+TrafficSignalController_TOPLEVEL.ll
+TrafficSignalController_TOPLEVEL.msk
+TrafficSignalController_TOPLEVEL.drc
+TrafficSignalController_TOPLEVEL.nky
+TrafficSignalController_TOPLEVEL.bit
+TrafficSignalController_TOPLEVEL.bin
+TrafficSignalController_TOPLEVEL.isc
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo"
+TrafficSignalController_TOPLEVEL.ngd
+TrafficSignalController_TOPLEVEL_ngdbuild.nav
+TrafficSignalController_TOPLEVEL.bld
+TrafficSignalController_TOPLEVEL.ucf.untf
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_summary.html
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_map.ncd
+TrafficSignalController_TOPLEVEL.ngm
+TrafficSignalController_TOPLEVEL.pcf
+TrafficSignalController_TOPLEVEL.nc1
+TrafficSignalController_TOPLEVEL.mrp
+TrafficSignalController_TOPLEVEL_map.mrp
+TrafficSignalController_TOPLEVEL.mdf
+TrafficSignalController_TOPLEVEL.cmd_log
+MAP_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+TrafficSignalController_TOPLEVEL_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+TrafficSignalController_TOPLEVEL.twr
+TrafficSignalController_TOPLEVEL.twx
+TrafficSignalController_TOPLEVEL.tsi
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Place & Route
+TrafficSignalController_TOPLEVEL_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+TrafficSignalController_TOPLEVEL.ncd
+TrafficSignalController_TOPLEVEL.par
+TrafficSignalController_TOPLEVEL.pad
+TrafficSignalController_TOPLEVEL_pad.txt
+TrafficSignalController_TOPLEVEL_pad.csv
+TrafficSignalController_TOPLEVEL.pad_txt
+TrafficSignalController_TOPLEVEL.dly
+reportgen.log
+TrafficSignalController_TOPLEVEL.xpi
+TrafficSignalController_TOPLEVEL.grf
+TrafficSignalController_TOPLEVEL.itr
+TrafficSignalController_TOPLEVEL_last_par.ncd
+TrafficSignalController_TOPLEVEL.placed_ncd_tracker
+TrafficSignalController_TOPLEVEL.routed_ncd_tracker
+TrafficSignalController_TOPLEVEL.cmd_log
+PAR_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+# Generate Programming File
+__projnav/TrafficSignalController_TOPLEVEL_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+TrafficSignalController_TOPLEVEL.ut
+# Generate Programming File
+TrafficSignalController_TOPLEVEL.bgn
+TrafficSignalController_TOPLEVEL.rbt
+TrafficSignalController_TOPLEVEL.ll
+TrafficSignalController_TOPLEVEL.msk
+TrafficSignalController_TOPLEVEL.drc
+TrafficSignalController_TOPLEVEL.nky
+TrafficSignalController_TOPLEVEL.bit
+TrafficSignalController_TOPLEVEL.bin
+TrafficSignalController_TOPLEVEL.isc
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo"
+TrafficSignalController_TOPLEVEL.ngd
+TrafficSignalController_TOPLEVEL_ngdbuild.nav
+TrafficSignalController_TOPLEVEL.bld
+TrafficSignalController_TOPLEVEL.ucf.untf
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_summary.html
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_map.ncd
+TrafficSignalController_TOPLEVEL.ngm
+TrafficSignalController_TOPLEVEL.pcf
+TrafficSignalController_TOPLEVEL.nc1
+TrafficSignalController_TOPLEVEL.mrp
+TrafficSignalController_TOPLEVEL_map.mrp
+TrafficSignalController_TOPLEVEL.mdf
+TrafficSignalController_TOPLEVEL.cmd_log
+MAP_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+TrafficSignalController_TOPLEVEL_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+TrafficSignalController_TOPLEVEL.twr
+TrafficSignalController_TOPLEVEL.twx
+TrafficSignalController_TOPLEVEL.tsi
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Place & Route
+TrafficSignalController_TOPLEVEL_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+TrafficSignalController_TOPLEVEL.ncd
+TrafficSignalController_TOPLEVEL.par
+TrafficSignalController_TOPLEVEL.pad
+TrafficSignalController_TOPLEVEL_pad.txt
+TrafficSignalController_TOPLEVEL_pad.csv
+TrafficSignalController_TOPLEVEL.pad_txt
+TrafficSignalController_TOPLEVEL.dly
+reportgen.log
+TrafficSignalController_TOPLEVEL.xpi
+TrafficSignalController_TOPLEVEL.grf
+TrafficSignalController_TOPLEVEL.itr
+TrafficSignalController_TOPLEVEL_last_par.ncd
+TrafficSignalController_TOPLEVEL.placed_ncd_tracker
+TrafficSignalController_TOPLEVEL.routed_ncd_tracker
+TrafficSignalController_TOPLEVEL.cmd_log
+PAR_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+# Generate Programming File
+__projnav/TrafficSignalController_TOPLEVEL_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+TrafficSignalController_TOPLEVEL.ut
+# Generate Programming File
+TrafficSignalController_TOPLEVEL.bgn
+TrafficSignalController_TOPLEVEL.rbt
+TrafficSignalController_TOPLEVEL.ll
+TrafficSignalController_TOPLEVEL.msk
+TrafficSignalController_TOPLEVEL.drc
+TrafficSignalController_TOPLEVEL.nky
+TrafficSignalController_TOPLEVEL.bit
+TrafficSignalController_TOPLEVEL.bin
+TrafficSignalController_TOPLEVEL.isc
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo"
+TrafficSignalController_TOPLEVEL.ngd
+TrafficSignalController_TOPLEVEL_ngdbuild.nav
+TrafficSignalController_TOPLEVEL.bld
+TrafficSignalController_TOPLEVEL.ucf.untf
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_summary.html
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_map.ncd
+TrafficSignalController_TOPLEVEL.ngm
+TrafficSignalController_TOPLEVEL.pcf
+TrafficSignalController_TOPLEVEL.nc1
+TrafficSignalController_TOPLEVEL.mrp
+TrafficSignalController_TOPLEVEL_map.mrp
+TrafficSignalController_TOPLEVEL.mdf
+TrafficSignalController_TOPLEVEL.cmd_log
+MAP_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+TrafficSignalController_TOPLEVEL_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+TrafficSignalController_TOPLEVEL.twr
+TrafficSignalController_TOPLEVEL.twx
+TrafficSignalController_TOPLEVEL.tsi
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Place & Route
+TrafficSignalController_TOPLEVEL_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+TrafficSignalController_TOPLEVEL.ncd
+TrafficSignalController_TOPLEVEL.par
+TrafficSignalController_TOPLEVEL.pad
+TrafficSignalController_TOPLEVEL_pad.txt
+TrafficSignalController_TOPLEVEL_pad.csv
+TrafficSignalController_TOPLEVEL.pad_txt
+TrafficSignalController_TOPLEVEL.dly
+reportgen.log
+TrafficSignalController_TOPLEVEL.xpi
+TrafficSignalController_TOPLEVEL.grf
+TrafficSignalController_TOPLEVEL.itr
+TrafficSignalController_TOPLEVEL_last_par.ncd
+TrafficSignalController_TOPLEVEL.placed_ncd_tracker
+TrafficSignalController_TOPLEVEL.routed_ncd_tracker
+TrafficSignalController_TOPLEVEL.cmd_log
+PAR_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+# Generate Programming File
+__projnav/TrafficSignalController_TOPLEVEL_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+TrafficSignalController_TOPLEVEL.ut
+# Generate Programming File
+TrafficSignalController_TOPLEVEL.bgn
+TrafficSignalController_TOPLEVEL.rbt
+TrafficSignalController_TOPLEVEL.ll
+TrafficSignalController_TOPLEVEL.msk
+TrafficSignalController_TOPLEVEL.drc
+TrafficSignalController_TOPLEVEL.nky
+TrafficSignalController_TOPLEVEL.bit
+TrafficSignalController_TOPLEVEL.bin
+TrafficSignalController_TOPLEVEL.isc
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo"
+TrafficSignalController_TOPLEVEL.ngd
+TrafficSignalController_TOPLEVEL_ngdbuild.nav
+TrafficSignalController_TOPLEVEL.bld
+TrafficSignalController_TOPLEVEL.ucf.untf
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_summary.html
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_map.ncd
+TrafficSignalController_TOPLEVEL.ngm
+TrafficSignalController_TOPLEVEL.pcf
+TrafficSignalController_TOPLEVEL.nc1
+TrafficSignalController_TOPLEVEL.mrp
+TrafficSignalController_TOPLEVEL_map.mrp
+TrafficSignalController_TOPLEVEL.mdf
+TrafficSignalController_TOPLEVEL.cmd_log
+MAP_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+TrafficSignalController_TOPLEVEL_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+TrafficSignalController_TOPLEVEL.twr
+TrafficSignalController_TOPLEVEL.twx
+TrafficSignalController_TOPLEVEL.tsi
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Place & Route
+TrafficSignalController_TOPLEVEL_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+TrafficSignalController_TOPLEVEL.ncd
+TrafficSignalController_TOPLEVEL.par
+TrafficSignalController_TOPLEVEL.pad
+TrafficSignalController_TOPLEVEL_pad.txt
+TrafficSignalController_TOPLEVEL_pad.csv
+TrafficSignalController_TOPLEVEL.pad_txt
+TrafficSignalController_TOPLEVEL.dly
+reportgen.log
+TrafficSignalController_TOPLEVEL.xpi
+TrafficSignalController_TOPLEVEL.grf
+TrafficSignalController_TOPLEVEL.itr
+TrafficSignalController_TOPLEVEL_last_par.ncd
+TrafficSignalController_TOPLEVEL.placed_ncd_tracker
+TrafficSignalController_TOPLEVEL.routed_ncd_tracker
+TrafficSignalController_TOPLEVEL.cmd_log
+PAR_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+# Generate Programming File
+__projnav/TrafficSignalController_TOPLEVEL_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+TrafficSignalController_TOPLEVEL.ut
+# Generate Programming File
+TrafficSignalController_TOPLEVEL.bgn
+TrafficSignalController_TOPLEVEL.rbt
+TrafficSignalController_TOPLEVEL.ll
+TrafficSignalController_TOPLEVEL.msk
+TrafficSignalController_TOPLEVEL.drc
+TrafficSignalController_TOPLEVEL.nky
+TrafficSignalController_TOPLEVEL.bit
+TrafficSignalController_TOPLEVEL.bin
+TrafficSignalController_TOPLEVEL.isc
+TrafficSignalController_TOPLEVEL.cmd_log
+# XST (Creating Lso File) : 
+TrafficSignalController_TOPLEVEL.lso
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL.syr
+TrafficSignalController_TOPLEVEL.prj
+TrafficSignalController_TOPLEVEL.sprj
+TrafficSignalController_TOPLEVEL.ana
+TrafficSignalController_TOPLEVEL.stx
+TrafficSignalController_TOPLEVEL.cmd_log
+TrafficSignalController_TOPLEVEL.ngc
+TrafficSignalController_TOPLEVEL.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\trafficcontroller/_ngo"
+TrafficSignalController_TOPLEVEL.ngd
+TrafficSignalController_TOPLEVEL_ngdbuild.nav
+TrafficSignalController_TOPLEVEL.bld
+TrafficSignalController_TOPLEVEL.ucf.untf
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_summary.html
+# Implementation : Map
+TrafficSignalController_TOPLEVEL_map.ncd
+TrafficSignalController_TOPLEVEL.ngm
+TrafficSignalController_TOPLEVEL.pcf
+TrafficSignalController_TOPLEVEL.nc1
+TrafficSignalController_TOPLEVEL.mrp
+TrafficSignalController_TOPLEVEL_map.mrp
+TrafficSignalController_TOPLEVEL.mdf
+TrafficSignalController_TOPLEVEL.cmd_log
+MAP_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+TrafficSignalController_TOPLEVEL_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+TrafficSignalController_TOPLEVEL.twr
+TrafficSignalController_TOPLEVEL.twx
+TrafficSignalController_TOPLEVEL.tsi
+TrafficSignalController_TOPLEVEL.cmd_log
+# Implementation : Place & Route
+TrafficSignalController_TOPLEVEL_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+TrafficSignalController_TOPLEVEL.ncd
+TrafficSignalController_TOPLEVEL.par
+TrafficSignalController_TOPLEVEL.pad
+TrafficSignalController_TOPLEVEL_pad.txt
+TrafficSignalController_TOPLEVEL_pad.csv
+TrafficSignalController_TOPLEVEL.pad_txt
+TrafficSignalController_TOPLEVEL.dly
+reportgen.log
+TrafficSignalController_TOPLEVEL.xpi
+TrafficSignalController_TOPLEVEL.grf
+TrafficSignalController_TOPLEVEL.itr
+TrafficSignalController_TOPLEVEL_last_par.ncd
+TrafficSignalController_TOPLEVEL.placed_ncd_tracker
+TrafficSignalController_TOPLEVEL.routed_ncd_tracker
+TrafficSignalController_TOPLEVEL.cmd_log
+PAR_NO_GUIDE_FILE_CPF "TrafficSignalController_TOPLEVEL"
+# Generate Programming File
+__projnav/TrafficSignalController_TOPLEVEL_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+TrafficSignalController_TOPLEVEL.ut
+# Generate Programming File
+TrafficSignalController_TOPLEVEL.bgn
+TrafficSignalController_TOPLEVEL.rbt
+TrafficSignalController_TOPLEVEL.ll
+TrafficSignalController_TOPLEVEL.msk
+TrafficSignalController_TOPLEVEL.drc
+TrafficSignalController_TOPLEVEL.nky
+TrafficSignalController_TOPLEVEL.bit
+TrafficSignalController_TOPLEVEL.bin
+TrafficSignalController_TOPLEVEL.isc
+TrafficSignalController_TOPLEVEL.cmd_log
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# xst flow : RunXST
+TrafficSignalController_TOPLEVEL_summary.html
+# XST (Creating Lso File) : 
+PWD_FinishLine_TB.lso
+# xst flow : RunXST
+PWD_FinishLine_TB_summary.html
+# xst flow : RunXST
+PWD_FinishLine_TB.syr
+PWD_FinishLine_TB.prj
+PWD_FinishLine_TB.sprj
+PWD_FinishLine_TB.ana
+PWD_FinishLine_TB.stx
+PWD_FinishLine_TB.cmd_log

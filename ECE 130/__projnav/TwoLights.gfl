@@ -1,0 +1,125 @@
+# xst flow : RunXST
+TwoLights_summary.html
+ProjNav -> New -> Test Fixture
+__projnav/createTF.err
+# Edit Constraints (Text)
+# XST (Creating Lso File) : 
+TwoLights.lso
+# xst flow : RunXST
+TwoLights_summary.html
+# xst flow : RunXST
+TwoLights.syr
+TwoLights.prj
+TwoLights.sprj
+TwoLights.ana
+TwoLights.stx
+TwoLights.cmd_log
+TwoLights.ngc
+TwoLights.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\ece 130/_ngo"
+TwoLights.ngd
+TwoLights_ngdbuild.nav
+TwoLights.bld
+TwoLights.ucf.untf
+TwoLights.cmd_log
+# XST (Creating Lso File) : 
+TwoLights.lso
+# xst flow : RunXST
+TwoLights_summary.html
+# xst flow : RunXST
+TwoLights.syr
+TwoLights.prj
+TwoLights.sprj
+TwoLights.ana
+TwoLights.stx
+TwoLights.cmd_log
+TwoLights.ngc
+TwoLights.ngr
+# View Technology Schematic
+TwoLights.ngr
+TwoLights.ngc
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\ece 130/_ngo"
+TwoLights.ngd
+TwoLights_ngdbuild.nav
+TwoLights.bld
+TwoLights.ucf.untf
+TwoLights.cmd_log
+# Implementation : Map
+TwoLights_summary.html
+# Implementation : Map
+TwoLights_map.ncd
+TwoLights.ngm
+TwoLights.pcf
+TwoLights.nc1
+TwoLights.mrp
+TwoLights_map.mrp
+TwoLights.mdf
+TwoLights.cmd_log
+MAP_NO_GUIDE_FILE_CPF "TwoLights"
+TwoLights_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+TwoLights.twr
+TwoLights.twx
+TwoLights.tsi
+TwoLights.cmd_log
+# Implementation : Place & Route
+TwoLights_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+TwoLights.ncd
+TwoLights.par
+TwoLights.pad
+TwoLights_pad.txt
+TwoLights_pad.csv
+TwoLights.pad_txt
+TwoLights.dly
+reportgen.log
+TwoLights.xpi
+TwoLights.grf
+TwoLights.itr
+TwoLights_last_par.ncd
+TwoLights.placed_ncd_tracker
+TwoLights.routed_ncd_tracker
+TwoLights.cmd_log
+PAR_NO_GUIDE_FILE_CPF "TwoLights"
+# Generate Programming File
+__projnav/TwoLights_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+TwoLights.ut
+# Generate Programming File
+TwoLights.bgn
+TwoLights.rbt
+TwoLights.ll
+TwoLights.msk
+TwoLights.drc
+TwoLights.nky
+TwoLights.bit
+TwoLights.bin
+TwoLights.isc
+TwoLights.cmd_log
+# Generate Programming File
+__projnav/TwoLights_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+TwoLights.ut
+# Generate Programming File
+TwoLights.bgn
+TwoLights.rbt
+TwoLights.ll
+TwoLights.msk
+TwoLights.drc
+TwoLights.nky
+TwoLights.bit
+TwoLights.bin
+TwoLights.isc
+TwoLights.cmd_log
+# xst flow : RunXST
+TwoLights_summary.html
+# xst flow : RunXST
+TwoLights_summary.html

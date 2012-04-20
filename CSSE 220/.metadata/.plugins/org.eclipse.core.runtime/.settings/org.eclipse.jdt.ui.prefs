@@ -1,0 +1,22 @@
+#Wed Feb 13 21:05:51 EST 2008
+spelling_locale=en_US
+markOccurrences=false
+command=C\:\\Program Files\\Java\\jdk1.6.0_01\\bin\\javadoc.exe
+org.eclipse.jdt.ui.text.templates_migrated=true
+useAnnotationsPrefPage=true
+eclipse.preferences.version=1
+org.eclipse.jface.textfont=1|Courier New|10|0|WINDOWS|1|-13|0|0|0|400|0|0|0|0|3|2|1|49|Courier New;
+tabWidthPropagated=true
+org.eclipse.jdt.ui.visibility.order=B,V,R,D,
+org.eclipse.jdt.ui.editor.tab.width=
+fontPropagated=true
+org.eclipse.jdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+org.eclipse.jdt.ui.javadoclocations.migrated=true
+proposalOrderMigrated=true
+outlinesortoption=T,SF,SI,SM,F,I,C,M,
+org.eclipse.jdt.ui.formatterprofiles.version=10
+useQuickDiffPrefPage=true
+org.eclipse.jdt.ui.text.custom_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
+internal.default.compliance=default
+content_assist_lru_history=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><history maxLHS\="100" maxRHS\="10"><lhs name\="java.awt.geom.Point2D"><rhs name\="java.awt.geom.Point2D$Double"/></lhs><lhs name\="java.lang.Cloneable"><rhs name\="java.awt.geom.Point2D$Double"/><rhs name\="java.awt.Dimension"/></lhs><lhs name\="java.awt.geom.Point2D$Double"><rhs name\="java.awt.geom.Point2D$Double"/></lhs><lhs name\="Hardy$RootClass"><rhs name\="Hardy$RootClass"/></lhs><lhs name\="java.awt.geom.Dimension2D"><rhs name\="java.awt.Dimension"/></lhs><lhs name\="java.awt.Dimension"><rhs name\="java.awt.Dimension"/></lhs></history>
+org.eclipse.jdt.ui.text.code_templates_migrated=true

@@ -1,0 +1,34 @@
+# DO NOT EDIT -- automatically generated design data file -- DO NOT EDIT!!!
+list \
+workdir {C:/DOERING/CLASS/ECE130/2006-07_1F/XILINX/PWD_JUDGE_SYSTEM} \
+cdslib {C:/doering/Class/ECE130/2006-07_1F/xilinx/PWD_Judge_System/cds.lib} \
+worklib {worklib} \
+mode {0} \
+filters {*.v *.vf} \
+sesslist {} \
+ToolOption_NCVhdl {-logfile ncvhdl.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog { -work worklib -cdslib C:/doering/Class/ECE130/2006-07_1F/xilinx/PWD_Judge_System/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/AMS { -work worklib -cdslib C:/doering/Class/ECE130/2006-07_1F/xilinx/PWD_Judge_System/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVerilog {-gui {} +linedebug +access rwc -q} \
+ToolOption_NCElab { -work worklib -cdslib C:/doering/Class/ECE130/2006-07_1F/xilinx/PWD_Judge_System/cds.lib -logfile ncelab.log -errormax 15 -access +wc -status} \
+ToolOption_NCSim { -gui -cdslib C:/doering/Class/ECE130/2006-07_1F/xilinx/PWD_Judge_System/cds.lib -logfile ncsim.log -errormax 15 -status} \
+ToolOption_NCSdfc {-logfile ncsdfc.log -compile -status} \
+ToolOption_ICT {} \
+ToolOption_Update {-errormax 15 -force} \
+ToolOption_SimVision {} \
+ToolOption_PLI Wizard {} \
+ToolOption_NCShell {-view shell -logfile ncshell.log -errormax 15 -suffix .v} \
+ToolOption_NCProtect {-logfile ncprotect.log} \
+ToolOption_NCVhdl {-logfile ncvhdl.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog { -work worklib -cdslib C:/doering/Class/ECE130/2006-07_1F/xilinx/PWD_Judge_System/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVlog/AMS { -work worklib -cdslib C:/doering/Class/ECE130/2006-07_1F/xilinx/PWD_Judge_System/cds.lib -logfile ncvlog.log -errormax 15 -update -linedebug -status} \
+ToolOption_NCVerilog {-gui {} +linedebug +access rwc -q} \
+ToolOption_NCElab { -work worklib -cdslib C:/doering/Class/ECE130/2006-07_1F/xilinx/PWD_Judge_System/cds.lib -logfile ncelab.log -errormax 15 -access +wc -status} \
+ToolOption_NCSim { -gui -cdslib C:/doering/Class/ECE130/2006-07_1F/xilinx/PWD_Judge_System/cds.lib -logfile ncsim.log -errormax 15 -status} \
+ToolOption_NCSdfc {-logfile ncsdfc.log -compile -status} \
+ToolOption_ICT {} \
+ToolOption_Update {-errormax 15 -force} \
+ToolOption_SimVision {} \
+ToolOption_PLI Wizard {} \
+ToolOption_NCShell {-view shell -logfile ncshell.log -errormax 15 -suffix .v} \
+ToolOption_NCProtect {-logfile ncprotect.log} \

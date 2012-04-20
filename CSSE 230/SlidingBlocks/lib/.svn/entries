@@ -1,0 +1,54 @@
+8
+
+dir
+127
+http://svn.cs.rose-hulman.edu/repos/csse230-sliding-200830-28/SlidingBlocks/lib
+http://svn.cs.rose-hulman.edu/repos/csse230-sliding-200830-28
+
+
+
+2008-04-13T14:11:55.752185Z
+1
+anderson
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+8f3b3355-b64a-0410-8853-c3a1274cb1cb
+
+TrayVerifier.class
+file
+
+
+
+
+2008-04-30T21:35:41.459646Z
+e2d2f9b48f929254f8622d7b4e491a1c
+2008-04-13T14:11:55.752185Z
+1
+anderson
+has-props
+
+Checker.class
+file
+
+
+
+
+2008-04-30T21:35:41.475272Z
+148f0d20259fb8e8392a39bd3553e214
+2008-04-13T14:11:55.752185Z
+1
+anderson
+has-props
+

@@ -1,0 +1,161 @@
+##### >>>   UCF File for Xilinx Spartan-3 FPGA Board   <<< #####
+### Created by Spartan-3 UCF Generator on 12/5/2007 at 14:54
+
+### Stage light control signals on B1 connector
+### Ground: Pin 1 (top row)
+NET oLight<15> LOC=C10;  # Pin  4 (bottom row)
+NET oLight<14> LOC=E10;  # Pin  6 (bottom row)
+NET oLight<13> LOC=C11;  # Pin  8 (bottom row)
+NET oLight<12> LOC=D11;  # Pin 10 (bottom row)
+NET oLight<11> LOC=C12;  # Pin 12  (bottom row)
+NET oLight<10> LOC=D12;  # Pin 14 (bottom row)
+NET oLight<9>  LOC=E11;  # Pin 16 (bottom row)
+NET oLight<8>  LOC=B16;  # Pin 18 (bottom row)
+NET oLight<7>  LOC=C15;  # Pin 21 (top row)
+NET oLight<6>  LOC=D15;  # Pin 23 (top row)
+NET oLight<5>  LOC=E15;  # Pin 25 (top row)
+NET oLight<4>  LOC=F15;  # Pin 27 (top row)
+NET oLight<3>  LOC=G16;  # Pin 29 (top row)
+NET oLight<2>  LOC=H16;  # Pin 31 (top row)
+NET oLight<1>  LOC=K16;  # Pin 33 (top row)
+NET oLight<0>  LOC=L15;  # Pin 35 (top row)
+
+### Spartan-3 Clock Oscillator:
+NET gClock LOC=T9;  # CLK - 50MHz oscillator
+
+### Spartan-3 Pushbutton Switches:
+NET gReset LOC=L14;  # BTN3 (active high)
+CONFIG PROHIBIT=L13;
+CONFIG PROHIBIT=M14;
+CONFIG PROHIBIT=M13;
+
+### Spartan-3 Slide Switches:
+NET iShowMIDI LOC=K13;  # SW7 (active high when up)
+CONFIG PROHIBIT=K14;
+CONFIG PROHIBIT=J13;
+CONFIG PROHIBIT=J14;
+CONFIG PROHIBIT=H13;
+CONFIG PROHIBIT=H14;
+CONFIG PROHIBIT=G12;
+NET iScheme LOC=F12;  # SW0 (active high when up)
+
+
+
+### Spartan-3 Discrete LEDs:
+NET oLED<7> LOC=P11;  # LD7 (active high)
+NET oLED<6> LOC=P12;  # LD6 (active high)
+NET oLED<5> LOC=N12;  # LD5 (active high)
+NET oLED<4> LOC=P13;  # LD4 (active high)
+NET oLED<3> LOC=N14;  # LD3 (active high)
+NET oLED<2> LOC=L12;  # LD2 (active high)
+NET oLED<1> LOC=P14;  # LD1 (active high)
+NET oLED<0> LOC=K12;  # LD0 (active high)
+
+
+### Spartan-3 7-Segment LED:   digit enables:
+NET oDigit<3> LOC=E13;  # left digit (active low)
+NET oDigit<2> LOC=F14;  # middle left digit (active low)
+NET oDigit<1> LOC=G14;  # middle right digit (active low)
+NET oDigit<0> LOC=D14;  # right digit (active low)
+
+### Spartan-3 7-Segment LED:   segment enables:
+NET oSegment<7> LOC=E14;  # LED display segment a (active low)
+NET oSegment<6> LOC=G13;  # LED display segment b (active low)
+NET oSegment<5> LOC=N15;  # LED display segment c (active low)
+NET oSegment<4> LOC=P15;  # LED display segment d (active low)
+NET oSegment<3> LOC=R16;  # LED display segment e (active low)
+NET oSegment<2> LOC=F13;  # LED display segment f (active low)
+NET oSegment<1> LOC=N16;  # LED display segment g (active low)
+NET oSegment<0> LOC=P16;  # LED display decimal point (active low)
+
+
+
+### Spartan-3 Serial Port (DB9 connector):
+NET iMIDI LOC=T13;  # RXD - receive data
+CONFIG PROHIBIT=R13;
+
+
+CONFIG PROHIBIT=N10;
+CONFIG PROHIBIT=T14;
+
+
+CONFIG PROHIBIT=M16;
+CONFIG PROHIBIT=M15;
+
+
+CONFIG PROHIBIT=R12;
+CONFIG PROHIBIT=T12;
+CONFIG PROHIBIT=R11;
+CONFIG PROHIBIT=R9;
+CONFIG PROHIBIT=T10;
+
+
+
+CONFIG PROHIBIT=P7;
+CONFIG PROHIBIT=T4;
+CONFIG PROHIBIT=P6;
+
+
+CONFIG PROHIBIT=N5;
+CONFIG PROHIBIT=R4;
+CONFIG PROHIBIT=P5;
+
+
+CONFIG PROHIBIT=K4;
+CONFIG PROHIBIT=G3;
+
+
+CONFIG PROHIBIT=L3;
+CONFIG PROHIBIT=K5;
+CONFIG PROHIBIT=K3;
+CONFIG PROHIBIT=J3;
+CONFIG PROHIBIT=J4;
+CONFIG PROHIBIT=H4;
+CONFIG PROHIBIT=H3;
+CONFIG PROHIBIT=G5;
+CONFIG PROHIBIT=E4;
+CONFIG PROHIBIT=E3;
+CONFIG PROHIBIT=F4;
+CONFIG PROHIBIT=F3;
+CONFIG PROHIBIT=G4;
+CONFIG PROHIBIT=L4;
+CONFIG PROHIBIT=M3;
+CONFIG PROHIBIT=M4;
+CONFIG PROHIBIT=N3;
+CONFIG PROHIBIT=L5;
+
+
+CONFIG PROHIBIT=R1;
+CONFIG PROHIBIT=P1;
+CONFIG PROHIBIT=L2;
+CONFIG PROHIBIT=J2;
+CONFIG PROHIBIT=H1;
+CONFIG PROHIBIT=F2;
+CONFIG PROHIBIT=P8;
+CONFIG PROHIBIT=D3;
+CONFIG PROHIBIT=B1;
+CONFIG PROHIBIT=C1;
+CONFIG PROHIBIT=C2;
+CONFIG PROHIBIT=R5;
+CONFIG PROHIBIT=T5;
+CONFIG PROHIBIT=R6;
+CONFIG PROHIBIT=T8;
+CONFIG PROHIBIT=N7;
+
+
+CONFIG PROHIBIT=N1;
+CONFIG PROHIBIT=M1;
+CONFIG PROHIBIT=K2;
+CONFIG PROHIBIT=C3;
+CONFIG PROHIBIT=F5;
+CONFIG PROHIBIT=G1;
+CONFIG PROHIBIT=E2;
+CONFIG PROHIBIT=D2;
+CONFIG PROHIBIT=D1;
+CONFIG PROHIBIT=E1;
+CONFIG PROHIBIT=G2;
+CONFIG PROHIBIT=J1;
+CONFIG PROHIBIT=K1;
+CONFIG PROHIBIT=M2;
+CONFIG PROHIBIT=N2;
+CONFIG PROHIBIT=P2;

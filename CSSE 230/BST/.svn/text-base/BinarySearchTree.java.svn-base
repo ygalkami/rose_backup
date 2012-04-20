@@ -1,0 +1,56 @@
+
+public class BinarySearchTree<T extends Comparable<T>> {
+	
+	private BinaryNode<T> root;
+	
+	public BinarySearchTree() {
+		this.root = null;
+	}
+	
+	// Does this tree contain obj?
+	public boolean contains(T obj){
+		return false;
+	}
+	
+	
+	// insert obj, if not already there
+	public void insert(T obj) {
+		
+	}
+	
+ 
+    // delete obj, if it's there
+	public void delete(T obj) {
+		
+	}
+	
+ 	
+	public static void main(String[] args) {
+		BinarySearchTree<Integer> tree = new BinarySearchTree<Integer>();
+		tree.insert(30);
+		tree.insert(50);
+		tree.insert(40);
+		tree.insert(20);
+		tree.insert(40);
+		tree.root.printInOrder(); System.out.println();
+		System.out.println(tree.contains(40));		
+		System.out.println(tree.contains(25));		
+		System.out.println(tree.contains(35));
+		tree.insert(35);
+		tree.insert(37);
+		tree.insert(45);
+		tree.insert(60);
+		tree.insert(70);
+		tree.insert(65);
+		tree.insert(43);
+		tree.insert(41);		
+		tree.root.printInOrder(); System.out.println();
+		tree.root.printPreOrder(); System.out.println();
+		System.out.println("------------------------");
+		tree.delete(40);
+		tree.root.printInOrder(); System.out.println();
+		tree.root.printPreOrder(); System.out.println();
+
+	}
+
+}

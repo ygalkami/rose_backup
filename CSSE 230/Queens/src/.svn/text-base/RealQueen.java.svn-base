@@ -1,0 +1,93 @@
+/**
+ * RealQueen is the class that does most of the work in this object-oriented
+ * solution of the non-attacking chess queens problem (writen by Claude
+ * Anderson, adapted from an algorithm by Timothy Budd). A queen is permanently
+ * stationed in a column, but may choose it's own row and negotiate with its
+ * neighbors (it only has the "address" of its neighbor immediately to the left)
+ * to find a peacable, non-attacking arrangement. The description of the Queen
+ * interface includes a few more details.
+ */
+public class RealQueen implements Queen {
+	private final Queen neighbor; // next queen to the left.
+
+	private final int column; // What's my (permanent) column?
+
+	private int currentRow; // where am I now?
+
+	private static int MAXROWS; // How big is the board?
+
+	/**
+	 * Constructs a queen for the given column and tells it about its neighbor
+	 * to the left.
+	 * 
+	 * @param neighbor
+	 * @param col
+	 */
+	RealQueen(Queen neighbor, int col) {
+		this.neighbor = neighbor;
+		this.column = col;
+	}
+
+	public boolean findFirst() {
+		currentRow = 1;
+		if (neighbor.findFirst())
+			return testOrAdvance();
+		else
+			return false;
+	}
+
+	// If this is a legal row for me, say so. If not, try the next row.
+	private boolean testOrAdvance() {
+		if (neighbor.canAttack(currentRow, column))
+			return findNext();
+		return true;
+	}
+
+	public boolean findNext() {
+		// TODO: implement this method
+		return true;
+	}
+
+	public boolean canAttack(int row, int col) {
+		// TODO: implement this method
+		return true;
+	}
+
+	@Override
+	public String toString() {
+		// TODO: implement this method
+		return " ";
+	}
+
+	/**
+	 * Runs the non-attacking queens finder
+	 * 
+	 * @param args
+	 *            first argument is integer giving the board size.
+	 */
+	public static void main(String args[]) {
+		// set up the board
+
+		if (args.length == 0)
+			MAXROWS = 5;
+		else
+			MAXROWS = Integer.parseInt(args[0]);
+
+		Queen neighbor = new NullQueen();
+
+		for (int i = 1; i <= MAXROWS; i++) {
+			Queen newQueen = new RealQueen(neighbor, i);
+			neighbor = newQueen;
+		}
+
+		// Now look for the solutions:
+
+		if (neighbor.findFirst()) {
+			System.out.println("SOLUTION: " + neighbor);
+
+			while (neighbor.findNext()) {
+				System.out.println("SOLUTION: " + neighbor);
+			}
+		}
+	}
+}

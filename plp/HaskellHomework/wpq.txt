@@ -1,0 +1,1 @@
+fromList [("curt",[DQPair "09/09/09" "i likef fish",DQPair "09/09/09" "i lie cheese",DQPair "09/10/11" "fuck"])]

@@ -1,0 +1,5 @@
+verilog work "Op2_NSD.v"
+verilog work "Reg_w4_iv0.v"
+verilog work "Op3_OD.v"
+verilog work "Op1_a.v"
+verilog work "TrafficSignalController_FSM.vf"

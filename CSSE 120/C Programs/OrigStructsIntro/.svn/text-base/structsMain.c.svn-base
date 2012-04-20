@@ -1,0 +1,136 @@
+/* ------------- structsMain.c -------------------------
+
+   Claude Anderson.  December 7, 1992.  
+   Revised 1/16/94, 1/16/95, 10/26/07, 11/1/07 (CCC).
+
+   See note (1) at the bottom for an introduction to structs.  */
+
+#include <stdio.h>
+#include <math.h>
+
+/* We have seen the various built-in (integer and floating-point) types
+   in C.  Now we define a new type, "point".  The keyword "typedef" says
+   that we are defining a new type.  The keyword "struct" says that this
+   type is to be a struct.  Then we define the two members, "xCoord" and
+   "yCoord", which are both real numbers.  Finally we specify the
+   name of our new data type, "point".                                */
+typedef struct {       /* This defines the name "point" to refer to   */   
+   double xCoord;      /* a struct with these two members .           */
+   double yCoord;
+ } point;
+
+
+/* So far we have not defined any actual points, but instead we have
+   defined a "blueprint" that tells how a point is to be constructed.
+   Let's define a function that takes as arguments two numbers
+   (representing the x and y values) and returns a point constructed
+   from these two values.  Notice that the return type of the
+   makePoint() function needs to be "point".  In class, we'll consider
+   some simple examples using this declaration.                         */
+point makePoint(double xx, double yy)  { 
+  point p;                       
+  p.xCoord = xx;
+  p.yCoord = yy;
+  return p;
+}
+
+
+/* Next I want to write a function to find the distance between two
+   points.  Before doing that, I write a function to calculate the square 
+   of a number, since there is no exponentiation operator in C, and the pow()
+   function is not very efficient for a simple calculation like square. */
+double square(double x) {
+	return x * x;
+}
+
+/* See note (2) a the bottom of this document for a description of a
+ * better apprach to square().
+ */
+ 
+ 
+/* TODO: Write  the definition of the distance function here                 */
+
+
+
+
+
+/* the main() function merely asks the user for the coordinates
+   of a couple of points, puts those coordinates into "point"
+   structs, and calculates the distance between them.                */
+
+
+int main () {
+  point p1, p2;
+  double x, y;
+
+  printf("Enter coordinates of the first point: ");
+  fflush(stdout);
+  scanf("%lf %lf", &x, &y);
+  p1 = makePoint(x, y);
+  
+  printf("Enter coordinates of the second point: ");
+  fflush(stdout);
+  scanf("%lf %lf", &x, &y);
+  p2 = makePoint(x, y);
+
+  printf("The distance between (%lf, %lf) and (%lf, %lf)\n is %lf.\n",
+         p1.xCoord, p1.yCoord, p2.xCoord, p2.yCoord, distance(p1, p2)); 
+         
+  return  0;
+}
+/* (1)
+ * Structs provide a way of giving one name to a (related) collection
+   of data.  For example, the information that RHIT maintains about each
+   student includes
+   
+      Last Name (a character string)
+      First Name (a character string)
+      Entry Year (an integer)
+      ID number (an integer)
+      GPA (a floating-point number)
+      amount owed (a large floating-point number)
+
+   It would be nice if a program that manipulates such data could have a
+   single variable to store all of the information about an individual
+   student.  C "structs" allow us to do just that.
+
+   The elements (members) of a struct may be of different types, as we
+   will see in a later example.  For this first example, the members of a
+   struct will all have the same type.
+
+   Each individual member of a struct has a name.  For example, if a
+   struct represents the coordinates of a point in two dimensions,
+   then xCoord and yCoord would be appropriate names for the two members
+   of the struct.                 
+   
+ (2)
+ 
+ /* NOTE:  IGNORE THIS COMMENT IF YOU WISH.
+ * We could have done this even more efficiently by using #define.
+ * 
+ * You do not need to know about this, but I show it for those who might be interested.
+ * #define square(s) ((s)*(s))
+
+   There is too much overhead associated with a function call to
+   use one for such a simple operation.  So instead we could I use #define to
+   define a "macro" named "square".  When square is used, the actual
+   argument gets substituted for the macro argument s.  For example,
+   the preprocessor expands "square(5)" to "((5)*(5))".  Similarly
+   "square(p1.x - p2.x)" gets expanded to "((p1.x - p2.x)*(p1.x -p2.x))".
+   Now you can see why the parentheses are needed in the
+   "((s)*(s))" in the definition of square().
+
+   Another reason for not defining square() as a function is that the
+   function would have to be associated with a particular type, such
+   as double.  If I wanted a function to square ints, I would have to
+   write a different function.  But the macro works for either type,
+   because the C preprocessor simply substitutes the text of your
+   macro arguments into your C program text before actual compilation
+   begins.                                                             
+ 
+
+  The points-and-lines files expand this pointer-struct concept greatly */
+
+
+
+

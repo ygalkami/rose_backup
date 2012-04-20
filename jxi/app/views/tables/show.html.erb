@@ -1,0 +1,16 @@
+<p>
+  <b>Name:</b>
+  <%=h @table.name %>
+</p>
+
+<h2>Columns</h2>
+<% @table.columns.each do |c| %>
+  <p>
+    <b>Column:</b>
+    <%=h c.name %>
+  </p>
+<% end %>
+
+<%= link_to 'Edit Table', edit_table_path(@table) %> |
+<%= link_to 'Back to Tables', tables_path %> |
+<%= link_to 'Manage Columns', table_columns_path(@table) %>

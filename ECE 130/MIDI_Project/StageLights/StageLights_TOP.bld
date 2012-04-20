@@ -1,0 +1,24 @@
+Release 7.1.04i ngdbuild H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+Command Line: ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my
+documents\courses\ece 130\midi_project\stagelights/_ngo" -nt timestamp -uc
+StageLights_TOP.ucf -p xc3s200-ft256-4 StageLights_TOP.ngc StageLights_TOP.ngd 
+
+Reading NGO file 'C:/Documents and Settings/pickdp/My Documents/Courses/ECE
+130/MIDI_Project/StageLights/StageLights_TOP.ngc' ...
+
+Applying constraints in "StageLights_TOP.ucf" to the design...
+
+Checking timing specifications ...
+Checking expanded design ...
+
+NGDBUILD Design Results Summary:
+  Number of errors:     0
+  Number of warnings:   0
+
+Total memory usage is 64988 kilobytes
+
+Writing NGD file "StageLights_TOP.ngd" ...
+
+Writing NGDBUILD log file "StageLights_TOP.bld"...

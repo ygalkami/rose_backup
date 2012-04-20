@@ -1,0 +1,193 @@
+import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.awt.event.KeyEvent;
+import java.awt.event.KeyListener;
+
+import javax.swing.ImageIcon;
+import javax.swing.JButton;
+import java.lang.Math;
+
+
+public class Square extends JButton implements ActionListener , KeyListener {
+	
+	protected boolean isBomb;
+	protected int numBombsAround = 0;
+	protected boolean isFlag;
+	protected boolean isQMark;
+	protected ImageIcon bomb;
+	static final int SPECIAL_KEY = 'c';
+	protected Color background = Color.WHITE;
+	protected Color bombColor = Color.BLACK;
+	protected int row;
+	protected int col;
+	protected int difficulity;
+	protected Square [][] board;
+	protected boolean revealed;
+	
+	public Square(int row, int col, int diff, Square [][] board) {
+		this.addKeyListener(this);
+		this.isFlag = false;
+		this.isQMark = false;
+		this.bomb = new ImageIcon("bomb.jpg");
+		this.setBackground(background);
+		this.row = row;
+		this.col = col;
+		this.difficulity = diff;
+		this.board = board;
+		this.revealed = false;
+	}
+	
+	public void sweep(Square [][] board) {
+		if (this.numBombsAround != 0) {
+			this.setText(this.numBombsAround + "");
+		}
+		else if (this.row != 0 && this.col != 0 && this.row != this.difficulity - 1 && this.col != this.difficulity - 1 && this.revealed == false) {
+			this.setBackground(Color.BLUE);
+			this.revealed = true;
+			board[row + 1][col + 1].sweep(board);
+			board[row - 1][col - 1].sweep(board);
+			board[row][col + 1].sweep(board);
+			board[row][col - 1].sweep(board);
+			board[row + 1][col].sweep(board);
+			board[row - 1][col].sweep(board);
+			board[row + 1][col - 1].sweep(board);
+			board[row - 1][col + 1].sweep(board);
+		}
+	}
+
+	public void setBomb() {
+		if (this.isBomb == false){
+			this.isBomb = true;
+		}
+		else {
+			for (int i = math.max(0, this.row - 1); i < math.min(this.difficulity - 1, row + 1); i++) {
+				for (int j)
+			}
+		}
+//		if (this.row != 0 && this.col != 0 && this.row != this.difficulity - 1 && this.col != this.difficulity - 1) {
+//			add1tosquares();
+//		}
+//		else if (this.row == 0 && this.col != 0 && this.row != this.difficulity - 1 && this.col != this.difficulity - 1){
+//			Top();
+//		}
+//		else if (this.row == this.difficulity - 1 && this.col != 0 && this.col != this.difficulity - 1) {
+//			Bottom();
+//		}
+//		else if (this.row != 0 && this.col == 0 && this.row != this.difficulity - 1 && this.col != this.difficulity - 1) {
+//			sideL();
+//		}
+//		else if (this.row != 0  && this.col == this.difficulity - 1 && this.row != this.difficulity - 1) {
+//			sideR();
+//		}
+//		else if (this.row == 0 && this.col == 0){
+//			board[row + 1][col + 1].numBombsAround++;
+//			board[row + 1][col].numBombsAround++;
+//			board[row][col + 1].numBombsAround++;
+//		}
+//		else if (this.row == this.difficulity - 1 && this.col == this.difficulity - 1){
+//			board[row - 1][col - 1].numBombsAround++;
+//			board[row - 1][col].numBombsAround++;
+//			board[row][col - 1].numBombsAround++;
+//		}
+//		else if (this.row == 0 && this.col == this.difficulity - 1) {
+//			board[row + 1][col].numBombsAround++;
+//			board[row - 1][col].numBombsAround++;
+//			board[row - 1][col - 1].numBombsAround++;
+//		}
+//		else {
+//			board[row][col + 1].numBombsAround++;
+//			board[row - 1][col].numBombsAround++;
+//			board[row - 1][col + 1].numBombsAround++;
+//		}
+		
+	}
+	
+	public void add1tosquares() {
+		board[row + 1][col + 1].numBombsAround++;
+		board[row - 1][col - 1].numBombsAround++;
+		board[row][col + 1].numBombsAround++;
+		board[row][col - 1].numBombsAround++;
+		board[row + 1][col].numBombsAround++;
+		board[row - 1][col].numBombsAround++;
+		board[row + 1][col - 1].numBombsAround++;
+		board[row - 1][col + 1].numBombsAround++;
+	}
+	
+	public void sideL() {
+		board[row + 1][col + 1].numBombsAround++;
+		board[row - 1][col].numBombsAround++;
+		board[row + 1][col].numBombsAround++;
+		board[row][col + 1].numBombsAround++;
+		board[row - 1][col + 1].numBombsAround++;
+	}
+	
+	public void sideR() {
+		board[row + 1][col - 1].numBombsAround++;
+		board[row - 1][col].numBombsAround++;
+		board[row + 1][col].numBombsAround++;
+		board[row][col - 1].numBombsAround++;
+		board[row - 1][col - 1].numBombsAround++;
+	}
+	
+	public void Top () {
+		board[row + 1][col + 1].numBombsAround++;
+		board[row][col + 1].numBombsAround++;
+		board[row][col - 1].numBombsAround++;
+		board[row + 1][col - 1].numBombsAround++;
+		board[row + 1][col].numBombsAround++;
+	}
+	
+	public void Bottom () {
+		board[row][col + 1].numBombsAround++;
+		board[row - 1][col + 1].numBombsAround++;
+		board[row - 1][col - 1].numBombsAround++;
+		board[row][col - 1].numBombsAround++;
+		board[row - 1][col].numBombsAround++;
+	}
+	
+	public void bombsAround(int bombs) {
+		this.numBombsAround = bombs;
+	}
+	
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		if(!this.isBomb && this.numBombsAround != 0){
+			this.setText("" + this.numBombsAround);
+		}
+		else if(this.isBomb){
+			Window.showbombs(Window.easy, Window.easyboard);
+			Window.showbombs(Window.medium, Window.mediumboard);
+			Window.showbombs(Window.expert, Window.expertboard);
+		}
+		else if (this.numBombsAround == 0)
+			this.sweep(board);
+		
+		this.revealed = true;
+	
+	}
+
+	public void keyPressed(KeyEvent e) {
+		if (e.getKeyChar()== SPECIAL_KEY){
+			Window.showbombs(Window.easy, Window.easyboard);
+			Window.showbombs(Window.medium, Window.mediumboard);
+			Window.showbombs(Window.expert, Window.expertboard);
+	        
+		}
+		
+	}
+
+	public void keyReleased(KeyEvent e) {
+		if (e.getKeyChar()== SPECIAL_KEY){
+			Window.hidebombs(Window.easy, Window.easyboard);
+			Window.hidebombs(Window.medium, Window.mediumboard);
+			Window.hidebombs(Window.expert, Window.expertboard);
+	       
+		}
+		
+	}
+
+	public void keyTyped(KeyEvent e) {}
+
+}

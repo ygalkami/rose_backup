@@ -1,0 +1,7 @@
+#
+echo test >testfile
+echo catting testile:
+cat testfile
+echo removing testfile
+rm testfile
+quit

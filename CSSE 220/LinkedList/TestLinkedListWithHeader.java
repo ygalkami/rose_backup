@@ -1,0 +1,43 @@
+
+public class TestLinkedListWithHeader {
+   
+   public static void main(String[] args) {
+//      LinkedListWithHeader<Integer> list1 = new LinkedListWithHeader<Integer>();
+//      LinkedListWithHeader<Integer> list3 = new LinkedListWithHeader<Integer>();
+//      LinkedListWithHeader<Integer> list2 = new LinkedListWithHeader<Integer>(5);
+//      System.out.println("sizes: " + list1.size() + " " + list2.size());
+//      list1.add(3);
+//      list2.add(4);
+//      System.out.println(list1);      
+//      System.out.println(list2);
+//      System.out.println("sizes: " + list1.size() + " " + list2.size());
+//      list1.add(0, 0);
+//      System.out.println(list1);      
+//      list1.add(1, 1);
+//      System.out.println(list1);      
+//      list1.add(3, 4);
+//      System.out.println(list1);      
+//      list3.add(0, 100);
+//      System.out.println(list3); 
+//      
+//      // Add some more elements:
+//      list1.add(20);
+//      list1.add(25);
+//      list1.add(30);
+//      System.out.println("list1 after several more adds: " + list1);
+//      Iterator<Integer> itr = list1.iterator();
+//      System.out.print("Iterator Printout: ");
+//      while (itr.hasNext()) {
+//         int n = itr.next();
+//         System.out.print(n + " ");
+//         if (n>21 && n<27)
+//            itr.remove();
+//      }
+//      System.out.println();
+//      
+//      System.out.println("List 1 after iteration with remove: " + list1);
+      
+    
+   }
+
+}

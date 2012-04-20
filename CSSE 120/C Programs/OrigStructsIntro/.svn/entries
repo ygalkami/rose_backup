@@ -1,0 +1,79 @@
+8
+
+dir
+87
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/StructIntro
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-11-01T18:11:16.538003Z
+85
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+.cdtproject
+file
+
+
+
+
+2007-11-02T12:04:21.769057Z
+adbc35fe466217ef2b27ec9cd7c43c12
+2007-11-01T18:11:16.538003Z
+85
+clifton
+
+.project
+file
+
+
+
+
+2007-11-02T12:04:21.784680Z
+082762b4bedbd814e23802f8c3bc7f4c
+2007-11-01T18:11:16.538003Z
+85
+clifton
+
+.cdtbuild
+file
+
+
+
+
+2007-11-02T12:04:21.784680Z
+16ff061179fb23f73f9915844369f6bf
+2007-11-01T18:11:16.538003Z
+85
+clifton
+
+structsMain.c
+file
+
+
+
+
+2007-11-02T12:04:21.800303Z
+b87c3b75c7a0ea3c62cb2896057150c5
+2007-11-01T18:11:16.538003Z
+85
+clifton
+
+.settings
+dir
+

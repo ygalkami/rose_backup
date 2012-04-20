@@ -1,0 +1,9 @@
+A := [Customer | Values | Methods];
+
+
+
+A           		A
+A[|-|]B					A--------B
+A[|-|>]B				A------->B
+A[<|-|]B				A<-------B
+A[|-.-|]B				A------->B *Dotted Line

@@ -1,0 +1,7 @@
+set foo bar
+echo set foo 
+echo $foo
+echo unset foo
+unset foo
+echo echoing foo
+echo $foo

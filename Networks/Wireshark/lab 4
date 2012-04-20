@@ -1,0 +1,19 @@
+UDP lab:
+
+1) 4
+3) 348 bytes
+4) 65507 Bytes
+5) 65536 - 1
+6) 0x11, 17
+8) They swap, in the first packet the source port is 32920 and the destination port is 53, and in the second
+   packet the source port is 53 and the destination port is 32920
+
+TCP Lab:
+1, 2, 4, 5, 6, 10, 12
+1) IP - 137.112.135.145 | PORT - 43323
+2) IP - 128.119.245.12 | PORT - 43323
+4) 0
+5) Sequence number = 0, Acknowledget number = 1
+6) Sequence number = 1
+10) No
+12) number of packets / total time = 725 / 3.25 = 216.42 bytes/sec

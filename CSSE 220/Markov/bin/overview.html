@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html PUBLIC
+          "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+<title>Markov Assignment - Overview</title>
+<link rel="stylesheet" type="text/css" href="../../style/style.css" />
+</head>
+
+<body>
+
+<h1>Markov Chain Programming Assignment Overview</h1>
+
+Markov documents:&nbsp;&nbsp; <a href="index-Markov.html">index</a>&nbsp;&nbsp;
+<a href="overview.html">overview</a>&nbsp;&nbsp;&nbsp; <a href="markov.html">
+markov</a>&nbsp;&nbsp;&nbsp; <a href="justification.html">justification</a>&nbsp;&nbsp;
+<a href="turnin-instructions.html">turnin-instructions</a>&nbsp;&nbsp;&nbsp;
+<a href="examples.html">code examples</a>
+&nbsp;&nbsp;&nbsp; <a href="MarkovPartners.xls">partners</a>
+&nbsp;&nbsp;&nbsp; <a href="importingEclipseClasses.html">importing classes</a>
+&nbsp;&nbsp;&nbsp; <a href="multiset/index.html">MultiSet</a>
+
+
+<h2>Assignment Constraints</h2>
+
+<p>You may talk with
+others about the ideas in this assignment, but you must write all code
+with your partner.&nbsp; I recommend that you not split up the work, but do it 
+together with the weaker programmer as &quot;driver&quot; most of the time, and with the 
+driver never being willing to do things without first understanding them.  You may (and are encouraged to) 
+talk to other students and get help with debugging, but do not let other 
+students write the code for you.</p>
+
+<h2>Objectives</h2>
+
+<p>You should</p>
+<ul class="inline">
+<li>Gain experience with reading specifications of data structures and
+using them without being concerned with how they are implemented</li>
+<li>Become familiar with the JDK's
+<a target="_blank" href="http://java.sun.com/j2se/1.5/docs/guide/collections/overview.html">Collections Framework</a>
+included in the
+<tt><a target="_blank" href="http://java.sun.com/j2se/1.5/docs/api/java/util/package-summary.html">java.util</a></tt>
+package
+<li>Understand the Markov Chain algorithm for constrained random
+sequence generation</li>
+<li>Experience non-trivial interaction between the data structures and
+the algorithm in the text-justification portion of the assignment</li>
+</ul>
+
+<h2>Your Task</h2>
+
+<p>Your task is to implement two different algorithms, which will
+be performed in sequence.</p>
+
+<p>The first is the <a href="markov.html">Markov Chain</a> algorithm.
+(Follow the link for an in-depth description.)  It takes as input some
+sequence of "words" and generates as output a constrained random
+sequence composed from some or all of the original "words".  The new
+sequence has similar statistical properties to the original
+sequence.</p>
+
+<p>The second algorithm is a <a href="justification.html">Text
+Justification</a> algorithm.  (Follow the link for an in-depth
+description.)  This algorithm should take as input some intermediate
+data representation from the Markov Chain algorithm and print that
+data to the console so that it is both left and right justified.</p>
+
+<h2>General Program Specification</h2>
+
+<p>You are to write a Java application in a class named <b> <tt>Markov</tt></b>.  The&nbsp; Markov 
+constructor should take 4 parameters (in the following order):</p>
+<ul class="inline">
+<li>The name of the text file that will be used to generate the random
+text.</li>
+<li>The prefix length for the Markov Chains (<i>n</i>).</li>
+<li>The maximum number of words that the output should contain.</li>
+<li>The maximum number of characters per output line.  This is the
+justification width.</li>
+</ul>
+
+<p>For example, the command</p>
+<blockquote><kbd>Markov markov = new Markov(&quot;texts\\Oz.txt&quot;, 3, 400, 75);</kbd></blockquote>
+
+<p>generates random text (written to <b>System.out</b>) based on the contents of the file
+<b>
+<tt>Oz.txt</tt></b> (from the texts folder) with Markov Chains of length 3.  It generates text
+until the Markov Chain algorithm naturally terminates or until 400
+words are generated, whichever comes first.  It justifies the output
+so that each output line occupies exactly 75 characters (except the
+last line).</p>
+
+<p>Note that the above example implies that the
+<tt>Markov</tt> class is in the default package, and that the Oz.txt
+file is in the same folder as <b>Markov.class</b>.</p>
+
+<p>A "word" is defined for the purpose of this algorithm as any sequence of non-whitespace
+characters, so you will not need to treat punctuation or
+capitalization in any special way.
+
+<!-- I am not so sure that this statement is true
+You should notice that this means
+you can trivially use a
+<tt><a target="_blank" href="http://java.sun.com/j2se/1.5/docs/api/java/util/StringTokenizer.html">java.util.StringTokenizer</a></tt>
+object to break an input line into "words".
+-->
+
+Thus the following will
+be considered to be four different words:</p>
+<ul class="inline">
+<li><tt>book</tt></li>
+<li><tt>Book</tt></li>
+<li><tt>"Book<!--"--></tt></li>
+<li><tt>book,</tt></li>
+</ul>
+
+<h2>Data Structures Specification</h2>
+
+<p>You are required to use the data structures specified in this
+document for pedagogical reasons.  Later in this course and in life you will have a
+chance to choose the data structures you think best fit the problem or
+implement your own, but at this point it is important to make sure you
+can figure out how to use those specified here.</p>
+
+<p>Note that this section will make more sense after you have read the in-depth descriptions of the <a href="markov.html">Markov
+Chain</a> and <a href="justification.html">Text Justification</a>
+algorithms.&nbsp; You should skim this document now, and read it again more carefully after reading those documents</p>
+
+<ul>
+
+<li><strong>Current Prefix.</strong>
+
+In your implementation of the
+class that represents the current prefix, use a <tt>FixedLengthQueue</tt>
+object as an instance variable that holds the actual words in the
+prefix. A FixedLengthQueue should have a
+constructor that takes a single argument&ndash;an integer that specifies the
+length of the queue. The class needs to support a method <tt>add()</tt>.
+This method should take a String as its sole argument and add it to the end (rear) of the queue.
+If the queue is full, that is, if it has reached its specified length, the
+<code>add()</code> method should also remove the String from the beginning (front) of
+the queue in order to maintain the length. Finally the queue should
+have a <tt>toString()</tt> method that returns a single String containing each entry in
+the queue, from front to back, separated by a space. Whenever you move on to the next prefix during the generation
+of the table of prefixes and their suffixes, you can simply add the new word
+to the FixedLengthQueue to obtain the next prefix.</li>
+
+<li><strong>Table and Table Entries.</strong> For the table of
+prefixes and their associated suffixes, use a <tt><a
+href="http://java.sun.com/j2se/1.5/docs/api/java/util/HashMap.html">java.util.HashMap</a></tt>
+object.  You must be sure that the keys (which should be Markov prefixes)  have a sensible
+<tt>public int hashCode()</tt> method.  On pp. 232-236, Weiss has a
+section entitled "Implementing <code>equals</code> and <code>hashCode</code>".  The
+<tt>hashCode()</tt> example in that section should be useful to
+you.  Each entry in the table (HashMap) will have a key that is a prefix and an
+associated value that IS-A (or possibly HAS-A depending on what you
+want to do) <tt>MultiSet</tt> that contains the
+suffixes that go with the given prefix. </li>
+
+<li><strong>Suffix Collections and Suffixes.</strong> For each prefix,
+you will build the collection of its suffixes.  This collection should be
+(or have) a
+<tt><a href="multiset/MultiSet.html">MultiSet</a></tt>, a class that we provide. 
+Adding these files to the project is described in the&nbsp;<a href="importingEclipseClasses.htm">importingEclipseClasses.htm</a> document.&nbsp;&nbsp; You 
+should not
+upload these files to AFS as part of your turnin; our test script will copy them into your 
+turnin folder before it compiles your code.
+Each item in a MultiSet will represent one suffix that corresponds
+to the given prefix.  This should allow
+fast insertion of new items and
+fast search for the <i>K</i><sup>th</sup> item when the random
+number generator tells you to use the <i>K</i><sup>th</sup> suffix.
+A trivial sample
+program that uses a <tt>MultiSet</tt> is included in
+<a href="examples.html"><tt>examples.html</tt></a>.</li>
+
+<li><strong>Text Justification.</strong> Use the
+<tt><a href="http://java.sun.com/j2se/1.5/docs/api/java/util/LinkedList.html">java.util.LinkedList</a></tt>
+class along with an array or <tt>ArrayList</tt> as described in
+<a href="justification.html">the
+Text Justification algorithm description</a>.</li>
+
+</ul>
+
+<h2>Efficiency and Memory Use</h2>
+
+<p>If the number of output words is small compared to the text from
+which the output is constructed, we would expect that most of the
+program's time would be spent building the table of prefixes and their suffixes, and not
+much time producing the output.</p>
+
+<p>It is possible that the default amount of memory allocated by the
+Java interpreter will not be enough.  To increase to 100 (or substitute
+your own number) megabytes, use the <tt>-Xmx</tt> option when you
+invoke the interpreter: "<tt>java -Xmx100m Driver
+0</tt>".  This <tt>-Xmx100m</tt> option
+will also be used when we test your program.  To enter this option in Eclipse, choose Run As&rarr;Run... , 
+click on Arguments.&nbsp; Under VM arguments, enter -Xmx100m.</p>
+
+<h2>Sample Data Files</h2>
+
+<p>Before you begin testing your program, you should create your own
+small data file, designed to produce a relatively small data structure
+that still provides choices for the random sequence generator.  The
+words in the file do not have to make sense.  Once you are confident
+that your program is working, you will want to try it on larger files
+that will produce more interesting random text.</p>
+
+<p>Some larger texts on which you may test your program are collected
+in the <a href="texts/"><tt>texts</tt></a>
+folder.  Due to memory requirements, you may not be able to
+process the longer ones with prefix-lengths greater than two, but a
+prefix length of two gives fairly interesting results.&nbsp; Try some of the 
+smaller files with larger prefix lengths.</p>
+
+<p>If you have a text that produces particularly interesting random
+sentences, please send it to me, and I make it available to other students.</p>
+
+<!--
+<h2>Turnin</h2>
+
+<p>All <tt>.java</tt>
+source files from your project (and nothing else) should be copied to
+<tt>/class/csse/csse230/turnin/your_username/Markov</tt> on AFS.
+More details about this and about testing your completed program will be given later this week.</p>
+-->
+
+<h2>Milestones</h2>
+<p>This assignment will be graded twice. For the first milestone,&nbsp; your 
+code must generate appropriate Markov chained output, but that output does not 
+have to be justified. Grading for this part will treat
+any amount of white space in the output as a delimiter. The Markov constructor
+should take the four arguments specified above, but for now it can ignore the last
+argument, justification width.</p>
+<p>The second milestone is the completed program, Markov plus justification. </p>
+
+<h2>Running Your Program for Grading Purposes</h2>
+
+<p>Our script&nbsp; will delete all <tt>.class</tt> files from your turnin folder, add in the 
+two MultiSet <code>.class</code> files, and use <tt>javac
+*.java</tt> to compile your code.  Then I will execute it using
+a program similar to <b>Driver.java</b>.  All output from your program must be written
+to <tt>System.out</tt>.  No descriptions, debugging information, or
+other extra characters should be included in your output. Our program&nbsp; will
+check to make sure that your output really is a justified Markov Chain, and any extra output will confuse it 
+and result in loss of credit for you.</p>
+
+<h2>Questions and Answers</h2>
+
+<p>These questions and answers will probably not make much sense if you
+have not yet read the <a href="markov.html">Markov Chain</a> and <a
+href="justification.html">Text Justification</a> algorithm
+descriptions.  I have given a variation on this assignment before, and these
+questions come from my archive of email and newsgroup questions from
+that term.</p>
+
+<table border="1"><tr>
+
+<th>Questions</th><th>Answers</th>
+
+</tr><tr>
+
+<td>How can we choose a random suffix from a
+<tt>MultiSet</tt>?</td>
+
+<td>Generate a random number, <i>k</i>, between 0 and size(), then use
+the <tt>findKth</tt> method from the <tt>MultiSet</tt> class.</td>
+
+</tr><tr>
+
+<td>Can we assume that the length of the line being outputted is
+longer than the length of the prefix?</td>
+
+<td>I presume you mean "the first prefix".  Since that prefix contains
+only one word, the answer is yes.  You may assume that no input word
+is longer than the line length.</td>
+
+</tr><tr>
+
+<td>Is it OK to not align the right side of last line of output with the other lines or is this
+mandatory?</td>
+
+<td>It would look pretty ugly if you did! The last line should be
+left-justified, of course, but definitely not right-justified (unless that 
+happens naturally without adding any extra spaces).</td>
+
+</tr><tr>
+
+<td>Also, will the text file name given at the command prompt include
+the ".txt"?</td>
+
+<td>Yes.  Whatever the full filename is, it should be included in the call to 
+the constructor.  If it's in a different directory than
+<tt>Markov.class</tt>, a pathname must be given, of course.</td>
+
+</tr><tr>
+
+<td>Do you really mean that there should be two spaces after
+<b>every</b> period, question mark, etc?</td>
+
+<td> No.  Only if the period, question mark, or exclamation point ends a word
+(defined for this assignment as a
+ sequence of non-whitespace characters). </td>
+
+</tr><tr>
+<td> How do I know whether a character is a whitespace character?
+</td>
+<td> One approach is to use the <tt>Character.isWhiteSpace</tt>
+method.  It would be very nice to set up a StringTokenizer object that
+considers all whitespace characters as delimiters.  This would be
+difficult if you wanted all Unicode whitespace characters; perhaps it
+is easier if you restrict your attention to ASCII whitespace
+characters, which you are allowed to do. Also see
+<a href="examples.html">examples.html</a> for an explanation of
+a <tt>String</tt>'s <tt>split</tt> method.</td>
+
+
+</tr><tr>
+
+<td>Are we ever supposed to call the <tt>hashCode()</tt> method that
+we must write?</td>
+
+<td>No.  The <tt>HashMap</tt> methods will call it when needed.</td>
+
+</tr><tr>
+<td> Can work on the justification part before the&nbsp;&nbsp; Markov algorithm 
+is working?
+
+</td> <td>
+Definitely.  I suggest working on the two parts "in parallel".
+ If you are working on the
+justification part, you can write a very simple <tt>main()</tt> method to test
+it. All
+that this program must do is (like Markov) feed your justification routine a
+word at a
+time, so that the output routine can justify and print the words from a line
+whenever that line gets filled. Your temporary program can simply bypass the 
+Markov Chain part and justify the original input text.</td>
+
+</tr><tr>
+<td> What's the worst behavior my program can exhibit (this question
+came from me, not from a student)?
+</td><td>
+An infinite loop.  You should make sure that your program always
+terminates and gives some kind of output to show what it is doing,
+even if that output is not correct.
+</td>
+
+</tr><tr>
+<td>
+What is the point of Markov, besides the DataStructures practice?
+Most of our programs up to this point could have some use in the real
+world.  I am just not sure what, if anything, Markov can be used for.
+</td><td>
+A very good question.
+
+Let me give you an analogy.  At one point, I started taking piano
+lessons.
+Something I had always planned to do "when life slows down a bit." (I
+finally
+decided that it never will, and that if I don't do it now, I'll never
+get
+around to it).  Then life got REALLY busy and I gave it up, but I WILL
+get back to it someday!  No, really :) <br />
+
+What did my teacher have me spend most of my time doing?  Scales and
+warm-up exercises.  I could ask "Will I ever use this in the real
+world?"
+What concert pianist or even bar room pianist would ever play a scale
+or a warm-up exercise for an audience?
+<br />
+My reaction could be to say that I shouldn't have to spend time
+practicing scales, etc.  because they are not "practical."
+But fortunately I did not do that, and I saw that
+practicing those boring pieces with &quot;no real-world application&quot; actually made me more agile at playing in general, so that I 
+could play
+the (quite simple) "real" pieces better than if I had
+never practiced the scales.
+<br >
+This course is a prerequisite for many other CSSE courses.
+Mostly, it its the CSSE equivalent of scales and warm-ups.  Hopefully
+by the time you are done this course, you will be able to run up
+and down the scales at a rapid speed, so that later when you do
+applications (in Operating Systems and other courses, and presumably
+after graduation), you will be able to concentrate on the problems
+you are solving, because grinding out the code will now be easy.
+
+By the end of this course I want you to be able to use data structures almost as effortlessly as a concert pianist
+plays a D major scale .  If that process allows you to
+do some
+interesting programs with immediate applications along the way, that's
+a bonus.
+But it's not the only point of the programming part of this course.
+</td>
+</tr>
+
+
+
+
+</table>
+
+</body>
+
+</html>
+

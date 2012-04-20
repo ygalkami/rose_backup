@@ -1,0 +1,52 @@
+8
+
+dir
+68
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/CNestedLoops/.settings
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-10-23T16:52:04.841122Z
+68
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+org.eclipse.cdt.core.prefs
+file
+
+
+
+
+2007-10-24T13:28:43.929184Z
+a0e77c7843608a269810b97378e19f41
+2007-10-23T16:52:04.841122Z
+68
+clifton
+
+org.eclipse.cdt.managedbuilder.core.prefs
+file
+
+
+
+
+2007-10-24T13:28:43.929184Z
+612445f4e40e462e4ca8aff3ae9b1a33
+2007-10-23T16:52:04.841122Z
+68
+clifton
+

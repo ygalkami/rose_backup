@@ -1,0 +1,71 @@
+8
+
+dir
+16
+http://svn.cs.rose-hulman.edu/repos/csse230-200830-pickdp/Displayable
+http://svn.cs.rose-hulman.edu/repos/csse230-200830-pickdp
+
+
+
+2008-04-09T07:19:37.150219Z
+16
+mrozekma
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+9932ecd4-5247-0410-88c8-8fdb18627565
+
+.classpath
+file
+
+
+
+
+2008-04-01T08:58:58.281250Z
+9b8154506b9055a8398c0cc323c260c6
+2008-03-24T14:48:31.758799Z
+7
+anderson
+
+Displayable.pdf
+file
+
+
+
+
+2008-04-09T16:22:15.171250Z
+2604fd84c77aebc76a5db3ef3eaa7ffc
+2008-04-09T07:19:37.150219Z
+16
+mrozekma
+has-props
+
+.project
+file
+
+
+
+
+2008-04-01T08:58:58.296875Z
+1f33489279bf567593d6f946b9bb4bd0
+2008-03-24T14:48:31.758799Z
+7
+anderson
+
+src
+dir
+
+bin
+dir
+

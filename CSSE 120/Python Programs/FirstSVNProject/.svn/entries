@@ -1,0 +1,55 @@
+8
+
+dir
+1
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/FirstSVNProject
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-09-23T19:42:02.421201Z
+1
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+.project
+file
+
+
+
+
+2007-09-25T12:36:36.150803Z
+7fea019212ad79ca93bd56f798128428
+2007-09-23T19:42:02.421201Z
+1
+clifton
+
+src
+dir
+
+.pydevproject
+file
+
+
+
+
+2007-09-25T12:36:36.150803Z
+a5c0f9c0962187b76be1915a402dc623
+2007-09-23T19:42:02.421201Z
+1
+clifton
+

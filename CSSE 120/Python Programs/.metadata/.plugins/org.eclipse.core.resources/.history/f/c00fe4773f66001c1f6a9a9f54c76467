@@ -1,0 +1,5 @@
+def main():
+    x, y = input("Enter two integers seperated by commas: ")
+    
+    print x + y
+main()

@@ -1,0 +1,13 @@
+
+--This line, and those below, will be ignored--
+
+M    tests/m3test1.xssh
+A    tests/m4test0.xssh
+M    src/builtin.c
+A    src/svn-commit.tmp~
+M    src/process_handler.c
+M    src/env_variables.c
+M    src/xssh.c
+M    src/input_parse.c
+M    src/input_handler.c
+A    svn-commit.tmp~

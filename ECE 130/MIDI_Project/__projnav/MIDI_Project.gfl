@@ -1,0 +1,546 @@
+ProjNav -> New -> Test Fixture
+__projnav/createTF.err
+# xst flow : RunXST
+Adder_summary.html
+# XST (Creating Lso File) : 
+Adder.lso
+# xst flow : RunXST
+Adder_summary.html
+# xst flow : RunXST
+Adder.syr
+Adder.prj
+Adder.sprj
+Adder.ana
+Adder.stx
+Adder.cmd_log
+Adder.ngc
+Adder.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project/_ngo"
+Adder.ngd
+Adder_ngdbuild.nav
+Adder.bld
+.untf
+Adder.cmd_log
+# Implementation : Map
+Adder_summary.html
+# Implementation : Map
+Adder_map.ncd
+Adder.ngm
+Adder.pcf
+Adder.nc1
+Adder.mrp
+Adder_map.mrp
+Adder.mdf
+Adder.cmd_log
+MAP_NO_GUIDE_FILE_CPF "Adder"
+Adder_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+Adder.twr
+Adder.twx
+Adder.tsi
+Adder.cmd_log
+# Implementation : Place & Route
+Adder_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+Adder.ncd
+Adder.par
+Adder.pad
+Adder_pad.txt
+Adder_pad.csv
+Adder.pad_txt
+Adder.dly
+reportgen.log
+Adder.xpi
+Adder.grf
+Adder.itr
+Adder_last_par.ncd
+Adder.placed_ncd_tracker
+Adder.routed_ncd_tracker
+Adder.cmd_log
+PAR_NO_GUIDE_FILE_CPF "Adder"
+# Generate Programming File
+__projnav/Adder_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+Adder.ut
+# Generate Programming File
+Adder.bgn
+Adder.rbt
+Adder.ll
+Adder.msk
+Adder.drc
+Adder.nky
+Adder.bit
+Adder.bin
+Adder.isc
+Adder.cmd_log
+# xst flow : RunXST
+Adder_summary.html
+# XST (Creating Lso File) : 
+MyPattern.lso
+# xst flow : RunXST
+MyPattern_summary.html
+# xst flow : RunXST
+MyPattern.syr
+MyPattern.prj
+MyPattern.sprj
+MyPattern.ana
+MyPattern.stx
+MyPattern.cmd_log
+MyPattern.ngc
+MyPattern.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project/_ngo"
+MyPattern.ngd
+MyPattern_ngdbuild.nav
+MyPattern.bld
+.untf
+MyPattern.cmd_log
+# Implementation : Map
+MyPattern_summary.html
+# Implementation : Map
+MyPattern_map.ncd
+MyPattern.ngm
+MyPattern.pcf
+MyPattern.nc1
+MyPattern.mrp
+MyPattern_map.mrp
+MyPattern.mdf
+MyPattern.cmd_log
+MAP_NO_GUIDE_FILE_CPF "MyPattern"
+MyPattern_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+MyPattern.twr
+MyPattern.twx
+MyPattern.tsi
+MyPattern.cmd_log
+# Implementation : Place & Route
+MyPattern_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+MyPattern.ncd
+MyPattern.par
+MyPattern.pad
+MyPattern_pad.txt
+MyPattern_pad.csv
+MyPattern.pad_txt
+MyPattern.dly
+reportgen.log
+MyPattern.xpi
+MyPattern.grf
+MyPattern.itr
+MyPattern_last_par.ncd
+MyPattern.placed_ncd_tracker
+MyPattern.routed_ncd_tracker
+MyPattern.cmd_log
+PAR_NO_GUIDE_FILE_CPF "MyPattern"
+# Generate Programming File
+__projnav/MyPattern_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+MyPattern.ut
+# Generate Programming File
+MyPattern.bgn
+MyPattern.rbt
+MyPattern.ll
+MyPattern.msk
+MyPattern.drc
+MyPattern.nky
+MyPattern.bit
+MyPattern.bin
+MyPattern.isc
+MyPattern.cmd_log
+# xst flow : RunXST
+Adder_summary.html
+# XST (Creating Lso File) : 
+Adder.lso
+# xst flow : RunXST
+Adder_summary.html
+# xst flow : RunXST
+Adder.syr
+Adder.prj
+Adder.sprj
+Adder.ana
+Adder.stx
+Adder.cmd_log
+Adder.ngc
+Adder.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project/_ngo"
+Adder.ngd
+Adder_ngdbuild.nav
+Adder.bld
+.untf
+Adder.cmd_log
+# Implementation : Map
+Adder_summary.html
+# Implementation : Map
+Adder_map.ncd
+Adder.ngm
+Adder.pcf
+Adder.nc1
+Adder.mrp
+Adder_map.mrp
+Adder.mdf
+Adder.cmd_log
+MAP_NO_GUIDE_FILE_CPF "Adder"
+Adder_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+Adder.twr
+Adder.twx
+Adder.tsi
+Adder.cmd_log
+# Implementation : Place & Route
+Adder_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+Adder.ncd
+Adder.par
+Adder.pad
+Adder_pad.txt
+Adder_pad.csv
+Adder.pad_txt
+Adder.dly
+reportgen.log
+Adder.xpi
+Adder.grf
+Adder.itr
+Adder_last_par.ncd
+Adder.placed_ncd_tracker
+Adder.routed_ncd_tracker
+Adder.cmd_log
+PAR_NO_GUIDE_FILE_CPF "Adder"
+# Generate Programming File
+__projnav/Adder_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+Adder.ut
+# Generate Programming File
+Adder.bgn
+Adder.rbt
+Adder.ll
+Adder.msk
+Adder.drc
+Adder.nky
+Adder.bit
+Adder.bin
+Adder.isc
+Adder.cmd_log
+# XST (Creating Lso File) : 
+Adder.lso
+# xst flow : RunXST
+Adder_summary.html
+# xst flow : RunXST
+Adder.syr
+Adder.prj
+Adder.sprj
+Adder.ana
+Adder.stx
+Adder.cmd_log
+Adder.ngc
+Adder.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project/_ngo"
+Adder.ngd
+Adder_ngdbuild.nav
+Adder.bld
+.untf
+Adder.cmd_log
+# Implementation : Map
+Adder_summary.html
+# Implementation : Map
+Adder_map.ncd
+Adder.ngm
+Adder.pcf
+Adder.nc1
+Adder.mrp
+Adder_map.mrp
+Adder.mdf
+Adder.cmd_log
+MAP_NO_GUIDE_FILE_CPF "Adder"
+Adder_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+Adder.twr
+Adder.twx
+Adder.tsi
+Adder.cmd_log
+# Implementation : Place & Route
+Adder_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+Adder.ncd
+Adder.par
+Adder.pad
+Adder_pad.txt
+Adder_pad.csv
+Adder.pad_txt
+Adder.dly
+reportgen.log
+Adder.xpi
+Adder.grf
+Adder.itr
+Adder_last_par.ncd
+Adder.placed_ncd_tracker
+Adder.routed_ncd_tracker
+Adder.cmd_log
+PAR_NO_GUIDE_FILE_CPF "Adder"
+# Generate Programming File
+__projnav/Adder_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+Adder.ut
+# Generate Programming File
+Adder.bgn
+Adder.rbt
+Adder.ll
+Adder.msk
+Adder.drc
+Adder.nky
+Adder.bit
+Adder.bin
+Adder.isc
+Adder.cmd_log
+# xst flow : RunXST
+Adder_summary.html
+# XST (Creating Lso File) : 
+Adder.lso
+# xst flow : RunXST
+Adder_summary.html
+# xst flow : RunXST
+Adder.syr
+Adder.prj
+Adder.sprj
+Adder.ana
+Adder.stx
+Adder.cmd_log
+Adder.ngc
+Adder.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project/_ngo"
+Adder.ngd
+Adder_ngdbuild.nav
+Adder.bld
+.untf
+Adder.cmd_log
+# Implementation : Map
+Adder_summary.html
+# Implementation : Map
+Adder_map.ncd
+Adder.ngm
+Adder.pcf
+Adder.nc1
+Adder.mrp
+Adder_map.mrp
+Adder.mdf
+Adder.cmd_log
+MAP_NO_GUIDE_FILE_CPF "Adder"
+Adder_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+Adder.twr
+Adder.twx
+Adder.tsi
+Adder.cmd_log
+# Implementation : Place & Route
+Adder_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+Adder.ncd
+Adder.par
+Adder.pad
+Adder_pad.txt
+Adder_pad.csv
+Adder.pad_txt
+Adder.dly
+reportgen.log
+Adder.xpi
+Adder.grf
+Adder.itr
+Adder_last_par.ncd
+Adder.placed_ncd_tracker
+Adder.routed_ncd_tracker
+Adder.cmd_log
+PAR_NO_GUIDE_FILE_CPF "Adder"
+# Generate Programming File
+__projnav/Adder_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+Adder.ut
+# Generate Programming File
+Adder.bgn
+Adder.rbt
+Adder.ll
+Adder.msk
+Adder.drc
+Adder.nky
+Adder.bit
+Adder.bin
+Adder.isc
+Adder.cmd_log
+# XST (Creating Lso File) : 
+Adder.lso
+# xst flow : RunXST
+Adder_summary.html
+# xst flow : RunXST
+Adder.syr
+Adder.prj
+Adder.sprj
+Adder.ana
+Adder.stx
+Adder.cmd_log
+Adder.ngc
+Adder.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project/_ngo"
+Adder.ngd
+Adder_ngdbuild.nav
+Adder.bld
+.untf
+Adder.cmd_log
+# Implementation : Map
+Adder_summary.html
+# Implementation : Map
+Adder_map.ncd
+Adder.ngm
+Adder.pcf
+Adder.nc1
+Adder.mrp
+Adder_map.mrp
+Adder.mdf
+Adder.cmd_log
+MAP_NO_GUIDE_FILE_CPF "Adder"
+Adder_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+Adder.twr
+Adder.twx
+Adder.tsi
+Adder.cmd_log
+# Implementation : Place & Route
+Adder_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+Adder.ncd
+Adder.par
+Adder.pad
+Adder_pad.txt
+Adder_pad.csv
+Adder.pad_txt
+Adder.dly
+reportgen.log
+Adder.xpi
+Adder.grf
+Adder.itr
+Adder_last_par.ncd
+Adder.placed_ncd_tracker
+Adder.routed_ncd_tracker
+Adder.cmd_log
+PAR_NO_GUIDE_FILE_CPF "Adder"
+# Generate Programming File
+__projnav/Adder_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+Adder.ut
+# Generate Programming File
+Adder.bgn
+Adder.rbt
+Adder.ll
+Adder.msk
+Adder.drc
+Adder.nky
+Adder.bit
+Adder.bin
+Adder.isc
+Adder.cmd_log
+# XST (Creating Lso File) : 
+Adder.lso
+# xst flow : RunXST
+Adder_summary.html
+# xst flow : RunXST
+Adder.syr
+Adder.prj
+Adder.sprj
+Adder.ana
+Adder.stx
+Adder.cmd_log
+Adder.ngc
+Adder.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\midi_project/_ngo"
+Adder.ngd
+Adder_ngdbuild.nav
+Adder.bld
+.untf
+Adder.cmd_log
+# Implementation : Map
+Adder_summary.html
+# Implementation : Map
+Adder_map.ncd
+Adder.ngm
+Adder.pcf
+Adder.nc1
+Adder.mrp
+Adder_map.mrp
+Adder.mdf
+Adder.cmd_log
+MAP_NO_GUIDE_FILE_CPF "Adder"
+Adder_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+Adder.twr
+Adder.twx
+Adder.tsi
+Adder.cmd_log
+# Implementation : Place & Route
+Adder_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+Adder.ncd
+Adder.par
+Adder.pad
+Adder_pad.txt
+Adder_pad.csv
+Adder.pad_txt
+Adder.dly
+reportgen.log
+Adder.xpi
+Adder.grf
+Adder.itr
+Adder_last_par.ncd
+Adder.placed_ncd_tracker
+Adder.routed_ncd_tracker
+Adder.cmd_log
+PAR_NO_GUIDE_FILE_CPF "Adder"
+# Generate Programming File
+__projnav/Adder_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+Adder.ut
+# Generate Programming File
+Adder.bgn
+Adder.rbt
+Adder.ll
+Adder.msk
+Adder.drc
+Adder.nky
+Adder.bit
+Adder.bin
+Adder.isc
+Adder.cmd_log
+# xst flow : RunXST
+Adder_summary.html
+# xst flow : RunXST
+Adder_summary.html

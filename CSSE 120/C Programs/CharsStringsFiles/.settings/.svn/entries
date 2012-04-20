@@ -1,0 +1,52 @@
+8
+
+dir
+92
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/CharsStringsFiles/.settings
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-11-05T04:31:23.697721Z
+88
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+org.eclipse.cdt.core.prefs
+file
+
+
+
+
+2007-11-08T03:16:02.593456Z
+ea7957b7bca3d85cfcae3f74cf93a258
+2007-11-05T04:31:23.697721Z
+88
+clifton
+
+org.eclipse.cdt.managedbuilder.core.prefs
+file
+
+
+
+
+2007-11-08T03:16:02.609081Z
+a4c3d1f1ce1e1fb3c756fef06d03ee6b
+2007-11-05T04:31:23.697721Z
+88
+clifton
+

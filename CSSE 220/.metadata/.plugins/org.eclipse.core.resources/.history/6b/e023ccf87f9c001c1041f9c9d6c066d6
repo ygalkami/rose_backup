@@ -1,0 +1,34 @@
+
+public class HW1 {
+
+
+	
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+	public static int maxOfThree (int a, int b, int c) 
+	{
+		if (a > b && a > c)
+			return a;
+		else if (b > a && b > c)
+			return b;
+		else
+			return c;
+		
+	}
+	public static int monthsToReach(double target, double monthlyDeposit, double annualInterestRate)
+	{
+		int balance = 0;
+		int j;
+		while(balance < target)
+		{
+			balance = balance * (annualInterestRate / 12);
+			balance = balance + monthlyDeposit;
+			j++;
+		}
+		
+		return j;
+	}
+}
+	

@@ -1,0 +1,140 @@
+<<<<<<< .mine
+module elevator/main
+open util/ordering[Floor]
+open util/ordering[Time]
+
+sig Floor {}
+sig Time {}
+abstract sig DoorState{}
+abstract sig Direction{}
+one sig Open, Closed extends DoorState { }
+one sig Up, Down extends Direction {}
+sig Lift{
+	door: Time -> one DoorState,
+	//up and down arrows are never both on
+	arrowLit: Time -> lone Direction,
+	currentFloor: Time -> one Floor,
+	requests: Time -> set Floor
+}
+
+//every floor must point to another floor
+fact isShaft {
+	//one n1: Node |  n1->n1 in r //1 node without parent
+	//two nodes can't have the same child
+	all f: Floor | not f->f in next
+
+	all f: Floor - last [] | let f' = next [f] |
+		f->f' in next and f'->f in prev
+
+	//the first floor can only be related to 1 other floor
+	//ensure the first and last nodes only connect to 1 other node
+	//one first[].next
+	//one last[].next
+
+	//every other node must point to two other nodes
+	//all f: Floor - last [] - first[] | #(f.next) = 2
+}
+
+pred validTransition [t, t': Time, l: Lift] {
+	l.currentFloor[t'] != l.currentFloor[t] implies moveUp[t, t', l] or moveDown[t,t',l]
+}
+
+pred serviceFloor [t, t': Time, l: Lift] {
+//	some r: l.requests[t'] | 
+//		next[r] in ^next[l.currentFloor[t']]
+//			implies moveUp[t, t', l]
+//	some r: l.requests[t] | 
+	l.currentFloor[t] in l.requests[t] implies 
+		l.requests[t'] =l.requests[t] - l.currentFloor[t]
+//			and l.DoorState = Open
+}
+
+pred moveDown [t, t': Time, l: Lift] {
+	not l.currentFloor[t] in last[]
+	l.currentFloor[t'] = next[l.currentFloor[t]]
+}
+
+pred moveUp [t, t': Time, l: Lift] {
+	not l.currentFloor[t] in last[]
+	l.currentFloor[t'] = next[l.currentFloor[t]]
+}
+
+
+//run {} for exactly 1 Lift, exactly 5 Floor, exactly 25 Time, exactly 1 DoorState
+run serviceFloor for exactly 1 Lift, exactly 5 Floor, exactly 2 Time, exactly 1 DoorState
+=======
+module elevator/main
+open util/ordering[Floor]
+//open util/ordering[Time]
+
+sig Floor {}
+sig Time {}
+abstract sig DoorState{}
+abstract sig Direction{}
+one sig Open, Closed extends DoorState { }
+one sig Up, Down extends Direction {}
+sig Lift{
+	door: Time -> one DoorState,
+	//up and down arrows are never both on
+	arrowLit: Time -> lone Direction,
+	currentFloor: Time -> one Floor,
+	requests: Time -> set Floor
+}
+
+//every floor must point to another floor
+fact isShaft {
+	//one n1: Node |  n1->n1 in r //1 node without parent
+	//two nodes can't have the same child
+	--all f: Floor | not f->f in next
+
+	--all f: Floor - last [] | let f' = next [f] |
+	--	f->f' in next and f'->f in prev
+
+	//the first floor can only be related to 1 other floor
+	//ensure the first and last nodes only connect to 1 other node
+	//one first[].next
+	//one last[].next
+
+	//every other node must point to two other nodes
+	//all f: Floor - last [] - first[] | #(f.next) = 2
+}
+
+pred validTransition [t, t': Time, l: Lift] {
+	l.currentFloor[t'] != l.currentFloor[t] implies 
+		(moveUp[t, t', l] or moveDown[t,t',l]) and serviceFloor[t,t',l]
+}
+fact mustHaveOneRequest {
+	#Lift.requests >= 1
+}
+pred serviceFloor [t, t': Time, l: Lift] {
+//	some r: l.requests[t'] | 
+//		next[r] in ^next[l.currentFloor[t']]
+//			implies moveUp[t, t', l]
+//	some r: l.requests[t] | 
+	l.currentFloor[t] in l.requests[t] implies 
+		l.requests[t'] = l.requests[t] - l.currentFloor[t]
+	
+	
+//			and validTransition[t,t',l]
+//			and l.DoorState = Open
+}
+
+pred moveDown [t, t': Time, l: Lift] {
+	not l.currentFloor[t] in last[]
+		//and t' = next[t] 
+	l.currentFloor[t'] = next[l.currentFloor[t]]
+}
+
+pred moveUp [t, t': Time, l: Lift] {
+	not l.currentFloor[t] in first[]
+		//and t' = next[t] 
+	 l.currentFloor[t'] = prev[l.currentFloor[t]]
+}
+
+//run {} for exactly 1 Lift, exactly 5 Floor, exactly 25 Time, exactly 1 DoorState
+run validTransition for exactly 1 Lift, exactly 5 Floor, exactly 2 Time, exactly 1 DoorState
+
+//run moveDown for exactly 1 Lift, exactly 5 Floor, exactly 2 Time, exactly 1 DoorState
+//run moveUp for exactly 1 Lift, exactly 5 Floor, exactly 2 Time, exactly 1 DoorState
+
+>>>>>>> .r6

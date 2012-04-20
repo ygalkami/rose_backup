@@ -1,0 +1,6 @@
+00:02:12.121582 00:e0:81:04:26:d9 (oui Unknown) > 70:00:1a:dd:00:02 (oui Unknown), ethertype IPv4 (0x0800), length 64: truncated-ip - 34 bytes missing! (tos 0x0, ttl 50, id 0, offset 0, flags [DF], proto ICMP (1), length 84) 137.112.136.195 > 171.67.240.210: ICMP echo request, id 30246, seq 5, length 64
+        0x0000:  4500 0054 0000 4000 3201 9a5f 8970 88c3
+        0x0010:  ab43 f0d2 0800 d4db 7626 0005 c423 164a
+        0x0020:  0000 0000 13b8 0000 0000 0000 1011 1213
+        0x0030:  1415
+

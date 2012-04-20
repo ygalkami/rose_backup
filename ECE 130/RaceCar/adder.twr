@@ -1,0 +1,138 @@
+--------------------------------------------------------------------------------
+Release 7.1.04i Trace H.42
+Copyright (c) 1995-2005 Xilinx, Inc.  All rights reserved.
+
+C:/Xilinx/bin/nt/trce.exe -ise
+c:\documents and settings\pickdp\my documents\courses\ece 130\racecar\RaceCar.ise
+-intstyle ise -e 3 -l 3 -s 4 -xml Adder Adder.ncd -o Adder.twr Adder.pcf
+
+
+Design file:              adder.ncd
+Physical constraint file: adder.pcf
+Device,speed:             xc3s200,-4 (PRODUCTION 1.37 2005-07-22)
+Report level:             error report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths
+   option. All paths that are not constrained will be reported in the
+   unconstrained paths section(s) of the report.
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+iA<0>          |oCarryOut      |   11.484|
+iA<0>          |oSum<0>        |   10.974|
+iA<0>          |oSum<1>        |   11.612|
+iA<0>          |oSum<2>        |   12.447|
+iA<0>          |oSum<3>        |   11.965|
+iA<0>          |oSum<4>        |   12.691|
+iA<0>          |oSum<5>        |   12.007|
+iA<0>          |oSum<6>        |   12.513|
+iA<0>          |oSum<7>        |   11.796|
+iA<1>          |oCarryOut      |   11.344|
+iA<1>          |oSum<1>        |   11.028|
+iA<1>          |oSum<2>        |   12.307|
+iA<1>          |oSum<3>        |   11.825|
+iA<1>          |oSum<4>        |   12.551|
+iA<1>          |oSum<5>        |   11.867|
+iA<1>          |oSum<6>        |   12.373|
+iA<1>          |oSum<7>        |   11.656|
+iA<2>          |oCarryOut      |   11.128|
+iA<2>          |oSum<2>        |   11.246|
+iA<2>          |oSum<3>        |   11.384|
+iA<2>          |oSum<4>        |   12.335|
+iA<2>          |oSum<5>        |   11.651|
+iA<2>          |oSum<6>        |   12.157|
+iA<2>          |oSum<7>        |   11.440|
+iA<3>          |oCarryOut      |   11.134|
+iA<3>          |oSum<3>        |   10.946|
+iA<3>          |oSum<4>        |   12.341|
+iA<3>          |oSum<5>        |   11.657|
+iA<3>          |oSum<6>        |   12.163|
+iA<3>          |oSum<7>        |   11.446|
+iA<4>          |oCarryOut      |   10.692|
+iA<4>          |oSum<4>        |   11.054|
+iA<4>          |oSum<5>        |   10.990|
+iA<4>          |oSum<6>        |   11.721|
+iA<4>          |oSum<7>        |   11.004|
+iA<5>          |oCarryOut      |   10.790|
+iA<5>          |oSum<5>        |   10.644|
+iA<5>          |oSum<6>        |   11.819|
+iA<5>          |oSum<7>        |   11.102|
+iA<6>          |oCarryOut      |   10.968|
+iA<6>          |oSum<6>        |   11.152|
+iA<6>          |oSum<7>        |   11.055|
+iA<7>          |oCarryOut      |   10.778|
+iA<7>          |oSum<7>        |   10.421|
+iB<0>          |oCarryOut      |   10.963|
+iB<0>          |oSum<0>        |   10.453|
+iB<0>          |oSum<1>        |   11.091|
+iB<0>          |oSum<2>        |   11.926|
+iB<0>          |oSum<3>        |   11.444|
+iB<0>          |oSum<4>        |   12.170|
+iB<0>          |oSum<5>        |   11.486|
+iB<0>          |oSum<6>        |   11.992|
+iB<0>          |oSum<7>        |   11.275|
+iB<1>          |oCarryOut      |   11.820|
+iB<1>          |oSum<1>        |   11.504|
+iB<1>          |oSum<2>        |   12.783|
+iB<1>          |oSum<3>        |   12.301|
+iB<1>          |oSum<4>        |   13.027|
+iB<1>          |oSum<5>        |   12.343|
+iB<1>          |oSum<6>        |   12.849|
+iB<1>          |oSum<7>        |   12.132|
+iB<2>          |oCarryOut      |   11.597|
+iB<2>          |oSum<2>        |   11.715|
+iB<2>          |oSum<3>        |   11.853|
+iB<2>          |oSum<4>        |   12.804|
+iB<2>          |oSum<5>        |   12.120|
+iB<2>          |oSum<6>        |   12.626|
+iB<2>          |oSum<7>        |   11.909|
+iB<3>          |oCarryOut      |   10.913|
+iB<3>          |oSum<3>        |   10.725|
+iB<3>          |oSum<4>        |   12.120|
+iB<3>          |oSum<5>        |   11.436|
+iB<3>          |oSum<6>        |   11.942|
+iB<3>          |oSum<7>        |   11.225|
+iB<4>          |oCarryOut      |   11.420|
+iB<4>          |oSum<4>        |   11.782|
+iB<4>          |oSum<5>        |   11.718|
+iB<4>          |oSum<6>        |   12.449|
+iB<4>          |oSum<7>        |   11.732|
+iB<5>          |oCarryOut      |   11.751|
+iB<5>          |oSum<5>        |   11.605|
+iB<5>          |oSum<6>        |   12.780|
+iB<5>          |oSum<7>        |   12.063|
+iB<6>          |oCarryOut      |   10.570|
+iB<6>          |oSum<6>        |   10.754|
+iB<6>          |oSum<7>        |   10.657|
+iB<7>          |oCarryOut      |   10.674|
+iB<7>          |oSum<7>        |   10.317|
+iCarryIn       |oCarryOut      |   11.607|
+iCarryIn       |oSum<0>        |   11.717|
+iCarryIn       |oSum<1>        |   11.735|
+iCarryIn       |oSum<2>        |   12.570|
+iCarryIn       |oSum<3>        |   12.088|
+iCarryIn       |oSum<4>        |   12.814|
+iCarryIn       |oSum<5>        |   12.130|
+iCarryIn       |oSum<6>        |   12.636|
+iCarryIn       |oSum<7>        |   11.919|
+---------------+---------------+---------+
+
+Analysis completed Thu Feb 14 18:47:54 2008
+--------------------------------------------------------------------------------
+
+
+
+Peak Memory Usage: 80 MB

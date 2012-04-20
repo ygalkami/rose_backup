@@ -1,0 +1,15 @@
+from graphics import *
+wind = GraphWin("An Alien Face", 200, 200)
+
+head = Oval(Point(5,10), Point(100, 150))
+head.draw(wind)
+
+leftEye = Line(Point(85,17), Point(45, 90))
+rightEye = Line(Point(85,70), Point(65, 90))
+
+#rightEye.move(1,1)
+
+leftEye.draw(wind)
+rightEye.draw(wind)
+
+wind.getMouse()

@@ -1,0 +1,17 @@
+rec.humor.funny (moderated) #2892 (2 + 97 more)
+From: luke.p@staff.ihug.co.nz (Luke Pascoe)
+[1] Buggy Debugging
+Keywords: chuckle, computers
+Date: Mon Jan 10 22:30:01 EST 2000
+
+Whilst watching the idiot box yesterday, there was a show about some
+DNA
+program being run. Bill Gates had invested $5 million into it, so they
+interviewed him and he responded as such:
+
+"We should be able to debug DNA the same way we debug software."
+
+Be afraid.
+
+[Note - originally by Mark Denholm (gigs@ihug.co.nz), posted with his
+        permission.]

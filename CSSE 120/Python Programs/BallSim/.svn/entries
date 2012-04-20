@@ -1,0 +1,55 @@
+8
+
+dir
+25
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/BallSim
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-10-01T01:29:26.481558Z
+25
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+.project
+file
+
+
+
+
+2007-10-02T13:04:00.995790Z
+6bb6768d0dca2052503d53abd2eed90a
+2007-10-01T01:29:26.481558Z
+25
+clifton
+
+src
+dir
+
+.pydevproject
+file
+
+
+
+
+2007-10-02T13:04:00.995790Z
+b66925ed307f16940266d84d28bf5a66
+2007-10-01T01:29:26.481558Z
+25
+clifton
+

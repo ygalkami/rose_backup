@@ -1,0 +1,9 @@
+xst -intstyle ise -ifn __projnav/TwoLights.xst -ofn TwoLights.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\ece 130/_ngo" -nt timestamp -uc TwoLights.ucf  -p xc3s200-ft256-4 TwoLights.ngc TwoLights.ngd
+xst -intstyle ise -ifn __projnav/TwoLights.xst -ofn TwoLights.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\ece 130/_ngo" -nt timestamp -uc TwoLights.ucf  -p xc3s200-ft256-4 TwoLights.ngc TwoLights.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o TwoLights_map.ncd TwoLights.ngd TwoLights.pcf
+par -w -intstyle ise -ol std -t 1 TwoLights_map.ncd TwoLights.ncd TwoLights.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml TwoLights TwoLights.ncd -o TwoLights.twr TwoLights.pcf
+bitgen -intstyle ise -f TwoLights.ut TwoLights.ncd
+bitgen -intstyle ise -f TwoLights.ut TwoLights.ncd

@@ -1,0 +1,412 @@
+ProjNav -> New -> Test Fixture
+__projnav/createTF.err
+# Edit Constraints (Text)
+# XST (Creating Lso File) : 
+SimpleGateCircuit.lso
+# xst flow : RunXST
+SimpleGateCircuit_summary.html
+# xst flow : RunXST
+SimpleGateCircuit.syr
+SimpleGateCircuit.prj
+SimpleGateCircuit.sprj
+SimpleGateCircuit.ana
+SimpleGateCircuit.stx
+SimpleGateCircuit.cmd_log
+SimpleGateCircuit.ngc
+SimpleGateCircuit.ngr
+# Implementation : Generate Post-Synthesis Simulation Model
+SimpleGateCircuit_synthesis.v
+SimpleGateCircuit_synthesis.nlf
+SimpleGateCircuit.versim_synth
+SimpleGateCircuit.synth_nlf
+SimpleGateCircuit.cmd_log
+SimpleGateCircuit_synthesis.v
+# View Technology Schematic
+SimpleGateCircuit.ngr
+SimpleGateCircuit.ngc
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\ece 130\simplegatecircuit\simplegatecircuit/_ngo"
+SimpleGateCircuit.ngd
+SimpleGateCircuit_ngdbuild.nav
+SimpleGateCircuit.bld
+SimpleGateCircuit.ucf.untf
+SimpleGateCircuit.cmd_log
+# Implementation : Map
+SimpleGateCircuit_summary.html
+# Implementation : Map
+SimpleGateCircuit_map.ncd
+SimpleGateCircuit.ngm
+SimpleGateCircuit.pcf
+SimpleGateCircuit.nc1
+SimpleGateCircuit.mrp
+SimpleGateCircuit_map.mrp
+SimpleGateCircuit.mdf
+SimpleGateCircuit.cmd_log
+MAP_NO_GUIDE_FILE_CPF "SimpleGateCircuit"
+SimpleGateCircuit_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+SimpleGateCircuit.twr
+SimpleGateCircuit.twx
+SimpleGateCircuit.tsi
+SimpleGateCircuit.cmd_log
+# Implementation : Place & Route
+SimpleGateCircuit_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+SimpleGateCircuit.ncd
+SimpleGateCircuit.par
+SimpleGateCircuit.pad
+SimpleGateCircuit_pad.txt
+SimpleGateCircuit_pad.csv
+SimpleGateCircuit.pad_txt
+SimpleGateCircuit.dly
+reportgen.log
+SimpleGateCircuit.xpi
+SimpleGateCircuit.grf
+SimpleGateCircuit.itr
+SimpleGateCircuit_last_par.ncd
+SimpleGateCircuit.placed_ncd_tracker
+SimpleGateCircuit.routed_ncd_tracker
+SimpleGateCircuit.cmd_log
+PAR_NO_GUIDE_FILE_CPF "SimpleGateCircuit"
+# Generate Programming File
+__projnav/SimpleGateCircuit_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+SimpleGateCircuit.ut
+# Generate Programming File
+SimpleGateCircuit.bgn
+SimpleGateCircuit.rbt
+SimpleGateCircuit.ll
+SimpleGateCircuit.msk
+SimpleGateCircuit.drc
+SimpleGateCircuit.nky
+SimpleGateCircuit.bit
+SimpleGateCircuit.bin
+SimpleGateCircuit.isc
+SimpleGateCircuit.cmd_log
+# xst flow : RunXST
+SimpleGateCircuit_summary.html
+# View RTL Schematic
+SimpleGateCircuit.ngr
+SimpleGateCircuit.ngc
+# View Technology Schematic
+SimpleGateCircuit.ngr
+SimpleGateCircuit.ngc
+# xst flow : RunXST
+SimpleGateCircuit_summary.html
+# XST (Creating Lso File) : 
+SimpleGateCircuit.lso
+# xst flow : RunXST
+SimpleGateCircuit_summary.html
+# xst flow : RunXST
+SimpleGateCircuit.syr
+SimpleGateCircuit.prj
+SimpleGateCircuit.sprj
+SimpleGateCircuit.ana
+SimpleGateCircuit.stx
+SimpleGateCircuit.cmd_log
+SimpleGateCircuit.ngc
+SimpleGateCircuit.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\ece 130\simplegatecircuit\simplegatecircuit/_ngo"
+SimpleGateCircuit.ngd
+SimpleGateCircuit_ngdbuild.nav
+SimpleGateCircuit.bld
+SimpleGateCircuit.ucf.untf
+SimpleGateCircuit.cmd_log
+# Implementation : Generate Post-Synthesis Simulation Model
+SimpleGateCircuit_synthesis.v
+SimpleGateCircuit_synthesis.nlf
+SimpleGateCircuit.versim_synth
+SimpleGateCircuit.synth_nlf
+SimpleGateCircuit.cmd_log
+SimpleGateCircuit_synthesis.v
+# View Technology Schematic
+SimpleGateCircuit.ngr
+SimpleGateCircuit.ngc
+# View RTL Schematic
+SimpleGateCircuit.ngr
+SimpleGateCircuit.ngc
+# Implementation : Map
+SimpleGateCircuit_summary.html
+# Implementation : Map
+SimpleGateCircuit_map.ncd
+SimpleGateCircuit.ngm
+SimpleGateCircuit.pcf
+SimpleGateCircuit.nc1
+SimpleGateCircuit.mrp
+SimpleGateCircuit_map.mrp
+SimpleGateCircuit.mdf
+SimpleGateCircuit.cmd_log
+MAP_NO_GUIDE_FILE_CPF "SimpleGateCircuit"
+SimpleGateCircuit_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+SimpleGateCircuit.twr
+SimpleGateCircuit.twx
+SimpleGateCircuit.tsi
+SimpleGateCircuit.cmd_log
+# Implementation : Place & Route
+SimpleGateCircuit_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+SimpleGateCircuit.ncd
+SimpleGateCircuit.par
+SimpleGateCircuit.pad
+SimpleGateCircuit_pad.txt
+SimpleGateCircuit_pad.csv
+SimpleGateCircuit.pad_txt
+SimpleGateCircuit.dly
+reportgen.log
+SimpleGateCircuit.xpi
+SimpleGateCircuit.grf
+SimpleGateCircuit.itr
+SimpleGateCircuit_last_par.ncd
+SimpleGateCircuit.placed_ncd_tracker
+SimpleGateCircuit.routed_ncd_tracker
+SimpleGateCircuit.cmd_log
+PAR_NO_GUIDE_FILE_CPF "SimpleGateCircuit"
+# Generate Programming File
+__projnav/SimpleGateCircuit_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+SimpleGateCircuit.ut
+# Generate Programming File
+SimpleGateCircuit.bgn
+SimpleGateCircuit.rbt
+SimpleGateCircuit.ll
+SimpleGateCircuit.msk
+SimpleGateCircuit.drc
+SimpleGateCircuit.nky
+SimpleGateCircuit.bit
+SimpleGateCircuit.bin
+SimpleGateCircuit.isc
+SimpleGateCircuit.cmd_log
+# XST (Creating Lso File) : 
+SimpleGateCircuit.lso
+# xst flow : RunXST
+SimpleGateCircuit_summary.html
+# xst flow : RunXST
+SimpleGateCircuit.syr
+SimpleGateCircuit.prj
+SimpleGateCircuit.sprj
+SimpleGateCircuit.ana
+SimpleGateCircuit.stx
+SimpleGateCircuit.cmd_log
+SimpleGateCircuit.ngc
+SimpleGateCircuit.ngr
+# XST (Creating Lso File) : 
+SimpleGateCircuit.lso
+# xst flow : RunXST
+SimpleGateCircuit_summary.html
+# xst flow : RunXST
+SimpleGateCircuit.syr
+SimpleGateCircuit.prj
+SimpleGateCircuit.sprj
+SimpleGateCircuit.ana
+SimpleGateCircuit.stx
+SimpleGateCircuit.cmd_log
+SimpleGateCircuit.ngc
+SimpleGateCircuit.ngr
+# XST (Creating Lso File) : 
+SimpleGateCircuit.lso
+# xst flow : RunXST
+SimpleGateCircuit_summary.html
+# xst flow : RunXST
+SimpleGateCircuit.syr
+SimpleGateCircuit.prj
+SimpleGateCircuit.sprj
+SimpleGateCircuit.ana
+SimpleGateCircuit.stx
+SimpleGateCircuit.cmd_log
+SimpleGateCircuit.ngc
+SimpleGateCircuit.ngr
+# XST (Creating Lso File) : 
+SimpleGateCircuit.lso
+# xst flow : RunXST
+SimpleGateCircuit_summary.html
+# xst flow : RunXST
+SimpleGateCircuit.syr
+SimpleGateCircuit.prj
+SimpleGateCircuit.sprj
+SimpleGateCircuit.ana
+SimpleGateCircuit.stx
+SimpleGateCircuit.cmd_log
+SimpleGateCircuit.ngc
+SimpleGateCircuit.ngr
+# XST (Creating Lso File) : 
+SimpleGateCircuit.lso
+# xst flow : RunXST
+SimpleGateCircuit_summary.html
+# xst flow : RunXST
+SimpleGateCircuit.syr
+SimpleGateCircuit.prj
+SimpleGateCircuit.sprj
+SimpleGateCircuit.ana
+SimpleGateCircuit.stx
+SimpleGateCircuit.cmd_log
+SimpleGateCircuit.ngc
+SimpleGateCircuit.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\ece 130\simplegatecircuit\simplegatecircuit/_ngo"
+SimpleGateCircuit.ngd
+SimpleGateCircuit_ngdbuild.nav
+SimpleGateCircuit.bld
+SimpleGateCircuit.ucf.untf
+SimpleGateCircuit.cmd_log
+# Implementation : Map
+SimpleGateCircuit_summary.html
+# Implementation : Map
+SimpleGateCircuit_map.ncd
+SimpleGateCircuit.ngm
+SimpleGateCircuit.pcf
+SimpleGateCircuit.nc1
+SimpleGateCircuit.mrp
+SimpleGateCircuit_map.mrp
+SimpleGateCircuit.mdf
+SimpleGateCircuit.cmd_log
+MAP_NO_GUIDE_FILE_CPF "SimpleGateCircuit"
+SimpleGateCircuit_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+SimpleGateCircuit.twr
+SimpleGateCircuit.twx
+SimpleGateCircuit.tsi
+SimpleGateCircuit.cmd_log
+# Implementation : Place & Route
+SimpleGateCircuit_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+SimpleGateCircuit.ncd
+SimpleGateCircuit.par
+SimpleGateCircuit.pad
+SimpleGateCircuit_pad.txt
+SimpleGateCircuit_pad.csv
+SimpleGateCircuit.pad_txt
+SimpleGateCircuit.dly
+reportgen.log
+SimpleGateCircuit.xpi
+SimpleGateCircuit.grf
+SimpleGateCircuit.itr
+SimpleGateCircuit_last_par.ncd
+SimpleGateCircuit.placed_ncd_tracker
+SimpleGateCircuit.routed_ncd_tracker
+SimpleGateCircuit.cmd_log
+PAR_NO_GUIDE_FILE_CPF "SimpleGateCircuit"
+# Generate Programming File
+__projnav/SimpleGateCircuit_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+SimpleGateCircuit.ut
+# Generate Programming File
+SimpleGateCircuit.bgn
+SimpleGateCircuit.rbt
+SimpleGateCircuit.ll
+SimpleGateCircuit.msk
+SimpleGateCircuit.drc
+SimpleGateCircuit.nky
+SimpleGateCircuit.bit
+SimpleGateCircuit.bin
+SimpleGateCircuit.isc
+SimpleGateCircuit.cmd_log
+# Generate Programming File
+__projnav/SimpleGateCircuit_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+SimpleGateCircuit.ut
+# Generate Programming File
+SimpleGateCircuit.bgn
+SimpleGateCircuit.rbt
+SimpleGateCircuit.ll
+SimpleGateCircuit.msk
+SimpleGateCircuit.drc
+SimpleGateCircuit.nky
+SimpleGateCircuit.bit
+SimpleGateCircuit.bin
+SimpleGateCircuit.isc
+SimpleGateCircuit.cmd_log
+# XST (Creating Lso File) : 
+SimpleGateCircuit.lso
+# xst flow : RunXST
+SimpleGateCircuit_summary.html
+# xst flow : RunXST
+SimpleGateCircuit.syr
+SimpleGateCircuit.prj
+SimpleGateCircuit.sprj
+SimpleGateCircuit.ana
+SimpleGateCircuit.stx
+SimpleGateCircuit.cmd_log
+SimpleGateCircuit.ngc
+SimpleGateCircuit.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\ece 130\simplegatecircuit\simplegatecircuit/_ngo"
+SimpleGateCircuit.ngd
+SimpleGateCircuit_ngdbuild.nav
+SimpleGateCircuit.bld
+SimpleGateCircuit.ucf.untf
+SimpleGateCircuit.cmd_log
+# Implementation : Map
+SimpleGateCircuit_summary.html
+# Implementation : Map
+SimpleGateCircuit_map.ncd
+SimpleGateCircuit.ngm
+SimpleGateCircuit.pcf
+SimpleGateCircuit.nc1
+SimpleGateCircuit.mrp
+SimpleGateCircuit_map.mrp
+SimpleGateCircuit.mdf
+SimpleGateCircuit.cmd_log
+MAP_NO_GUIDE_FILE_CPF "SimpleGateCircuit"
+SimpleGateCircuit_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+SimpleGateCircuit.twr
+SimpleGateCircuit.twx
+SimpleGateCircuit.tsi
+SimpleGateCircuit.cmd_log
+# Implementation : Place & Route
+SimpleGateCircuit_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+SimpleGateCircuit.ncd
+SimpleGateCircuit.par
+SimpleGateCircuit.pad
+SimpleGateCircuit_pad.txt
+SimpleGateCircuit_pad.csv
+SimpleGateCircuit.pad_txt
+SimpleGateCircuit.dly
+reportgen.log
+SimpleGateCircuit.xpi
+SimpleGateCircuit.grf
+SimpleGateCircuit.itr
+SimpleGateCircuit_last_par.ncd
+SimpleGateCircuit.placed_ncd_tracker
+SimpleGateCircuit.routed_ncd_tracker
+SimpleGateCircuit.cmd_log
+PAR_NO_GUIDE_FILE_CPF "SimpleGateCircuit"
+# Generate Programming File
+__projnav/SimpleGateCircuit_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+SimpleGateCircuit.ut
+# Generate Programming File
+SimpleGateCircuit.bgn
+SimpleGateCircuit.rbt
+SimpleGateCircuit.ll
+SimpleGateCircuit.msk
+SimpleGateCircuit.drc
+SimpleGateCircuit.nky
+SimpleGateCircuit.bit
+SimpleGateCircuit.bin
+SimpleGateCircuit.isc
+SimpleGateCircuit.cmd_log
+# xst flow : RunXST
+SimpleGateCircuit_summary.html
+# xst flow : RunXST
+SimpleGateCircuit_summary.html

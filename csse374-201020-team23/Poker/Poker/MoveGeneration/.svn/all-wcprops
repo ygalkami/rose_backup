@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/csse374-201020-team23/!svn/ver/261/Poker/Poker/MoveGeneration
+END
+IMoveChoiceStrategy.cs
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/repos/csse374-201020-team23/!svn/ver/238/Poker/Poker/MoveGeneration/IMoveChoiceStrategy.cs
+END
+LegalMoveGenerator.cs
+K 25
+svn:wc:ra_dav:version-url
+V 90
+/repos/csse374-201020-team23/!svn/ver/208/Poker/Poker/MoveGeneration/LegalMoveGenerator.cs
+END
+AutomatedMoveChoiceStrategy.cs
+K 25
+svn:wc:ra_dav:version-url
+V 99
+/repos/csse374-201020-team23/!svn/ver/261/Poker/Poker/MoveGeneration/AutomatedMoveChoiceStrategy.cs
+END

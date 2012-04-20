@@ -1,0 +1,19 @@
+xst -intstyle ise -ifn __projnav/Adder.xst -ofn Adder.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\racecar/_ngo" -nt timestamp -i  -p xc3s200-ft256-4 Adder.ngc Adder.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o Adder_map.ncd Adder.ngd Adder.pcf
+par -w -intstyle ise -ol std -t 1 Adder_map.ncd Adder.ncd Adder.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml Adder Adder.ncd -o Adder.twr Adder.pcf
+bitgen -intstyle ise -f Adder.ut Adder.ncd
+bitgen -intstyle ise -f Adder.ut Adder.ncd
+xst -intstyle ise -ifn __projnav/Adder.xst -ofn Adder.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\racecar/_ngo" -nt timestamp -i  -p xc3s200-ft256-4 Adder.ngc Adder.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o Adder_map.ncd Adder.ngd Adder.pcf
+par -w -intstyle ise -ol std -t 1 Adder_map.ncd Adder.ncd Adder.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml Adder Adder.ncd -o Adder.twr Adder.pcf
+bitgen -intstyle ise -f Adder.ut Adder.ncd
+xst -intstyle ise -ifn __projnav/Adder.xst -ofn Adder.syr
+ngdbuild -intstyle ise -dd "c:\documents and settings\pickdp\my documents\courses\ece 130\racecar/_ngo" -nt timestamp -i  -p xc3s200-ft256-4 Adder.ngc Adder.ngd
+map -intstyle ise -p xc3s200-ft256-4 -cm area -pr b -k 4 -c 100 -o Adder_map.ncd Adder.ngd Adder.pcf
+par -w -intstyle ise -ol std -t 1 Adder_map.ncd Adder.ncd Adder.pcf
+trce -intstyle ise -e 3 -l 3 -s 4 -xml Adder Adder.ncd -o Adder.twr Adder.pcf
+bitgen -intstyle ise -f Adder.ut Adder.ncd

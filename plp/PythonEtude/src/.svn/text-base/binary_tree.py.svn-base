@@ -1,0 +1,152 @@
+# An object-oriented etude on binary trees.
+# by David Pick, 9/19/09
+# Points: 8.5 / 10 - build_tree should raise errors with the following invalid trees:
+#    build_tree('ABCD','CDAB')
+#    build_tree("AC", "AB")
+# Also, using a wrapper class for a list for level order is still using a list
+
+
+
+class My_Queue():
+    """Simple Queue class that can be safely mutated while being iterated over"""
+    def __init__(self):
+        self.queue = []
+        
+    def push(self,node):
+        self.queue.append(node)
+        
+    def pop(self):
+        return self.queue.pop
+        
+    def get_list(self):
+        return self.queue
+        
+class EmptyNode:
+    """Node class that does not contain any children"""
+    def __init__(self, element):
+        self.element = element
+        
+    def preorder(self):
+        return self.element
+    
+    def inorder(self):
+        return self.element
+    
+    def postorder(self):
+        return self.element
+    
+    def levelorder(self):
+        return self.element
+    
+    def levelorder_help(self, queue, list):
+        list.append(self.element)
+        for x in self.empty():
+            queue.append(x)
+        current = queue.pop()
+        current.levelorder_help(queue, list)
+    
+    def empty(self):
+        """returns an empty list, because the list has no children"""
+        return []
+    
+class BinaryTreeNode:
+    """Binary Node class with children"""
+    def __init__(self, element, left=EmptyNode(""), right=EmptyNode("")):
+        self.element = element
+        self.left = left
+        self.right = right
+    
+    def preorder(self):
+        """returns an interator of a pre order traversal of the tree"""
+        yield self.element
+        for x in self.left.preorder():
+            yield x
+        for x in self.right.preorder():
+            yield x
+            
+    def inorder(self):
+        """returns an interator of a in order traversal of the tree"""
+        for x in self.left.inorder():
+            yield x
+        yield self.element
+        for x in self.right.inorder():
+            yield x
+            
+    def postorder(self):
+        """returns an interator of a post order traversal of the tree"""
+        for x in self.left.postorder():
+            yield x
+        for x in self.right.postorder():
+            yield x
+        yield self.element
+        
+    def levelorder(self):
+        """returns an interator of a level order traversal of the tree"""
+        queue = My_Queue()
+        list = []
+        queue.push(self)
+        for x in queue.get_list():
+            current = queue.pop()
+            list.append(current)
+            for y in x.empty():
+                queue.push(y)
+        for x in queue.get_list():
+            yield x.element
+        
+    def empty(self):
+        """returns list of children of the node"""
+        return [self.left, self.right]
+            
+def build_tree(pre_order, in_order):
+    if len(pre_order) < 1 or len(in_order) < 1:
+        return "No Empty Trees"
+    left, root, right = in_order.partition(pre_order[0])
+    
+    root = BinaryTreeNode(root)
+    
+    if len(left) == 1:
+        root.left = BinaryTreeNode(left)
+    elif len(left) != 0:
+        root.left = build_tree(pre_order[1: len(left)], left)
+    if len(right) == 1:
+        root.right = BinaryTreeNode(right)
+    elif len(right) != 0:
+        root.right = build_tree(pre_order[1 + len(left):], right)
+        
+    return root
+
+def print_traversals(tree):
+    print "PreOrder: "
+    for a in tree.preorder():
+        print a,
+    
+    print ""
+    print "InOrder: "
+    for b in tree.inorder():
+        print b,
+    
+    print ""
+    print "PostOrder: "
+    for c in tree.postorder():
+        print c,
+        
+    print ""
+    print "LevelOrder: "
+    for d in tree.levelorder():
+        print d,
+
+if __name__ == '__main__':
+    a = build_tree('AQUICHE', 'UQIAHCE') 
+    b = build_tree('THEQUICKLAZYFOX', 'QIUCEHLAZKFYTXO')
+    c = build_tree('AMBIDEXTROUS', 'MIDBEARTUOXS')
+    d = build_tree('LUMBERJACK', 'EBMRULCAKJ') 
+    print_traversals(a)
+    print ""
+    print_traversals(b)
+    print ""
+    print_traversals(c)
+    print ""
+    print_traversals(d)
+    
+
+

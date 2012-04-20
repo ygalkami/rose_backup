@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CommitComments>	<CommitComment>Priority Queue done</CommitComment>
+	<CommitComment>Anagram working</CommitComment>
+	<CommitComment>Now catches numbers ... hopefully</CommitComment>
+	<CommitComment>set fixed jlist size</CommitComment>
+	<CommitComment>now finds missspelled words with double puncation at the end</CommitComment>
+	<CommitComment>added some more comments</CommitComment>
+	<CommitComment>changed suggestedlist focusable to false</CommitComment>
+	<CommitComment>Added generatecorrections method</CommitComment>
+	<CommitComment>Fixed the issue that when a button was clicked the selected
+text became unselected.</CommitComment>
+	<CommitComment>Removed html selecting of words in favor of built in select methods</CommitComment>
+</CommitComments>

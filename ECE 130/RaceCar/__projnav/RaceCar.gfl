@@ -1,0 +1,250 @@
+# XST (Creating Lso File) : 
+Adder.lso
+# xst flow : RunXST
+Adder_summary.html
+# xst flow : RunXST
+Adder.syr
+Adder.prj
+Adder.sprj
+Adder.ana
+Adder.stx
+Adder.cmd_log
+Adder.ngc
+Adder.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\racecar/_ngo"
+Adder.ngd
+Adder_ngdbuild.nav
+Adder.bld
+.untf
+Adder.cmd_log
+# Implementation : Map
+Adder_summary.html
+# Implementation : Map
+Adder_map.ncd
+Adder.ngm
+Adder.pcf
+Adder.nc1
+Adder.mrp
+Adder_map.mrp
+Adder.mdf
+Adder.cmd_log
+MAP_NO_GUIDE_FILE_CPF "Adder"
+Adder_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+Adder.twr
+Adder.twx
+Adder.tsi
+Adder.cmd_log
+# Implementation : Place & Route
+Adder_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+Adder.ncd
+Adder.par
+Adder.pad
+Adder_pad.txt
+Adder_pad.csv
+Adder.pad_txt
+Adder.dly
+reportgen.log
+Adder.xpi
+Adder.grf
+Adder.itr
+Adder_last_par.ncd
+Adder.placed_ncd_tracker
+Adder.routed_ncd_tracker
+Adder.cmd_log
+PAR_NO_GUIDE_FILE_CPF "Adder"
+# Generate Programming File
+__projnav/Adder_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+Adder.ut
+# Generate Programming File
+Adder.bgn
+Adder.rbt
+Adder.ll
+Adder.msk
+Adder.drc
+Adder.nky
+Adder.bit
+Adder.bin
+Adder.isc
+Adder.cmd_log
+# xst flow : RunXST
+Adder_summary.html
+# Generate Programming File
+__projnav/Adder_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+Adder.ut
+# Generate Programming File
+Adder.bgn
+Adder.rbt
+Adder.ll
+Adder.msk
+Adder.drc
+Adder.nky
+Adder.bit
+Adder.bin
+Adder.isc
+Adder.cmd_log
+# XST (Creating Lso File) : 
+Adder.lso
+# xst flow : RunXST
+Adder_summary.html
+# xst flow : RunXST
+Adder.syr
+Adder.prj
+Adder.sprj
+Adder.ana
+Adder.stx
+Adder.cmd_log
+Adder.ngc
+Adder.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\racecar/_ngo"
+Adder.ngd
+Adder_ngdbuild.nav
+Adder.bld
+.untf
+Adder.cmd_log
+# Implementation : Map
+Adder_summary.html
+# Implementation : Map
+Adder_map.ncd
+Adder.ngm
+Adder.pcf
+Adder.nc1
+Adder.mrp
+Adder_map.mrp
+Adder.mdf
+Adder.cmd_log
+MAP_NO_GUIDE_FILE_CPF "Adder"
+Adder_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+Adder.twr
+Adder.twx
+Adder.tsi
+Adder.cmd_log
+# Implementation : Place & Route
+Adder_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+Adder.ncd
+Adder.par
+Adder.pad
+Adder_pad.txt
+Adder_pad.csv
+Adder.pad_txt
+Adder.dly
+reportgen.log
+Adder.xpi
+Adder.grf
+Adder.itr
+Adder_last_par.ncd
+Adder.placed_ncd_tracker
+Adder.routed_ncd_tracker
+Adder.cmd_log
+PAR_NO_GUIDE_FILE_CPF "Adder"
+# Generate Programming File
+__projnav/Adder_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+Adder.ut
+# Generate Programming File
+Adder.bgn
+Adder.rbt
+Adder.ll
+Adder.msk
+Adder.drc
+Adder.nky
+Adder.bit
+Adder.bin
+Adder.isc
+Adder.cmd_log
+# XST (Creating Lso File) : 
+Adder.lso
+# xst flow : RunXST
+Adder_summary.html
+# xst flow : RunXST
+Adder.syr
+Adder.prj
+Adder.sprj
+Adder.ana
+Adder.stx
+Adder.cmd_log
+Adder.ngc
+Adder.ngr
+# Implmentation : Translate
+__projnav/ednTOngd_tcl.rsp
+"c:\documents and settings\pickdp\my documents\courses\ece 130\racecar/_ngo"
+Adder.ngd
+Adder_ngdbuild.nav
+Adder.bld
+.untf
+Adder.cmd_log
+# Implementation : Map
+Adder_summary.html
+# Implementation : Map
+Adder_map.ncd
+Adder.ngm
+Adder.pcf
+Adder.nc1
+Adder.mrp
+Adder_map.mrp
+Adder.mdf
+Adder.cmd_log
+MAP_NO_GUIDE_FILE_CPF "Adder"
+Adder_map.ngm
+# Implmentation : Post-Place & Route Timing
+__projnav/ncdTOtwr_tcl.rsp
+Adder.twr
+Adder.twx
+Adder.tsi
+Adder.cmd_log
+# Implementation : Place & Route
+Adder_summary.html
+# Implmentation : Place & Route
+__projnav/nc1TOncd_tcl.rsp
+Adder.ncd
+Adder.par
+Adder.pad
+Adder_pad.txt
+Adder_pad.csv
+Adder.pad_txt
+Adder.dly
+reportgen.log
+Adder.xpi
+Adder.grf
+Adder.itr
+Adder_last_par.ncd
+Adder.placed_ncd_tracker
+Adder.routed_ncd_tracker
+Adder.cmd_log
+PAR_NO_GUIDE_FILE_CPF "Adder"
+# Generate Programming File
+__projnav/Adder_ncdTOut_tcl.rsp
+__projnav/bitgen.rsp
+bitgen.ut
+Adder.ut
+# Generate Programming File
+Adder.bgn
+Adder.rbt
+Adder.ll
+Adder.msk
+Adder.drc
+Adder.nky
+Adder.bit
+Adder.bin
+Adder.isc
+Adder.cmd_log
+# xst flow : RunXST
+Adder_summary.html
+# xst flow : RunXST
+Adder_summary.html

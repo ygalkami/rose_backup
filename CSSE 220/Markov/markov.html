@@ -1,0 +1,273 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html PUBLIC
+          "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en">
+
+<head>
+<title>Markov Chain Algorithm</title>
+<link rel="stylesheet" type="text/css" href="../../style/style.css" />
+</head>
+
+<body>
+
+<h1>Markov Chain Algorithm</h1>
+
+Markov documents:&nbsp;&nbsp; <a href="index-Markov.html">index</a>&nbsp;&nbsp;
+<a href="overview.html">overview</a>&nbsp;&nbsp;&nbsp; <a href="markov.html">
+markov</a>&nbsp;&nbsp;&nbsp; <a href="justification.html">justification</a>&nbsp;&nbsp;
+<a href="turnin-instructions.html">turnin-instructions</a>&nbsp;&nbsp;&nbsp;
+<a href="examples.html">code examples</a>
+&nbsp;&nbsp;&nbsp; <a href="MarkovPartners.xls">partners</a>
+&nbsp;&nbsp;&nbsp; <a href="importingEclipseClasses.html">importing classes</a>
+&nbsp;&nbsp;&nbsp; <a href="multiset/index.html">MultiSet</a>
+
+
+
+<h2>Background</h2>
+
+<p>The idea of using this algorithm came from Kernighan and Pike's
+<i>
+<a href="http://www.amazon.com/Practice-Programming-Addison-Wesley-Professional-Computing/dp/020161586X/ref=pd_bbs_sr_1?ie=UTF8&s=books&qid=1200854157&sr=8-1">The
+Practice of Programming</a></i>, chapter 3.</p>
+
+<h2>Purpose</h2>
+
+<p>Running the Markov algorithm with prefix length <i>n</i>=2 on the
+text of L. Frank Baum's <i>The Wonderful Wizard of Oz</i> might result
+in something like the following.</p>
+
+<blockquote>Dorothy lived in the doorway and looked upon her right
+foot and said: "Oz has sent for you."  So the Wizard in the basket.
+"Good-bye!"  "Good-bye!" shouted everyone, and all eyes were turned
+upward to where the Great Oz."<!--"--> "Oh, indeed!"  exclaimed the
+man.  "He has more brains than he needs."  "And I am something
+terrible." "But, I don't care who kills her.  But until she is
+melted," explained the Scarecrow.  He had been cut.  "There," said he;
+"now you have earned the brains you will oil the joints of my legs, I
+shall know everything."</blockquote>
+
+<p>As you can see, the generated text makes little sense, but it seems to have 
+similar grammar, sentence structure, and dialogue as the original 
+text. It approximates natural language in structure, if not in sense. The 
+generated text has similar statistical properties to the original text: every 
+three-word phrase in the output appeared somewhere in the input.</p>
+
+<p>The algorithm builds statistics about the frequency with which
+words follow certain prefix groups of other words.  For example, with
+prefix size <i>n</i>=1, each generated word is randomly chosen based
+on the probability that it may follow the previous word, as observed
+from the input text.  With <i>n</i>=2, the next generated word is
+based on the previous two words, and so on.  Small values of <i>n</i>
+tend to produce gibberish; large ones tend to reproduce the input
+exactly.  It is possible to think of running the algorithm at
+<i>n</i>=0, which would yield a truly random order of words from the input text.  
+Your implementation is not required to work for <i>n</i>=0..</p>
+
+<p>This idea of "chains" puts a few serious constraints on the
+generated text.  For example, the output will always begin with the
+first <i>n</i> words of the input.  Similarly, if allowed to run to
+completion the algorithm will always end on the same word as the
+input.  The cause of this behavior will become clear later.</p>
+
+<h2>Definitions</h2>
+
+<p>If words <i>w</i><sub>1</sub>, <i>w</i><sub>2</sub>, ...,
+<i>w<sub>n</sub></i>, <i>w<sub>n+1</sub></i> occur consecutively in
+the input, then <i>w<sub>n+1</sub></i> is said to be a suffix of the
+prefix <i>w</i><sub>1</sub>, <i>w</i><sub>2</sub>, ...,
+<i>w<sub>n</sub></i>.  Remember, <i>n</i> is called the <b>prefix</b>
+length.</p>
+
+<p>If the same prefix-suffix pair exists <i>x</i> times in the input,
+then that suffix is said to have multiplicity <i>x</i>.  Multiplicity
+of the suffix is important during text generation because suffixes are
+chosen according to their probability of following a given prefix as
+observed from the input.  A suffix with multiplicity 2 has twice the
+probability of being chosen as a suffix with multiplicity 1.</p>
+
+<h2>Concrete Example</h2>
+
+<p>Examine this famous passage (often called &quot;The Beatitudes&quot;)&nbsp; from the New International Version of the
+Bible.  It is our input.  Notice the recurrence of certain phrases,
+coupled with the uniqueness of others.</p>
+
+<blockquote>
+Blessed are the poor in spirit,<br />
+for theirs is the kingdom of heaven.<br />
+Blessed are those who mourn,<br />
+for they will be comforted.<br />
+Blessed are the meek,<br />
+for they will inherit the earth.<br />
+Blessed are those who hunger and thirst for righteousness,<br />
+for they will be filled.<br />
+Blessed are the merciful,<br />
+for they will be shown mercy.<br />
+Blessed are the pure in heart,<br />
+for they will see God.<br />
+Blessed are the peacemakers,<br />
+for they will be called sons of God.<br />
+<br />
+Matthew 5:3-9
+</blockquote>
+
+<p>Let's build a table of prefixes and suffixes when <i>n</i>=2 by
+considering only the prefixes that come from the first and last sentences
+(otherwise the table would span several pages in this document), but we list 
+corresponding
+all suffixes from the passage that match those prefixes.</p>
+
+<p>It is clear that any generated text must start with "Blessed are",
+since those are the first <i>n</i> words of the input.  However, to
+build our table, every word must have a prefix, and every
+<i>n</i>-word phrase must have at least one suffix.  The prefixes for
+the first "Blessed" and "are" spill off the front of the paragraph;
+similarly, the suffix of "of God." spills off the end.  Rather than
+make our algorithm's flow control more complex to handle these
+boundary cases, we shall introduce artificial data.</p>
+
+<p>Let <tt>NONWORD</tt> represent some word that is not allowed to
+occur in the input.  Then consider any words that need to exist but
+are outside of the paragraph to be <tt>NONWORD</tt>.  Then we can say
+that the first two prefixes from this passage are "<tt>NONWORD</tt>
+<tt>NONWORD</tt>" and "<tt>NONWORD</tt> Blessed".  Given prefix length
+<i>n</i>, we will need <i>n</i> artificial prefixes, the first with
+<i>n</i> <tt>NONWORD</tt>s, the second with <i>n</i>-1, and so on.
+Similarly, we shall say the suffix of "of God." is "<tt>NONWORD</tt>".
+The end result is that to begin text generation, we use a prefix of
+<i>n</i> <tt>NONWORD</tt>s, and the algorithm terminates normally if
+<tt>NONWORD</tt> is ever chosen as the next output word.&nbsp; In order to keep 
+output from our tests from getting too long, we place an artificial limit on the 
+number of generated words (this is the third parameter of the Markov 
+constructor).</p>
+
+<p>Now we can look at the table.</p>
+
+<table border="1"><tr>
+<th width="25%">Prefix</th>
+<th width="25%">Suffixes</th>
+</tr><tr>
+<td><tt>NONWORD</tt> <tt>NONWORD</tt></td>
+<td>Blessed</td>
+</tr><tr>
+<td><tt>NONWORD</tt> Blessed</td>
+<td>are</td>
+</tr><tr>
+<td>Blessed are</td>
+<td>the (multiplicity 5)<br />those (multiplicity 2)</td>
+</tr><tr>
+<td>are the</td>
+<td>poor<br />meek,<br />merciful,<br />pure<br />peacemakers,</td>
+</tr><tr>
+<td>the poor</td>
+<td>in</td>
+</tr><tr>
+<td>poor in</td>
+<td>spirit,</td>
+</tr><tr>
+<td>in spirit,</td>
+<td>for</td>
+</tr><tr>
+<td>spirit, for</td>
+<td>theirs</td>
+</tr><tr>
+<td>for theirs</td>
+<td>is</td>
+</tr><tr>
+<td>theirs is</td>
+<td>the</td>
+</tr><tr>
+<td>is the</td>
+<td>kingdom</td>
+</tr><tr>
+<td>the kingdom</td>
+<td>of</td>
+</tr><tr>
+<td>kingdom of</td>
+<td>heaven.</td>
+</tr><tr>
+<td>of heaven.</td>
+<td>Blessed</td>
+</tr><tr>
+<td>the peacemakers,</td>
+<td>for</td>
+</tr><tr>
+<td>peacemakers, for</td>
+<td>they</td>
+</tr><tr>
+<td>for they</td>
+<td>will</td>
+</tr><tr>
+<td>they will</td>
+<td>be (multiplicity 4)<br />inherit<br />see<br /></td>
+</tr><tr>
+<td>will be</td>
+<td>comforted.<br />filled.<br />shown<br />called</td>
+</tr><tr>
+<td>be called</td>
+<td>sons</td>
+</tr><tr>
+<td>called sons</td>
+<td>of</td>
+</tr><tr>
+<td>sons of</td>
+<td>God.</td>
+</tr><tr>
+<td>of God.</td>
+<td><tt>NONWORD</tt></td>
+</tr></table>
+
+<p>You can see that some prefixes can lead to many different choices for the 
+output text, while some have only one choice for the next word.  For example, "the poor in spirit, for theirs
+is the kingdom of heaven." is a chain with no alternate branches.  However,
+the prefix "Blessed are" has two possible next words,&nbsp; and "are the" has five.
+Also notice that "the" follows "Blessed are" more often than "those".
+Hopefully, you can now see why the first <i>n</i> words of the output
+are always the same as the input.</p>
+
+<h2>Algorithm Description</h2>
+
+<p>Now that we've defined prefixes, suffixes, and <tt>NONWORD</tt>, we
+can give pseudo-code for the Markov Chain algorithm.  Note that there
+are no special cases in the flow control; the <tt>NONWORD</tt> data
+takes care of that.</p>
+
+<pre>
+// build data structures
+<b>w[1]...w[n] = NONWORD...NONWORD;</b> // beginning of input text
+<b>while( there are more input words ) {
+   w[n+1] = next word;
+   add w[n+1] to the MultiSet of suffixes of w[1]...w[n];
+   w[1]...w[n] = w[2]...w[n+1];
+}
+add NONWORD to the MultiSet  of suffixes of w[1]...w[n];</b> // end of input text
+
+// output new text
+<b>w[1]...w[n] = NONWORD;
+w[n+1] = the one suffix associated with a prefix that is all NONWORDs;</b>
+<b>while( w[n+1] != NONWORD ) {
+   output w[n+1];
+   replace the prefix w[1]...w[n] by the prefix w[2]...w[n+1];
+   w[n+1] = a randomly chosen suffix of w[1]...w[n];</b>
+   /* note: The random choice should be weighted based on the
+      multiplicity of each suffix. MultiSet's findKth() method takes care of this for you. */
+}
+</pre>
+
+<h2>Implementation</h2>
+
+<p>The pseudo-code makes fairly clear the procedural necessities of
+the algorithm.  It should also be clear that you will need to
+utilize several different data structures:</p>
+<ul class="inline">
+<li>to keep track of the current prefix</li>
+<li>to map a prefix to a list of suffixes</li>
+<li>to take multiplicity of suffixes into account</li>
+</ul>
+
+<p>Most of these design decisions have been made for you, as described&nbsp; in the
+<a href="overview.html">overview document</a>.</p>
+
+</body>
+
+</html>

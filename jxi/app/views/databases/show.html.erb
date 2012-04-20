@@ -1,0 +1,17 @@
+<p>
+  <b>Name:</b>
+  <%=h @database.name %>
+</p>
+
+<h2>Tables</h2>
+<% @database.tables.each do |c| %>
+  <p>
+    <b>Table:</b>
+    <%=h c.name %>
+  </p>
+
+<% end %>
+
+<%= link_to 'Edit Database', edit_database_path(@database) %> |
+<%= link_to 'Back to Databases', databases_path %> |
+<%= link_to 'Manage Tables', database_tables_path(@database) %>

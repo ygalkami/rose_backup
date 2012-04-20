@@ -1,0 +1,25 @@
+<h1>Columns for <%= @table.name %></h1>
+
+<column>
+
+<% for column in @columns %>
+  <tr>
+    <td><%=h column.name %></td>
+    <td><%=h column.type %></td>
+    <td><%=h column.null %></td>
+    <td><%= link_to 'Show', table_column_path(@table, column) %></td>
+    <td>
+        <%= link_to 'Edit', edit_table_column_path(@table, column) %>
+    </td>
+    <td>
+        <%= link_to 'Destroy', table_column_path(@table, column),
+            :confirm => 'Are you sure?', :method => :delete %><br />
+    </td>
+  </tr>
+<% end %>
+</column>
+
+<br />
+
+<%= link_to 'New column', new_table_column_path(@table) %>
+<%= link_to 'Back to Table', @table %>

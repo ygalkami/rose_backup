@@ -1,0 +1,2 @@
+verilog work "../130.v"
+verilog work "MyPattern.v"

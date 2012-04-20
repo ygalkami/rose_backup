@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/repos/csse403-201010-TheGrooveMonitors/!svn/ver/45/trunk
+END
+tcp_server.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/csse403-201010-TheGrooveMonitors/!svn/ver/19/trunk/tcp_server.groovy
+END
+test_experimental.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/repos/csse403-201010-TheGrooveMonitors/!svn/ver/41/trunk/test_experimental.groovy
+END
+test.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/csse403-201010-TheGrooveMonitors/!svn/ver/45/trunk/test.groovy
+END
+.project
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/repos/csse403-201010-TheGrooveMonitors/!svn/ver/3/trunk/.project
+END
+client_gui.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/csse403-201010-TheGrooveMonitors/!svn/ver/20/trunk/client_gui.groovy
+END
+hello.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/repos/csse403-201010-TheGrooveMonitors/!svn/ver/8/trunk/hello.groovy
+END
+gui.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/repos/csse403-201010-TheGrooveMonitors/!svn/ver/17/trunk/gui.groovy
+END
+tcp_client.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/repos/csse403-201010-TheGrooveMonitors/!svn/ver/13/trunk/tcp_client.groovy
+END
+ip.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/repos/csse403-201010-TheGrooveMonitors/!svn/ver/8/trunk/ip.groovy
+END
+network.groovy
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/repos/csse403-201010-TheGrooveMonitors/!svn/ver/11/trunk/network.groovy
+END

@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/repos/csse304-200930-24/!svn/ver/27/
+END
+datatypes.ss
+K 25
+svn:wc:ra_dav:version-url
+V 49
+/repos/csse304-200930-24/!svn/ver/28/datatypes.ss
+END
+interpreter.ss
+K 25
+svn:wc:ra_dav:version-url
+V 51
+/repos/csse304-200930-24/!svn/ver/31/interpreter.ss
+END
+main.ss
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/repos/csse304-200930-24/!svn/ver/15/main.ss
+END
+env.ss
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/repos/csse304-200930-24/!svn/ver/29/env.ss
+END
+parse.ss
+K 25
+svn:wc:ra_dav:version-url
+V 45
+/repos/csse304-200930-24/!svn/ver/31/parse.ss
+END

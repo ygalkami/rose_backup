@@ -1,0 +1,28 @@
+
+public class Move {
+	
+	public int moveToX;
+	public int moveToY;
+	public int currentPosX;
+	public int currentPosY;
+	public String Direction = "";
+	public String oppositeDirection = "";
+	public Block block;
+
+	public Move(int currentY, int currentX, int movetoY, int movetoX, Block block, String direction, String oppositeDirection){
+		this.currentPosX = currentX;
+		this.currentPosY = currentY;
+		this.moveToX = movetoX;
+		this.moveToY = movetoY;
+		this.block = block;
+		this.Direction = direction;
+		this.oppositeDirection = oppositeDirection;
+//		System.out.println("Row: " + currentPosY + " Col: " + currentPosX + " MoveRow: " + movetoY + " MoveCol: " + movetoX);
+	}
+	
+	public String toString() {
+		//return "[Current Row " + this.currentPosY + " Current Col " + this.currentPosX + " Move To Row " + this.moveToY + " Move To Col " + this.moveToX + "]";
+		return this.currentPosY + " " + this.currentPosX + " " + this.moveToY + " " + this.moveToX;
+	}
+
+}

@@ -1,0 +1,34 @@
+#!/bin/csh
+# ------------------------------------------------------------------
+# Shell script to try solving the puzzles in the hard subdirectory
+# ------------------------------------------------------------------
+# Make sure this script is executable by saying
+#	chmod +x runtests
+# if necessary.  
+# You may also need to make the auxilliary script executable:
+#   chmod +x runsuccess.csh
+# Then just say
+#	./runtests
+# to try them all.
+# ------------------------------------------------------------------
+echo '===================================================================='
+echo '--- dads (needs 58 moves)'
+./runsuccess.csh dads d209.goal
+echo '--- flipper (needs 155 moves)'
+./runsuccess.csh flipper flipper.goal
+
+echo '--- salmon4'
+./runsuccess.csh salmon4 salmon4.goal
+echo '--- salmon8'
+./runsuccess.csh salmon8 salmon8.goal
+
+echo '--- pandemonium (needs 80 moves)'
+./runsuccess.csh pandemonium pandemonium.goal
+
+echo '--- salmon16'
+./runsuccess.csh salmon16 salmon16.goal
+echo '--- salmon32'
+./runsuccess.csh salmon32 salmon32.goal
+echo '--- salmon64'
+./runsuccess.csh salmon64 salmon64.goal
+

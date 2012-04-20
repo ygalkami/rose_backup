@@ -1,0 +1,79 @@
+8
+
+dir
+68
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/CNestedLoops
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-10-23T16:52:04.841122Z
+68
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+.cdtproject
+file
+
+
+
+
+2007-10-24T13:28:43.960434Z
+adbc35fe466217ef2b27ec9cd7c43c12
+2007-10-23T16:52:04.841122Z
+68
+clifton
+
+.project
+file
+
+
+
+
+2007-10-24T13:28:43.976059Z
+42c60aef4efe30711c386014651e03a6
+2007-10-23T16:52:04.841122Z
+68
+clifton
+
+.cdtbuild
+file
+
+
+
+
+2007-10-24T13:28:43.976059Z
+76bcb4221cb00c84ed1daeedf1c9b902
+2007-10-23T16:52:04.841122Z
+68
+clifton
+
+.settings
+dir
+
+NestedLoopPatterns.c
+file
+78
+
+
+
+2007-10-25T22:18:10.065450Z
+4f8c0d0916fd8d9390d5bda5ec014ee9
+2007-10-25T22:17:43.208457Z
+78
+pickdp
+

@@ -1,0 +1,52 @@
+8
+
+dir
+1
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/FirstSVNProject/src
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-09-23T19:42:02.421201Z
+1
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+NestedLoopPatterns.py
+file
+21
+
+
+
+2007-09-28T12:06:17.437500Z
+ed1fa94c60e17608a7845bad919cda75
+2007-09-28T03:52:43.530469Z
+21
+verkamj
+
+spam.py
+file
+2
+
+
+
+2007-09-25T12:37:52.856700Z
+d128ed55f05ddcef877e91b69e0e531e
+2007-09-25T12:34:44.003562Z
+2
+pickdp
+

@@ -1,0 +1,16 @@
+ncsim: 05.40-s011: (c) Copyright 1995-2005 Cadence Design Systems, Inc.
+
+-------------------------------------
+Relinquished control to SimVision...
+ncsim> 
+ncsim> source "C:/Program Files/Cadence Design Systems/IUS/tools/inca/files/ncsimrc"
+ncsim> database -open waves -into waves.shm -default
+Created default SHM database waves
+ncsim> probe -create -shm PWD_Judge_FSM_TB.gClock PWD_Judge_FSM_TB.gReset PWD_Judge_FSM_TB.iClockEnable PWD_Judge_FSM_TB.iLaneSensorA PWD_Judge_FSM_TB.iLaneSensorB PWD_Judge_FSM_TB.iLaneSensorC PWD_Judge_FSM_TB.oDisplay PWD_Judge_FSM_TB.oState
+Created probe 1
+ncsim> run
+Simulation stopped via $stop(1) at time 1331 NS + 0
+ncsim> ^C
+ncsim> exit
+ncsim: Memory Usage - 15.3M data 
+ncsim: CPU Usage - 0.1s system + 0.1s user = 0.1s total (30.7s, 0.4% cpu)

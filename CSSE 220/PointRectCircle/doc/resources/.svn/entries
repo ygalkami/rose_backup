@@ -1,0 +1,29 @@
+8
+
+dir
+3
+http://svn.cs.rose-hulman.edu/repos/csse220-winter2008-pickdp/PointRectCircle/doc/resources
+http://svn.cs.rose-hulman.edu/repos/csse220-winter2008-pickdp
+
+
+
+2007-12-04T22:36:01.325689Z
+3
+pickdp
+
+
+svn:special svn:externals svn:needs-lock
+
+inherit.gif
+file
+
+
+
+
+2007-12-03T15:11:55.370390Z
+220f4eda0bd49915699315f18b8b03cf
+2007-12-04T22:36:01.325689Z
+3
+pickdp
+has-props
+

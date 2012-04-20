@@ -1,0 +1,52 @@
+8
+
+dir
+25
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp/BallSim/src
+http://svn.cs.rose-hulman.edu/repos/csse120-fall07-pickdp
+
+
+
+2007-10-01T01:29:26.481558Z
+25
+clifton
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+6e460534-ab3a-0410-88fd-c324e7b87a2d
+
+blackjackWithClasses.py
+file
+
+
+
+
+2007-10-02T13:04:00.964540Z
+1d2dc6dcbeab4a4517f65efb3a2e6251
+2007-10-01T01:29:26.481558Z
+25
+clifton
+
+ballSim.py
+file
+45
+
+
+
+2007-10-05T00:02:03.952357Z
+d882105733d80e7032dc7b836fe75b9a
+2007-10-04T23:58:23.709830Z
+45
+pickdp
+

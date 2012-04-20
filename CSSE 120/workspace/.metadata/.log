@@ -1,0 +1,48 @@
+!SESSION 2007-06-13 13:27:06.779 -----------------------------------------------
+eclipse.buildId=M20070212-1330
+java.version=1.6.0_01
+java.vendor=Sun Microsystems Inc.
+BootLoader constants: OS=win32, ARCH=x86, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86
+
+!ENTRY org.python.pydev 1 1 2007-06-13 13:27:52.050
+!MESSAGE Information about process of adding new interpreter:
+- Opening dialog to request executable (or jar).
+- The file chosen was null (returning null).
+
+
+!ENTRY org.python.pydev 1 1 2007-06-13 13:28:12.488
+!MESSAGE Information about process of adding new interpreter:
+- Opening dialog to request executable (or jar).
+- Chosen interpreter file:'C:\Program Files\Python25\python.exe
+- Ok, file is non-null. Getting info on:C:\Program Files\Python25\python.exe
+- Beggining task:Getting libs totalWork:100
+- Setting task name:Mounting executable string...
+- Setting task name:Executing:  "C:\Program Files\Python25\python.exe" -u "C:\Program Files\eclipse\plugins\org.python.pydev_1.3.4\PySrc\interpreterInfo.py"
+- Setting task name:Making pythonpath environment... "C:\Program Files\Python25\python.exe" -u "C:\Program Files\eclipse\plugins\org.python.pydev_1.3.4\PySrc\interpreterInfo.py"
+- Setting task name:Making exec... "C:\Program Files\Python25\python.exe" -u "C:\Program Files\eclipse\plugins\org.python.pydev_1.3.4\PySrc\interpreterInfo.py"
+- Setting task name:Reading output...
+- Setting task name:Waiting for process to finish.
+- Setting task name:Found:c:\program files\python25\dlls\bz2.pyd
+- Setting task name:Found:c:\program files\python25\dlls\pyexpat.pyd
+- Setting task name:Found:c:\program files\python25\dlls\select.pyd
+- Setting task name:Found:c:\program files\python25\dlls\sqlite3.dll
+- Setting task name:Found:c:\program files\python25\dlls\tcl84.dll
+- Setting task name:Found:c:\program files\python25\dlls\tclpip84.dll
+- Setting task name:Found:c:\program files\python25\dlls\tix84.dll
+- Setting task name:Found:c:\program files\python25\dlls\tk84.dll
+- Setting task name:Found:c:\program files\python25\dlls\unicodedata.pyd
+- Setting task name:Found:c:\program files\python25\dlls\winsound.pyd
+- Setting task name:Found:c:\program files\python25\dlls\_bsddb.pyd
+- Setting task name:Found:c:\program files\python25\dlls\_ctypes.pyd
+- Setting task name:Found:c:\program files\python25\dlls\_ctypes_test.pyd
+- Setting task name:Found:c:\program files\python25\dlls\_elementtree.pyd
+- Setting task name:Found:c:\program files\python25\dlls\_hashlib.pyd
+- Setting task name:Found:c:\program files\python25\dlls\_msi.pyd
+- Setting task name:Found:c:\program files\python25\dlls\_socket.pyd
+- Setting task name:Found:c:\program files\python25\dlls\_sqlite3.pyd
+- Setting task name:Found:c:\program files\python25\dlls\_ssl.pyd
+- Setting task name:Found:c:\program files\python25\dlls\_testcapi.pyd
+- Setting task name:Found:c:\program files\python25\dlls\_tkinter.pyd
+- Success getting the info. Result:c:\program files\python25\python.exe
+

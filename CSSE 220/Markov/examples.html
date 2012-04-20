@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE html PUBLIC
+          "-//W3C//DTD XHTML 1.0 Transitional//EN"
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html lang="en" xml:lang="en">
+
+<head>
+<title>Examples</title>
+<link rel="stylesheet" type="text/css" href="../../style/style.css" />
+</head>
+
+<body>
+
+<h1>Markov Chain Programming Assignment Code Examples</h1>
+
+Markov documents:&nbsp;&nbsp; <a href="index-Markov.html">index</a>&nbsp;&nbsp;
+<a href="overview.html">overview</a>&nbsp;&nbsp;&nbsp; <a href="markov.html">
+markov</a>&nbsp;&nbsp;&nbsp; <a href="justification.html">justification</a>&nbsp;&nbsp;
+<a href="turnin-instructions.html">turnin-instructions</a>&nbsp;&nbsp;&nbsp;
+<a href="examples.html">code examples</a>&nbsp;&nbsp;
+<a href="MarkovPartners.xls">partners</a>
+&nbsp;&nbsp;&nbsp; <a href="importingEclipseClasses.html">importing classes</a>
+&nbsp;&nbsp;&nbsp; <a href="multiset/index.html">MultiSet</a>
+
+
+
+<h2>FixedLengthQueue</h2>
+
+<p>Usage:<br> 
+<br>
+<tt>FixedLengthQueue prefixQueue = new FixedLengthQueue(4);<br>
+System.out.println("Queue with 0 elements: "+prefixQueue);<br>
+prefixQueue.add("element-one");<br>
+System.out.println("Queue with 1 element:  "+prefixQueue);<br>
+prefixQueue.add("element-two");<br>
+System.out.println("Queue with 2 elements: "+prefixQueue);<br>
+prefixQueue.add("element-three");<br>
+System.out.println("Queue with 3 elements: "+prefixQueue);<br>
+prefixQueue.add("element-four");<br>
+System.out.println("Queue with 4 elements: "+prefixQueue);<br>
+prefixQueue.add("element-five");<br>
+System.out.println("Queue with 4 elements: "+prefixQueue);<br>
+prefixQueue.add("element-six");<br>
+System.out.println("Queue with 4 elements: "+prefixQueue);<br></tt>
+<br>
+The output of the above would be:
+<br><br>
+<tt>
+Queue with 0 elements: <br>
+Queue with 1 element:  element-one<br>
+Queue with 2 elements: element-one element-two<br>
+Queue with 3 elements: element-one element-two element-three<br>
+Queue with 4 elements: element-one element-two element-three element-four<br>
+Queue with 4 elements: element-two element-three element-four element-five<br>
+Queue with 4 elements: element-three element-four element-five element-six<br>
+</tt>
+
+</p>
+
+
+
+<h2>MultiSet</h2>
+
+<p>
+Note that this data structure does not guarantee any specified
+ordering of values. What it does guarantee is that if <code>findKth(i)</code> is called for each 
+<i>i</i> in the range&nbsp; 0 &lt= i &lt size(),
+and an object <i>obj</i> has multiplicity <i>m</i> in this <tt>MultiSet</tt>, 
+<i>m</i> of those calls to &lt;code&gt;findKth&lt;/code&gt; will return <i>obj</i>.
+<pre>
+public class TestMultiSet
+{
+  public static void main(String[] args)
+  {
+    MultiSet t = new MultiSet();
+    t.add("Washington G.");
+    t.add("Jefferson T.");
+    t.add("Lincoln A.");
+    t.add("Roosevelt T.");
+    t.add("Reagan R.");
+    System.out.println("Items in order:");
+    for (int i = 0; i < t.size(); i++) {
+    	System.out.println(t.findKth(i));
+    }
+    System.out.println();
+    t.add("Washington G.");
+    t.add("Jefferson T.");
+    t.add("Lincoln A.");
+    t.add("Roosevelt T.");
+    t.add("Reagan R.");
+    System.out.println("Items in order:");
+    for (int i = 0; i < t.size(); i++) {
+    	System.out.println(t.findKth(i));
+    }
+    System.out.println();
+    for (int i = 0; i < 50; i++) {
+    	t.add("Lincoln A.");
+    }
+    //adding an item more than once at a time probably won't
+    //be useful for the Markov Chain project, but a data structure
+    //like MultiSet should probably include a method for doing so
+    t.add("Lincoln A.",50);
+    System.out.println("Number of items stored:");
+    System.out.println(t.numEntries());
+    System.out.println();
+    ArrayList a = t.values();
+    System.out.println("Items actually stored:");
+    for (int i = 0; i < a.size(); i++) {
+    	System.out.println(a.get(i)+" has multiplicity "+t.getMultiplicity(a.get(i)));
+    }
+    System.out.println();
+    System.out.println("Out of bounds items k=-1 and k=1001:");
+    System.out.println(t.findKth(-1));
+    System.out.println(t.findKth(1001));
+  }
+}
+</pre>
+</p>
+
+<h2><tt>String.split()</tt></h2>
+<p>
+As an alternative to the word-by-word Scanner, you may read in a line at a time 
+and use the
+<tt><a href="http://java.sun.com/j2se/1.5.0/docs/api/java/lang/String.html#split(java.lang.String)">String.split()</a></tt>
+method to parse input.
+<br>
+<pre>
+String text = "This text\t  contains \n\t whitespace\r\r\r\r\r.";
+String[] textSplit = text.split("\\s+");
+for (int i = 0; i < textSplit.length; i++) {
+	System.out.println(textSplit[i]);
+}
+</pre>
+produces the following output:
+<br>
+<pre>
+This
+text
+contains
+whitespace
+.
+</pre>
+Recall that <tt>\\</tt> parses as a single backslash since backslash is Java's escape character;
+the argument given to <tt>split</tt> is a
+<a href="http://en.wikipedia.org/wiki/Regular_expression">regular expression</a> 
+that means match (as a delimiter)
+one or more ("+") whitespace characters ("\s").
+
+
+</body>
+
+</html>
